@@ -393,9 +393,9 @@ label start_iw:
     show dv_s scared
     show ja scared
     show mt smile
-    with dissolve
-    
+    with dissolve    
     window show
+    
     mt "Отдохну наконец от вас хотя бы недельку.{w} В конце концов, должен же и у меня быть отпуск…"
 
     window hide

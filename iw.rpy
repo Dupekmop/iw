@@ -5,7 +5,7 @@ label start_iw:
     
     ### дляТЕСТОВ
     
-        
+
     
     ### /дляТЕСТОВ
     
@@ -176,10 +176,10 @@ label start_iw:
     show ja angry at right with ease
 
     window show
-    "Некоторое время продолжалось молчаливое силовое соревнование по перетягиванию Семёна."
+    "Некоторое время продолжалось молчаливое соревнование по перетягиванию Семёна."
     "Наконец поняв, что грубой силой тут ничего не решить, соперницы оставили меня в покое и перешли к переговорам."
 
-    show ja angry at cright with ease
+    show ja dontlike at cright with ease
     sls "Ты что творишь? Совсем сбрендила или это уже белая горячка?"
 
     show dv_s angry at cleft with ease
@@ -197,7 +197,7 @@ label start_iw:
 
     slf "А вот с таких. Теперь только так и никак иначе. Твоё место занято.{w} Смирись."
 
-    show ja angry with dissolve
+    show ja rage with dissolve
     sls "Знаешь, что?"
     "Славя Номер Два кипела от негодования не в силах подобрать слова."
 
@@ -236,7 +236,8 @@ label start_iw:
     slf "Было нельзя, а теперь можно! Беру власть в свои руки!"
 
     usp "Вся власть советам!"
-    show us laugh sport far at cright behind un with hpunch    
+    show us laugh sport far at cright behind un with hpunch
+    show un surprise with dissolve
     usp "То есть мне!"
 
     "Сцена обогатилась ещё одним персонажем: маленькой рыжей девочкой лет двенадцати."

@@ -18,7 +18,7 @@ label start_iw:
     window hide
     $ day_time()
     $ backdrop = "days"
-    $ new_chapter(1, u"Прибытие")
+    $ new_chapter(1, u"Сокровенное желание: Прибытие")
     play music music_list["no_tresspassing"]
     scene bg ext_bus with flash
     $ set_mode_adv()
@@ -76,7 +76,7 @@ label start_iw:
 
     sv "Абсурдная ситуация, абсурдные мысли. Какой-то лагерь, пионеры, Славяны…"
 
-    show sl_e4 serious pioneer at right with hpunch
+    show ja serious pioneer at right with hpunch
     show dv_s shocked:
         ease 1 xpos 0.2
         
@@ -85,7 +85,7 @@ label start_iw:
     show dv_s surprise with dissolve
     dvp "Не слушай её! Она перепутала! Я — Славяна!"
 
-    show sl_e4 surprise with dissolve
+    show ja surprise with dissolve
     slp "Что значит ты — Славяна? А я тогда кто?"
     
     show dv_s normal:
@@ -96,18 +96,18 @@ label start_iw:
     show dv_s laugh with dissolve
     slf "И вообще, кто первый, тот и Славяна!"
 
-    show sl_e4 serious with dissolve
+    show ja serious with dissolve
     sls "Не обращай внимания, Алиса шутит. Она у нас выдумщица и хулиганка."
     "Обратилась Славя Номер Два уже ко мне."
     
     show dv_s normal with dissolve
     
-    show sl_e4 shy close:
+    show ja shy close:
         ease 1 xpos 0.6
     "Она подхватила меня под руку и прижалась так, что я почувствовал мягкость её груди."
     sls "И лучше держись от неё подальше. От таких, сам понимаешь, ничего хорошего не жди."
 
-    show sl_e4 smile pioneer at cright with ease
+    show ja smile pioneer at cright with ease
     
     "Потом немного отстранилась и продолжила уже громче:"
     sls "Сейчас я провожу тебя к вожатой.{w} Как доехал?"
@@ -119,18 +119,18 @@ label start_iw:
     "Славя Номер Один схватила меня за другую руку и потянула к себе."
     slf "Нет, я провожу!"
 
-    show sl_e4 serious:
+    show ja serious:
         ease 0.5 xpos 0.6
     sls "..."
     
     window hide
     show dv_s normal:
         ease 0.7 xpos 0.2
-    show sl_e4 serious with hpunch:
+    show ja serious with hpunch:
         ease 0.7 xpos 0.5
     $ renpy.pause(0.5, hard=True)
     
-    show sl_e4 serious:
+    show ja serious:
         ease 0.7 xpos 0.8
     show dv_s normal with hpunch:
         ease 0.7 xpos 0.5
@@ -138,11 +138,11 @@ label start_iw:
     
     show dv_s angry:
         ease 0.7 xpos 0.2
-    show sl_e4 serious with hpunch:
+    show ja serious with hpunch:
         ease 0.7 xpos 0.5
     $ renpy.pause(0.5, hard=True)
     
-    show sl_e4 angry:
+    show ja angry:
         ease 0.6 xpos 0.8
     show dv_s angry with hpunch:
         ease 0.6 xpos 0.5
@@ -150,11 +150,11 @@ label start_iw:
     
     show dv_s angry:
         ease 0.6 xpos 0.2
-    show sl_e4 angry with hpunch:
+    show ja angry with hpunch:
         ease 0.6 xpos 0.5
     $ renpy.pause(0.5, hard=True)
     
-    show sl_e4 angry:
+    show ja angry:
         ease 0.5 xpos 0.8
     show dv_s rage with hpunch:
         ease 0.5 xpos 0.5
@@ -162,49 +162,48 @@ label start_iw:
     
     show dv_s rage:
         ease 0.5 xpos 0.2
-    show sl_e4 rage with hpunch:
+    show ja rage with hpunch:
         ease 0.5 xpos 0.5
     $ renpy.pause(0.5, hard=True)
     
-    show sl_e4 rage:
+    show ja rage:
         ease 0.4 xpos 0.8
     show dv_s rage with hpunch:
         ease 0.4 xpos 0.5
     $ renpy.pause(0.5, hard=True)
 
     show dv_s angry at left with ease
-    show sl_e4 angry at right with ease
+    show ja angry at right with ease
 
     window show
-    #"Некоторое время продолжалось молчаливое силовое противостояние, заключавшееся в перетягивании Семёна."
-    
+    "Некоторое время продолжалось молчаливое силовое соревнование по перетягиванию Семёна."
     "Наконец поняв, что грубой силой тут ничего не решить, соперницы оставили меня в покое и перешли к переговорам."
 
-    show sl_e4 angry at cright with ease
+    show ja angry at cright with ease
     sls "Ты что творишь? Совсем сбрендила или это уже белая горячка?"
 
     show dv_s angry at cleft with ease
     slf "Да сколько можно одно и то же снова и снова. Всё, надоело! Хочу быть доброй, ласковой и милой."
 
-    show sl_e4 surprise at right with ease
+    show ja surprise at right with ease
     sls "Чего-о-о?"
 
     show dv_s normal with dissolve
     slf "Того!{w} Теперь твоя очередь в одиночестве бренчать на гитаре по вечерам, устраивать пакости Панамке и держать в страхе весь лагерь."
     slf "Ещё быть колючей, гордой и неприступной, но с большим, любящим сердцем. Не забудь."
 
-    show sl_e4 serious with dissolve
+    show ja serious with dissolve
     sls "Вот ещё.{w} С каких это пор…"
 
     slf "А вот с таких. Теперь только так и никак иначе. Твоё место занято.{w} Смирись."
 
-    show sl_e4 angry with dissolve
+    show ja angry with dissolve
     sls "Знаешь, что?"
     "Славя Номер Два кипела от негодования не в силах подобрать слова."
 
     slf "Что?"
 
-    sls "Это уже переходит всякие границы. Совсем распоясалась!{w} Придётся взяться и за твоё воспитание."
+    sls "Это уже переходит всякие границы.{w} Совсем распоясалась.{w} Придётся взяться и за твоё воспитание!"
 
     show dv_s grin with dissolve
     slf "Ну, попробуй…"
@@ -214,21 +213,21 @@ label start_iw:
 
     stop music fadeout 2
     unv "Ой, девочки, м-может, не надо?"
-    "Раздался сзади чей-то жалобный голосок."
+    "Раздался сзади чей-то жалобный голос."
 
     window hide
     scene bg ext_camp_entrance_day with wiperight
     show un sad sport far at center with dissolve
-    $ renpy.pause(2, hard=True)
+    $ renpy.pause(1, hard=True)
     window show
 
     sv "Кажется, я окружён и бежать некуда"
 
-    show sl_e4 serious pioneer at fleft with hpunch
+    show ja serious pioneer at fleft with hpunch
     sls "Лена!"
     
     show dv_s normal pioneer at fright with vpunch
-    slf "Вот только тебя здесь не хватало. Чего пришла?{w} Скройся с глаз, а то я за себя не ручаюсь!"
+    slf "Вот только тебя здесь не хватало.{w} Чего пришла? Скройся с глаз, а то я за себя не ручаюсь!"
 
     show un sad sport at center with dissolve
     un "Алиса… Но ведь так нельзя…"
@@ -243,23 +242,25 @@ label start_iw:
     "Сцена обогатилась ещё одним персонажем: маленькой рыжей девочкой лет двенадцати."
     "Она быстро подбежала к Славянам и встала между ними живым барьером."
     
-    show un angry2 at cleft with ease
-    show us normal sport at center with ease
+    show un angry2 at cleft zorder 0
+    show us normal sport at center zorder 1
+    with ease
     
     sls "Ульяна, ты очень вовремя!{w} Держи свою подругу на поводке и намордник на неё надень, а то покусает ещё." 
-    show sl_e4 angry with dissolve
+    show ja angry with dissolve
     sls "Бешеная."
 
     show dv_s rage with dissolve
     slf "Щас я кого-то укушу — мало не покажется!"
+    window hide
     show us surp1 with dissolve
     stop ambience
     play sound sfx_angry_ulyana
     $ renpy.pause(2, hard=True)
     show us surp2 with dissolve
     $ renpy.pause(2, hard=True)
-    #window hide
-    scene bg black
+    
+    scene anim prolog_1
     play music music_list["that_s_our_madhouse"]
     
     play sound sfx_face_slap 
@@ -339,19 +340,20 @@ label start_iw:
     play ambience ambience_ext_road_day
 
     scene bg ext_camp_entrance_day with dissolve
-    show dv_s cry pioneer at fleft with dissolve 
-    show sl_e4 dontlike pioneer at fright with dissolve
-    show us angry sport at left with dissolve
-    show un angry sport at right with dissolve
+    show dv_s cry pioneer at fleft
+    show ja dontlike pioneer at fright
+    show us angry sport at left
+    show un angry sport at right
+    with dissolve
     
-    #window show
+    window show
     "Довольно быстро всё кончилось."
     "Славя Номер Один лежала на земле, и её держала каким-то хитрым захватом маленькая Ульяна, а Славю Номер Два держала Лена, выглядевшая теперь отнюдь не безобидно."
 
     us "Ну, и что тут происходит? Что я пропустила интересного?"
 
     show un angry2 at cright with ease
-    show sl_e4 sad with dissolve
+    show ja sad with dissolve
     sls "Эта ненормальная утверждает, что теперь она Славяна."
     "Славя Номер Два кивнула на поверженную Славю Номер Один."
 
@@ -368,10 +370,13 @@ label start_iw:
 
     window hide
     show mt normal panama pioneer at center with dspr
-    show us surp2 sport at left with ease
-    show un surprise sport at right with ease
-    show dv_s surprise with dissolve 
-    show sl_e4 surprise pioneer at fright with dissolve
+    show us surp2 sport at left
+    show un surprise sport at right
+    with ease
+    
+    show dv_s surprise 
+    show ja surprise pioneer
+    with dissolve
     
     window show
     chor "Ольга Дмитриевна?"
@@ -386,8 +391,9 @@ label start_iw:
     show us fear
     show un scared
     show dv_s scared
-    show sl_e4 scared
-    show mt smile with dissolve
+    show ja scared
+    show mt smile
+    with dissolve
     
     window show
     mt "Отдохну наконец от вас хотя бы недельку.{w} В конце концов, должен же и у меня быть отпуск…"
@@ -396,13 +402,12 @@ label start_iw:
     stop ambience
     hide mt with dissolve
     $ renpy.pause(1, hard=True)
-    hide dv_s with dissolve
-    $ renpy.pause(1, hard=True)
-    hide sl_e4 with dissolve
-    $ renpy.pause(1, hard=True)
-    hide un with dissolve
-    $ renpy.pause(1, hard=True)
-    hide us with dissolve
+    hide dv_s
+    hide ja
+    hide un
+    hide us
+    with dissolve
+    
     play music music_list["orchid"]
     $ renpy.pause(2, hard=True)
     

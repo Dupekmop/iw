@@ -1,7 +1,106 @@
-label start_iw:
+label iw_start:
+    menu:
+        "Давай с самого начала":
+            jump iw_prescriptum
+        "День первый: прибытие":
+            jump iw_dayOne_arrive
+
+label iw_prescriptum:
     $ prolog_time()
+    $ backdrop = "prologue"
+    $ new_chapter(0, u"Сокровенное желание: Прескриптум")
+        
+    ### дляТЕСТОВ
+    
+
+    
+    ### /дляТЕСТОВ
+
+    show text "{i}{color=#f1d076}Бойтесь своих желаний — они имеют свойство сбываться{/color}{/i}" at truecenter with dissolve2
+    $ renpy.pause(3)
+    hide text with dissolve2
+    
+    play ambience ambience_cold_wind_loop fadein 3
+    play music music_prologue fadein 3
+    scene bg black with dissolve2
+    $ set_mode_nvl()
+    "Иногда случается, что вещи теряют свой смысл.{w} Вот смысл окна, например, чтобы в него смотреть, но порой смотришь в него, а смотреть там нечего.{w} Ничего интересного.{w} Или вот какой смысл умываться по утрам? Чтобы быть бодрым?{w} А какой смысл быть по утрам бодрым?{w} Какой вообще смысл быть по утрам… Непонятно."
+    "И непонятно, то ли жизнь всегда была бессмысленной, а ты просто не замечал этого, то ли смысл был, но куда-то затерялся."
+    window hide
+    
+    scene anim prolog_1 with dissolve5
+    $ set_mode_adv()
+            
+    window show
+    pvo "Не лежи на снегу, простудишься."
+    
+    me "Ну и что? А смысл не простужаться?"
+
+    pvo "Чтобы не болеть."
+
+    me "А смысл не болеть?"
+
+    pvo "Чтобы быть здоровым! Семён, ты что, опять забыл принять таблетки?"
+
+    "Я медленно осмотрелся. Сверху, из сумрака, с одной из веток раскинувшегося рядом клёна на меня таращились два ярко-жёлтых кошачьих глаза с тёмными узкими зрачками."
+
+    sv "Говорящая кошка, только и всего"
+
+    "Вспомнился анекдот."
+    "{i}Учитель: «Дети, запишите предложение: “Рыба сидела на дереве”».\n{w}Ученик: «А разве рыбы сидят на деревьях?»\n{w}Учитель: «Ну… Это была сумасшедшая рыба».{/i}"
+
+    sv "А это — сумасшедшая кошка"
+
+    sv "Или сумасшедший я, если слышу, как она со мной разговаривает?"
+    "Ведь кошки совершенно точно не могут разговаривать, у них даже нет произносительных органов артикуляции…"
+    "Хотя откуда мне достоверно знать про кошачьи органы, разве я фелинолог? Куда там, я даже не зоолог.{w} Так, никчёмный хиккан-анимешник…"
+
+    me "А смысл быть здоровым?"
+    "Обратился я с новым вопросом, пристально глядя на две жёлтые точки."
+
+    "Точки сощурились, как если бы их обладатель улыбнулся."
+
+    pvo "Чудак, тебе что, не нравится быть здоровым?"
+
+    me "При чём здесь нравится или не нравится… Я не хочу быть бессмысленно здоровым."
+
+    "Точки снова округлились."
+
+    pvo "Тебе нужен смысл?"
+
+    me "Да."
+
+    pvo "Во всём, во всём?"
+
+    me "Неплохо бы."
+
+    pvo "Тогда тебе нужна Эвристическая Машина."
+    "Веско ответствовала кошка."
+
+    me "Какая-какая машина?.."
+
+    pvo "Эвристическая.{w} Дающая смысл."
+
+    "Я покатал во рту это новое для меня слово. И неожиданно решил:"
+
+    me "Да, она мне нужна…{w} Но где её искать?"
+
+    pvo "О! Это очень далеко!"
+
+    me "За смыслом хоть на край света.{w} Веди меня!"
+
+    "Кошка выпрыгнула из темноты."
+    "Её неестественно большая морда застыла совсем рядом"
+    play sound sfx_catlaugh
+    "Её неестественно большая морда застыла совсем рядом и громко расхохоталась мне в лицо."
+    stop ambience fadeout 3
+    stop music fadeout 3
+    $ renpy.pause(3)
+    window hide
+        
+label iw_dayOne_arrive:
     $ persistent.sprite_time = "day"
-    scene bg black with dissolve
+    scene bg black with dissolve2
     
     ### дляТЕСТОВ
     
@@ -9,13 +108,9 @@ label start_iw:
     
     ### /дляТЕСТОВ
     
-    $ set_mode_nvl()
-    "{i}Существует теория, что Вселенная бесконечна,{/i}"
-    "{i}а потому в ней должны быть копии нашей планеты.{/i}"
-    "{i}Вы только представьте: летел космический корабль{/i}"
-    "{i}миллионы световых лет в поисках другой цивилизации…{/i}"
-    "{i}и уткнулся в Мытищи.{/i}"
-    window hide
+    show text "{i}{color=#f1d076}Существует теория, что Вселенная бесконечна,\n а потому в ней должны быть копии нашей планеты.\n Вы только представьте: летел космический корабль\n миллионы световых лет в поисках другой цивилизации…\n и уткнулся в Мытищи.{/color}{/i}" at truecenter with dissolve2
+    $ renpy.pause(10)
+    hide text with dissolve2
     $ day_time()
     $ backdrop = "days"
     $ new_chapter(1, u"Сокровенное желание: Прибытие")
@@ -42,8 +137,8 @@ label start_iw:
 
     window hide
     play ambience ambience_camp_entrance_day
-    play sound sfx_suspence_bang
-    show dv_s normal pioneer at center with hpunch
+    play sound sfx_suddenly
+    show jd normal pioneer at center with hpunch
     stop music
     window show
     dvp "Привет!{w} Ты, наверное, новенький?"
@@ -56,51 +151,51 @@ label start_iw:
 
     "Впрочем, внешне девушка ничем не отличалась от обыкновенных людей."
 
-    show dv_s smile with dissolve
+    show jd smile with dissolve
     dvp "О! Это замечательно! Добро пожаловать в пионерлагерь «Совёнок»."
     dvp "От лица всего нашего дружного коллектива ребят, вожатых и обслуживающего персонала приветствую тебя!"
     
-    show dv_s grin with dissolve
-    dvp "Надеюсь, тебе у нас понравится!{w} Моё имя Славяна! Но все меня Славя зовут. И ты тоже зови."
+    show jd grin with dissolve
+    dvp "Надеюсь, тебе у нас понравится! Моё имя Славяна!{w} Но все меня Славя зовут. И ты тоже зови."
 
     me "Хорошо. Буду звать."
 
-    show dv_s normal with dissolve
+    show jd normal with dissolve
     sv "Надеюсь, вскоре я проснусь, и никого звать уже не понадобится. Как там в Винни-Пухе: как позвать Слонопотама? Идёт ли он на свист и если идёт, то зачем?"
 
     me "Э-э-э… да… А меня Семён зовут. И ты тоже зови… Если понадоблюсь."
     
-    show dv_s smile with dissolve
+    show jd smile with dissolve
 
     "Я почесал затылок."
 
     sv "Абсурдная ситуация, абсурдные мысли. Какой-то лагерь, пионеры, Славяны…"
 
     show ja serious pioneer at right with hpunch
-    show dv_s shocked:
+    show jd shocked:
         ease 1 xpos 0.2
         
     slp "Алиса? Что ты тут делаешь?"
 
-    show dv_s surprise with dissolve
+    show jd surprise with dissolve
     dvp "Не слушай её! Она перепутала! Я — Славяна!"
 
     show ja surprise with dissolve
     slp "Что значит ты — Славяна? А я тогда кто?"
     
-    show dv_s normal:
+    show jd normal:
         ease 0.5 xpos 0.3    
     play music music_list["eat_some_trouble"] fadein 2
     slf "Откуда я знаю? Возможно, ты — Лена."
     
-    show dv_s laugh with dissolve
+    show jd laugh with dissolve
     slf "И вообще, кто первый, тот и Славяна!"
 
     show ja serious with dissolve
     sls "Не обращай внимания, Алиса шутит. Она у нас выдумщица и хулиганка."
     "Обратилась Славя Номер Два уже ко мне."
     
-    show dv_s normal with dissolve
+    show jd normal with dissolve
     
     show ja shy close:
         ease 1 xpos 0.6
@@ -114,7 +209,7 @@ label start_iw:
 
     sv "Что здесь творится?"
 
-    show dv_s normal:
+    show jd normal:
         ease 0.5 xpos 0.4    
     "Славя Номер Один схватила меня за другую руку и потянула к себе."
     slf "Нет, я провожу!"
@@ -124,7 +219,7 @@ label start_iw:
     sls "..."
     
     window hide
-    show dv_s normal:
+    show jd normal:
         ease 0.7 xpos 0.2
     show ja serious with hpunch:
         ease 0.7 xpos 0.5
@@ -132,11 +227,11 @@ label start_iw:
     
     show ja serious:
         ease 0.7 xpos 0.8
-    show dv_s normal with hpunch:
+    show jd normal with hpunch:
         ease 0.7 xpos 0.5
     $ renpy.pause(0.5, hard=True)
     
-    show dv_s angry:
+    show jd angry:
         ease 0.7 xpos 0.2
     show ja serious with hpunch:
         ease 0.7 xpos 0.5
@@ -144,11 +239,11 @@ label start_iw:
     
     show ja angry:
         ease 0.6 xpos 0.8
-    show dv_s angry with hpunch:
+    show jd angry with hpunch:
         ease 0.6 xpos 0.5
     $ renpy.pause(0.5, hard=True)
     
-    show dv_s angry:
+    show jd angry:
         ease 0.6 xpos 0.2
     show ja angry with hpunch:
         ease 0.6 xpos 0.5
@@ -156,11 +251,11 @@ label start_iw:
     
     show ja angry:
         ease 0.5 xpos 0.8
-    show dv_s rage with hpunch:
+    show jd rage with hpunch:
         ease 0.5 xpos 0.5
     $ renpy.pause(0.5, hard=True)
     
-    show dv_s rage:
+    show jd rage:
         ease 0.5 xpos 0.2
     show ja rage with hpunch:
         ease 0.5 xpos 0.5
@@ -168,11 +263,11 @@ label start_iw:
     
     show ja rage:
         ease 0.4 xpos 0.8
-    show dv_s rage with hpunch:
+    show jd rage with hpunch:
         ease 0.4 xpos 0.5
     $ renpy.pause(0.5, hard=True)
 
-    show dv_s angry at left with ease
+    show jd angry at left with ease
     show ja angry at right with ease
 
     window show
@@ -182,30 +277,27 @@ label start_iw:
     show ja dontlike at cright with ease
     sls "Ты что творишь? Совсем сбрендила или это уже белая горячка?"
 
-    show dv_s angry at cleft with ease
+    show jd angry at cleft with ease
     slf "Да сколько можно одно и то же снова и снова. Всё, надоело! Хочу быть доброй, ласковой и милой."
 
     show ja surprise at right with ease
     sls "Чего-о-о?"
 
-    show dv_s normal with dissolve
+    show jd normal with dissolve
     slf "Того!{w} Теперь твоя очередь в одиночестве бренчать на гитаре по вечерам, устраивать пакости Панамке и держать в страхе весь лагерь."
     slf "Ещё быть колючей, гордой и неприступной, но с большим, любящим сердцем. Не забудь."
 
     show ja serious with dissolve
-    sls "Вот ещё.{w} С каких это пор…"
+    sls "Вот ещё.{w} С каких это пор…{w=1}{nw}"
 
     slf "А вот с таких. Теперь только так и никак иначе. Твоё место занято.{w} Смирись."
 
     show ja rage with dissolve
     sls "Знаешь, что?"
-    "Славя Номер Два кипела от негодования не в силах подобрать слова."
-
     slf "Что?"
-
     sls "Это уже переходит всякие границы.{w} Совсем распоясалась.{w} Придётся взяться и за твоё воспитание!"
 
-    show dv_s grin with dissolve
+    show jd grin with dissolve
     slf "Ну, попробуй…"
 
     scene bg ext_road_day with wipeleft
@@ -226,13 +318,13 @@ label start_iw:
     show ja serious pioneer at fleft with hpunch
     sls "Лена!"
     
-    show dv_s normal pioneer at fright with vpunch
+    show jd normal pioneer at fright with vpunch
     slf "Вот только тебя здесь не хватало.{w} Чего пришла? Скройся с глаз, а то я за себя не ручаюсь!"
 
     show un sad sport at center with dissolve
     un "Алиса… Но ведь так нельзя…"
 
-    show dv_s angry with dissolve
+    show jd angry with dissolve
     slf "Было нельзя, а теперь можно! Беру власть в свои руки!"
 
     usp "Вся власть советам!"
@@ -251,7 +343,7 @@ label start_iw:
     show ja angry with dissolve
     sls "Бешеная."
 
-    show dv_s rage with dissolve
+    show jd rage with dissolve
     slf "Щас я кого-то укушу — мало не покажется!"
     window hide
     show us surp1 with dissolve
@@ -260,7 +352,7 @@ label start_iw:
     $ renpy.pause(2, hard=True)
     show us surp2 with dissolve
     $ renpy.pause(2, hard=True)
-    
+        
     scene anim prolog_1
     play music music_list["that_s_our_madhouse"]
     
@@ -300,6 +392,9 @@ label start_iw:
     play sound sfx_break_cupboard 
     with hpunch
     $ renpy.pause(0.5, hard=True)
+    play sound sfx_soccer_ball_kick
+    with hpunch
+    $ renpy.pause(0.5, hard=True)
     play sound sfx_bodyfall_1 
     with vpunch
     $ renpy.pause(0.5, hard=True)
@@ -309,15 +404,15 @@ label start_iw:
     play sound sfx_bush_body_fall 
     with vpunch
     $ renpy.pause(0.5, hard=True)
-    play sound sfx_armature_swish 
+    play sound sfx_table_hit 
     with hpunch
     $ renpy.pause(0.5, hard=True)
     play sound sfx_boat_impact 
     with hpunch
     $ renpy.pause(0.5, hard=True)
-    play sound sfx_face_slap 
+    play sound sfx_break_monitor 
     with hpunch
-    $ renpy.pause(0.5, hard=True)
+    $ renpy.pause(1.5, hard=True)
     play sound sfx_energy_door_bus 
     with vpunch
     $ renpy.pause(2, hard=True)
@@ -335,13 +430,16 @@ label start_iw:
     $ renpy.pause(0.5, hard=True)
     play sound sfx_alisa_falls 
     with hpunch
-    $ renpy.pause(2, hard=True)
+    $ renpy.pause(1, hard=True)
+    play sound sfx_chair_fall 
+    with vpunch
+    $ renpy.pause(1, hard=True)
     stop music fadeout 2
     stop sound
     play ambience ambience_ext_road_day
 
     scene bg ext_camp_entrance_day with dissolve
-    show dv_s cry pioneer at fleft
+    show jd cry pioneer at fleft
     show ja dontlike pioneer at fright
     show us angry sport at left
     show un angry sport at right
@@ -361,7 +459,7 @@ label start_iw:
     show us sad at cleft with ease
     us "Алиска, поясни!"
 
-    show dv_s sad with dissolve
+    show jd sad with dissolve
     sls "Да чего пояснять? Хочу побыть колхозницей.{w} Надоело, знаешь ли, каждый раз одно и то же.{w} Разнообразие, все дела."
 
     show us smile with dissolve
@@ -375,7 +473,7 @@ label start_iw:
     show un surprise sport at right
     with ease
     
-    show dv_s surprise 
+    show jd surprise 
     show ja surprise pioneer
     with dissolve
     
@@ -391,27 +489,28 @@ label start_iw:
     window hide
     show us fear
     show un scared
-    show dv_s scared
+    show jd scared
     show ja scared
     show mt smile
     with dissolve    
     window show
-    
+
     mt "Отдохну наконец от вас хотя бы недельку.{w} В конце концов, должен же и у меня быть отпуск…"
 
     window hide
     stop ambience
+    play music killem
     hide mt with dissolve
     $ renpy.pause(1, hard=True)
-    hide dv_s
+    hide jd
     hide ja
     hide un
     hide us
     with dissolve
     
-    play music music_list["orchid"]
     $ renpy.pause(2, hard=True)
     
+    play sound sfx_intro_bus_stop_sigh
     scene bg ext_camp_entrance_evening with dissolve2
     $ persistent.sprite_time = "sunset"
     $ sunset_time()
@@ -424,7 +523,7 @@ label start_iw:
     "Наверняка очень острый."
     "Впрочем, проверять его остроту на себе мне не хотелось, и я стал медленно пятиться, не выпуская из виду всю чудную компанию, собравшуюся на стоянке перед воротами пионерского лагеря «Совёнок»."
 
-    play sound sfx_punch_medium
+    play sound sfx_clench2
     with vpunch
     "Спина встретилась с твёрдой холодной преградой."
     "Я несколько раз толкнулся в неё не оборачиваясь, но безрезультатно."
@@ -445,7 +544,7 @@ label start_iw:
     $ night_time()
     show un cry_smile sport close at center with dissolve2
     window show
-    
+
     play sound_loop sfx_head_heartbeat
     un "Не бойся."
     "Успокоила меня Лена и занесла нож для удара."
@@ -455,11 +554,13 @@ label start_iw:
     $ renpy.pause(1, hard=True)
     play sound sfx_scary_sting
     show un evil_smile
-    $ renpy.pause(1, hard=True)
+    $ renpy.pause(0.5, hard=True)
     play sound sfx_ghost_children_laugh
-
+    $ renpy.pause(1, hard=True)
+    
     scene bg black with dissolve2
     stop sound_loop
-    play ambience ambience_old_camp_outside
+    play ambience ambience_camp_entrance_night
     stop music fadeout 3
     pause
+    jump iw_start

@@ -1,11 +1,8 @@
 ﻿init:
 
-    $ mods["start_iw"]=u"{font=mods/iw/menu/slimamif.ttf}{color=#131357}Сокровенное желание{/color}{/font}"
+    $ mods["iw_start"]=u"{font=mods/iw/menu/slimamif.ttf}{color=#131357}Сокровенное желание{/color}{/font}"
     
-    image bg clear_sem_room_e3 = "mods/2020miku/bg/clear_sem_room_e3.jpg"
-    image not_real_friend_e3 = "mods/2020miku/ach/not_real_friend_e3.png"
-    image together_forever_e3 = "mods/2020miku/ach/together_forever_e3.png"
-    
+    $ pvo = Character(u"Голос из темноты", color="#fff8e7", what_color="#f1d076", what_outlines=[( 0, "#000000", 2, 2 )]) # Голос во сне в прологе
     $ sv = Character(u"...",               color="#fff8e7", what_color="#f1d076", what_prefix=u"«", what_suffix=u"»", what_outlines=[( 0, "#000000", 2, 2 )]) # мысли Семёна
     $ slf = Character(u"Славя Номер Один", color="#ffaa00", what_color="#f1d076", what_outlines=[( 0, "#000000", 2, 2 )]) # Алиса на остановке
     $ sls = Character(u"Славя Номер Два",  color="#ffd200", what_color="#f1d076", what_outlines=[( 0, "#000000", 2, 2 )]) # Славя на остановке
@@ -15,7 +12,6 @@
     $ jop = Character(u"Пришелец",         color="#e60000", what_color="#f1d076", what_outlines=[( 0, "#000000", 2, 2 )]) # Йошка до представления
     $ ai = Character(u"Искин",             color="#fff8e7", what_color="#f1d076", what_outlines=[( 0, "#000000", 2, 2 )]) # Искин
     $ aip = Character(u"Голограмма",       color="#fff8e7", what_color="#f1d076", what_outlines=[( 0, "#000000", 2, 2 )]) # Искин до представления
-    
     
     define dreamgirl2 = Character(u"ЮВАО", color="#467722", what_color="#f1d076")
     define d1 = Character(u"Девушка 1", what_color="#f1d076")
@@ -35,7 +31,19 @@
     define tok = Character(u"Вилли", color="#d4620e", what_color="#f1d076")
     define nat1 = Character(u"Повар", color="#fbfe04", what_color="#f1d076")
     define uv1 = Character(u"Странная пионерка", color="#467722", what_color="#f1d076")
+    
+    $ dissolve5 = Dissolve(5.0)
 
+#sfx
+    $ sfx_suddenly = "mods/iw/audio/sfx/sfx_suddenly.ogg"
+    $ sfx_catlaugh = "mods/iw/audio/sfx/sfx_catlaugh.ogg"
+
+#music
+    $ music_prologue = "mods/iw/audio/music/reverance.mp3"
+    $ killem = "mods/iw/audio/music/killem.mp3"
+    
+#bg    
+    image bg ext_camp_entrance_evening = "mods/iw/img/bg/ext_camp_entrance_evening.jpg"
 #=====================================
 #День 1
     $ d1_keys_e3 = False
@@ -51,7 +59,7 @@
     
 #BG    
     image bg int_dining_hall_people_day_e3 = "mods/2020miku/bg/int_dining_hall_people_day_e3.jpg"
-    image bg ext_camp_entrance_evening = "mods/iw/bg/ext_camp_entrance_evening.jpg"
+    
 #CG    
     image cg d1_sl_dinner_e3 = "mods/2020miku/cg/d1_sl_dinner_e3.jpg"
     image cg d1_sl_dinner_0_e3 = "mods/2020miku/cg/d1_sl_dinner_0_e3.jpg"

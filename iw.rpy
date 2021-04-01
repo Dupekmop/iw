@@ -95,12 +95,12 @@ label iw_prescriptum:
     "Её неестественно большая морда застыла совсем рядом и громко расхохоталась мне в лицо."
     stop ambience fadeout 3
     stop music fadeout 3
-    $ renpy.pause(3)
     window hide
         
 label iw_dayOne_arrive:
     $ persistent.sprite_time = "day"
-    scene bg black with dissolve2
+    scene bg black with dissolve5
+    $ renpy.pause(5, hard=True)
     
     ### дляТЕСТОВ
     
@@ -108,7 +108,7 @@ label iw_dayOne_arrive:
     
     ### /дляТЕСТОВ
     
-    show text "{i}{color=#f1d076}Существует теория, что Вселенная бесконечна,\n а потому в ней должны быть копии нашей планеты.\n Вы только представьте: летел космический корабль\n миллионы световых лет в поисках другой цивилизации…\n и уткнулся в Мытищи.{/color}{/i}" at truecenter with dissolve2
+    show text "{i}{color=#f1d076}Существует теория, что Вселенная бесконечна,\nа потому в ней должны быть копии нашей планеты.\nВы только представьте: летел космический корабль\nмиллионы световых лет в поисках другой цивилизации…\nи уткнулся в Мытищи.{/color}{/i}" at truecenter with dissolve2
     $ renpy.pause(10)
     hide text with dissolve2
     $ day_time()

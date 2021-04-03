@@ -524,7 +524,10 @@ label iw_dayOne_arrive:
     
     window show
     "Лена тем временем подходила всё ближе и становилась всё печальнее."
-    $ renpy.pause(2, hard=True)
+    me "Лена… Леночка, ты это… ножик положь, пока не поранилась."
+    show un cry_smile with dissolve
+    $ renpy.pause(1, hard=True)
+    "Но её решимость огорчить меня до невозможности ничуть не поколебалась."
     me "Сходил за хлебушком, называется…"
 
     window hide

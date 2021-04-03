@@ -44,6 +44,7 @@
     
 #bg    
     image bg ext_camp_entrance_evening = "mods/iw/img/bg/ext_camp_entrance_evening.jpg"
+    image bg ext_camp_entrance_sunset = "mods/iw/img/bg/ext_camp_entrance_sunset.png"
 #=====================================
 #День 1
     $ d1_keys_e3 = False

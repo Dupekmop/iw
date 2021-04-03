@@ -524,7 +524,7 @@ label iw_dayOne_arrive:
     
     window show
     "Лена тем временем подходила всё ближе и становилась всё печальнее."
-
+    $ renpy.pause(2, hard=True)
     me "Сходил за хлебушком, называется…"
 
     window hide

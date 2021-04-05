@@ -3,7 +3,7 @@
     $ mods["iw_start"]=u"{font=mods/iw/menu/slimamif.ttf}{color=#131357}Сокровенное желание{/color}{/font}"
     
     $ pvo = Character(u"Голос из темноты", color="#fff8e7", what_color="#f1d076", what_outlines=[( 0, "#000000", 2, 2 )]) # Голос во сне в прологе
-    $ sv = Character(u"...",               color="#fff8e7", what_color="#f1d076", what_prefix=u"«", what_suffix=u"»", what_outlines=[( 0, "#000000", 2, 2 )]) # мысли Семёна
+    $ sv = Character(u"...",               color="#fff8e7", what_color="#f1d076", what_outlines=[( 0, "#000000", 2, 2 )], what_prefix=u"«", what_suffix=u"»") # мысли Семёна
     $ slf = Character(u"Славя Номер Один", color="#ffaa00", what_color="#f1d076", what_outlines=[( 0, "#000000", 2, 2 )]) # Алиса на остановке
     $ sls = Character(u"Славя Номер Два",  color="#ffd200", what_color="#f1d076", what_outlines=[( 0, "#000000", 2, 2 )]) # Славя на остановке
     $ unv = Character(u"Голос",            color="#b956ff", what_color="#f1d076", what_outlines=[( 0, "#000000", 2, 2 )]) # голос Лены

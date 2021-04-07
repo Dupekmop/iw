@@ -323,6 +323,7 @@ label iw_dayOne_arrive:
     "Славя Номер Один схватила меня за другую руку и потянула к себе."
     slf "Нет, я провожу!"
     show entrance_day:
+        #anchor (0.5,-0.1)
         zoom 1.1
     with vpunch
 
@@ -332,7 +333,7 @@ label iw_dayOne_arrive:
     window hide
     play sound sfx_prunk1
     show entrance_day:
-        anchor (0.5,1)
+        anchor (0.5,0.1)
         ease 0.5 pos (0.55,1)
     show jd normal:
         ease 0.5 xpos 0.05
@@ -412,12 +413,12 @@ label iw_dayOne_arrive:
         ease 0.3 xpos 0.75
     $ renpy.pause(0.3, hard=True)
 
-    window show
-    "Некоторое время продолжалось молчаливое соревнование по перетягиванию Семёна."
-
+    show entrance_day:
+        ease 0.5 pos (0.5,1)
     show jd angry pioneer at left with ease
     show ja angry pioneer at right with ease
-
+    window show
+    "Некоторое время продолжалось молчаливое соревнование по перетягиванию Семёна."
     "Наконец поняв, что грубой силой тут ничего не решить, соперницы оставили меня в покое и перешли к переговорам."
 
     hide entrance_day with vpunch

@@ -1,5 +1,6 @@
 init -1000:
 #Спрайты
+#ИСКИН
 
     image ai happy pink = ConditionSwitch(
         "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_happy.png"), im.matrix.tint(0.94, 0.82, 1.0)),
@@ -18,6 +19,7 @@ init -1000:
         "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_rage.png"), im.matrix.tint(0.63, 0.78, 0.82)),
         True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_rage.png"))
 
+#АЛИСОСЛАВЯ
 
     image jd cry body = ConditionSwitch(
         "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/dv_s/dv_1_body.png", (0, 0), "mods/iw/sprites/normal/dv_s/dv_1_cry.png"), im.matrix.tint(0.94, 0.82, 1.0)),
@@ -335,8 +337,9 @@ init -1000:
         "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/dv_s/dv_5_body.png", (0, 0), "mods/iw/sprites/normal/dv_s/dv_5_swim.png", (0, 0), "mods/iw/sprites/normal/dv_s/dv_5_rage.png"), im.matrix.tint(0.94, 0.82, 1.0)),
         "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/dv_s/dv_5_body.png", (0, 0), "mods/iw/sprites/normal/dv_s/dv_5_swim.png", (0, 0), "mods/iw/sprites/normal/dv_s/dv_5_rage.png"), im.matrix.tint(0.63, 0.78, 0.82)),
         True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/dv_s/dv_5_body.png", (0, 0), "mods/iw/sprites/normal/dv_s/dv_5_swim.png", (0, 0), "mods/iw/sprites/normal/dv_s/dv_5_rage.png"))
-        
-        
+
+#АЛИСОСЛАВЯ close
+
     image jd cry body close = ConditionSwitch(
         "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), "mods/iw/sprites/close/dv_s/dv_1_body.png", (0, 0), "mods/iw/sprites/close/dv_s/dv_1_cry.png"), im.matrix.tint(0.94, 0.82, 1.0)),
         "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), "mods/iw/sprites/close/dv_s/dv_1_body.png", (0, 0), "mods/iw/sprites/close/dv_s/dv_1_cry.png"), im.matrix.tint(0.63, 0.78, 0.82)),
@@ -653,16 +656,7 @@ init -1000:
         "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), "mods/iw/sprites/close/dv_s/dv_5_body.png", (0, 0), "mods/iw/sprites/close/dv_s/dv_5_swim.png", (0, 0), "mods/iw/sprites/close/dv_s/dv_5_rage.png"), im.matrix.tint(0.94, 0.82, 1.0)),
         "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), "mods/iw/sprites/close/dv_s/dv_5_body.png", (0, 0), "mods/iw/sprites/close/dv_s/dv_5_swim.png", (0, 0), "mods/iw/sprites/close/dv_s/dv_5_rage.png"), im.matrix.tint(0.63, 0.78, 0.82)),
         True, im.Composite((1125, 1080), (0, 0), "mods/iw/sprites/close/dv_s/dv_5_body.png", (0, 0), "mods/iw/sprites/close/dv_s/dv_5_swim.png", (0, 0), "mods/iw/sprites/close/dv_s/dv_5_rage.png"))
-
-        
-        
-        
-        
-        
-        
-        
-        
-
+ 
 #al_e3 normal
     image al_e4 dontlike body = ConditionSwitch(
         "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/al/al_1_body.png", (0, 0), "mods/iw/sprites/normal/al/al_1_dontlike.png"), im.matrix.tint(0.94, 0.82, 1.0)),

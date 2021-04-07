@@ -1,6 +1,24 @@
 init -1000:
 #Спрайты
 
+    image ai happy pink = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_happy.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_happy.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_happy.png"))
+    image ai surprise pink = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_surprise.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_surprise.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_surprise.png"))
+    image ai scary pink = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_scary.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_scary.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_scary.png"))
+    image ai rage pink = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_rage.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_rage.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_rage.png"))
+
+
     image jd cry body = ConditionSwitch(
         "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/dv_s/dv_1_body.png", (0, 0), "mods/iw/sprites/normal/dv_s/dv_1_cry.png"), im.matrix.tint(0.94, 0.82, 1.0)),
         "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/dv_s/dv_1_body.png", (0, 0), "mods/iw/sprites/normal/dv_s/dv_1_cry.png"), im.matrix.tint(0.63, 0.78, 0.82)),

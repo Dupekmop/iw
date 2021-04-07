@@ -12,7 +12,15 @@ label iw_prescriptum:
         
     ### дляТЕСТОВ
     
-
+    scene bg ext_square_day
+    show ai pink scary at center with dissolve2
+    "..."
+    show ai pink surprise at center with dissolve
+    "..."
+    show ai pink rage at center with dissolve
+    "..."
+    show ai pink happy at center with dissolve
+    "..."
     
     ### /дляТЕСТОВ
 

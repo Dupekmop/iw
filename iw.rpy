@@ -9,18 +9,11 @@ label iw_prescriptum:
     $ prolog_time()
     $ backdrop = "prologue"
     $ new_chapter(0, u"Сокровенное желание: Прескриптум")
+    $ persistent.sprite_time = "day"
         
     ### дляТЕСТОВ
     
-    scene bg ext_square_day
-    show ai pink scary at center with dissolve2
-    "..."
-    show ai pink surprise at center with dissolve
-    "..."
-    show ai pink rage at center with dissolve
-    "..."
-    show ai pink happy at center with dissolve
-    "..."
+
     
     ### /дляТЕСТОВ
 
@@ -256,7 +249,9 @@ label iw_dayOne_arrive:
     window hide
     play ambience ambience_camp_entrance_day
     play sound sfx_suddenly
-    show jd normal pioneer at center with hpunch
+    show entrance_day
+    show jd normal pioneer at center
+    with hpunch
     stop music
     
     window show
@@ -317,78 +312,115 @@ label iw_dayOne_arrive:
     "Она подхватила меня под руку и прижалась так, что я почувствовал мягкость её груди."
     sls "И лучше держись от неё подальше. От таких, сам понимаешь, ничего хорошего не жди."
 
-    show ja smile pioneer at cright with ease
+    show ja smile close at right with ease
     
     "Потом немного отстранилась и продолжила уже громче:"
     sls "Сейчас я провожу тебя к вожатой.{w} Как доехал?"
 
     sv "Что здесь творится?"
 
-    show jd normal:
-        ease 0.5 xpos 0.4    
+    show jd pioneer normal close at fleft with ease
     "Славя Номер Один схватила меня за другую руку и потянула к себе."
     slf "Нет, я провожу!"
+    show entrance_day:
+        zoom 1.1
+    with vpunch
 
-    show ja serious:
-        ease 0.5 xpos 0.6
+    show ja serious with dissolve
     sls "..."
     
     window hide
+    play sound sfx_prunk1
+    show entrance_day:
+        anchor (0.5,1)
+        ease 0.5 pos (0.55,1)
     show jd normal:
-        ease 0.7 xpos 0.2
+        ease 0.5 xpos 0.05
     show ja serious with hpunch:
-        ease 0.7 xpos 0.5
+        ease 0.5 xpos 0.75
     $ renpy.pause(0.5, hard=True)
     
-    show ja serious:
-        ease 0.7 xpos 0.8
-    show jd normal with hpunch:
-        ease 0.7 xpos 0.5
-    $ renpy.pause(0.5, hard=True)
-    
-    show jd angry:
-        ease 0.7 xpos 0.2
+    play sound sfx_prunk2
+    show entrance_day:
+        ease 0.5 pos (0.45,1)
+    show jd normal:
+        ease 0.5 xpos 0.25
     show ja serious with hpunch:
-        ease 0.7 xpos 0.5
+        ease 0.5 xpos 0.95
     $ renpy.pause(0.5, hard=True)
     
-    show ja angry:
-        ease 0.6 xpos 0.8
-    show jd angry with hpunch:
-        ease 0.6 xpos 0.5
-    $ renpy.pause(0.5, hard=True)
-    
+    play sound sfx_prunk3
+    show entrance_day:
+        ease 0.5 pos (0.55,1)
     show jd angry:
-        ease 0.6 xpos 0.2
+        ease 0.5 xpos 0.05
+    show ja serious with hpunch:
+        ease 0.5 xpos 0.75
+    $ renpy.pause(0.5, hard=True)
+    
+    play sound sfx_prunk1
+    show entrance_day:
+        ease 0.5 pos (0.45,1)
+    show jd angry:
+        ease 0.5 xpos 0.25
+    show ja serious with hpunch:
+        ease 0.5 xpos 0.95
+    $ renpy.pause(0.5, hard=True)
+    
+    play sound sfx_prunk2
+    show entrance_day:
+        ease 0.5 pos (0.55,1)
+    show jd angry:
+        ease 0.5 xpos 0.05
     show ja angry with hpunch:
-        ease 0.6 xpos 0.5
+        ease 0.5 xpos 0.75
     $ renpy.pause(0.5, hard=True)
     
-    show ja angry:
-        ease 0.5 xpos 0.8
-    show jd rage with hpunch:
-        ease 0.5 xpos 0.5
+    play sound sfx_prunk3
+    show entrance_day:
+        ease 0.5 pos (0.45,1)
+    show jd angry:
+        ease 0.4 xpos 0.25
+    show ja angry with hpunch:
+        ease 0.4 xpos 0.95
     $ renpy.pause(0.5, hard=True)
     
+    play sound sfx_prunk1
+    show entrance_day:
+        ease 0.5 pos (0.55,1)
     show jd rage:
-        ease 0.5 xpos 0.2
-    show ja rage with hpunch:
-        ease 0.5 xpos 0.5
-    $ renpy.pause(0.5, hard=True)
+        ease 0.4 xpos 0.05
+    show ja angry with hpunch:
+        ease 0.4 xpos 0.75
+    $ renpy.pause(0.4, hard=True)
     
-    show ja rage:
-        ease 0.4 xpos 0.8
-    show jd rage with hpunch:
-        ease 0.4 xpos 0.5
-    $ renpy.pause(0.5, hard=True)
-
-    show jd angry at left with ease
-    show ja angry at right with ease
+    play sound sfx_prunk2
+    show entrance_day:
+        ease 0.5 pos (0.45,1)
+    show jd rage:
+        ease 0.3 xpos 0.25
+    show ja rage with hpunch:
+        ease 0.3 xpos 0.95
+    $ renpy.pause(0.3, hard=True)
+    
+    play sound sfx_prunk3
+    show entrance_day:
+        ease 0.5 pos (0.55,1)
+    show jd rage:
+        ease 0.3 xpos 0.05
+    show ja rage with hpunch:
+        ease 0.3 xpos 0.75
+    $ renpy.pause(0.3, hard=True)
 
     window show
     "Некоторое время продолжалось молчаливое соревнование по перетягиванию Семёна."
+
+    show jd angry pioneer at left with ease
+    show ja angry pioneer at right with ease
+
     "Наконец поняв, что грубой силой тут ничего не решить, соперницы оставили меня в покое и перешли к переговорам."
 
+    hide entrance_day with vpunch
     show ja dontlike at cright with ease
     sls "Ты что творишь? Совсем сбрендила или это уже белая горячка?"
 

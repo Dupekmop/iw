@@ -37,6 +37,11 @@
 #sfx
     $ sfx_suddenly = "mods/iw/audio/sfx/sfx_suddenly.ogg"
     $ sfx_catlaugh = "mods/iw/audio/sfx/sfx_catlaugh.ogg"
+    $ sfx_blop = "mods/iw/audio/sfx/sfx_blop.ogg"
+    $ sfx_prunk1 = "mods/iw/audio/sfx/sfx_prunk1.ogg"
+    $ sfx_prunk2 = "mods/iw/audio/sfx/sfx_prunk2.ogg"
+    $ sfx_prunk3 = "mods/iw/audio/sfx/sfx_prunk3.ogg"
+    
 
 #music
     $ music_prologue = "mods/iw/audio/music/reverance.mp3"
@@ -46,6 +51,10 @@
     image bg ext_camp_entrance_evening = "mods/iw/img/bg/ext_camp_entrance_evening.jpg"
     image bg ext_camp_entrance_sunset_sur = "mods/iw/img/bg/ext_camp_entrance_sunset_sur.jpg"
     image bg ext_camp_entrance_sunset = "mods/iw/img/bg/ext_camp_entrance_sunset.png"
+
+#image
+    image scary_lena = "mods/iw/img/i/scary_lena.png"
+    image entrance_day = "mods/iw/img/i/ext_camp_entrance_day.jpg"
 #=====================================
 #День 1
     $ d1_keys_e3 = False
@@ -66,8 +75,7 @@
     image cg d1_sl_dinner_e3 = "mods/2020miku/cg/d1_sl_dinner_e3.jpg"
     image cg d1_sl_dinner_0_e3 = "mods/2020miku/cg/d1_sl_dinner_0_e3.jpg"
 #IMAGE
-    image scary_lena = "mods/iw/i/scary_lena.png"
-        
+            
 #Музыка
     $ koster1_e3 = "mods/2020miku/music/koster1_e3.mp3"
     $ bremen_dr_e3 = "mods/2020miku/music/bremen_dr_e3.mp3" #вечер с мику

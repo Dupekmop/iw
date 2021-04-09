@@ -19,6 +19,13 @@ init -1000:
         "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_rage.png"), im.matrix.tint(0.63, 0.78, 0.82)),
         True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_rage.png"))
 
+#ИСКИН close
+
+    image ai cry pink close = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), "mods/iw/sprites/close/ai/ai_1_body.png", (0, 0), "mods/iw/sprites/close/ai/ai_1_pink.png", (0, 0), "mods/iw/sprites/close/ai/ai_1_cry.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), "mods/iw/sprites/close/ai/ai_1_body.png", (0, 0), "mods/iw/sprites/close/ai/ai_1_pink.png", (0, 0), "mods/iw/sprites/close/ai/ai_1_cry.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((1125, 1080), (0, 0), "mods/iw/sprites/close/ai/ai_1_body.png", (0, 0), "mods/iw/sprites/close/ai/ai_1_pink.png", (0, 0), "mods/iw/sprites/close/ai/ai_1_cry.png"))
+
 #АЛИСОСЛАВЯ
 
     image jd cry body = ConditionSwitch(

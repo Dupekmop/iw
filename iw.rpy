@@ -2,8 +2,10 @@ label iw_start:
     menu:
         "Давай с самого начала":
             jump iw_prescriptum
-        "День первый: прибытие":
+        "День первый: прибытие Семёна":
             jump iw_dayOne_arrive
+        "День первый: прибытие Йошки":
+            jump iw_dayOne_scaryLena
 
 label iw_prescriptum:
     $ prolog_time()
@@ -247,8 +249,8 @@ label iw_dayOne_arrive:
 
     window hide    
     scene bg ext_camp_entrance_day with dissolve2
-    
     window show
+    
     sv "И что это за пионерлагерь “Совёнок”?{w} Откуда здесь пережиток далёких социалистических времён?{w} И ведь не скажешь, что заброшен"
 
     window hide
@@ -438,7 +440,7 @@ label iw_dayOne_arrive:
 
     show jd normal with dissolve
     slf "Того!{w} Теперь твоя очередь в одиночестве бренчать на гитаре по вечерам, устраивать пакости Панамке и держать в страхе весь лагерь."
-    slf "Ещё быть колючей, гордой и неприступной, но с большим, любящим сердцем. Не забудь."
+    slf "Ещё быть колючей, гордой и неприступной, но с большим любящим сердцем. Не забудь."
 
     show ja serious with dissolve
     sls "Вот ещё.{w} С каких это пор…"
@@ -462,7 +464,7 @@ label iw_dayOne_arrive:
 
     window hide
     scene bg ext_camp_entrance_day with wiperight
-    show un sad sport far at center with dissolve
+    show un sad pioneer far at center with dissolve
     $ renpy.pause(1, hard=True)
     window show
 
@@ -474,15 +476,15 @@ label iw_dayOne_arrive:
     show jd normal pioneer at fright with vpunch
     slf "Вот только тебя здесь не хватало.{w} Чего пришла? Скройся с глаз, а то я за себя не ручаюсь!"
 
-    show un sad sport at center with dissolve
+    show un sad pioneer at center with dissolve
     un "Алиса… Но ведь так нельзя…"
 
     show jd angry with dissolve
     slf "Было нельзя, а теперь можно! Беру власть в свои руки!"
 
+    show un surprise with dspr
     usp "Вся власть советам!"
     show us laugh sport far at cright behind un with hpunch
-    show un surprise with dissolve
     usp "То есть мне!"
 
     "Сцена обогатилась ещё одним персонажем: маленькой рыжей девочкой лет двенадцати."
@@ -499,10 +501,11 @@ label iw_dayOne_arrive:
     show jd rage with dissolve
     slf "Щас я кого-то укушу — мало не покажется!"
     window hide
-    show us surp1 with dissolve
     stop ambience
     play sound sfx_angry_ulyana
-    $ renpy.pause(2, hard=True)
+    $ renpy.pause(1, hard=True)
+    show us surp1 with dissolve
+    $ renpy.pause(1, hard=True)
     show us surp2 with dissolve
     $ renpy.pause(2, hard=True)
         
@@ -511,81 +514,61 @@ label iw_dayOne_arrive:
     
     play sound sfx_face_slap 
     with hpunch
-    $ renpy.pause(0.1, hard=True)
+    $ renpy.pause(0.3, hard=True)
     play sound sfx_lena_hits_alisa 
     with vpunch
-    $ renpy.pause(0.1, hard=True)
+    $ renpy.pause(0.3, hard=True)
     play sound sfx_pat_shoulder_hard 
     with hpunch
-    $ renpy.pause(0.75, hard=True)
+    $ renpy.pause(0.3, hard=True)
     play sound sfx_drop_alisa_bag 
     with hpunch
-    $ renpy.pause(0.75, hard=True)
-    play sound sfx_punch_medium 
-    with hpunch
-    $ renpy.pause(0.75, hard=True)
-    play sound sfx_broken_dish 
-    with vpunch
-    $ renpy.pause(0.75, hard=True)
-    play sound sfx_armature_swish 
-    with hpunch
-    $ renpy.pause(0.5, hard=True)
+    $ renpy.pause(0.3, hard=True)
     play sound sfx_piano_head_bump 
     with vpunch
-    $ renpy.pause(1.5, hard=True)
-    play sound sfx_body_bump 
+    $ renpy.pause(0.3, hard=True)
+    play sound sfx_armature_swish 
     with hpunch
-    $ renpy.pause(0.5, hard=True)
-    play sound sfx_break_flashlight_alisa
-    with vpunch
-    $ renpy.pause(0.5, hard=True)
-    play sound sfx_punch_washstand 
-    with vpunch
-    $ renpy.pause(0.5, hard=True)
-    play sound sfx_break_cupboard 
+    $ renpy.pause(0.3, hard=True)
+    play sound sfx_drop_pipe 
     with hpunch
-    $ renpy.pause(0.5, hard=True)
-    play sound sfx_soccer_ball_kick
-    with hpunch
-    $ renpy.pause(0.5, hard=True)
+    $ renpy.pause(0.3, hard=True)
     play sound sfx_bodyfall_1 
-    with vpunch
-    $ renpy.pause(0.5, hard=True)
+    with vpunch    
+    $ renpy.pause(0.3, hard=True)
     play sound sfx_punch_medium 
-    with hpunch
-    $ renpy.pause(0.5, hard=True)
+    with hpunch    
+    $ renpy.pause(0.3, hard=True)
     play sound sfx_bush_body_fall 
     with vpunch
-    $ renpy.pause(0.5, hard=True)
-    play sound sfx_table_hit 
+    $ renpy.pause(0.3, hard=True)
+    play sound sfx_punch_medium 
     with hpunch
+    $ renpy.pause(0.3, hard=True)
+    play sound sfx_break_monitor 
+    with hpunch
+    $ renpy.pause(0.5, hard=True)
+    play sound sfx_energy_door_bus 
+    with vpunch
     $ renpy.pause(0.5, hard=True)
     play sound sfx_boat_impact 
     with hpunch
-    $ renpy.pause(0.5, hard=True)
-    play sound sfx_break_monitor 
-    with hpunch
-    $ renpy.pause(1.5, hard=True)
-    play sound sfx_energy_door_bus 
-    with vpunch
-    $ renpy.pause(2, hard=True)
-    play sound sfx_drop_pipe 
-    with hpunch
-    $ renpy.pause(0.5, hard=True)
-    play sound sfx_punch_washstand 
-    with hpunch
-    $ renpy.pause(0.5, hard=True)
+    $ renpy.pause(0.3, hard=True)
     play sound sfx_fall_grass 
     with vpunch
-    $ renpy.pause(0.5, hard=True)
-    play sound sfx_fall_wood_floor 
+    $ renpy.pause(0.3, hard=True)
+    play sound sfx_body_bump 
+    with hpunch
+    $ renpy.pause(0.3, hard=True)
+    play sound sfx_broken_dish 
+    with vpunch
+    $ renpy.pause(0.3, hard=True)
+    play sound sfx_punch_washstand 
     with vpunch
     $ renpy.pause(0.5, hard=True)
     play sound sfx_alisa_falls 
     with hpunch
-    $ renpy.pause(1, hard=True)
-    play sound sfx_chair_fall 
-    with vpunch
+    
     $ renpy.pause(1, hard=True)
     stop music fadeout 2
     stop sound
@@ -595,7 +578,7 @@ label iw_dayOne_arrive:
     show jd cry pioneer at fleft
     show ja dontlike pioneer at fright
     show us angry sport at left
-    show un angry sport at right
+    show un angry pioneer at right
     with dissolve2
     
     window show
@@ -621,56 +604,72 @@ label iw_dayOne_arrive:
     mtp "И правда, почему бы не попробовать?"
 
     window hide
-    show mt normal panama pioneer at center with dspr
+    show mt normal panama pioneer far at center with vpunch
     show us surp2 sport at left
-    show un surprise sport at right
+    show un surprise pioneer at right
     with ease
-    
     show jd surprise 
     show ja surprise pioneer
     with dissolve
-    
     window show
     chor "Ольга Дмитриевна?"
-
-    mt "Да-да, она самая. Не ждали?"
-    mt "Ну и что вы тут устроили? Совсем кукухой поехали."
-    
-    show mt sad close with dissolve
-    mt "Лена, давай его на новый виток. А этих бракованных в расход, и сама не забудь ликвидироваться."
-    
+    hide mt
+    show mt laugh panama pioneer at center with dissolve
+    "Ольга Дмитриевна придвинулась ближе к пионеркам, на её лице сияла лучезарная, но жутковатая улыбка."
+    mt "Не ждали?"
+    $ renpy.pause(1, hard=True)
+    show mt grin with dissolve
+    mt "Что за кутерьма?{w} Кто у нас опять по эциху заскучал?"
     window hide
+    $ renpy.pause(1, hard=True)
+    show mt rage
     show us fear
     show un scared
     show jd scared
     show ja scared
-    show mt smile
     with dissolve    
     window show
-
-    mt "Отдохну наконец от вас хотя бы недельку.{w} В конце концов, должен же и у меня быть отпуск…"
-
+    mt "Чего притихли?{w} Вам совсем кукушки поотшибало на жаре?!"
+    "Грозно проревела вожатая, впечатывая взглядом в загустевший вязкий воздух каждую по отдельности и всех вместе."
+    "Пионерки молчали."
+    $ renpy.pause(1, hard=True)
+    show mt angry close with dissolve2
+    mt "Так, ладно…"
+    "Удовлетворившись произведённым эффектом, Ольга Дмитриевна так же резко сменила гнев на милость и приблизилась ко мне."
+    mt "Что это у нас тут?"
+    "Она оглядела меня с брезгливым недоумением и хмыкнула."
+    show mt surprise with dissolve
+    mt "Какой жалкий экземпляр…"
+    window hide
+    show us sad
+    show un sad
+    show jd sad
+    show ja sad
+    with dissolve
+    window show
+    mt "Лена, ты ещё здесь?"
+    show un shy with dissolve
+    show mt smile with dissolve
+    mt "В расход его."
+    mt "А остальным оправиться и прибыть ко мне для профилактической беседы."
+    show un angry2 with dissolve
     window hide
     stop ambience
     hide mt with dissolve
-    play music killem fadein 2
-    $ renpy.pause(1, hard=True)
-    hide jd
-    hide ja
-    hide un
-    hide us
-    with dissolve2
     
-    $ renpy.pause(2, hard=True)
+label iw_dayOne_scaryLena:
     
     play sound sfx_intro_bus_stop_sigh
     scene bg ext_camp_entrance_sunset with dissolve2
+    $ renpy.pause(2, hard=True)
+    
     $ persistent.sprite_time = "sunset"
     $ sunset_time()
-    show un sad sport far at center with dissolve
+    show un sad pioneer far at center with dissolve
     window show
     un "Прости, Семён…"
 
+    play music killem fadein 2
     "Девушка Лена зашагала ко мне, не сводя с меня грустного взгляда."
     "В её руке блеснул угрожающего вида кухонный нож."
     "Наверняка очень острый."
@@ -683,7 +682,7 @@ label iw_dayOne_arrive:
     
     window hide
     hide un with dissolve2
-    show un cry sport at center with dissolve
+    show un cry pioneer at center with dissolve
     
     window show
     "Лена тем временем подходила всё ближе и становилась всё печальнее."
@@ -695,9 +694,7 @@ label iw_dayOne_arrive:
 
     window hide
     scene bg ext_camp_entrance_sunset_sur with dissolve2
-    $ persistent.sprite_time = "night"
-    $ night_time()
-    show un cry_smile sport close at center with dissolve2
+    show un cry_smile pioneer close at center with dissolve2
     window show
 
     play sound_loop sfx_head_heartbeat
@@ -710,12 +707,12 @@ label iw_dayOne_arrive:
     play sound sfx_scary_sting
     show un evil_smile
     $ renpy.pause(1, hard=True)
+    play ambience ambience_camp_entrance_night
     play sound sfx_ghost_children_laugh
+    stop music fadeout 3
     $ renpy.pause(1, hard=True)
     
     scene bg black with dissolve2
     stop sound_loop
-    play ambience ambience_camp_entrance_night
-    stop music fadeout 3
     pause
     jump iw_start

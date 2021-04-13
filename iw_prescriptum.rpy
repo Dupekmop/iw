@@ -342,7 +342,6 @@ label iw_prescriptum:
     show fireflies4 zorder 6
     show fireflies5 zorder 5
     $ renpy.pause(4, hard=True)
-    play sound [ "<silence 3.0>", "sfx_magic" ]
     play sound sfx_magic
     show dreamgirl zorder 1:
         anchor (0.5,0.4)

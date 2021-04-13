@@ -333,6 +333,8 @@ label iw_prescriptum:
     "И почему бы не подыграть своим галлюцинациям и не совместить это с поездкой на…{w=1} каком там…{w=1} автобусе."
     "Хоть какое-то приключение…"
     
+    window hide
+    $ renpy.pause(1, hard=True)
     show blink
     $ renpy.pause(2, hard=True)
     show fireflies0 zorder 10
@@ -349,7 +351,10 @@ label iw_prescriptum:
         ease 2 ypos 0.6
     with pixellate3
     $ renpy.pause(2, hard=True)
+    window show
     sv "О да, я приду…"
+    window hide
+    
     hide blink
     hide dreamgirl with dissolve
     show unblink
@@ -359,10 +364,13 @@ label iw_prescriptum:
     hide fireflies4 with dissolve2
     hide fireflies5 with dissolve2
     $ renpy.pause(2, hard=True)
+    
+    window show
     me "Куда мне, говоришь, ехать надо?"
-        
-    play sound sfx_ding_in
     window hide
+    
+    $ renpy.pause(1, hard=True)
+    play sound sfx_ding_in
     $ renpy.pause(1, hard=True)
     scene bg semen_room_pc_alt
     play sound_loop sfx_computer_noise fadein 3

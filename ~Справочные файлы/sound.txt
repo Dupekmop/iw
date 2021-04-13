@@ -1,214 +1,240 @@
-﻿sfx_achievement                             ## Ачивка
-sfx_alisa_falls                             ## Падение Алиса, крик
-sfx_alisa_lighter                           ## Зажигалка
-sfx_alisa_masha_enter                       ## Открытие двери и топот
-sfx_alisa_picklock                          ## Ковыряние отмычками
-sfx_angry_ulyana                            ## Закипание
-sfx_armature_swish                          ## Арматура удар
-sfx_bed_squeak1                             ## Скрип кровати 1
-sfx_bed_squeak2                             ## Скрип кровати 2
-sfx_blanket_off_stand                       ## Прыжок на кровать
-sfx_blow_out_candle                         ## Задувание свечи
-sfx_boat_impact                             ## Столкновение лодок
-sfx_body_bump                               ## Падение тела на землю
-sfx_bodyfall_1                              ## Глухое падение
-sfx_bones_breaking                          ## Ломание костей
-sfx_borshtch                                ## Обливание супом
-sfx_brass_drop                              ## Что-то кидают 
-sfx_break_cupboard                          ## Сломали что-то
-sfx_break_flashlight                        ## Разбили фонарь
-sfx_break_flashlight_alisa                  ## Разбили фонарь, девушка кричит
-sfx_break_grid                              ## Ломание решётки
-sfx_break_monitor                           ## Сломали мотор
-sfx_broken_dish                             ## Разбили стекло
-sfx_broom_sweep                             ## Подметают
-sfx_bus_honk                                ## Гудок автобуса
-sfx_bus_idle                                ## Работающий мотор
-sfx_bus_interior_moving                     ## Автобус в движении
-sfx_bus_loop                                ## Автобус скрипит
-sfx_bus_out                                 ## Автобус уехал
-sfx_bus_stop                                ## Автобус остановился
-sfx_bus_window_hit                          ## Удар по стеклу
-sfx_bush_body_fall                          ## Перекатывание тела 
-sfx_bush_leaves                             ## Листья шумят
-sfx_campus_door_rattle                      ## Попытка открыть закрытую дверь
-sfx_carousel_squeak                         ## Скрип решётки
-sfx_cellar_open                             ## Открытие шкафа
-sfx_cellular_phone_error                    ## Нет сигнала
-sfx_chair_fall                              ## Стул упал
-sfx_cigarette_pack_crumple                  ## Скомкал сигареты
-sfx_clench2                                 ## Сжимание
-sfx_click_1                                 ## Клик
-sfx_click_2                                 ## Клик
-sfx_click_3                                 ## Клик 
-sfx_close_cabinet                           ## Закрытие двери
-sfx_close_door_1                            ## Хлопок двери
-sfx_close_door_campus_1                     ## Закрытие двери
-sfx_close_door_clubs_nextroom               ## Дверь
-sfx_close_water_sink                        ## Умывальник закрыть
-sfx_computer_noise                          ## Шум компа
-sfx_concert_applause                        ## Апплодисменты
-sfx_cooking_eggs_1                          ## Разбивают и мешают яйца
-sfx_cooking_eggs_2                          ## Жарят яйца
-sfx_cooling_bus_motor                       ## Похоже на тихий шум ведра
-sfx_cooling_engine_loop                     ## Словно стучат по чему-то(звук приглушённый)
-sfx_dinner_horn_processed                   ## Горн к еде
-sfx_dinner_jingle_normal                    ## Горн к еде
-sfx_dinner_jingle_speaker                   ## Горн к еде
-sfx_dinner_jingle_speaker_tape              ## Горн к еде
-sfx_door_bell                               ## Звонок в дверь
-sfx_door_squeak_light                       ## Скрип двери
-sfx_draw_water                              ## Намочили водой
-sfx_drawer_rattle                           ## Шум закрытия тумбочки
-sfx_drop_alisa_bag                          ## Бросили сумку на землю
-sfx_drop_pipe                               ## Бросили трубу
-sfx_dropped_chair                           ## Уронили стул
-sfx_eat_apple                               ## Кусает яблоко
-sfx_energy_door_bus                         ## Удар током и падение
-sfx_face_slap                               ## Пощёчина  
-sfx_fall_grass                              ## Упал на траву
-sfx_fall_metal_door                         ## Падение металической двери
-sfx_fall_wood_floor                         ## Упал на пол
-sfx_far_steps                               ## Звук шагов в дали
-sfx_forest_fireplace                        ## Звук костра
-sfx_ghost_children_laugh                    ## Стрёмный детский смех
-sfx_grate_hand_fall                         ## Удар по решётке
-sfx_grate_open_hand                         ## Открытие решётки
-sfx_gusty_wind                              ## Шум ветра
-sfx_hatch_drop                              ## Падение топора
-sfx_head_explode                            ## Взрывающиеся кишки
-sfx_head_heartbeat                          ## Стук сердца
-sfx_hell_alarm_clock                        ## Звук будильника
-sfx_hell_crickets_1                         ## Кузнечики
-sfx_hell_crickets_2                         ## Кузнечики
-sfx_hell_crickets_3                         ## Кузнечики
-sfx_hell_crickets_3                         ## Кузнечики
-sfx_hiding_in_bush                          ## Шум в кустах
-sfx_home_phone_break                        ## Сломал телефон
-sfx_home_phone_ring                         ## Звонок телефона
-sfx_home_phone_take                         ## Взял телефон
-sfx_ignite_torch                            ## Поджигание факела
-sfx_ikarus_arrive                           ## Прибытие Икаруса
-sfx_ikarus_open_doors                       ## Икарус открыл двери
-sfx_inhale                                  ## Тяжёлый вдох
-sfx_insert_crowbar_door                     ## Звук ломика о желёзную дверь
-sfx_intro_bus_door_open                     ## Открытие дверей в автобусе(интро)
-sfx_intro_bus_engine_loop                   ## Звук двигателя
-sfx_intro_bus_engine_start                  ## Звук приближающегося автобуса
-sfx_intro_bus_stop_sigh                     ## Похоже на протяжный выдох
-sfx_intro_bus_stop_steps                    ## Звук шагов по снегу
-sfx_intro_bus_transition                    ## Когда Семён увидел, что он летом
-sfx_jump_into_hole_2                        ## Прыжок в дыру
-sfx_jump_over_hole                          ## Прыжок через дыру
-sfx_key_drawer                              ## Отрытие двери ключём и вход
-sfx_keyboard_mouse                          ## Клавиатура и мышь
-sfx_keyboard_mouse_computer_noise           ## Клавиатура и мышь шум компа
-sfx_keys_rattle                             ## Связка ключей
-sfx_knock_door2                             ## Стук в дверь
-sfx_knock_door3_dull                        ## Глухой стук в дверь
-sfx_knock_door6_closed                      ## Попытка открыть закрытую дверь
-sfx_knock_door7_polite                      ## Стук в дверь
-sfx_knock_door_closed_hard1                 ## Попытка открыть закрытую дверь грубо
-sfx_knock_door_closed_hard2                 ## Попытка открыть закрытую дверь грубо
-sfx_knock_glass                             ## Стук в окно
-sfx_knocking_door_2                         ## Стук в дверь
-sfx_knocking_door_outside                   ## Стук в дверь
-sfx_konami_off                              ## Звук выключения игровой приставки
-sfx_konami_on                               ## Звук включения игровой приставки
-sfx_lena_hits_alisa                         ## Лена ударила Алису по мордасу
-sfx_lena_plays_tennis_fail                  ## Лена играет в теннис
-sfx_lena_plays_tennis_fail                  ## Лена играет в теннис
-sfx_light_candle                            ## Зажигание свечи зажигалкой
-sfx_lock_click                              ## Звук запирания замка
-sfx_lock_close                              ## Звук запирания замка
-sfx_lock_open                               ## Звук открывания замка
-sfx_lock_open_close_1                       ## Звук открывания замка
-sfx_match_candle                            ## Зажигание свечи спичкой
-sfx_medpunkt_door_open                      ## Открытие двери
-sfx_metal_door_handle_rattle                ## Звук металической двери
-sfx_metal_door_heavy_close                  ## Звук захлопывания массивной двери
-sfx_metal_door_large_close_basement         ## Звук закрытия чего-то металического
-sfx_miku_song_learn1                        ## Песня Мику без слов
-sfx_miku_song_learn2                        ## Песня Мику без слов 
-sfx_muffled_explosion                       ## Взрыв в далеке
-sfx_mystery_movement                        ## Звук закрытия двери
-sfx_nightmare_explosion                     ## Взрыв близко
-sfx_nightmare_underground_rumble            ## Взрыв с обвалом
-sfx_open_cabinet_1                          ## Открытие двери
-sfx_open_cabinet_2                          ## Открытие двери
-sfx_open_cupboard                           ## Открытие двери
-sfx_open_dooor_campus_1                     ## Открытие двери
-sfx_open_dooor_campus_2                     ## Открытие двери
-sfx_open_door_1                             ## Открытие двери
-sfx_open_door_2                             ## Открытие двери
-sfx_open_door_clubs                         ## Открытие двери
-sfx_open_door_clubs_2                       ## Открытие двери
-sfx_open_door_clubs_nextroom                ## Открытие двери
-sfx_open_door_kick                          ## Открытие двери с пинка
-sfx_open_door_mines                         ## Открытие двери
-sfx_open_door_mines_metal                   ## Открытие двери металической
-sfx_open_door_squeak_2                      ## Скрип петель
-sfx_open_door_strong                        ## Открытие двери грубо
-sfx_open_drapes                             ## Открытие штор
-sfx_open_journal                            ## Листают журнал
-sfx_open_metal_door                         ## Открытие двери металической
-sfx_open_metal_hatch                        ## Открытие двери ломом
-sfx_open_table                              ## Открытие ящика стола
-sfx_open_water_sink                         ## Открытие раковины
-sfx_open_window                             ## Открытие окна
-sfx_owl_far                                 ## Шум совы
-sfx_paper_bag                               ## Комкание бумани
-sfx_pat_shoulder_hard                       ## Удар по плечу
-sfx_piano_head_bump                         ## Удар головой об пианино
-sfx_punch_medium                            ## Удар по плечу
-sfx_punch_washstand                         ## Удар по лицу
-sfx_put_sugar_cart                          ## Погрузил сахар в телегу
-sfx_radio_squelch_1                         ## Шум радио
-sfx_radio_squelch_2                         ## Шум радио
-sfx_radio_tune                              ## Шум радио
-sfx_rowboat_loop                            ## Шум воды
-sfx_run_forest                              ## Шаги, убегающие
-sfx_salt_impact                             ## Ложкой по столу
-sfx_scary_sting                             ## Рена
-sfx_scoop_water_cup                         ## Кружку наполняют водой из бочки
-sfx_shoulder_dive_water                     ## Что-то упало под воду
-sfx_shurik_mines_far                        ## Шаги в шахте далеко
-sfx_shurik_opens_door                       ## Открытие двери
-sfx_shurik_snore                            ## Хрипы
-sfx_signal_pistol                           ## Шум сигнального пистолета
-sfx_simon_applause                          ## Хлопки
-sfx_simon_fall_1                            ## Шум проваливающейся земли
-sfx_simon_fall_2                            ## Шум проваливающейся земли
-sfx_slam_door_campus                        ## Хлопок дверью
-sfx_slavya_gets_out                         ## Открытие двери
-sfx_slavya_run                              ## Кто-то бежит к вам
-sfx_soccer_ball_catch                       ## Удар по мячу и его поймали
-sfx_soccer_ball_gate                        ## Удар по мячу в ворота
-sfx_soccer_ball_kick                        ## Удар по мячу
-sfx_steps_clubs_nextroom                    ## Шаги по ступенькам
-sfx_stomach_growl                           ## Урчание живота
-sfx_street_traffic_outside                  ## Шум машин в городе
-sfx_suspence_bang                           ## Неожиданный поворот
-sfx_swimming                                ## Кто-то плавает
-sfx_table_hit                               ## Удар по столу
-sfx_tennis_serve_1                          ## Игра в теннис
-sfx_tennis_serve_2                          ## Игра в теннис
-sfx_terminator                              ## Музыка из терминатора
-sfx_terminator_parody                       ## Пародия на музыки из терминатора
-sfx_throw_compote                           ## Компот вылился
-sfx_thunder_crack                           ## Гром
-sfx_thunder_rumble                          ## Гром в дали
-sfx_thunder_wood                            ## Гром 
-sfx_torch                                   ## Звук горения факела
-sfx_tree_branches                           ## Шелест листьев
-sfx_uliana_jumps_down                       ## Кто-то спрыгнул вниз
-sfx_underwater_dive                         ## Звук подводных гребков
-sfx_unlock_door_campus                      ## Открытие двери кампуса ключом
-sfx_unlock_medpunkt_door                    ## Открытие двери больнички ключом
-sfx_unzip_sleepbag                          ## Звук молнии
-sfx_water_emerge                            ## Кто-то воду разгребает
-sfx_water_sink_stream                       ## Вода из крана
-sfx_water_splash                            ## Облили водой
-sfx_wind_gust                               ## Шум ветра
-sfx_wood_floor_squeak                       ## Скрип пола
-sfx_wood_friction                           ## Трение палки о деревяшку
+#РАЗНОЕ
+play sound sfx_achievement                             # Ачивка
+play sound sfx_angry_ulyana                            # Закипание
+play sound sfx_inhale                                  # Тяжёлый вдох
+play sound sfx_broom_sweep                             # Подметают (долгий звук, более 10 сек)
+play sound sfx_bush_leaves                             # Шум задеваемых веток (короткий, менее 3 сек)
+play sound sfx_hiding_in_bush                          # Шум задеваемых веток (долгий, 5 сек)
+play sound sfx_tree_branches                           # Шелест листьев
+play sound sfx_carousel_squeak                         # Скрип чего-то металлического с лёгким эхом, как будто в туннеле
+play sound sfx_wood_floor_squeak                       # Скрип пола
+play sound sfx_insert_crowbar_door                     # Лёгкий толчок и скрип металла
+play sound sfx_cooling_bus_motor                       # Шум вентиляции или другого вращающегося механизма (звонкий)
+play sound sfx_cooling_engine_loop                     # Шум вентиляции или другого вращающегося механизма (глухой)
+play sound sfx_simon_applause                          # Хлопание в ладоши
+play sound sfx_concert_applause                        # Овации
+play sound sfx_cooking_eggs_1                          # Разбивают и мешают яйца
+play sound sfx_cooking_eggs_2                          # Жарят яйца
+play sound sfx_eat_apple                               # Откусывает и жуёт яблоко
+play sound sfx_keys_rattle                             # Связка ключей
+play sound sfx_miku_song_learn1                        # Мелодия Мику без слов 1
+play sound sfx_miku_song_learn2                        # Мелодия Мику без слов 2
+play sound sfx_terminator                              # Музыка из терминатора в комичной обработке
+play sound sfx_terminator_parody                       # Фильм терминатор показывают по телевизору
+play sound sfx_open_journal                            # Перелистывание страниц
+play sound sfx_owl_far                                 # Ухание совы
+play sound sfx_paper_bag                               # Звук бумаги
+play sound sfx_shurik_snore                            # Храп
+play sound sfx_stomach_growl                           # Урчание живота
+play sound sfx_signal_pistol                           # Выстрел из ракетницы
+play sound sfx_unzip_sleepbag                          # Звук открывания замка-молнии
+
+#ШАГИ
+play sound sfx_alisa_masha_enter                       # Открытие двери и шаги по деревянному полу (5 сек)
+play sound sfx_steps_clubs_nextroom                    # Шаги в соседней комнате или над головой
+play sound sfx_far_steps                               # Спокойные шаги по земле или щебню
+play sound sfx_run_forest                              # Трусца по земле или траве
+play sound sfx_slavya_run                              # Трусца по утоптанной земле (приближается и останавливается)
+play sound sfx_shurik_mines_far                        # Шаги в шахте 
+play sound sfx_intro_bus_stop_steps                    # Звук приближающихся по снегу шагов, мимо проезжает автомобиль (начинается очень долго)
+
+#ДВЕРИ, ОКНА
+play sound sfx_knock_glass                             # Стук в окно
+play sound sfx_open_drapes                             # Открытие штор
+play sound sfx_door_bell                               # Звонок в дверь
+play sound sfx_knock_door2                             # Стук в дверь (звонкий) 1
+play sound sfx_knock_door7_polite                      # Стук в дверь (звонкий) 2
+play sound sfx_knock_door3_dull                        # Стук в дверь (глухой)
+play sound sfx_knocking_door_2                         # Стук в дверь (умеренный) 1
+play sound sfx_knocking_door_outside                   # Стук в дверь (умеренный) 1
+play sound sfx_close_door_campus_1                     # Закрытие двери (среднее)
+play sound sfx_close_door_1                            # Закрытие двери (громкое)
+play sound sfx_slam_door_campus                        # Закрытие двери (грубое)
+play sound sfx_close_door_clubs_nextroom               # Шум открываемой или закрываемой двери (глухой)
+play sound sfx_medpunkt_door_open                      # Шум открываемой или закрываемой двери (звонкий)
+play sound sfx_open_cabinet_1                          # Шум открываемой или закрываемой двери (короткий) 1
+play sound sfx_open_cabinet_2                          # Шум открываемой или закрываемой двери (короткий) 2
+play sound sfx_metal_door_handle_rattle                # Шум открываемой или закрываемой двери (металлический)
+play sound sfx_metal_door_heavy_close                  # Шум открываемой или закрываемой двери (металлический с эхом)
+play sound sfx_unlock_door_campus                      # Открытие двери ключом 1
+play sound sfx_unlock_medpunkt_door                    # Открытие двери ключом 2
+play sound sfx_open_dooor_campus_1                     # Открытие двери 1
+play sound sfx_open_dooor_campus_2                     # Открытие двери 2
+play sound sfx_open_metal_door                         # Открытие двери 3
+play sound sfx_open_door_squeak_2                      # Открытие двери со скрипом (медленное)
+play sound sfx_open_door_clubs_nextroom                # Открытие двери со скрипом 1
+play sound sfx_open_door_1                             # Открытие двери со скрипом 2
+play sound sfx_open_door_2                             # Открытие двери со скрипом 3
+play sound sfx_open_door_clubs                         # Открытие двери со скрипом 4
+play sound sfx_open_door_clubs_2                       # Открытие двери со скрипом 5
+play sound sfx_open_door_clubs_nextroom                # Открытие двери со скрипом 6
+play sound sfx_open_door_kick                          # Открытие двери пинком
+play sound sfx_open_door_strong                        # Открытие двери грубое
+play sound sfx_open_door_mines                         # Открытие деревянной двери с эхом
+play sound sfx_shurik_opens_door                       # Открытие деревянной двери с лёгким эхом
+play sound sfx_open_door_mines_metal                   # Открытие металлической двери с эхом
+play sound sfx_campus_door_rattle                      # Попытка открыть закрытую дверь 1
+play sound sfx_knock_door6_closed                      # Попытка открыть закрытую дверь 2
+play sound sfx_knock_door_closed_hard1                 # Попытка открыть закрытую дверь (грубо)
+play sound sfx_knock_door_closed_hard2                 # Попытка открыть закрытую дверь (грубо, долгий)
+
+#МЕБЕЛЬ
+play sound sfx_bed_squeak1                             # Неприятный скрип 1
+play sound sfx_bed_squeak2                             # Неприятный скрип 2
+play sound sfx_door_squeak_light                       # Скрип чего-то деревянного
+play sound sfx_blanket_off_stand                       # Откинул одеяло и встал с кровати
+play sound sfx_cellar_open                             # Открытие шкафа или тумбочки 1
+play sound sfx_drawer_rattle                           # Открытие шкафа или тумбочки 2
+play sound sfx_open_cupboard                           # Открытие шкафа или тумбочки 3
+play sound sfx_key_drawer                              # Открытие шкафа или тумбочки с ключом
+play sound sfx_slavya_gets_out                         # Открытие шкафа или тумбочки и шорох вещей
+play sound sfx_open_table                              # Открытие ящика стола
+play sound sfx_open_window                             # Открытие ящика стола или тумбочки
+play sound sfx_close_cabinet                           # Закрытие шкафа или тумбочки
+play sound sfx_mystery_movement                        # Попытка открыть запертый шкаф или тумбочку
+
+#ЗАМКИ
+play sound sfx_alisa_picklock                          # Ковыряние отмычками
+play sound sfx_lock_click                              # Звук запирания замка (звонкий)
+play sound sfx_lock_close                              # Звук запирания замка (глухой)
+play sound sfx_lock_open                               # Звук открывания замка (звонкий)
+play sound sfx_lock_open_close_1                       # Звук открывания замка (глухой)
+
+#ПАДЕНИЯ
+play sound sfx_alisa_falls                             # Шорох щебня под ногами и вскрик (3 сек)
+play sound sfx_body_bump                               # Падение тела на деревянный пол (звонкое)
+play sound sfx_bodyfall_1                              # Падение тела на деревянный пол (глухое) 1
+play sound sfx_fall_wood_floor                         # Падение тела на деревянный пол (глухое) 2
+play sound sfx_chair_fall                              # Падение чего-то на деревянный пол
+play sound sfx_drop_pipe                               # Падение чего-то металлического на пол (звонкое)
+play sound sfx_hatch_drop                              # Падение чего-то металлического на пол (глухое)
+play sound sfx_dropped_chair                           # Падение стула на деревянный пол
+play sound sfx_brass_drop                              # Грохот падающих жестянок (3 сек)
+play sound sfx_bush_body_fall                          # Падение чего-то тяжёлого в кусты или траву
+play sound sfx_fall_grass                              # Падение чего-то тяжёлого на землю
+play sound sfx_fall_metal_door                         # Скрип петель и падение металлического люка на пол с эхом
+play sound sfx_drop_alisa_bag                          # Сумку бросили на землю
+play sound sfx_put_sugar_cart                          # Мешок бросили в тележку
+play sound sfx_jump_into_hole_2                        # Прыжок в пролом
+play sound sfx_jump_over_hole                          # Прыжок через пролом
+play sound sfx_uliana_jumps_down                       # Прыжок с высоты
+play sound sfx_simon_fall_1                            # Шум проваливающейся земли
+play sound sfx_simon_fall_2                            # Шум проваливающейся земли и падение
+play sound sfx_shoulder_dive_water                     # Падение чего-то под воду
+
+#УДАРЫ, РАЗРУШНИЯ
+play sound sfx_muffled_explosion                       # Взрыв в далеке
+play sound sfx_nightmare_explosion                     # Громкий взрыв и обвал
+play sound sfx_nightmare_underground_rumble            # Тихий взрыв и обвал
+play sound sfx_armature_swish                          # Арматура рассекает воздух
+play sound sfx_lena_plays_tennis_fail                  # Ракетка для бадминтона рассекает воздух
+play sound sfx_tennis_serve_1                          # Удар ракетки по воланчику 1
+play sound sfx_tennis_serve_2                          # Удар ракетки по воланчику 2
+play sound sfx_soccer_ball_catch                       # Удар по мячу, и его поймали
+play sound sfx_soccer_ball_gate                        # Удар по мячу в ворота
+play sound sfx_soccer_ball_kick                        # Удар по мячу
+play sound sfx_boat_impact                             # Лодка ударяется днищем о берег
+play sound sfx_cigarette_pack_crumple                  # Хруст комкаемой пачки от сигарет
+play sound sfx_bones_breaking                          # Хруст ломаемых веток или костей (3 сек)
+play sound sfx_break_cupboard                          # Удар и хруст осколков
+play sound sfx_broken_dish                             # Разбивание стекла
+play sound sfx_break_flashlight                        # Разбивание фонарика (вжух)
+play sound sfx_break_flashlight_alisa                  # Разбивание фонарика и вскрик (вжух)
+play sound sfx_break_grid                              # Удары по чему-то металлическому (3 сек) 1
+play sound sfx_grate_hand_fall                         # Удары по чему-то металлическому (3 сек) 2
+play sound sfx_grate_open_hand                         # Удары по чему-то металлическому и скрип петель (5 сек)
+play sound sfx_metal_door_large_close_basement         # Глухой удар по чему-то металлическому и эхо
+play sound sfx_break_monitor                           # Что-то деревянное швырнули, и оно разбилось (вжух)
+play sound sfx_table_hit                               # Удар по деревянной поверхности
+play sound sfx_bus_window_hit                          # Удар по какой-то поверхности (точно не стекляной!)
+play sound sfx_salt_impact                             # Удар по столу
+play sound sfx_clench2                                 # Короткий глухой удар (не металл)
+play sound sfx_home_phone_break                        # Короткий удар по предмету из пластика
+play sound sfx_piano_head_bump                         # Удар головой о рояль
+play sound sfx_energy_door_bus                         # Удар током и падение
+play sound sfx_lena_hits_alisa                         # Удар кулаком и падение
+play sound sfx_face_slap                               # Пощёчина
+play sound sfx_pat_shoulder_hard                       # Удар кулаком по телу 1
+play sound sfx_punch_medium                            # Удар кулаком по телу 2
+play sound sfx_punch_washstand                         # Удар предметом по телу
+
+#ОБЕДЕННЫЙ ГОРН (на слух, отличий между ними нет)
+play sound sfx_dinner_horn_processed
+play sound sfx_dinner_jingle_normal
+play sound sfx_dinner_jingle_speaker
+play sound sfx_dinner_jingle_speaker_tape
+
+#ОГОНЬ
+play sound sfx_alisa_lighter                           # Зажигалка
+play sound sfx_light_candle                            # Поджигание свечи зажигалкой
+play sound sfx_match_candle                            # Поджигание свечи спичкой
+play sound sfx_ignite_torch                            # Поджигание факела
+play sound sfx_torch                                   # Звук горения факела
+play sound sfx_forest_fireplace                        # Звук костра
+play sound sfx_blow_out_candle                         # Задувание свечи (быстро и коротко)
+play sound sfx_wood_friction                           # Добыча огня трением
+
+#ПОГОДНЫЕ ЭФФЕКТЫ
+play sound sfx_gusty_wind                              # Шум сильного ветра
+play sound sfx_wind_gust                               # Шум ветра короткий
+play sound sfx_thunder_rumble                          # Гром долгий вдали
+play sound sfx_thunder_crack                           # Гром вблизи
+play sound sfx_thunder_wood                            # Гром вблизи (короткий)
+
+#ВОДА, УМЫВАЛЬНИКИ
+play sound sfx_open_water_sink                         # Открытие вентиля умывальника или душа
+play sound sfx_close_water_sink                        # Закрытие вентиля умывальника или душа
+play sound sfx_water_sink_stream                       # Шум воды из умывальника или душа
+play sound sfx_scoop_water_cup                         # Зачерпнули воду кружкой
+play sound sfx_borshtch                                # Плеснули водой на что-то 1
+play sound sfx_throw_compote                           # Плеснули водой на что-то (вжух) 2
+play sound sfx_draw_water                              # Всплеск воды 1
+play sound sfx_water_splash                            # Всплеск воды 2
+play sound sfx_water_emerge                            # Всплеск воды 3
+play sound sfx_rowboat_loop                            # Звук гребца на лодке
+play sound sfx_swimming                                # Пловец в воде POV
+play sound sfx_shoulder_dive_water                     # Падение чего-то под воду
+play sound sfx_underwater_dive                         # Звук гребков под водой
+
+#ТЕЛЕФОН, КОМПЬЮТЕР, РАДИО
+play sound sfx_home_phone_ring                         # Звонок домашнего телефона
+play sound sfx_home_phone_take                         # Взял трубку домашнего телефона
+play sound sfx_cellular_phone_error                    # Мобильный, нет сигнала
+play sound sfx_click_1                                 # Нажатие на клавишу ПК 1
+play sound sfx_click_2                                 # Нажатие на клавишу ПК 2
+play sound sfx_click_3                                 # Нажатие на клавишу ПК 3
+play sound sfx_keyboard_mouse                          # Беспорядочные звуки клавиатуры и мыши
+play sound sfx_keyboard_mouse_computer_noise           # Беспорядочные звуки клавиатуры и мыши (с шумом компьютера)
+play sound sfx_computer_noise                          # Шум компьютера
+play sound sfx_konami_on                               # Звук включения игровой приставки
+play sound sfx_konami_off                              # Звук выключения игровой приставки
+play sound sfx_radio_squelch_1                         # Шум радио (короткий)
+play sound sfx_radio_squelch_2                         # Шум радио (средний)
+play sound sfx_radio_tune                              # Настройка радио
+
+#ТРАНСПОРТ
+play sound sfx_street_traffic_outside                  # Шум городского трафика
+play sound sfx_bus_honk                                # Автомобильный сигнал
+play sound sfx_bus_idle                                # Звук работы мотора на холостых
+play sound sfx_intro_bus_engine_loop                   # Звук работы мотора в движении
+play sound sfx_bus_interior_moving                     # Автобус в движении изнутри
+play sound sfx_bus_loop                                # Автобус в движении изнутри (громче и со скрипами)
+play sound sfx_bus_out                                 # Автобус уезжает, закрывая двери
+play sound sfx_intro_bus_door_open                     # Автобус уезжает, закрывая двери (тадам)
+play sound sfx_intro_bus_engine_start                  # Автобус подъехал и стоит на холостых 1
+play sound sfx_ikarus_arrive                           # Автобус подъехал и стоит на холостых 2
+play sound sfx_bus_stop                                # Автобус подъехал и заглушил мотор
+play sound sfx_ikarus_open_doors                       # Открытие двери автобуса
+
+#ХОРРОР
+play sound sfx_head_heartbeat                          # Стук сердца
+play sound sfx_head_explode                            # Взрыв плоти
+play sound sfx_ghost_children_laugh                    # Стрёмный детский смех
+play sound sfx_hell_alarm_clock                        # Жуткий звон будильника
+play sound sfx_hell_crickets_1                         # Адские кузнечики 1
+play sound sfx_hell_crickets_2                         # Адские кузнечики 2
+play sound sfx_hell_crickets_3                         # Адские кузнечики 3
+play sound sfx_intro_bus_stop_sigh                     # Тревожный звуковой переход 1 (средний)
+play sound sfx_intro_bus_transition                    # Тревожный звуковой переход 2 (долгий)
+play sound sfx_scary_sting                             # Тревожный звуковой переход 3 (короткий)
+play sound sfx_suspence_bang                           # Тревожный звуковой переход 4 (средний, пианино)

@@ -1,222 +1,6 @@
-label iw_start:
-    menu:
-        "Давай с самого начала":
-            jump iw_prescriptum
-        "День первый: прибытие Семёна":
-            jump iw_dayOne_arrive
-        "День первый: прибытие Йошки":
-            jump iw_dayOne_scaryLena
-
-label iw_prescriptum:
-    $ prolog_time()
-    $ backdrop = "prologue"
-    $ new_chapter(0, u"Сокровенное желание: Прескриптум")
-    $ persistent.sprite_time = "day"
-        
-    ### дляТЕСТОВ
-    
-
-    
-    ### /дляТЕСТОВ
-
-    show text "{i}{color=#f1d076}Бойтесь своих желаний — они имеют свойство сбываться{/color}{/i}" at truecenter with dissolve2
-    $ renpy.pause(3)
-    hide text with dissolve2
-    
-    play ambience ambience_cold_wind_loop fadein 3
-    play music music_prologue fadein 3
-    scene bg black with dissolve2
-    $ set_mode_nvl()
-    "Иногда случается, что вещи теряют свой смысл.{w} Вот смысл окна, например, чтобы в него смотреть, но порой смотришь в него, а смотреть там нечего.{w} Ничего интересного.{w} Или вот какой смысл умываться по утрам? Чтобы быть бодрым?{w} А какой смысл быть по утрам бодрым?{w} Какой вообще смысл быть по утрам…{w} Непонятно."
-    "И непонятно, то ли жизнь всегда была бессмысленной, а ты просто не замечал этого, то ли смысл был, но куда-то затерялся."
-    window hide
-    
-    scene anim prolog_1 with dissolve5
-    $ set_mode_adv()
-            
-    window show
-    pvo "Не лежи на снегу, простудишься."
-    
-    me "Ну и что? А смысл не простужаться?"
-
-    pvo "Чтобы не болеть."
-
-    me "А смысл не болеть?"
-
-    pvo "Чтобы быть здоровым! Семён, ты что, опять забыл принять таблетки?"
-
-    "Я из последних сил напряг зрение.{w} Сверху, из сумрака, с одной из веток раскинувшегося рядом клёна на меня таращились два ярко-жёлтых глаза с узкими вертикальными зрачками."
-    sv "Говорящая кошка, только и всего"
-
-    "Вспомнился анекдот."
-    "{i}Учитель: «Дети, запишите предложение: “Рыба сидела на дереве”».\n{w}Ученик: «А разве рыбы сидят на деревьях?»\n{w}Учитель: «Ну… Это была сумасшедшая рыба».{/i}"
-
-    sv "А это — сумасшедшая кошка"
-    sv "Или сумасшедший я, если слышу, как она со мной разговаривает?"
-    "Ведь кошки совершенно точно не могут разговаривать, у них даже нет произносительных органов артикуляции…"
-    "Хотя откуда мне достоверно знать про кошачьи органы, разве я фелинолог? Куда там, я даже не зоолог.{w} Так, никчёмный хиккан-анимешник…"
-
-    me "А смысл быть здоровым?"
-    "Обратился я с новым вопросом, пристально глядя на жёлтые точки."
-
-    "Точки сощурились, как если бы их обладатель улыбнулся."
-    pvo "Чудак, тебе что, не нравится быть здоровым?"
-
-    me "При чём здесь нравится или не нравится…{w} Я не хочу быть бессмысленно здоровым."
-
-    "Точки снова округлились."
-    pvo "Тебе нужен смысл?"
-
-    me "Да."
-
-    pvo "Во всём, во всём?"
-
-    me "Неплохо бы."
-
-    pvo "Тогда тебе нужна Эвристическая Машина."
-    "Веско ответствовала кошка."
-
-    me "Какая-какая машина?.."
-
-    pvo "Эвристическая.{w} Дающая смысл."
-
-    "Я покатал во рту это новое для меня слово. И неожиданно решил:"
-    me "Да, она мне нужна…{w} Но где её искать?"
-
-    pvo "О!{w=0.5} Это очень далеко!"
-
-    me "За смыслом хоть на край света.{w} Веди меня!"
-
-    "Неожиданно точки погасли, и кошка бесшумно выпрыгнула из темноты."
-    "Её неестественно большая морда застыла совсем рядом…"
-    
-    window hide
-    play sound sfx_catlaugh
-    $ renpy.pause(0.5, hard=True)
-    play ambience ambience_medstation_inside_night
-    stop music
-    scene bg semen_room
-    window show
-    
-    "Я проснулся."
-    "На панели задач мерцал значок мессенджера, а из болтающихся на шее наушников тускло пищало, требуя моего внимания."
-    "Рука протянулась к мышке."
-    
-    window hide
-    $ renpy.pause(1, hard=True)
-    play sound sfx_click_3
-    $ renpy.pause(1, hard=True)
-    $ set_mode_nvl()
-    window show
-    
-    "Посреди тёмных обоев рабочего стола резко вспыхнул белый прямоугольник, ударив по глазам ярким светом. Виски сдавило ноющей болью."
-
-    uvp "{i}«Семён, привет! Помнишь меня?»{/i}"
-    "Я вгляделся в незнакомый никнейм «ЮВАО» и весьма миловидное лицо девушки с кавайными кошачьими ушками на аватаре. Не придумав ничего лучше, написал в ответ:{nw}"
-    me "{i}«Ты кто?»{/i}"
-    uvp "{i}«Опять всё забыл?»{/i}"
-    me "{i}«А что я должен помнить?»{/i}"
-    uvp "{i}«Как что?!»{w=1}\n«Ведь мы…»{w=1}\n«Ты же меня…»{w=0.75}\n«А, я поняла, забей»{/i}"
-
-    $ set_mode_adv()
-    "Окно мессенджера несколько минут не подавало признаков жизни, и я решил, что неизвестная мне ЮВАО просто ошиблась номером."
-    "Говоря начистоту, симпатичные молодые девушки только так и могут наткнуться на меня: в темноте и по ошибке."
-    "Да и несимпатичные тоже.{w} И даже совсем немолодые и несимпатичные…"
-    "Я бы ещё долго углублялся в степени некрасивости девушек, с которыми мне теоретически светит хоть что-то, но поток угрюмых мыслей прервало новое сообщение от незнакомки."
-
-    $ set_mode_nvl()
-    uvp "{i}«410 автобус. Собирайся прямо сейчас!»{/i}"
-    "Я несколько раз перечитал короткую строчку из пяти слов, но так и не нашёлся, что ответить.{w} Вдогонку прилетело следующее:{nw}"
-    uvp "{i}«Если не хочешь на автобусе, можешь просто выброситься из окна. Только надо тщательно это сделать, чтоб в лепёшку, а иначе ничего не получится!»{/i}"
-    "Теперь я уже твёрдо уверился, что меня с кем-то перепутали, и написал:{nw}"
-    me "{i}«Ты ошиблась, я тебя не знаю»{/i}"
-    uvp "{i}«И про Машину тоже не знаешь?»{/i}"
-    me "{i}«Какую Машину?»{/i}"
-    uvp "{i}«Эвристическую»{/i}"
-    
-    window hide
-    $ renpy.pause(3, hard=True)
-    $ set_mode_adv()
-    window show
-    
-    "Экран монитора расплылся перед глазами, строчки сообщений разъехались в разные стороны.{w} Из памяти выпрыгнула где-то услышанная недавно фраза."
-    "{i}«Вот смысл окна, например, чтобы в него выброситься, но порой бросаешься в него, а бросаться там некуда».{/i}"
-    "Нет, не эта…{w} Про Эвристическую Машину."
-    
-    $ set_mode_nvl()
-    "Неумолимым свинцовым кирпичом по мозгам ударило следующее сообщение:{nw}"
-    uvp "{i}«Вспомнил?»{/i}"
-    me "Вспомнил."
-    "Произнёс я вслух и закурил."
-    uvp "{i}«Раз так, собирайся, у тебя мало времени!»{/i}"
-    me "А ты-то кто такая ваще?"
-    uvp "https://vtentakle.com/xram_uvao{w=1}{nw}"
-    uvp "{i}«Какой же ты сегодня непонятливый! Ну, кто твоя вайфу? Кто посещает Храм богини Юли и делает щедрые подношения мне там?»{/i}"
-    me "Стебёшься? Это же просто картинки с вымышленным персонажем визуальной новеллы. Даже я это понимаю."
-    uvp "{i}«Не знаю, кто там у вас вымышленный, а я — настоящая!»{/i}"
-    me "Чем докажешь?"
-    uvp "{i}«Приходи и потрогай…»{/i}"
-    "Спустя секунду сообщение дополнилось кокетливым смайликом."
-    me "А почему именно я?{w} Нас же там тысячи."
-    uvp "{i}«Фейспалм.жпг»{/i}{w=0.5}{nw}"
-    uvp "{i}«Теперь я понимаю, почему у тебя нет девушки»{/i}{w=0.5}{nw}"
-    uvp "{i}«ТЫ ЖЕ ТОРМОЗ!»{/i}{w=1}{nw}"
-    uvp "{i}«Совсем уже овощем стал от картинок с голыми задницами»{/i}"
-    me "Эй, давай-ка повежливей."
-    uvp "{i}«Тогда прекрати задавать глупые вопросы и собирайся, пока и вправду не пошла искать более сообразительного поклонника»{/i}{w=1}{nw}"
-    uvp "{i}«И более симпатичного»{/i}"
-    me "Слыш, вот это уже обидно было!"
-
-    window hide
-    scene bg black with flash
-    $ renpy.pause(3, hard=True)
-    scene bg semen_room with dissolve
-    $ set_mode_adv()
-
-    "Прыгая на одной ноге посреди комнаты и натягивая поверх домашних трико зимние джинсы, я не переставал задаваться множеством вопросов."
-    "Кто она такая и как нашла меня, не зарегистрированного под настоящим именем ни в одной соцсети."
-    "Откуда знает, что мне снилось?"
-    "Или, например, каким образом слышит то, что я говорю вслух в пустой квартире?"
-    "Так или иначе, выходило, что пойти на улицу проветрить мозги и правда будет полезно."
-    "И почему бы не подыграть своим галлюцинациям и не совместить это с поездкой на…{w=1} каком там…{w=1} автобусе."
-    "Хоть какое-то приключение…"
-    "{i}«Приходи и потрогай…»{/i} — эти слова стояли у меня перед глазами и будоражили воображение."
-    sv "О да, я приду…"
-    
-    me "Куда мне, говоришь, ехать надо?"
-    "Окно мессенджера тут же мигнуло новым сообщением. Я затянул ремень на худосочном теле и подошёл к монитору."
-
-    $ set_mode_nvl()
-    uvp "{i}«Садись на автобус 410 и приезжай»{/i}"
-    me "И всё, так просто?"
-    uvp "{i}«Да»{/i}"
-    me "Типа больше ничего делать не надо? Просто сесть на автобус, и я приеду к тебе?"
-    uvp "{i}«Да. А что не так?»{/i}"
-    me "Ничего. Кроме того, что я еду на встречу с кошкодевочкой, которая ни с того ни с сего свалилась на меня, как снег на голову, и теперь общается со мной посредством…{w} э-э…{w} а как ты это делаешь?"
-    "В ответ прилетел бьющийся головой о стену смайлик."
-    uvp "{i}«Пока ещё не свалилась!»{/i}{w=1}{nw}"
-    uvp "{i}«Но ты прав, кое-что сделать придётся, когда будешь на месте. Чтобы я почувствовала твоё присутствие и нашла тебя, тебе придётся совершить ритуал призыва»{/i}"
-    "Когда пауза затянулась, я осторожно поинтересовался:"
-    me "Ну? И какой?"
-    uvp "{i}«Короче, там будет площадь. Выйди на неё голышом рано-рано утром, встань лицом строго на юго-юго-восток и с первыми лучами солнца громко три раза крикни: “Юля, приди!”»{/i}{w=1}{nw}"
-    uvp "{i}«Да, самая главная деталь — трусы! Тебе надо будет кричать, держа их как можно выше над головой. А в оконцове обязательно сожги их и развей пепел по ветру»{/i}{w=1}{nw}"
-    uvp "{i}«Это самое важное, иначе я не найду дорогу к тебе. Трусы подойдут любые, но лучше женские»{/i}"
-    
-    window hide
-    scene bg black with flash
-    $ renpy.pause(3, hard=True)
-    scene bg semen_room with dissolve
-    $ set_mode_adv()
-    
-    me "Сегодня, должно быть, четверг…{w} По четвергам у меня вечно все наперекосяк."
-    scene bg black with dissolve5
-    $ renpy.pause(5, hard=True)
-    stop ambience
-
-
-label iw_dayOne_arrive:
-    show text "{i}{color=#f1d076}Существует теория, что Вселенная бесконечна,\nа потому в ней должны быть копии нашей планеты.\nВы только представьте: летел космический корабль\nмиллионы световых лет в поисках другой цивилизации…\nи уткнулся в Мытищи.{/color}{/i}" at truecenter with dissolve2
-    $ renpy.pause(10)
+label iw_dayOne_arriveSemyon:
+    show text "{size=+20}{font=mods/iw/menu/slimamif.ttf}{color=#fff8e7}Существует теория, что Вселенная бесконечна,\nа потому в ней должны быть копии нашей планеты.\nВы только представьте: летел космический корабль\nмиллионы световых лет в поисках другой цивилизации…\nи уткнулся в Мытищи.{/color}{/font}{/size}" at truecenter with dissolve2
+    $ renpy.pause(12)
     hide text with dissolve2
     $ backdrop = "days"
     $ new_chapter(1, u"Сокровенное желание: Прибытие")
@@ -256,7 +40,6 @@ label iw_dayOne_arrive:
     window hide
     play ambience ambience_camp_entrance_day
     play sound sfx_suddenly
-    show entrance_day
     show jd normal pioneer at center
     with hpunch
     stop music
@@ -303,6 +86,7 @@ label iw_dayOne_arrive:
     show jd normal:
         ease 0.5 xpos 0.3    
     play music music_list["eat_some_trouble"] fadein 2
+    stop ambience fadeout 2
     slf "Откуда я знаю? Возможно, ты — Лена."
     
     show jd laugh with dissolve
@@ -329,8 +113,7 @@ label iw_dayOne_arrive:
     show jd pioneer normal close at fleft with ease
     "Славя Номер Один схватила меня за другую руку и потянула к себе."
     slf "Нет, я провожу!"
-    show entrance_day:
-        #anchor (0.5,-0.1)
+    show bg:
         zoom 1.1
     with vpunch
 
@@ -339,7 +122,7 @@ label iw_dayOne_arrive:
     
     window hide
     play sound sfx_prunk1
-    show entrance_day:
+    show bg:
         anchor (0.5,0.1)
         ease 0.5 pos (0.55,1)
     show jd normal:
@@ -349,7 +132,7 @@ label iw_dayOne_arrive:
     $ renpy.pause(0.5, hard=True)
     
     play sound sfx_prunk2
-    show entrance_day:
+    show bg:
         ease 0.5 pos (0.45,1)
     show jd normal:
         ease 0.5 xpos 0.25
@@ -358,7 +141,7 @@ label iw_dayOne_arrive:
     $ renpy.pause(0.5, hard=True)
     
     play sound sfx_prunk3
-    show entrance_day:
+    show bg:
         ease 0.5 pos (0.55,1)
     show jd angry:
         ease 0.5 xpos 0.05
@@ -367,7 +150,7 @@ label iw_dayOne_arrive:
     $ renpy.pause(0.5, hard=True)
     
     play sound sfx_prunk1
-    show entrance_day:
+    show bg:
         ease 0.5 pos (0.45,1)
     show jd angry:
         ease 0.5 xpos 0.25
@@ -376,7 +159,7 @@ label iw_dayOne_arrive:
     $ renpy.pause(0.5, hard=True)
     
     play sound sfx_prunk2
-    show entrance_day:
+    show bg:
         ease 0.5 pos (0.55,1)
     show jd angry:
         ease 0.5 xpos 0.05
@@ -385,7 +168,7 @@ label iw_dayOne_arrive:
     $ renpy.pause(0.5, hard=True)
     
     play sound sfx_prunk3
-    show entrance_day:
+    show bg:
         ease 0.5 pos (0.45,1)
     show jd angry:
         ease 0.4 xpos 0.25
@@ -394,7 +177,7 @@ label iw_dayOne_arrive:
     $ renpy.pause(0.5, hard=True)
     
     play sound sfx_prunk1
-    show entrance_day:
+    show bg:
         ease 0.5 pos (0.55,1)
     show jd rage:
         ease 0.4 xpos 0.05
@@ -403,7 +186,7 @@ label iw_dayOne_arrive:
     $ renpy.pause(0.4, hard=True)
     
     play sound sfx_prunk2
-    show entrance_day:
+    show bg:
         ease 0.5 pos (0.45,1)
     show jd rage:
         ease 0.3 xpos 0.25
@@ -412,7 +195,7 @@ label iw_dayOne_arrive:
     $ renpy.pause(0.3, hard=True)
     
     play sound sfx_prunk3
-    show entrance_day:
+    show bg:
         ease 0.5 pos (0.55,1)
     show jd rage:
         ease 0.3 xpos 0.05
@@ -420,7 +203,7 @@ label iw_dayOne_arrive:
         ease 0.3 xpos 0.75
     $ renpy.pause(0.3, hard=True)
 
-    show entrance_day:
+    show bg:
         ease 0.5 pos (0.5,1)
     show jd angry pioneer at left with ease
     show ja angry pioneer at right with ease
@@ -428,7 +211,10 @@ label iw_dayOne_arrive:
     "Некоторое время продолжалось молчаливое соревнование по перетягиванию Семёна."
     "Наконец поняв, что грубой силой тут ничего не решить, соперницы оставили меня в покое и перешли к переговорам."
 
-    hide entrance_day with vpunch
+    show bg:
+        zoom 1.0
+    with vpunch
+    
     show ja dontlike at cright with ease
     sls "Ты что творишь? Совсем сбрендила или это уже белая горячка?"
 
@@ -458,6 +244,7 @@ label iw_dayOne_arrive:
     scene bg ext_road_day with wipeleft
     "Я под шумок стал озираться в поисках путей отступления, чтобы просто по-тихому незаметно удалиться."
 
+    play ambience ambience_camp_entrance_day
     stop music fadeout 2
     unv "Ой, девочки, м-может, не надо?"
     "Раздался сзади чей-то жалобный голос."
@@ -510,33 +297,34 @@ label iw_dayOne_arrive:
     $ renpy.pause(2, hard=True)
         
     scene anim prolog_1
+    stop ambience
     play music music_list["that_s_our_madhouse"]
     
     play sound sfx_face_slap 
     with hpunch
-    $ renpy.pause(0.3, hard=True)
+    $ renpy.pause(0.5, hard=True)
     play sound sfx_lena_hits_alisa 
     with vpunch
-    $ renpy.pause(0.3, hard=True)
-    play sound sfx_pat_shoulder_hard 
+    $ renpy.pause(0.5, hard=True)
+    play sound sfx_punch_washstand
     with hpunch
-    $ renpy.pause(0.3, hard=True)
-    play sound sfx_drop_alisa_bag 
+    $ renpy.pause(0.5, hard=True)
+    play sound sfx_punch_medium
     with hpunch
-    $ renpy.pause(0.3, hard=True)
+    $ renpy.pause(0.5, hard=True)
     play sound sfx_piano_head_bump 
     with vpunch
-    $ renpy.pause(0.3, hard=True)
+    $ renpy.pause(0.5, hard=True)
     play sound sfx_armature_swish 
     with hpunch
-    $ renpy.pause(0.3, hard=True)
+    $ renpy.pause(0.5, hard=True)
     play sound sfx_drop_pipe 
     with hpunch
-    $ renpy.pause(0.3, hard=True)
+    $ renpy.pause(1.0, hard=True)
     play sound sfx_bodyfall_1 
     with vpunch    
     $ renpy.pause(0.3, hard=True)
-    play sound sfx_punch_medium 
+    play sound sfx_clench2 
     with hpunch    
     $ renpy.pause(0.3, hard=True)
     play sound sfx_bush_body_fall 
@@ -551,7 +339,7 @@ label iw_dayOne_arrive:
     play sound sfx_energy_door_bus 
     with vpunch
     $ renpy.pause(0.5, hard=True)
-    play sound sfx_boat_impact 
+    play sound sfx_boat_impact
     with hpunch
     $ renpy.pause(0.3, hard=True)
     play sound sfx_fall_grass 
@@ -561,9 +349,6 @@ label iw_dayOne_arrive:
     with hpunch
     $ renpy.pause(0.3, hard=True)
     play sound sfx_broken_dish 
-    with vpunch
-    $ renpy.pause(0.3, hard=True)
-    play sound sfx_punch_washstand 
     with vpunch
     $ renpy.pause(0.5, hard=True)
     play sound sfx_alisa_falls 
@@ -623,14 +408,14 @@ label iw_dayOne_arrive:
     window hide
     $ renpy.pause(1, hard=True)
     show mt rage
-    show us fear
-    show un scared
-    show jd scared
-    show ja scared
+    show us fear far at left
+    show un scared far at right
+    show jd scared far at fleft
+    show ja scared far at fright
     with dissolve    
     window show
     mt "Чего притихли?{w} Вам совсем кукушки поотшибало на жаре?!"
-    "Грозно проревела вожатая, впечатывая взглядом в загустевший вязкий воздух каждую по отдельности и всех вместе."
+    "Грозно проревела вожатая, впечатывая взглядом в плавящийся вязкий воздух каждую по отдельности и всех вместе."
     "Пионерки молчали."
     $ renpy.pause(1, hard=True)
     show mt angry close with dissolve2
@@ -657,8 +442,7 @@ label iw_dayOne_arrive:
     stop ambience
     hide mt with dissolve
     
-label iw_dayOne_scaryLena:
-    
+label iw_dayOne_arriveJoshka:    
     play sound sfx_intro_bus_stop_sigh
     scene bg ext_camp_entrance_sunset with dissolve2
     $ renpy.pause(2, hard=True)

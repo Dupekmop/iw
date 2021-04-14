@@ -32,15 +32,14 @@
     define nat1 = Character(u"Повар", color="#fbfe04", what_color="#f1d076")
     define uv1 = Character(u"Странная пионерка", color="#467722", what_color="#f1d076")
     
-    $ dissolve5 = Dissolve(5.0)
-    $ pixellate3 = Pixellate(3,3)
-
 #sfx
     $ sfx_suddenly = "mods/iw/audio/sfx/suddenly.ogg"
+    $ sfx_vzhux = "mods/iw/audio/sfx/vzhux.ogg"
     $ sfx_scratch1 = "mods/iw/audio/sfx/scratch1.mp3"
     $ sfx_magic = "mods/iw/audio/sfx/magic.ogg"
     $ sfx_catlaugh = "mods/iw/audio/sfx/catlaugh.ogg"
     $ sfx_click = "mods/iw/audio/sfx/click.mp3"
+    $ sfx_ding_short = "mods/iw/audio/sfx/ding_short.ogg"
     $ sfx_ding = "mods/iw/audio/sfx/ding.mp3"
     $ sfx_ding_in = "mods/iw/audio/sfx/ding_in.mp3"
     $ sfx_ding_out = "mods/iw/audio/sfx/ding_out.mp3"
@@ -57,27 +56,21 @@
     $ killem = "mods/iw/audio/music/killem.mp3"
     
 #bg 
-    image bg ext_park_dream = "mods/iw/img/bg/ext_park_dream.png"
+    image bg ext_dream_prologue = "mods/iw/img/bg/ext_dream_prologue.png"
+    image bg semen_room_iw_1 = "mods/iw/img/bg/semen_room_iw_1.png"
+    image bg semen_room_iw_2 = "mods/iw/img/bg/semen_room_iw_2.png"
     image bg semen_room_pc = "mods/iw/img/bg/semen_room_pc.png"
     image bg semen_room_pc_alt = "mods/iw/img/bg/semen_room_pc_alt.png"
-    image bg semen_room_pc_altt = "mods/iw/img/bg/semen_room_pc_altt.png"
-    image bg semen_room_alt = "mods/iw/img/bg/semen_room_alt.png"
     image bg ext_camp_entrance_evening = "mods/iw/img/bg/ext_camp_entrance_evening.jpg"
     image bg ext_camp_entrance_sunset_sur = "mods/iw/img/bg/ext_camp_entrance_sunset_sur.jpg"
     image bg ext_camp_entrance_sunset = "mods/iw/img/bg/ext_camp_entrance_sunset.png"
+    
+#cg
+    image cg prologue_cat =  "mods/iw/img/cg/prologue_cat.png"
 
 #image
-    image snowblossom1 = SnowBlossom("mods/iw/img/i/snowflake1.png", count=50, border=200, xspeed=(30, 70), yspeed=(75, 175), start=2, fast=True, horizontal=False)
-    image snowblossom2 = SnowBlossom("mods/iw/img/i/snowflake2.png", count=60, border=200, xspeed=(20, 60), yspeed=(50, 150), start=3, fast=True, horizontal=False)
-    image snowblossom3 = SnowBlossom("mods/iw/img/i/snowflake3.png", count=70, border=200, xspeed=(10, 50), yspeed=(25, 125), start=4, fast=True, horizontal=False)
-    image snowblossom4 = SnowBlossom("mods/iw/img/i/snowflake4.png", count=80, border=200, xspeed=(5, 40), yspeed=(12, 112), start=5, fast=True, horizontal=False)
-    image fireflies0 = SnowBlossom("mods/iw/img/i/firefly0.png", count=15, border=50, xspeed=(30, 90), yspeed=(-50, -150), start=2, fast=False, horizontal=False)
-    image fireflies1 = SnowBlossom("mods/iw/img/i/firefly1.png", count=15, border=50, xspeed=(30, 90), yspeed=(-37, -100), start=2, fast=False, horizontal=False)
-    image fireflies2 = SnowBlossom("mods/iw/img/i/firefly2.png", count=15, border=50, xspeed=(25, 75), yspeed=(-27, -70), start=2, fast=False, horizontal=False)
-    image fireflies3 = SnowBlossom("mods/iw/img/i/firefly3.png", count=15, border=50, xspeed=(20, 60), yspeed=(-16, -45), start=2, fast=False, horizontal=False)
-    image fireflies4 = SnowBlossom("mods/iw/img/i/firefly4.png", count=30, border=50, xspeed=(15, 45), yspeed=(-8, -20), start=2, fast=False, horizontal=False)
-    image fireflies5 = SnowBlossom("mods/iw/img/i/firefly5.png", count=30, border=50, xspeed=(10, 30), yspeed=(-2, -8), start=2, fast=False, horizontal=False)
     image dreamgirl = "mods/iw/img/i/dreamgirl.png"
+    image dreamgirl_bubble = "mods/iw/img/i/dreamgirl_bubble.png"
     image dreamgirl_creepy = "mods/iw/img/i/dreamgirl_creepy.png"
     image chat = "mods/iw/img/i/chat.png"
     image msngr = "mods/iw/img/i/msngr.png"

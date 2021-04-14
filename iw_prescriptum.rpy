@@ -19,20 +19,14 @@ label iw_prescriptum:
     
     play ambience ambience_cold_wind_loop fadein 3
     play music music_prologue fadein 3
-    scene bg black with dissolve2
+    scene bg black
+
     $ set_mode_nvl()
     "Иногда случается, что вещи теряют свой смысл.{w} Вот смысл окна, например, чтобы в него смотреть, но порой смотришь в него, а смотреть там нечего.{w} Ничего интересного.{w} Или вот какой смысл умываться по утрам? Чтобы быть бодрым?{w} А какой смысл быть по утрам бодрым?{w} Какой вообще смысл быть по утрам…{w} Непонятно."
     "И непонятно, то ли жизнь всегда была бессмысленной, а ты просто не замечал этого, то ли смысл был, но куда-то затерялся."
     window hide
     
-    scene bg ext_park_dream with dissolve5
-    show snowblossom1
-    show snowblossom2
-    show snowblossom3
-    show snowblossom4
     $ set_mode_adv()
-            
-    window show
             
     pvo "Не лежи на снегу, простудишься."
     
@@ -43,6 +37,16 @@ label iw_prescriptum:
     me "А смысл не болеть?"
 
     pvo "Чтобы быть здоровым! Семён, ты что, опять забыл принять таблетки?"
+    
+    window hide
+    $ renpy.pause(1)
+    show drm_bg
+    show snowblossom1
+    show snowblossom2
+    show snowblossom3
+    show snowblossom4
+    with dissolve5
+    window show
 
     "Я из последних сил напряг зрение.{w} Сверху, из сумрака, с одной из веток раскинувшегося рядом клёна на меня таращились два ярко-жёлтых глаза с узкими вертикальными зрачками."
     sv "Говорящая кошка, только и всего"
@@ -85,16 +89,37 @@ label iw_prescriptum:
     pvo "О!{w=0.5} Это очень далеко!"
 
     me "За смыслом хоть на край света.{w} Веди меня!"
+    
+    window hide
+    $ renpy.pause(1, hard=True)
+    play sound sfx_vzhux
+    scene bg ext_dream_prologue with dissolve2
     $ renpy.pause(2, hard=True)
-    "Точки погасли, и кошка бесшумно выпрыгнула из темноты."
+    play sound sfx_uliana_jumps_down
+    $ renpy.pause(0.5, hard=True)
+    scene cg prologue_cat with vpunch
+    window show
+    
+    "Точки погасли, и кошка практически бесшумно выпрыгнула из темноты."
     "Её неестественно большая морда застыла совсем рядом…"
     
     window hide
     play sound sfx_catlaugh
-    $ renpy.pause(0.5, hard=True)
+    show cg:
+        rotate 0
+        anchor (0.5,0.5)
+        parallel:
+            linear 1.5 zoom 10
+        parallel:
+            linear 1.5 ypos 0.9
+        parallel:
+            linear 1.5 rotate 180
+        parallel:
+            linear 1.5 xzoom 0.01
+    $ renpy.pause(1, hard=True)
     play ambience ambience_medstation_inside_night
     stop music
-    scene bg semen_room_alt
+    scene bg semen_room_iw_1
     window show
     
     sv "Бывает же, приснится такое…{w} Вроде бы и не кошмар, но явно что-то не особо нормальное"
@@ -122,7 +147,8 @@ label iw_prescriptum:
     
     window show
     "Посреди тёмных обоев рабочего стола резко вспыхнул белый прямоугольник, ударив по глазам ярким светом. Виски сдавило ноющей болью."
-    "В информации о контакте было совершенно пусто, только фотография весьма миловидной девушки с кавайными кошачьими ушками на аватаре. Типичный спам-бот. "
+    "В информации о контакте было совершенно пусто, только фотография весьма миловидной девушки с кавайными кошачьими ушками на аватаре."
+    "Типичный спам-бот."
     "Даже вместо ника стоял всего лишь номер телефона. Но по номеру же нельзя узнать, что за человек на другом конце сетевого кабеля, ведь так?"
     "Хотя, конечно, когда-нибудь всё будет по-другому. Унифицированные числовые идентификаторы вместо имён, набор символов в биографии, несколько байт характера и три с половиной бита чувств…"
     
@@ -165,7 +191,7 @@ label iw_prescriptum:
 
     pause
     window show
-    "Окно мессенджера несколько минут не подавало признаков жизни, и я решил, что девушка просто ошиблась номером."
+    "Окно мессенджера перестало подавать признаки жизни, и я решил, что девушка просто ошиблась номером."
     "Говоря начистоту, симпатичные молодые девушки только так и могут наткнуться на меня: в темноте и по ошибке."
     "Да и несимпатичные тоже.{w} И даже совсем немолодые и несимпатичные…"
     
@@ -243,6 +269,7 @@ label iw_prescriptum:
     me "Вспомнил."
     play ambience ambience_medstation_inside_night fadein 5
     play sound sfx_smoke
+    $ renpy.pause(1, hard=True)
     stop sound_loop fadeout 5
     play sound_loop sfx_computer_noise fadein 5
     "Произнёс я вслух и закурил."
@@ -323,7 +350,23 @@ label iw_prescriptum:
     window hide
     play music christmas_met fadein 3
     stop sound_loop fadeout 3
-    scene bg semen_room_alt with dissolve5
+    scene bg semen_room_iw_2 with dissolve5
+    
+    play sound sfx_wood_floor_squeak
+    pause 0.5
+    play sound sfx_drop_alisa_bag 
+    with vpunch
+    pause 0.5
+    play sound sfx_drop_alisa_bag 
+    with vpunch
+    pause 1
+    play sound sfx_bus_window_hit 
+    with vpunch
+    pause 0.5
+    play sound sfx_door_squeak_light
+    pause 0.5
+    play sound sfx_wood_floor_squeak
+    pause 0.5
     
     "Прыгая на одной ноге посреди комнаты и натягивая поверх домашних трико зимние джинсы, я не переставал задаваться множеством вопросов."
     "Кто она такая и как нашла меня, не зарегистрированного под настоящим именем ни в одной соцсети?"
@@ -336,33 +379,55 @@ label iw_prescriptum:
     window hide
     $ renpy.pause(1, hard=True)
     show blink
-    $ renpy.pause(2, hard=True)
     show fireflies0 zorder 10
     show fireflies1 zorder 9
     show fireflies2 zorder 8
     show fireflies3 zorder 7
     show fireflies4 zorder 6
     show fireflies5 zorder 5
-    $ renpy.pause(4, hard=True)
+    $ renpy.pause(6, hard=True)
     play sound sfx_magic
     show dreamgirl zorder 1:
-        anchor (0.5,0.4)
-        pos (0.5,0.5)
-        ease 2 ypos 0.6
+        anchor (0.5,0.5)
+        pos (0.55,0.8)
     with pixellate3
+    $ renpy.pause(1, hard=True)
+    show dreamgirl_bubble zorder 1:
+        anchor (0.5,0.5)
+        pos (0.67,0.5)
+    play sound sfx_ding_short
     $ renpy.pause(2, hard=True)
+    
+    show dreamgirl:
+        parallel:
+            ease 3 zoom 1.3
+        parallel:
+            ease 3 ypos 0.95
+    show dreamgirl_bubble:
+        parallel:
+            ease 4 zoom 1.4
+        parallel:
+            ease 3 xpos 0.67
+        parallel:
+            ease 3.5 ypos 0.55
+
+    $ renpy.pause(4.5, hard=True)
+   
     window show
     sv "О да, я приду…"
     window hide
     
     hide blink
-    hide dreamgirl with dissolve
-    show unblink
-    hide fireflies1 with dissolve2
-    hide fireflies2 with dissolve2
-    hide fireflies3 with dissolve2
-    hide fireflies4 with dissolve2
-    hide fireflies5 with dissolve2
+    hide dreamgirl
+    hide dreamgirl_bubble
+    with dissolve5
+    
+    hide fireflies0 with dissolve
+    hide fireflies1 with dissolve
+    hide fireflies2 with dissolve
+    hide fireflies3 with dissolve
+    hide fireflies4 with dissolve
+    hide fireflies5 with dissolve
     $ renpy.pause(2, hard=True)
     
     window show
@@ -397,6 +462,7 @@ label iw_prescriptum:
     pause
     
     me "Ничего. Кроме того, что я еду на встречу с кошкодевочкой, которая ни с того ни с сего свалилась на меня, как снег на голову, и теперь общается со мной посредством…{w} э-э…{w} а как ты это делаешь?"
+    window hide 
     
     $ renpy.pause(2, hard=True)
     play sound sfx_ding_in
@@ -414,7 +480,9 @@ label iw_prescriptum:
         ease 0.1 ypos -1.4315
     $ renpy.pause(8, hard=True)
     
+    window show
     me "Ну? И какой?"
+    window hide
     
     play sound sfx_ding_in
     show chat:                           # Короче, там будет площадь. Выйди на неё голышом рано-рано утром 
@@ -424,7 +492,7 @@ label iw_prescriptum:
     play sound sfx_ding_in
     show chat:                           # Да, самая главная деталь — трусы!
         ease 0.1 ypos -1.6102
-    $ renpy.pause(1.5, hard=True)
+    $ renpy.pause(2, hard=True)
     stop music
     play sound sfx_scratch1
     $ renpy.pause(3, hard=True)
@@ -436,7 +504,6 @@ label iw_prescriptum:
     
     stop sound_loop
     stop ambience
-    window hide
     scene bg black with flash
     $ renpy.pause(2, hard=True)
     me "Сегодня, должно быть, четверг…{w} По четвергам у меня вечно все наперекосяк."

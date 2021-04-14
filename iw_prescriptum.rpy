@@ -97,7 +97,7 @@ label iw_prescriptum:
     $ renpy.pause(2, hard=True)
     play sound sfx_uliana_jumps_down
     $ renpy.pause(0.5, hard=True)
-    scene cg prologue_cat with vpunch
+    scene cg prologue_cat with zoomin
     window show
     
     "Точки погасли, и кошка практически бесшумно выпрыгнула из темноты."
@@ -108,14 +108,11 @@ label iw_prescriptum:
     show cg:
         rotate 0
         anchor (0.5,0.5)
+        pos (0.5,0.5)
         parallel:
-            linear 1.5 zoom 10
+            ease 1.5 zoom 5
         parallel:
-            linear 1.5 ypos 0.9
-        parallel:
-            linear 1.5 rotate 180
-        parallel:
-            linear 1.5 xzoom 0.01
+            ease 1.5 rotate 1440
     $ renpy.pause(1, hard=True)
     play ambience ambience_medstation_inside_night
     stop music
@@ -247,7 +244,7 @@ label iw_prescriptum:
     "Всё вокруг поплыло, потеряло чёткость.{w} Голова закружилась.{w} Я почувствовал, как само моё естество вырывается из физической оболочки.{w} Из глубин небытия медленно всплыла услышанная недавно фраза…"
     window hide
     play sound sfx_intro_bus_transition
-    show text u"{size=+40}{font=mods/iw/menu/ustroke.ttf}{color=#ac0000}вот смысл окна, например\nчтобы в него выброситься...\nно порой бросаешься в него,\nа бросаться там некуда{/color}{/font}{/size}" onlayer texture:
+    show text u"{size=+40}{font=mods/iw/menu/ustroke.ttf}{color=#ac0000}вот смысл окна, например,\nчтобы в него выброситься...\nно порой бросаешься в него,\nа бросаться там некуда{/color}{/font}{/size}" onlayer texture:
         alpha 0
         anchor (0.5,0.5)
         pos (0.5,0.5)
@@ -333,7 +330,7 @@ label iw_prescriptum:
         ease 0.1 ypos -1.0111
     pause
     
-    me "Эй, давай-ка повежливей.{w} Богиня, блин."
+    me "Эй, полегче!{w} Богиня, блин."
     
     play sound sfx_ding_in
     show chat:                           # Тогда прекрати задавать глупые вопросы

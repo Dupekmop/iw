@@ -114,8 +114,10 @@ label iw_dayOne_arriveSemyon:
     "Славя Номер Один схватила меня за другую руку и потянула к себе."
     slf "Нет, я провожу!"
     show bg:
-        zoom 1.1
-    with vpunch
+        anchor (0.5,0.5)
+        pos (0.5,0.5)
+        zoom 1.2
+    with hpunch
 
     show ja serious with dissolve
     sls "..."
@@ -123,8 +125,7 @@ label iw_dayOne_arriveSemyon:
     window hide
     play sound sfx_prunk1
     show bg:
-        anchor (0.5,0.1)
-        ease 0.5 pos (0.55,1)
+        ease 0.5 xpos 0.55
     show jd normal:
         ease 0.5 xpos 0.05
     show ja serious with hpunch:
@@ -133,7 +134,7 @@ label iw_dayOne_arriveSemyon:
     
     play sound sfx_prunk2
     show bg:
-        ease 0.5 pos (0.45,1)
+        ease 0.5 xpos 0.45
     show jd normal:
         ease 0.5 xpos 0.25
     show ja serious with hpunch:
@@ -142,7 +143,7 @@ label iw_dayOne_arriveSemyon:
     
     play sound sfx_prunk3
     show bg:
-        ease 0.5 pos (0.55,1)
+        ease 0.5 xpos 0.55
     show jd angry:
         ease 0.5 xpos 0.05
     show ja serious with hpunch:
@@ -151,69 +152,112 @@ label iw_dayOne_arriveSemyon:
     
     play sound sfx_prunk1
     show bg:
-        ease 0.5 pos (0.45,1)
-    show jd angry:
-        ease 0.5 xpos 0.25
-    show ja serious with hpunch:
-        ease 0.5 xpos 0.95
-    $ renpy.pause(0.5, hard=True)
-    
-    play sound sfx_prunk2
-    show bg:
-        ease 0.5 pos (0.55,1)
-    show jd angry:
-        ease 0.5 xpos 0.05
-    show ja angry with hpunch:
-        ease 0.5 xpos 0.75
-    $ renpy.pause(0.5, hard=True)
-    
-    play sound sfx_prunk3
-    show bg:
-        ease 0.5 pos (0.45,1)
+        ease 0.4 xpos 0.45
     show jd angry:
         ease 0.4 xpos 0.25
-    show ja angry with hpunch:
+    show ja serious with hpunch:
         ease 0.4 xpos 0.95
-    $ renpy.pause(0.5, hard=True)
+    $ renpy.pause(0.4, hard=True)
     
-    play sound sfx_prunk1
+    play sound sfx_prunk2
     show bg:
-        ease 0.5 pos (0.55,1)
-    show jd rage:
+        ease 0.4 xpos 0.55
+    show jd angry:
         ease 0.4 xpos 0.05
     show ja angry with hpunch:
         ease 0.4 xpos 0.75
     $ renpy.pause(0.4, hard=True)
     
-    play sound sfx_prunk2
+    play sound sfx_prunk3
     show bg:
-        ease 0.5 pos (0.45,1)
-    show jd rage:
+        ease 0.3 xpos 0.45
+    show jd angry:
         ease 0.3 xpos 0.25
-    show ja rage with hpunch:
+    show ja angry with hpunch:
         ease 0.3 xpos 0.95
     $ renpy.pause(0.3, hard=True)
     
-    play sound sfx_prunk3
+    play sound sfx_prunk1
     show bg:
-        ease 0.5 pos (0.55,1)
+        ease 0.3 xpos 0.55
     show jd rage:
         ease 0.3 xpos 0.05
-    show ja rage with hpunch:
+    show ja angry with hpunch:
         ease 0.3 xpos 0.75
     $ renpy.pause(0.3, hard=True)
+    
+    play sound sfx_prunk2
+    show bg:
+        ease 0.2 xpos 0.45
+    show jd rage:
+        ease 0.2 xpos 0.25
+    show ja rage with hpunch:
+        ease 0.2 xpos 0.95
+    $ renpy.pause(0.2, hard=True)
+    
+    play sound sfx_prunk3
+    show bg:
+        ease 0.1 xpos 0.55
+    show jd rage:
+        ease 0.1 xpos 0.05
+    show ja rage with hpunch:
+        ease 0.1 xpos 0.75
+    $ renpy.pause(0.1, hard=True)
+    
+    play sound sfx_prunk1
+    show bg:
+        ease 0.1 xpos 0.45
+    show jd rage:
+        ease 0.1 xpos 0.25
+    show ja rage with hpunch:
+        ease 0.1 xpos 0.95
+    $ renpy.pause(0.1, hard=True)
+    
+    play sound sfx_prunk2
+    show bg:
+        ease 0.1 xpos 0.55
+    show jd rage:
+        ease 0.1 xpos 0.05
+    show ja rage with hpunch:
+        ease 0.1 xpos 0.75
+    $ renpy.pause(0.1, hard=True)
+    
+    play sound sfx_prunk3
+    show bg:
+        ease 0.1 xpos 0.45
+    show jd rage:
+        ease 0.1 xpos 0.25
+    show ja rage with hpunch:
+        ease 0.1 xpos 0.95
+    $ renpy.pause(0.1, hard=True)
+    
+    play sound sfx_prunk1
+    show bg:
+        ease 0.1 xpos 0.55
+    show jd rage:
+        ease 0.1 xpos 0.05
+    show ja rage with hpunch:
+        ease 0.1 xpos 0.75
+    $ renpy.pause(0.1, hard=True)
 
     show bg:
-        ease 0.5 pos (0.5,1)
-    show jd angry pioneer at left with ease
-    show ja angry pioneer at right with ease
+        parallel:
+            ease 1.5 zoom 100
+        parallel:
+            ease 1.5 rotate 2160
+    show jd:
+        ease 1.5 xpos -0.5
+    show ja:
+        ease 1.5 xpos 1.5
+    $ renpy.pause(1.5, hard=True)
+
+    scene bg ext_camp_entrance_day with flash
+    show jd angry pioneer at left
+    show ja angry pioneer at right
+    with ease
     window show
     "Некоторое время продолжалось молчаливое соревнование по перетягиванию Семёна."
     "Наконец поняв, что грубой силой тут ничего не решить, соперницы оставили меня в покое и перешли к переговорам."
-
-    show bg:
-        zoom 1.0
-    with vpunch
     
     show ja dontlike at cright with ease
     sls "Ты что творишь? Совсем сбрендила или это уже белая горячка?"
@@ -252,15 +296,25 @@ label iw_dayOne_arriveSemyon:
     window hide
     scene bg ext_camp_entrance_day with wiperight
     show un sad pioneer far at center with dissolve
+    show ja serious pioneer:
+        anchor (0.5,0.0)
+        xpos -0.5
+    show jd normal pioneer:
+        anchor (0.5,0.0)
+        xpos 1.5
     $ renpy.pause(1, hard=True)
     window show
 
     sv "Кажется, я окружён и бежать некуда"
 
-    show ja serious pioneer at fleft with hpunch
+    show ja:
+        ease 0.3 xpos 0.15
+    with hpunch
     sls "Лена!"
     
-    show jd normal pioneer at fright with vpunch
+    show jd:
+        ease 0.3 xpos 0.85
+    with hpunch
     slf "Вот только тебя здесь не хватало.{w} Чего пришла? Скройся с глаз, а то я за себя не ручаюсь!"
 
     show un sad pioneer at center with dissolve
@@ -290,11 +344,12 @@ label iw_dayOne_arriveSemyon:
     window hide
     stop ambience
     play sound sfx_angry_ulyana
-    $ renpy.pause(1, hard=True)
-    show us surp1 with dissolve
-    $ renpy.pause(1, hard=True)
     show us surp2 with dissolve
-    $ renpy.pause(2, hard=True)
+    show jd:
+        linear 0.01 xpos 0.854
+        linear 0.01 xpos 0.85
+        repeat
+    $ renpy.pause(4, hard=True)
         
     scene anim prolog_1
     stop ambience
@@ -417,8 +472,10 @@ label iw_dayOne_arriveSemyon:
     mt "Чего притихли?{w} Вам совсем кукушки поотшибало на жаре?!"
     "Грозно проревела вожатая, впечатывая взглядом в плавящийся вязкий воздух каждую по отдельности и всех вместе."
     "Пионерки молчали."
+    window hide
     $ renpy.pause(1, hard=True)
     show mt angry close with dissolve2
+    window show
     mt "Так, ладно…"
     "Удовлетворившись произведённым эффектом, Ольга Дмитриевна так же резко сменила гнев на милость и приблизилась ко мне."
     mt "Что это у нас тут?"
@@ -489,13 +546,12 @@ label iw_dayOne_arriveJoshka:
     window hide
     $ renpy.pause(1, hard=True)
     play sound sfx_scary_sting
+    stop music
     show un evil_smile
     $ renpy.pause(1, hard=True)
-    play ambience ambience_camp_entrance_night
+    play ambience ambience_camp_entrance_night fadein 3
     play sound sfx_ghost_children_laugh
-    stop music fadeout 3
     $ renpy.pause(1, hard=True)
-    
     scene bg black with dissolve2
     stop sound_loop
     pause

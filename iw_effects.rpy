@@ -51,10 +51,11 @@ init:
         repeat
 
 #снегопад
-    image snowblossom1 = SnowBlossom("mods/iw/img/sfx/snowflake0.png", count=70, border=500, xspeed=(30, 70), yspeed=(75, 175), start=2, fast=True, horizontal=False)
-    image snowblossom2 = SnowBlossom("mods/iw/img/sfx/snowflake1.png", count=80, border=500, xspeed=(20, 60), yspeed=(50, 150), start=3, fast=True, horizontal=False)
-    image snowblossom3 = SnowBlossom("mods/iw/img/sfx/snowflake2.png", count=90, border=500, xspeed=(10, 50), yspeed=(25, 125), start=4, fast=True, horizontal=False)
-    image snowblossom4 = SnowBlossom("mods/iw/img/sfx/snowflake3.png", count=100, border=500, xspeed=(5, 40), yspeed=(12, 112), start=5, fast=True, horizontal=False)
+    image snowblossom1 = SnowBlossom(Animation("mods/iw/img/sfx/snowflake0.png", 0.25, "mods/iw/img/sfx/snowflake1.png", 0.25, "mods/iw/img/sfx/snowflake2.png", 0.25), count=50, border=200, xspeed=(100, 150), yspeed=(100, 200), start=2, fast=True, horizontal=False)
+    image snowblossom2 = SnowBlossom(Animation("mods/iw/img/sfx/snowflake3.png", 0.25, "mods/iw/img/sfx/snowflake4.png", 0.25, "mods/iw/img/sfx/snowflake5.png", 0.25), count=75, border=200, xspeed=(75, 125), yspeed=(50, 100), start=3, fast=True, horizontal=False)
+    image snowblossom3 = SnowBlossom(Animation("mods/iw/img/sfx/snowflake6.png", 0.25, "mods/iw/img/sfx/snowflake7.png", 0.25, "mods/iw/img/sfx/snowflake8.png", 0.25), count=100, border=200, xspeed=(50, 100), yspeed=(25, 50), start=4, fast=True, horizontal=False)
+    
+
     
 #светлячки
     image fireflies0 = SnowBlossom("mods/iw/img/sfx/firefly0.png", count=15, border=50, xspeed=(30, 90), yspeed=(-50, -150), start=2, fast=False, horizontal=False)

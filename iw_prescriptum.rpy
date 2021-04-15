@@ -44,7 +44,6 @@ label iw_prescriptum:
     show snowblossom1
     show snowblossom2
     show snowblossom3
-    show snowblossom4
     with dissolve5
     window show
 

@@ -1,5 +1,8 @@
 init:
 #transitions
+    $ dissolve5 = Dissolve(5.0)
+    $ pixellate3 = Pixellate(3,4)
+    
     # Кристалл
     $ diam = ImageDissolve(im.Tile("mods/iw/img/transit/pattern.jpg"), 2, 1)
     $ fdiam = ImageDissolve(im.Tile("mods/iw/img/transit/pattern.jpg"), 1, 1)

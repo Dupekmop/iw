@@ -1,6 +1,6 @@
 ﻿init:
 
-    $ mods["iw_start"]=u"{font=mods/iw/menu/slimamif.ttf}{color=#131357}Сокровенное желание{/color}{/font}"
+    $ mods["iw_start"]=u"{font=mods/iw/menu/slimamif.ttf}{color=#000}Сокровенное желание{/color}{/font}"
     
     $ pvo = Character(u"Голос из темноты", color="#000000", what_color="#f1d076", what_outlines=[( 0, "#000000", 2, 2 )]) # Голос во сне в прологе
     $ sv = Character(u"...",               color="#fff8e7", what_color="#f1d076", what_outlines=[( 0, "#000000", 2, 2 )], what_prefix=u"«", what_suffix=u"»") # мысли Семёна
@@ -33,9 +33,9 @@
     define uv1 = Character(u"Странная пионерка", color="#467722", what_color="#f1d076")
     
 #sfx
-    $ sfx_suddenly = "mods/iw/audio/sfx/suddenly.ogg"
     $ sfx_vzhux = "mods/iw/audio/sfx/vzhux.ogg"
     $ sfx_scratch1 = "mods/iw/audio/sfx/scratch1.mp3"
+    $ sfx_scratch2 = "mods/iw/audio/sfx/scratch2.ogg"
     $ sfx_magic = "mods/iw/audio/sfx/magic.ogg"
     $ sfx_catlaugh = "mods/iw/audio/sfx/catlaugh.ogg"
     $ sfx_click = "mods/iw/audio/sfx/click.mp3"
@@ -51,9 +51,9 @@
     
 
 #music
-    $ music_prologue = "mods/iw/audio/music/reverance.mp3"
-    $ christmas_met = "mods/iw/audio/music/christmas_met_7dl.ogg"
-    $ killem = "mods/iw/audio/music/killem.mp3"
+    $ iw_reverance = "mods/iw/audio/music/reverance.mp3"
+    $ iw_story = "mods/iw/audio/music/story.ogg"
+    $ iw_killem = "mods/iw/audio/music/killem.mp3"
     
 #bg 
     image bg ext_dream_prologue = "mods/iw/img/bg/ext_dream_prologue.png"

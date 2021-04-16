@@ -18,7 +18,7 @@ label iw_prescriptum:
     hide text with dissolve2
     
     play ambience ambience_cold_wind_loop fadein 3
-    play music music_prologue fadein 3
+    play music iw_reverance fadein 3
     scene bg black
 
     $ set_mode_nvl()
@@ -40,7 +40,7 @@ label iw_prescriptum:
     
     window hide
     $ renpy.pause(1)
-    show drm_bg
+    scene bg drm_bg
     show snowblossom1
     show snowblossom2
     show snowblossom3
@@ -105,7 +105,6 @@ label iw_prescriptum:
     window hide
     play sound sfx_catlaugh
     show cg:
-        rotate 0
         anchor (0.5,0.5)
         pos (0.5,0.5)
         parallel:
@@ -344,7 +343,7 @@ label iw_prescriptum:
     me "Слыш, вот это уже реально обидно было!"
     
     window hide
-    play music christmas_met fadein 3
+    play music iw_story fadein 3
     stop sound_loop fadeout 3
     scene bg semen_room_iw_2 with dissolve5
     

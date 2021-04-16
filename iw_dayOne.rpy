@@ -39,7 +39,7 @@ label iw_dayOne_arriveSemyon:
 
     window hide
     play ambience ambience_camp_entrance_day
-    play sound sfx_suddenly
+    play sound sfx_scratch2
     show jd normal pioneer at center
     with hpunch
     stop music
@@ -510,7 +510,7 @@ label iw_dayOne_arriveJoshka:
     window show
     un "Прости, Семён…"
 
-    play music killem fadein 2
+    play music iw_killem fadein 2
     "Девушка Лена зашагала ко мне, не сводя с меня грустного взгляда."
     "В её руке блеснул угрожающего вида кухонный нож."
     "Наверняка очень острый."

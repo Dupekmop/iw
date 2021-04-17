@@ -99,7 +99,7 @@ label iw_prescriptum:
     scene cg prologue_cat with zoomin
     window show
     
-    "Точки погасли, и кошка практически бесшумно выпрыгнула из темноты."
+    "Точки погасли, и кошка практически бесшумно выпрыгнула из темноты." with vpunch
     "Её неестественно большая морда застыла совсем рядом…"
     
     window hide
@@ -402,9 +402,9 @@ label iw_prescriptum:
         parallel:
             ease 4 zoom 1.4
         parallel:
-            ease 3 xpos 0.67
+            ease 3 xpos 0.66
         parallel:
-            ease 3.5 ypos 0.55
+            ease 3.5 ypos 0.52
 
     $ renpy.pause(4.5, hard=True)
    

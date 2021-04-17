@@ -245,6 +245,7 @@ label iw_dayOne_arriveSemyon:
             ease 1.5 zoom 100
         parallel:
             ease 1.5 rotate 2160
+    play sound sfx_prunk2
     show jd:
         ease 1.5 xpos -0.5
     show ja:
@@ -285,7 +286,7 @@ label iw_dayOne_arriveSemyon:
     show jd grin with dissolve
     slf "Ну, попробуй…"
 
-    scene bg ext_road_day with wipeleft
+    scene bg ext_road_day with slideawayleft
     "Я под шумок стал озираться в поисках путей отступления, чтобы просто по-тихому незаметно удалиться."
 
     play ambience ambience_camp_entrance_day
@@ -294,7 +295,7 @@ label iw_dayOne_arriveSemyon:
     "Раздался сзади чей-то жалобный голос."
 
     window hide
-    scene bg ext_camp_entrance_day with wiperight
+    scene bg ext_camp_entrance_day with slideawayright
     show un sad pioneer far at center with dissolve
     show ja serious pioneer:
         anchor (0.5,0.0)

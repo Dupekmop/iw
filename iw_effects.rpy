@@ -23,7 +23,10 @@ init:
     $ touch = ImageDissolve(im.Tile("mods/iw/img/transit/pattern2.jpg"), 0.9, 1)
     $ guess_on = ImageDissolve("mods/iw/img/transit/blackpalm.png", 0.25, ramplen=256, reverse=True)
     $ guess_off = ImageDissolve("mods/iw/img/transit/blackpalm.png", 0.3, ramplen=256)
-
+    #splash
+    $ iw_splash_out = ImageDissolve(im.Tile("mods/iw/img/transit/iw_trans_1.png"), 1, 1)
+    $ iw_splash_in = ImageDissolve(im.Tile("mods/iw/img/transit/iw_trans_2.png"), 1, 1)
+    $ iw_splash_d = MultipleTransition([False, iw_splash_out, Solid("#011"), iw_splash_in, True])
     
 #noise
     $ config.layers = [ 'master', 'texture', 'transient', 'screens', 'overlay' ]

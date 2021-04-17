@@ -3,29 +3,29 @@ init:
     $ dissolve5 = Dissolve(5.0)
     $ pixellate3 = Pixellate(3,4)
     
-    # Кристалл
+    # кристалл
     $ diam = ImageDissolve(im.Tile("mods/iw/img/transit/pattern.jpg"), 2, 1)
     $ fdiam = ImageDissolve(im.Tile("mods/iw/img/transit/pattern.jpg"), 1, 1)
     $ fulldiam = MultipleTransition([False,fdiam, Solid("#011"),fdiam,True])
-    # Поворотный
+    # поворотный
     $ clock_l = ImageDissolve("mods/iw/img/transit/clock_l.jpg", 1.5, 50, reverse=False)
     $ joff_l = MultipleTransition([False, clock_l, Solid("#011"), clock_l, True])
     $ clock_r = ImageDissolve("mods/iw/img/transit/clock_r.png", 1.5, 50, reverse=False)
     $ joff_r = MultipleTransition([False, clock_r, Solid("#011"), clock_r, True])
-    # Жалюзи
+    # жалюзи
     $ blind_d = ImageDissolve(im.Tile("mods/iw/img/transit/roof_ks.jpg"), 1.3)
     $ blinds_l = ImageDissolve(im.Tile("mods/iw/img/transit/roof_ks2.jpg"), 0.6)
     $ blinds_r = ImageDissolve(im.Tile("mods/iw/img/transit/roof_ks3.jpg"), 0.7)
     $ blinds_ud = ImageDissolve("mods/iw/img/transit/blackout_ud.png", 0.3)
     $ blind_l = MultipleTransition([False,blinds_l,Solid("#011"),blinds_r,True])
     $ blind_r = MultipleTransition([False,blinds_r,Solid("#011"),blinds_l,True])
-    # Разное
+    # разное
     $ touch = ImageDissolve(im.Tile("mods/iw/img/transit/pattern2.jpg"), 0.9, 1)
     $ guess_on = ImageDissolve("mods/iw/img/transit/blackpalm.png", 0.25, ramplen=256, reverse=True)
     $ guess_off = ImageDissolve("mods/iw/img/transit/blackpalm.png", 0.3, ramplen=256)
 
     
-#noise effect
+#noise
     $ config.layers = [ 'master', 'texture', 'transient', 'screens', 'overlay' ]
     image noise:
         "mods/iw/img/sfx/noise1.png" with Dissolve(0.2, alpha=True)
@@ -79,8 +79,28 @@ init:
     
 #светлячки
     image fireflies0 = SnowBlossom("mods/iw/img/sfx/firefly0.png", count=15, border=50, xspeed=(30, 90), yspeed=(-50, -150), start=2, fast=False, horizontal=False)
-    image fireflies1 = SnowBlossom("mods/iw/img/sfx/firefly1.png", count=15, border=50, xspeed=(30, 90), yspeed=(-37, -100), start=2, fast=False, horizontal=False)
+    image fireflies1 = SnowBlossom("mods/iw/img/sfx/firefly1.png", count=15, border=50, xspeed=(-90, -30), yspeed=(-37, -100), start=2, fast=False, horizontal=False)
     image fireflies2 = SnowBlossom("mods/iw/img/sfx/firefly2.png", count=15, border=50, xspeed=(25, 75), yspeed=(-27, -70), start=2, fast=False, horizontal=False)
-    image fireflies3 = SnowBlossom("mods/iw/img/sfx/firefly3.png", count=15, border=50, xspeed=(20, 60), yspeed=(-16, -45), start=2, fast=False, horizontal=False)
+    image fireflies3 = SnowBlossom("mods/iw/img/sfx/firefly3.png", count=15, border=50, xspeed=(-60, -20), yspeed=(-16, -45), start=2, fast=False, horizontal=False)
     image fireflies4 = SnowBlossom("mods/iw/img/sfx/firefly4.png", count=30, border=50, xspeed=(15, 45), yspeed=(-8, -20), start=2, fast=False, horizontal=False)
-    image fireflies5 = SnowBlossom("mods/iw/img/sfx/firefly5.png", count=30, border=50, xspeed=(10, 30), yspeed=(-2, -8), start=2, fast=False, horizontal=False)
+    image fireflies5 = SnowBlossom("mods/iw/img/sfx/firefly5.png", count=30, border=50, xspeed=(-30, -10), yspeed=(-2, -8), start=2, fast=False, horizontal=False)
+
+#прогулочный шаг
+    transform promenad:
+        align (0.5,0.5)
+        zoom 1.03
+        ease 0.3 xalign 0.35 yalign 0.65
+        ease 0.3 xalign 0.50 yalign 0.50
+        ease 0.3 xalign 0.65 yalign 0.65
+        ease 0.3 xalign 0.50 yalign 0.50
+        repeat
+
+#бег
+    transform jogging:
+        align (0.5,0.5)
+        zoom 1.06
+        ease 0.2 xalign 0.35 yalign 0.65
+        ease 0.2 xalign 0.50 yalign 0.50
+        ease 0.2 xalign 0.65 yalign 0.65
+        ease 0.2 xalign 0.50 yalign 0.50
+        repeat

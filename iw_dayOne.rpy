@@ -390,8 +390,8 @@ label iw_dayOne_arriveSemyon:
     play sound sfx_punch_medium 
     with hpunch
     $ renpy.pause(0.3, hard=True)
-    play sound sfx_break_monitor 
-    with hpunch
+    play sound sfx_broken_dish 
+    with vpunch
     $ renpy.pause(0.5, hard=True)
     play sound sfx_energy_door_bus 
     with vpunch
@@ -405,9 +405,9 @@ label iw_dayOne_arriveSemyon:
     play sound sfx_body_bump 
     with hpunch
     $ renpy.pause(0.3, hard=True)
-    play sound sfx_broken_dish 
-    with vpunch
-    $ renpy.pause(0.5, hard=True)
+    play sound sfx_break_monitor 
+    with hpunch
+    $ renpy.pause(0.7, hard=True)
     play sound sfx_alisa_falls 
     with hpunch
     

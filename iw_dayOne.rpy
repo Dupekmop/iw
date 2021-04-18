@@ -1,11 +1,12 @@
 label iw_dayOne_arriveSemyon:
+    $ ty = "1"
     show text "{size=+20}{font=mods/iw/menu/slimamif.ttf}{color=#fff8e7}Существует теория, что Вселенная бесконечна,\nа потому в ней должны быть копии нашей планеты.\nВы только представьте: летел космический корабль\nмиллионы световых лет в поисках другой цивилизации…\nи уткнулся в Мытищи.{/color}{/font}{/size}" at truecenter with dissolve2
     $ renpy.pause(12)
     hide text with dissolve2
-    $ day_time()
     $ backdrop = "days"
     $ new_chapter(1, u"Сокровенное желание: Прибытие")
     $ persistent.sprite_time = "day"
+    $ day_time()
     
     ### дляТЕСТОВ
     
@@ -23,18 +24,19 @@ label iw_dayOne_arriveSemyon:
     "И твердь эта несомненно опиралась на могучие плечи местного Атланта."
     "Воздух был горячий и густой, пахло пылью, старым железом, раздавленной зеленью, жизнью."
     "Трава была по пояс, неподалёку темнели заросли кустарника, торчали кое-как унылые кривоватые деревья."
-    
+
     window hide
     scene bg ext_bus with dissolve
     window show
-    
+    $ iw_screens()
+    $ ty = "1"
     "Автобус стоял на дне огромной котловины с пологими склонами; местность вокруг заметно поднималась к размытому неясному горизонту, и это было странно, потому что где-то рядом текла река, большая и спокойная, текла на запад, вверх по склону котловины."
     sv "Мало того, что из зимы попал в лето, так и местность ещё странная"
 
     window hide    
     scene bg ext_camp_entrance_day with dissolve2
     window show
-    
+    $ ty = "2"
     sv "И что это за пионерлагерь “Совёнок”?{w} Откуда здесь пережиток далёких социалистических времён?{w} И ведь не скажешь, что заброшен"
 
     window hide
@@ -245,7 +247,6 @@ label iw_dayOne_arriveSemyon:
             ease 1.5 zoom 100
         parallel:
             ease 1.5 rotate 2160
-    play sound sfx_prunk2
     show jd:
         ease 1.5 xpos -0.5
     show ja:
@@ -286,7 +287,7 @@ label iw_dayOne_arriveSemyon:
     show jd grin with dissolve
     slf "Ну, попробуй…"
 
-    scene bg ext_road_day with slideawayleft
+    scene bg ext_road_day with wipeleft
     "Я под шумок стал озираться в поисках путей отступления, чтобы просто по-тихому незаметно удалиться."
 
     play ambience ambience_camp_entrance_day
@@ -295,7 +296,7 @@ label iw_dayOne_arriveSemyon:
     "Раздался сзади чей-то жалобный голос."
 
     window hide
-    scene bg ext_camp_entrance_day with slideawayright
+    scene bg ext_camp_entrance_day with wiperight
     show un sad pioneer far at center with dissolve
     show ja serious pioneer:
         anchor (0.5,0.0)

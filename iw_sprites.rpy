@@ -663,6 +663,327 @@ init -1000:
         "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), "mods/iw/sprites/close/dv_s/dv_5_body.png", (0, 0), "mods/iw/sprites/close/dv_s/dv_5_swim.png", (0, 0), "mods/iw/sprites/close/dv_s/dv_5_rage.png"), im.matrix.tint(0.94, 0.82, 1.0)),
         "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), "mods/iw/sprites/close/dv_s/dv_5_body.png", (0, 0), "mods/iw/sprites/close/dv_s/dv_5_swim.png", (0, 0), "mods/iw/sprites/close/dv_s/dv_5_rage.png"), im.matrix.tint(0.63, 0.78, 0.82)),
         True, im.Composite((1125, 1080), (0, 0), "mods/iw/sprites/close/dv_s/dv_5_body.png", (0, 0), "mods/iw/sprites/close/dv_s/dv_5_swim.png", (0, 0), "mods/iw/sprites/close/dv_s/dv_5_rage.png"))
+        
+        
+#АЛИСОСЛАВЯ far
+
+    image jd cry body far = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_1_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_cry.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_1_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_cry.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_1_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_cry.png"))
+    image jd cry dress far = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_1_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_dress.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_cry.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_1_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_dress.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_cry.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_1_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_dress.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_cry.png"))
+    image jd cry pioneer far = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_1_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_pioneer.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_cry.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_1_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_pioneer.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_cry.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_1_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_pioneer.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_cry.png"))
+    image jd cry pioneer2 far = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_1_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_pioneer2.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_cry.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_1_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_pioneer2.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_cry.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_1_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_pioneer2.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_cry.png"))
+    image jd cry sport far = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_1_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_sport.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_cry.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_1_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_sport.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_cry.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_1_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_sport.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_cry.png"))
+    image jd cry swim far = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_1_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_swim.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_cry.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_1_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_swim.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_cry.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_1_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_swim.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_cry.png"))
+    image jd scared body far = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_1_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_scared.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_1_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_scared.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_1_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_scared.png"))
+    image jd scared dress far = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_1_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_dress.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_scared.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_1_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_dress.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_scared.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_1_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_dress.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_scared.png"))
+    image jd scared pioneer far = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_1_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_pioneer.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_scared.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_1_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_pioneer.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_scared.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_1_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_pioneer.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_scared.png"))
+    image jd scared pioneer2 far = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_1_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_pioneer2.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_scared.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_1_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_pioneer2.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_scared.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_1_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_pioneer2.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_scared.png"))
+    image jd scared sport far = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_1_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_sport.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_scared.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_1_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_sport.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_scared.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_1_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_sport.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_scared.png"))
+    image jd scared swim far = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_1_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_swim.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_scared.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_1_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_swim.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_scared.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_1_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_swim.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_scared.png"))
+    image jd shocked body far = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_1_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_shocked.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_1_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_shocked.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_1_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_shocked.png"))
+    image jd shocked dress far = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_1_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_dress.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_shocked.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_1_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_dress.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_shocked.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_1_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_dress.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_shocked.png"))
+    image jd shocked pioneer far = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_1_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_pioneer.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_shocked.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_1_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_pioneer.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_shocked.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_1_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_pioneer.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_shocked.png"))
+    image jd shocked pioneer2 far = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_1_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_pioneer2.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_shocked.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_1_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_pioneer2.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_shocked.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_1_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_pioneer2.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_shocked.png"))
+    image jd shocked sport far = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_1_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_sport.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_shocked.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_1_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_sport.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_shocked.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_1_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_sport.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_shocked.png"))
+    image jd shocked swim far = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_1_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_swim.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_shocked.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_1_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_swim.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_shocked.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_1_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_swim.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_shocked.png"))
+    image jd surprise body far = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_1_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_surprise.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_1_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_surprise.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_1_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_surprise.png"))
+    image jd surprise dress far = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_1_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_dress.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_surprise.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_1_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_dress.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_surprise.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_1_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_dress.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_surprise.png"))
+    image jd surprise pioneer far = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_1_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_pioneer.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_surprise.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_1_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_pioneer.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_surprise.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_1_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_pioneer.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_surprise.png"))
+    image jd surprise pioneer2 far = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_1_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_pioneer2.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_surprise.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_1_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_pioneer2.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_surprise.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_1_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_pioneer2.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_surprise.png"))
+    image jd surprise sport far = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_1_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_sport.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_surprise.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_1_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_sport.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_surprise.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_1_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_sport.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_surprise.png"))
+    image jd surprise swim far = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_1_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_swim.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_surprise.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_1_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_swim.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_surprise.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_1_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_swim.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_1_surprise.png"))
+        
+    image jd grin body far = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_2_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_2_grin.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_2_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_2_grin.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_2_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_2_grin.png"))
+    image jd grin dress far = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_2_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_2_dress.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_2_grin.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_2_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_2_dress.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_2_grin.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_2_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_2_dress.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_2_grin.png"))
+    image jd grin pioneer far = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_2_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_2_pioneer.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_2_grin.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_2_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_2_pioneer.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_2_grin.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_2_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_2_pioneer.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_2_grin.png"))
+    image jd grin pioneer2 far = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_2_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_2_pioneer2.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_2_grin.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_2_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_2_pioneer2.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_2_grin.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_2_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_2_pioneer2.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_2_grin.png"))
+    image jd grin sport far = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_2_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_2_sport.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_2_grin.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_2_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_2_sport.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_2_grin.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_2_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_2_sport.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_2_grin.png"))
+    image jd grin swim far = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_2_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_2_swim.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_2_grin.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_2_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_2_swim.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_2_grin.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_2_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_2_swim.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_2_grin.png"))
+        
+    image jd guilty body far = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_3_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_3_guilty.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_3_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_3_guilty.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_3_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_3_guilty.png"))
+    image jd guilty dress far = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_3_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_3_dress.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_3_guilty.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_3_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_3_dress.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_3_guilty.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_3_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_3_dress.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_3_guilty.png"))
+    image jd guilty pioneer far = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_3_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_3_pioneer.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_3_guilty.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_3_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_3_pioneer.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_3_guilty.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_3_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_3_pioneer.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_3_guilty.png"))
+    image jd guilty pioneer2 far = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_3_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_3_pioneer2.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_3_guilty.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_3_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_3_pioneer2.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_3_guilty.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_3_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_3_pioneer2.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_3_guilty.png"))
+    image jd guilty sport far = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_3_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_3_sport.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_3_guilty.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_3_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_3_sport.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_3_guilty.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_3_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_3_sport.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_3_guilty.png"))
+    image jd guilty swim far = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_3_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_3_swim.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_3_guilty.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_3_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_3_swim.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_3_guilty.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_3_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_3_swim.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_3_guilty.png"))
+    image jd sad body far = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_3_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_3_sad.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_3_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_3_sad.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_3_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_3_sad.png"))
+    image jd sad dress far = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_3_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_3_dress.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_3_sad.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_3_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_3_dress.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_3_sad.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_3_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_3_dress.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_3_sad.png"))
+    image jd sad pioneer far = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_3_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_3_pioneer.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_3_sad.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_3_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_3_pioneer.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_3_sad.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_3_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_3_pioneer.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_3_sad.png"))
+    image jd sad pioneer2 far = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_3_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_3_pioneer2.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_3_sad.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_3_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_3_pioneer2.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_3_sad.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_3_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_3_pioneer2.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_3_sad.png"))
+    image jd sad sport far = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_3_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_3_sport.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_3_sad.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_3_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_3_sport.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_3_sad.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_3_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_3_sport.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_3_sad.png"))
+    image jd sad swim far = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_3_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_3_swim.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_3_sad.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_3_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_3_swim.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_3_sad.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_3_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_3_swim.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_3_sad.png"))
+    image jd shy body far = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_3_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_3_shy.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_3_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_3_shy.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_3_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_3_shy.png"))
+    image jd shy dress far = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_3_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_3_dress.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_3_shy.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_3_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_3_dress.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_3_shy.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_3_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_3_dress.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_3_shy.png"))
+    image jd shy pioneer far = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_3_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_3_pioneer.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_3_shy.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_3_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_3_pioneer.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_3_shy.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_3_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_3_pioneer.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_3_shy.png"))
+    image jd shy pioneer2 far = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_3_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_3_pioneer2.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_3_shy.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_3_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_3_pioneer2.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_3_shy.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_3_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_3_pioneer2.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_3_shy.png"))
+    image jd shy sport far = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_3_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_3_sport.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_3_shy.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_3_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_3_sport.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_3_shy.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_3_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_3_sport.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_3_shy.png"))
+    image jd shy swim far = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_3_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_3_swim.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_3_shy.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_3_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_3_swim.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_3_shy.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_3_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_3_swim.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_3_shy.png"))
+        
+    image jd laugh body far = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_4_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_4_laugh.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_4_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_4_laugh.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_4_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_4_laugh.png"))
+    image jd laugh dress far = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_4_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_4_dress.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_4_laugh.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_4_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_4_dress.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_4_laugh.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_4_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_4_dress.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_4_laugh.png"))
+    image jd laugh pioneer far = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_4_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_4_pioneer.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_4_laugh.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_4_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_4_pioneer.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_4_laugh.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_4_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_4_pioneer.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_4_laugh.png"))
+    image jd laugh pioneer2 far = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_4_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_4_pioneer2.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_4_laugh.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_4_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_4_pioneer2.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_4_laugh.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_4_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_4_pioneer2.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_4_laugh.png"))
+    image jd laugh sport far = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_4_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_4_sport.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_4_laugh.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_4_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_4_sport.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_4_laugh.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_4_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_4_sport.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_4_laugh.png"))
+    image jd laugh swim far = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_4_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_4_swim.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_4_laugh.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_4_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_4_swim.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_4_laugh.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_4_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_4_swim.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_4_laugh.png"))
+    image jd normal body far = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_4_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_4_normal.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_4_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_4_normal.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_4_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_4_normal.png"))
+    image jd normal dress far = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_4_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_4_dress.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_4_normal.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_4_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_4_dress.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_4_normal.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_4_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_4_dress.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_4_normal.png"))
+    image jd normal pioneer far = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_4_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_4_pioneer.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_4_normal.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_4_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_4_pioneer.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_4_normal.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_4_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_4_pioneer.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_4_normal.png"))
+    image jd normal pioneer2 far = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_4_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_4_pioneer2.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_4_normal.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_4_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_4_pioneer2.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_4_normal.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_4_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_4_pioneer2.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_4_normal.png"))
+    image jd normal sport far = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_4_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_4_sport.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_4_normal.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_4_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_4_sport.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_4_normal.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_4_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_4_sport.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_4_normal.png"))
+    image jd normal swim far = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_4_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_4_swim.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_4_normal.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_4_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_4_swim.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_4_normal.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_4_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_4_swim.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_4_normal.png"))
+    image jd smile body far = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_4_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_4_smile.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_4_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_4_smile.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_4_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_4_smile.png"))
+    image jd smile dress far = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_4_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_4_dress.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_4_smile.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_4_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_4_dress.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_4_smile.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_4_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_4_dress.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_4_smile.png"))
+    image jd smile pioneer far = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_4_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_4_pioneer.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_4_smile.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_4_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_4_pioneer.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_4_smile.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_4_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_4_pioneer.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_4_smile.png"))
+    image jd smile pioneer2 far = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_4_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_4_pioneer2.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_4_smile.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_4_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_4_pioneer2.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_4_smile.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_4_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_4_pioneer2.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_4_smile.png"))
+    image jd smile sport far = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_4_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_4_sport.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_4_smile.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_4_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_4_sport.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_4_smile.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_4_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_4_sport.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_4_smile.png"))
+    image jd smile swim far = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_4_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_4_swim.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_4_smile.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_4_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_4_swim.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_4_smile.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_4_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_4_swim.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_4_smile.png"))
+
+        
+    image jd angry body far = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_5_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_5_angry.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_5_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_5_angry.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_5_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_5_angry.png"))
+    image jd angry dress far = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_5_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_5_dress.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_5_angry.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_5_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_5_dress.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_5_angry.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_5_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_5_dress.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_5_angry.png"))
+    image jd angry pioneer far = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_5_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_5_pioneer.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_5_angry.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_5_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_5_pioneer.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_5_angry.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_5_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_5_pioneer.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_5_angry.png"))
+    image jd angry pioneer2 far = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_5_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_5_pioneer2.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_5_angry.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_5_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_5_pioneer2.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_5_angry.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_5_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_5_pioneer2.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_5_angry.png"))
+    image jd angry sport far = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_5_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_5_sport.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_5_angry.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_5_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_5_sport.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_5_angry.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_5_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_5_sport.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_5_angry.png"))
+    image jd angry swim far = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_5_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_5_swim.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_5_angry.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_5_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_5_swim.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_5_angry.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_5_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_5_swim.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_5_angry.png"))
+    image jd rage body far = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_5_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_5_rage.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_5_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_5_rage.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_5_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_5_rage.png"))
+    image jd rage dress far = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_5_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_5_dress.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_5_rage.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_5_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_5_dress.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_5_rage.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_5_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_5_dress.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_5_rage.png"))
+    image jd rage pioneer far = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_5_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_5_pioneer.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_5_rage.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_5_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_5_pioneer.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_5_rage.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_5_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_5_pioneer.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_5_rage.png"))
+    image jd rage pioneer2 far = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_5_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_5_pioneer2.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_5_rage.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_5_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_5_pioneer2.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_5_rage.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_5_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_5_pioneer2.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_5_rage.png"))
+    image jd rage sport far = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_5_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_5_sport.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_5_rage.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_5_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_5_sport.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_5_rage.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_5_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_5_sport.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_5_rage.png"))
+    image jd rage swim far = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_5_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_5_swim.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_5_rage.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_5_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_5_swim.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_5_rage.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((675, 1080), (0, 0), "mods/iw/sprites/far/dv_s/dv_5_body.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_5_swim.png", (0, 0), "mods/iw/sprites/far/dv_s/dv_5_rage.png"))
  
 #al_e3 normal
     image al_e4 dontlike body = ConditionSwitch(

@@ -13,93 +13,6 @@
     $ ai = Character(u"Искин",             color="#fff8e7", what_color="#f1d076", what_outlines=[( 0, "#000000", 2, 2 )]) # Искин
     $ aip = Character(u"Голограмма",       color="#fff8e7", what_color="#f1d076", what_outlines=[( 0, "#000000", 2, 2 )]) # Искин до представления
 
-#===========================
-#Новый текстбокс
-    screen iw_say:
-        window background None id "window":
-
-            $ timeofday = persistent.timeofday
-
-            if persistent.font_size == "large":
-
-                imagebutton auto "mods/iw/gui/dialogue_box/backward_%s.png" xpos 38 ypos 924 action ShowMenu("text_history")
-
-                add "mods/iw/gui/dialogue_box/dialogue_box_large.png" xpos 174 ypos 866
-
-                imagebutton auto "mods/iw/gui/dialogue_box/hide_%s.png" xpos 1508 ypos 883 action HideInterface()
-                imagebutton auto "mods/iw/gui/dialogue_box/save_%s.png" xpos 1567 ypos 883 action ShowMenu('save')
-                imagebutton auto "mods/iw/gui/dialogue_box/menu_%s.png" xpos 1625 ypos 883 action ShowMenu('game_menu_selector')
-                imagebutton auto "mods/iw/gui/dialogue_box/load_%s.png" xpos 1682 ypos 883 action ShowMenu('load')
-
-                if not config.skipping:
-                    imagebutton auto "mods/iw/gui/dialogue_box/forward_%s.png" xpos 1735 ypos 924 action Skip()
-                else:
-                    imagebutton auto "mods/iw/gui/dialogue_box/fast_forward_%s.png" xpos 1735 ypos 924 action Skip()
-
-                text what id "what" xpos 194 ypos 914 xmaximum 1541 size 35 line_spacing 1 # font 'mods/iw/fonts/Caveat.ttf'
-                if who:
-                    text who id "who" xpos 194 ypos 877 size 35 line_spacing 1
-
-            elif persistent.font_size == "small":
-
-                imagebutton auto "mods/iw/gui/dialogue_box/backward_%s.png" xpos 38 ypos 949 action ShowMenu("text_history")
-
-                add "mods/iw/gui/dialogue_box/dialogue_box.png" xpos 174 ypos 916
-
-                imagebutton auto "mods/iw/gui/dialogue_box/hide_%s.png" xpos 1508 ypos 933 action HideInterface()
-                imagebutton auto "mods/iw/gui/dialogue_box/save_%s.png" xpos 1567 ypos 933 action ShowMenu('save')
-                imagebutton auto "mods/iw/gui/dialogue_box/menu_%s.png" xpos 1625 ypos 933 action ShowMenu('game_menu_selector')
-                imagebutton auto "mods/iw/gui/dialogue_box/load_%s.png" xpos 1682 ypos 933 action ShowMenu('load')
-
-                if not config.skipping:
-                    imagebutton auto "mods/iw/gui/dialogue_box/forward_%s.png" xpos 1735 ypos 949 action Skip()
-                else:
-                    imagebutton auto "mods/iw/gui/dialogue_box/fast_forward_%s.png" xpos 1735 ypos 949 action Skip()
-
-                text what id "what" xpos 194 ypos 964 xmaximum 1541 size 28 line_spacing 2 # font 'mods/iw/fonts/Caveat.ttf'
-                if who:
-                    text who id "who" xpos 194 ypos 931 size 28 line_spacing 2
-                    
-    screen iw_nvl:
-
-        $ timeofday = persistent.timeofday
-
-    
-        window background Frame("mods/iw/gui/choice_box.png",50,50) xfill True yfill True yalign 0.5 left_padding 175 right_padding 175 bottom_padding 150 top_padding 150:
-            has vbox
-            for who, what, who_id, what_id, window_id in dialogue:
-                window:
-                    id window_id
-                    has hbox:
-                        spacing 10
-                    if persistent.font_size == "large":
-                        if who is not None:
-                            text who id who_id size 35
-                        text what id what_id size 35
-                    elif persistent.font_size == "small":
-                        if who is not None:
-                            text who id who_id size 28
-                        text what id what_id size 28
-            if items:
-                vbox:
-                    id "menu"
-                    for caption, action, chosen in items:
-                        if action:
-                            button:
-                                style "nvl_menu_choice_button"
-                                action action
-                                text caption style "nvl_menu_choice"
-                        else:
-                            text caption style "nvl_dialogue"
-
-        imagebutton auto "mods/iw/gui/dialogue_box/backward_%s.png" xpos 38 ypos 924 action ShowMenu("text_history")
-
-        if not config.skipping:
-            imagebutton auto "mods/iw/gui/dialogue_box/forward_%s.png" xpos 1768 ypos 949 action Skip()
-        else:
-            imagebutton auto "mods/iw/gui/dialogue_box/fast_forward_%s.png" xpos 1768 ypos 949 action Skip()
-#====================================
-    
     define dreamgirl2 = Character(u"ЮВАО", color="#467722", what_color="#f1d076")
     define d1 = Character(u"Девушка 1", what_color="#f1d076")
     define d2 = Character(u"Девушка 2", what_color="#f1d076")
@@ -200,10 +113,103 @@
     $ veter_e3 = "mods/2020miku/music/veter_e3.mp3"
     $ dogd3_e3 = "mods/2020miku/music/dogd3_e3.mp3"
     $ dogd_gr_e3 = "mods/2020miku/music/dogd_gr_e3.mp3"
+
     
+#===========================
+#Новый текстбокс
 init python:
 
     def iw_screens():
         renpy.display.screen.screens[("say", None)] = renpy.display.screen.screens[("iw_say", None)]
         renpy.display.screen.screens[("nvl", None)] = renpy.display.screen.screens[("iw_nvl", None)]
-    iw_screens()
+        
+    def iw__screens_diact():
+        renpy.display.screen.screens[("say", None)] 
+        renpy.display.screen.screens[("nvl", None)]
+
+
+screen iw_say:
+    window background None id "window":
+
+            #$ timeofday = persistent.timeofday
+            
+        #$ ty = "1"
+
+        if persistent.font_size == "large":
+
+            imagebutton auto "mods/iw/gui/dialogue_box/" + ty + "_backward_%s.png" xpos 38 ypos 924 action ShowMenu("text_history")
+
+            add "mods/iw/gui/dialogue_box/dialogue_box_large.png" xpos 174 ypos 866
+
+            imagebutton auto "mods/iw/gui/dialogue_box/hide_%s.png" xpos 1508 ypos 883 action HideInterface()
+            imagebutton auto "mods/iw/gui/dialogue_box/save_%s.png" xpos 1567 ypos 883 action ShowMenu('save')
+            imagebutton auto "mods/iw/gui/dialogue_box/menu_%s.png" xpos 1625 ypos 883 action ShowMenu('game_menu_selector')
+            imagebutton auto "mods/iw/gui/dialogue_box/load_%s.png" xpos 1682 ypos 883 action ShowMenu('load')
+
+            if not config.skipping:
+                imagebutton auto "mods/iw/gui/dialogue_box/forward_%s.png" xpos 1735 ypos 924 action Skip()
+            else:
+                imagebutton auto "mods/iw/gui/dialogue_box/fast_forward_%s.png" xpos 1735 ypos 924 action Skip()
+
+            text what id "what" xpos 194 ypos 914 xmaximum 1541 size 35 line_spacing 1 # font 'mods/iw/fonts/Caveat.ttf'
+            if who:
+                text who id "who" xpos 194 ypos 877 size 35 line_spacing 1
+
+        elif persistent.font_size == "small":
+
+            imagebutton auto "mods/iw/gui/dialogue_box/" + ty + "_backward_%s.png" xpos 38 ypos 924 action ShowMenu("text_history")
+
+            add "mods/iw/gui/dialogue_box/dialogue_box.png" xpos 174 ypos 916
+
+            imagebutton auto "mods/iw/gui/dialogue_box/hide_%s.png" xpos 1508 ypos 933 action HideInterface()
+            imagebutton auto "mods/iw/gui/dialogue_box/save_%s.png" xpos 1567 ypos 933 action ShowMenu('save')
+            imagebutton auto "mods/iw/gui/dialogue_box/menu_%s.png" xpos 1625 ypos 933 action ShowMenu('game_menu_selector')
+            imagebutton auto "mods/iw/gui/dialogue_box/load_%s.png" xpos 1682 ypos 933 action ShowMenu('load')
+
+            if not config.skipping:
+                imagebutton auto "mods/iw/gui/dialogue_box/forward_%s.png" xpos 1735 ypos 949 action Skip()
+            else:
+                imagebutton auto "mods/iw/gui/dialogue_box/fast_forward_%s.png" xpos 1735 ypos 949 action Skip()
+
+            text what id "what" xpos 194 ypos 964 xmaximum 1541 size 28 line_spacing 2 # font 'mods/iw/fonts/Caveat.ttf'
+            if who:
+                text who id "who" xpos 194 ypos 931 size 28 line_spacing 2
+                
+screen iw_nvl:
+
+    $ timeofday = persistent.timeofday
+
+
+    window background Frame("mods/iw/gui/choice_box.png",50,50) xfill True yfill True yalign 0.5 left_padding 175 right_padding 175 bottom_padding 150 top_padding 150:
+        has vbox
+        for who, what, who_id, what_id, window_id in dialogue:
+            window:
+                id window_id
+                has hbox:
+                    spacing 10
+                if persistent.font_size == "large":
+                    if who is not None:
+                        text who id who_id size 35
+                    text what id what_id size 35
+                elif persistent.font_size == "small":
+                    if who is not None:
+                        text who id who_id size 28
+                    text what id what_id size 28
+        if items:
+            vbox:
+                id "menu"
+                for caption, action, chosen in items:
+                    if action:
+                        button:
+                            style "nvl_menu_choice_button"
+                            action action
+                            text caption style "nvl_menu_choice"
+                    else:
+                        text caption style "nvl_dialogue"
+
+    imagebutton auto "mods/iw/gui/dialogue_box/backward_%s.png" xpos 38 ypos 924 action ShowMenu("text_history")
+
+    if not config.skipping:
+        imagebutton auto "mods/iw/gui/dialogue_box/forward_%s.png" xpos 1768 ypos 949 action Skip()
+    else:
+        imagebutton auto "mods/iw/gui/dialogue_box/fast_forward_%s.png" xpos 1768 ypos 949 action Skip()

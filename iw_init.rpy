@@ -177,9 +177,9 @@ screen iw_say:
             else:
                 imagebutton auto "mods/iw/gui/dialogue_box/fast_forward_%s.png" xpos 1800 ypos 950 action Skip()
 
-            text what id "what" xpos 194 ypos 950 xmaximum 1550 size 28 line_spacing 2 font 'mods/iw/menu/arsenal.ttf' color '#fff8e7'
+            text what id "what" xpos 184 ypos 950 xmaximum 1550 size 28 line_spacing 2 font 'mods/iw/menu/arsenal.ttf' color '#fff8e7'
             if who:
-                text who id "who" xpos 194 ypos 910 size 28 line_spacing 2 font 'mods/iw/menu/arsenal.ttf'
+                text who id "who" xpos 184 ypos 910 size 28 line_spacing 2 font 'mods/iw/menu/arsenal.ttf'
                 
 screen iw_nvl:
 

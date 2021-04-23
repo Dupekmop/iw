@@ -15,7 +15,7 @@ label iw_prescriptum:
     $ backdrop = "prologue"
     $ new_chapter(0, u"Сокровенное желание:\nПрескриптум")
     $ persistent.sprite_time = "day"
-    show text "{size=+20}{font=mods/iw/menu/headingpro.ttf}{color=#fff8e7}Бойтесь своих желаний — они имеют свойство сбываться{/color}{/font}{/size}" at truecenter with dissolve2
+    show text "{size=+10}{font=mods/iw/menu/headingpro.ttf}{color=#fff8e7}Бойтесь своих желаний — они имеют свойство сбываться{/color}{/font}{/size}" at truecenter with dissolve2
     $ renpy.pause(4)
     hide text with dissolve2
     

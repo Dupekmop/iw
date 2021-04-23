@@ -3,16 +3,16 @@
     $ mods["iw_start"]=u"{font=mods/iw/menu/headingpro.ttf}{color=#011}Сокровенное желание{/color}{/font}"
     $ fnt = "mods/iw/menu/arsenal.ttf"
     $ otl = [(0,"#000000",2,2)]
-    $ pvo = Character(u"Голос из темноты", color="#000000", what_color="#fff8e7", what_outlines=otl, what_font=fnt, who_font=fnt) # Голос во сне в прологе
-    $ sv = Character(u"...",               color="#fff8e7", what_color="#fff8e7", what_outlines=otl, what_prefix=u"«", what_suffix=u"»", what_font=fnt, who_font=fnt) # мысли Семёна
-    $ slf = Character(u"Славя Номер Один", color="#ffaa00", what_color="#fff8e7", what_outlines=otl, what_font=fnt, who_font=fnt) # Алиса на остановке
-    $ sls = Character(u"Славя Номер Два",  color="#ffd200", what_color="#fff8e7", what_outlines=otl, what_font=fnt, who_font=fnt) # Славя на остановке
-    $ unv = Character(u"Голос",            color="#b956ff", what_color="#fff8e7", what_outlines=otl, what_font=fnt, who_font=fnt) # голос Лены
-    $ chor = Character(u"Пионерки",        color="#02de90", what_color="#fff8e7", what_outlines=otl, what_font=fnt, who_font=fnt) # все пионерки говорят хором
-    $ jo = Character(u"Йошка",             color="#e60000", what_color="#fff8e7", what_outlines=otl, what_font=fnt, who_font=fnt) # Йошка
-    $ jop = Character(u"Пришелец",         color="#e60000", what_color="#fff8e7", what_outlines=otl, what_font=fnt, who_font=fnt) # Йошка до представления
-    $ ai = Character(u"Искин",             color="#fff8e7", what_color="#fff8e7", what_outlines=otl, what_font=fnt, who_font=fnt) # Искин
-    $ aip = Character(u"Голограмма",       color="#fff8e7", what_color="#fff8e7", what_outlines=otl, what_font=fnt, who_font=fnt) # Искин до представления
+    $ pvo = Character(u"Голос из темноты", color="#000000", what_color="#fff8e7", what_outlines=otl) # Голос во сне в прологе
+    $ sv = Character(u"...",               color="#fff8e7", what_color="#fff8e7", what_outlines=otl, what_prefix=u"«", what_suffix=u"»") # мысли Семёна
+    $ slf = Character(u"Славя Номер Один", color="#ffaa00", what_color="#fff8e7", what_outlines=otl) # Алиса на остановке
+    $ sls = Character(u"Славя Номер Два",  color="#ffd200", what_color="#fff8e7", what_outlines=otl) # Славя на остановке
+    $ unv = Character(u"Голос",            color="#b956ff", what_color="#fff8e7", what_outlines=otl) # голос Лены
+    $ chor = Character(u"Пионерки",        color="#02de90", what_color="#fff8e7", what_outlines=otl) # все пионерки говорят хором
+    $ jo = Character(u"Йошка",             color="#e60000", what_color="#fff8e7", what_outlines=otl) # Йошка
+    $ jop = Character(u"Пришелец",         color="#e60000", what_color="#fff8e7", what_outlines=otl) # Йошка до представления
+    $ ai = Character(u"Искин",             color="#fff8e7", what_color="#fff8e7", what_outlines=otl) # Искин
+    $ aip = Character(u"Голограмма",       color="#fff8e7", what_color="#fff8e7", what_outlines=otl) # Искин до представления
 
     define dreamgirl2 = Character(u"ЮВАО", color="#467722", what_color="#f1d076")
     define d1 = Character(u"Девушка 1", what_color="#f1d076")
@@ -145,7 +145,7 @@ screen iw_say:
 
             imagebutton auto "mods/iw/gui/dialogue_box/" + ty + "_backward_%s.png" xpos 38 ypos 924 action ShowMenu("text_history")
 
-            add "mods/iw/gui/dialogue_box/dialogue_box_large.png" xpos 174 ypos 866
+            add "mods/iw/gui/dialogue_box/dialogue_box_large.png" xpos 0 ypos 850
 
             imagebutton auto "mods/iw/gui/dialogue_box/hide_%s.png" xpos 1508 ypos 883 action HideInterface()
             imagebutton auto "mods/iw/gui/dialogue_box/save_%s.png" xpos 1567 ypos 883 action ShowMenu('save')
@@ -157,29 +157,29 @@ screen iw_say:
             else:
                 imagebutton auto "mods/iw/gui/dialogue_box/fast_forward_%s.png" xpos 1735 ypos 924 action Skip()
 
-            text what id "what" xpos 194 ypos 914 xmaximum 1541 size 35 line_spacing 1 # font 'mods/iw/fonts/Caveat.ttf'
+            text what id "what" xpos 194 ypos 914 xmaximum 1550 size 35 line_spacing 1 font 'mods/iw/menu/arsenal.ttf' color '#fff8e7'
             if who:
-                text who id "who" xpos 194 ypos 877 size 35 line_spacing 1
+                text who id "who" xpos 194 ypos 877 size 35 line_spacing 1 font 'mods/iw/menu/arsenal.ttf'
 
         elif persistent.font_size == "small":
 
-            imagebutton auto "mods/iw/gui/dialogue_box/" + ty + "_backward_%s.png" xpos 38 ypos 924 action ShowMenu("text_history")
+            add "mods/iw/gui/dialogue_box/dialogue_box.png" xpos -5 ypos 900
 
-            add "mods/iw/gui/dialogue_box/dialogue_box.png" xpos 174 ypos 916
+            imagebutton auto "mods/iw/gui/dialogue_box/" + ty + "_backward_%s.png" xpos 30 ypos 950 action ShowMenu("text_history")
 
-            imagebutton auto "mods/iw/gui/dialogue_box/hide_%s.png" xpos 1508 ypos 933 action HideInterface()
-            imagebutton auto "mods/iw/gui/dialogue_box/save_%s.png" xpos 1567 ypos 933 action ShowMenu('save')
-            imagebutton auto "mods/iw/gui/dialogue_box/menu_%s.png" xpos 1625 ypos 933 action ShowMenu('game_menu_selector')
-            imagebutton auto "mods/iw/gui/dialogue_box/load_%s.png" xpos 1682 ypos 933 action ShowMenu('load')
+            imagebutton auto "mods/iw/gui/dialogue_box/hide_%s.png" xpos 1508 ypos 910 action HideInterface()
+            imagebutton auto "mods/iw/gui/dialogue_box/save_%s.png" xpos 1567 ypos 910 action ShowMenu('save')
+            imagebutton auto "mods/iw/gui/dialogue_box/menu_%s.png" xpos 1625 ypos 910 action ShowMenu('game_menu_selector')
+            imagebutton auto "mods/iw/gui/dialogue_box/load_%s.png" xpos 1682 ypos 910 action ShowMenu('load')
 
             if not config.skipping:
-                imagebutton auto "mods/iw/gui/dialogue_box/forward_%s.png" xpos 1735 ypos 949 action Skip()
+                imagebutton auto "mods/iw/gui/dialogue_box/forward_%s.png" xpos 1800 ypos 950 action Skip()
             else:
-                imagebutton auto "mods/iw/gui/dialogue_box/fast_forward_%s.png" xpos 1735 ypos 949 action Skip()
+                imagebutton auto "mods/iw/gui/dialogue_box/fast_forward_%s.png" xpos 1800 ypos 950 action Skip()
 
-            text what id "what" xpos 194 ypos 964 xmaximum 1541 size 28 line_spacing 2 # font 'mods/iw/fonts/Caveat.ttf'
+            text what id "what" xpos 194 ypos 950 xmaximum 1550 size 28 line_spacing 2 font 'mods/iw/menu/arsenal.ttf' color '#fff8e7'
             if who:
-                text who id "who" xpos 194 ypos 931 size 28 line_spacing 2
+                text who id "who" xpos 194 ypos 910 size 28 line_spacing 2 font 'mods/iw/menu/arsenal.ttf'
                 
 screen iw_nvl:
 

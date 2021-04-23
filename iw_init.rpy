@@ -2,10 +2,6 @@
 
     $ mods["iw_start"]=u"{font=mods/iw/menu/headingpro.ttf}{color=#011}Сокровенное желание{/color}{/font}"
     
-    define gui.text_font = "mods/iw/menu/arsenal.ttf"
-    define gui.name_text_font = "mods/iw/menu/arsenal.ttf"
-    define gui.interface_text_font = "mods/iw/menu/arsenal.ttf"
-    
     $ pvo = Character(u"Голос из темноты", color="#000000", what_color="#f1d076", what_outlines=[( 0, "#000000", 2, 2 )]) # Голос во сне в прологе
     $ sv = Character(u"...",               color="#fff8e7", what_color="#f1d076", what_outlines=[( 0, "#000000", 2, 2 )], what_prefix=u"«", what_suffix=u"»") # мысли Семёна
     $ slf = Character(u"Славя Номер Один", color="#ffaa00", what_color="#f1d076", what_outlines=[( 0, "#000000", 2, 2 )]) # Алиса на остановке
@@ -123,26 +119,10 @@
 #Новый текстбокс
 init -1 python:
 
-    def font(font="mods/iw/menu/arsenal.ttf", who=None, prf=None, mm=None):
-        style.say_dialogue.font = font # текст в текстбоксе
-        style.say_thought.font = font # текст в текстбоксе
-        if not who is None:
-            style.say_label.font = who # имя персонажа
-        if not prf is None:
-            # интерфейс (настройки и сохранения)
-            style.pref_label_text.font = prf
-            style.pref_button_text.font = prf
-            style.small_button_text.font = prf
-            style.large_button_text.font = prf
-            style.file_picker_text.font = prf
-            style.file_picker_button_text.font = prf
-            style.file_picker_nav_button_text.font = prf
-            style.button_text.font = prf # текст на кнопках
-            style.label_text.font = prf # надписи
-        if not mm is None:
-            style.mm_button_text.font = mm # кнопки главного меню
-        # применяем изменения
-        style.rebuild()
+    style.default.font = "mods/iw/menu/arsenal.ttf"
+    style.say_dialogue.font = "mods/iw/menu/arsenal.ttf"
+    style.say_thought.font = "mods/iw/menu/arsenal.ttf"
+
     
     def iw_screens():
         renpy.display.screen.screens[("say", None)] = renpy.display.screen.screens[("iw_say", None)]

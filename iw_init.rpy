@@ -1,17 +1,19 @@
 ﻿init:
 
     $ mods["iw_start"]=u"{font=mods/iw/menu/headingpro.ttf}{color=#011}Сокровенное желание{/color}{/font}"
-    
-    $ pvo = Character(u"Голос из темноты", color="#000000", what_color="#f1d076", what_outlines=[( 0, "#000000", 2, 2 )]) # Голос во сне в прологе
-    $ sv = Character(u"...",               color="#fff8e7", what_color="#f1d076", what_outlines=[( 0, "#000000", 2, 2 )], what_prefix=u"«", what_suffix=u"»") # мысли Семёна
-    $ slf = Character(u"Славя Номер Один", color="#ffaa00", what_color="#f1d076", what_outlines=[( 0, "#000000", 2, 2 )]) # Алиса на остановке
-    $ sls = Character(u"Славя Номер Два",  color="#ffd200", what_color="#f1d076", what_outlines=[( 0, "#000000", 2, 2 )]) # Славя на остановке
-    $ unv = Character(u"Голос",            color="#b956ff", what_color="#f1d076", what_outlines=[( 0, "#000000", 2, 2 )]) # голос Лены
-    $ chor = Character(u"Пионерки",        color="#02de90", what_color="#f1d076", what_outlines=[( 0, "#000000", 2, 2 )]) # все пионерки говорят хором
-    $ jo = Character(u"Йошка",             color="#e60000", what_color="#f1d076", what_outlines=[( 0, "#000000", 2, 2 )]) # Йошка
-    $ jop = Character(u"Пришелец",         color="#e60000", what_color="#f1d076", what_outlines=[( 0, "#000000", 2, 2 )]) # Йошка до представления
-    $ ai = Character(u"Искин",             color="#fff8e7", what_color="#f1d076", what_outlines=[( 0, "#000000", 2, 2 )]) # Искин
-    $ aip = Character(u"Голограмма",       color="#fff8e7", what_color="#f1d076", what_outlines=[( 0, "#000000", 2, 2 )]) # Искин до представления
+    $ fnt = "mods/iw/menu/arsenal.ttf"
+    $ otl = [(0,"#000000",2,2)]
+    $ pvo = Character(u"Голос из темноты", color="#000000", what_color="#fff8e7", what_outlines=otl, what_font=fnt, who_font=fnt) # Голос во сне в прологе
+    $ sv = Character(u"...",               color="#fff8e7", what_color="#fff8e7", what_outlines=otl, what_prefix=u"«", what_suffix=u"»", what_font=fnt, who_font=fnt) # мысли Семёна
+    $ slf = Character(u"Славя Номер Один", color="#ffaa00", what_color="#fff8e7", what_outlines=otl, what_font=fnt, who_font=fnt) # Алиса на остановке
+    $ sls = Character(u"Славя Номер Два",  color="#ffd200", what_color="#fff8e7", what_outlines=otl, what_font=fnt, who_font=fnt) # Славя на остановке
+    $ unv = Character(u"Голос",            color="#b956ff", what_color="#fff8e7", what_outlines=otl, what_font=fnt, who_font=fnt) # голос Лены
+    $ chor = Character(u"Пионерки",        color="#02de90", what_color="#fff8e7", what_outlines=otl, what_font=fnt, who_font=fnt) # все пионерки говорят хором
+    $ jo = Character(u"Йошка",             color="#e60000", what_color="#fff8e7", what_outlines=otl, what_font=fnt, who_font=fnt) # Йошка
+    $ jop = Character(u"Пришелец",         color="#e60000", what_color="#fff8e7", what_outlines=otl, what_font=fnt, who_font=fnt) # Йошка до представления
+    $ ai = Character(u"Искин",             color="#fff8e7", what_color="#fff8e7", what_outlines=otl, what_font=fnt, who_font=fnt) # Искин
+    $ aip = Character(u"Голограмма",       color="#fff8e7", what_color="#fff8e7", what_outlines=otl, what_font=fnt, who_font=fnt) # Искин до представления
+    $ narrator = Character (what_color="#fff8e7", what_font=fnt, who_font=fnt)
 
     define dreamgirl2 = Character(u"ЮВАО", color="#467722", what_color="#f1d076")
     define d1 = Character(u"Девушка 1", what_color="#f1d076")

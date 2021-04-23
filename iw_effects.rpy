@@ -90,7 +90,7 @@ init:
 
 #прогулочный шаг
     transform promenad:
-        align (0.5,0.5)
+        truecenter
         zoom 1.03
         ease 0.3 xalign 0.35 yalign 0.65
         ease 0.3 xalign 0.50 yalign 0.50
@@ -100,10 +100,19 @@ init:
 
 #бег
     transform jogging:
-        align (0.5,0.5)
-        zoom 1.06
-        ease 0.2 xalign 0.35 yalign 0.65
-        ease 0.2 xalign 0.50 yalign 0.50
-        ease 0.2 xalign 0.65 yalign 0.65
-        ease 0.2 xalign 0.50 yalign 0.50
-        repeat
+        truecenter
+        zoom 1.25
+        parallel:
+            ease 0.25 zoom 1.30 rotate 0.75
+            ease 0.20 zoom 1.25 rotate -0.75
+            ease 0.25 zoom 1.30 rotate 0.75
+            ease 0.20 zoom 1.35 rotate -0.75
+            repeat
+        parallel:
+            ease 0.25 xpos 0.495
+            ease 0.20 xpos 0.505
+            repeat
+        parallel:
+            ease 0.25 ypos 0.495
+            ease 0.30 ypos 0.505
+            repeat

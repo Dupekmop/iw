@@ -4,7 +4,7 @@ label iw_dayOne_arriveSemyon:
     $ renpy.pause(12)
     hide text with dissolve2
     $ backdrop = "days"
-    $ new_chapter(1, u"Сокровенное желание: Прибытие")
+    $ new_chapter(1, u"Сокровенное желание:\nПрибытие")
     $ persistent.sprite_time = "day"
     $ day_time()
     
@@ -353,7 +353,7 @@ label iw_dayOne_arriveSemyon:
         repeat
     $ renpy.pause(4, hard=True)
         
-    scene anim prolog_1
+    scene anim prolog_1 at jogging
     stop ambience
     play music music_list["that_s_our_madhouse"]
     
@@ -530,6 +530,7 @@ label iw_dayOne_arriveJoshka:
     window show
     "Лена тем временем подходила всё ближе и становилась всё печальнее."
     me "Лена… Леночка, ты это… ножик положь, пока не поранилась."
+    $ renpy.pause(1, hard=True)
     show un cry_smile with dissolve
     $ renpy.pause(1, hard=True)
     "Но её решимость огорчить меня до невозможности ничуть не поколебалась."
@@ -541,14 +542,25 @@ label iw_dayOne_arriveJoshka:
     window show
 
     play sound_loop sfx_head_heartbeat
+    sv "Я же просто хотел потрогать…"
+    sv "Кстати, а где эта, как её там…"
+    sv "По-моему, самое время ей появиться и спасти меня"
+    sv "Ведь так обычно бывает во второсортном кино, когда главному герою грозит смерть"
+    sv "Или это не тот фильм? Или не фильм? Или я не главный герой?"
+    sv "Мать моя в коньках на босу ногу, какой же бред…"
+    
+    window hide
+    $ renpy.pause(1, hard=True)
+    window show
+    
     un "Не бойся."
     "Успокоила меня Лена и занесла нож для удара."
     
     un "Я как раз недавно смотрела в библиотеке анатомический атлас, и теперь знаю, куда бить, чтобы всё прошло быстро."
     window hide
     $ renpy.pause(1, hard=True)
+    stop music fadeout 3
     play sound sfx_scary_sting
-    stop music
     show un evil_smile
     $ renpy.pause(1, hard=True)
     play ambience ambience_camp_entrance_night fadein 3

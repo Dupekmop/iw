@@ -50,7 +50,7 @@ label iw_test:
     show ai cry lng_pink at fright
     ai "Несмотря на твоё хулиганское поведение, ты пока умудрился разбить мне только сердце."
     show ai serious srt_pink at fright
-    ai "Несмотря на твоё хулиганское поведение, ты пока умудрился разбить мне только сердце. Давай на этом и остановимся.""
+    ai "Несмотря на твоё хулиганское поведение, ты пока умудрился разбить мне только сердце. Давай на этом и остановимся."
     show ai dontlike tai_pink at fright
     pause
     show ai angry1 lng_pink at fright

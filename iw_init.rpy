@@ -13,7 +13,6 @@
     $ jop = Character(u"Пришелец",         color="#e60000", what_color="#fff8e7", what_outlines=otl, what_font=fnt, who_font=fnt) # Йошка до представления
     $ ai = Character(u"Искин",             color="#fff8e7", what_color="#fff8e7", what_outlines=otl, what_font=fnt, who_font=fnt) # Искин
     $ aip = Character(u"Голограмма",       color="#fff8e7", what_color="#fff8e7", what_outlines=otl, what_font=fnt, who_font=fnt) # Искин до представления
-    $ narrator = Character (what_color="#fff8e7", what_font=fnt, who_font=fnt)
 
     define dreamgirl2 = Character(u"ЮВАО", color="#467722", what_color="#f1d076")
     define d1 = Character(u"Девушка 1", what_color="#f1d076")

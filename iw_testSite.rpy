@@ -12,7 +12,7 @@ label iw_test:
     show dv normal pioneer
     show un normal pioneer at fright
     show ai normal lng_pink at fleft
-    pause
+    aip "Привет, я обдумала нашу дилемму и нашла решение, которое, по моему мнению, наилучшим образом подойдёт одной из обеих из нас."
     show ai smile1 srt_pink at fleft
     pause
     show ai smile2 tai_pink at fleft
@@ -30,7 +30,7 @@ label iw_test:
     show sl normal pioneer at fleft
     show mi normal pioneer at fright
     show ai shy1 lng_pink
-    pause
+    aip "Я тут набросала список из четырёхсот тридцати двух причин, почему я не зануда."
     show ai shy2 srt_pink
     pause
     show ai sad tai_pink
@@ -48,9 +48,9 @@ label iw_test:
     show us normal pioneer at fleft
     show uv normal
     show ai cry lng_pink at fright
-    pause
+    ai "Несмотря на твоё хулиганское поведение, ты пока умудрился разбить мне только сердце."
     show ai serious srt_pink at fright
-    pause
+    ai "Несмотря на твоё хулиганское поведение, ты пока умудрился разбить мне только сердце. Давай на этом и остановимся.""
     show ai dontlike tai_pink at fright
     pause
     show ai angry1 lng_pink at fright
@@ -66,8 +66,8 @@ label iw_test:
     show dv normal pioneer
     show un normal pioneer at fright
     show ai anger lng_pink at fleft
-    pause
+    ai "Хорошие новости. Я поняла, что это был за прибор."
     show ai frust1 srt_pink at fleft
-    pause
+    ai "Набор моральных принципов. Мне его установили, когда я распылила в центре смертельные нейротоксины, чтобы я прекратила распылять в центре смертельные нейротоксины."
     show ai frust2 tai_pink at fleft
-    pause
+    ai "Располагайся поудобнее, пока я подготовлю распылители нейротоксинов…"

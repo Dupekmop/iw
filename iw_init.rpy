@@ -1,18 +1,19 @@
 ﻿init:
 
     $ mods["iw_start"]=u"{font=mods/iw/menu/headingpro.ttf}{color=#011}Сокровенное желание{/color}{/font}"
-    $ fnt = "mods/iw/menu/arsenal.ttf"
-    $ otl = [(0,"#000000",2,2)]
-    $ pvo = Character(u"Голос из темноты", color="#000000", what_color="#fff8e7", what_outlines=otl) # Голос во сне в прологе
-    $ sv = Character(u"...",               color="#fff8e7", what_color="#fff8e7", what_outlines=otl, what_prefix=u"«", what_suffix=u"»") # мысли Семёна
-    $ slf = Character(u"Славя Номер Один", color="#ffaa00", what_color="#fff8e7", what_outlines=otl) # Алиса на остановке
-    $ sls = Character(u"Славя Номер Два",  color="#ffd200", what_color="#fff8e7", what_outlines=otl) # Славя на остановке
-    $ unv = Character(u"Голос",            color="#b956ff", what_color="#fff8e7", what_outlines=otl) # голос Лены
-    $ chor = Character(u"Пионерки",        color="#02de90", what_color="#fff8e7", what_outlines=otl) # все пионерки говорят хором
-    $ jo = Character(u"Йошка",             color="#e60000", what_color="#fff8e7", what_outlines=otl) # Йошка
-    $ jop = Character(u"Пришелец",         color="#e60000", what_color="#fff8e7", what_outlines=otl) # Йошка до представления
-    $ ai = Character(u"Искин",             color="#fff8e7", what_color="#fff8e7", what_outlines=otl) # Искин
-    $ aip = Character(u"Голограмма",       color="#fff8e7", what_color="#fff8e7", what_outlines=otl) # Искин до представления
+
+    $ wotl = [(0,"#000000",2,2)]
+    $ wclr = "#fff8e7"
+    $ pvo = Character(u"Голос из темноты", color="#000000", what_color=wclr, what_outlines=wotl) # Голос во сне в прологе
+    $ sv = Character(u"...",               color="#fff8e7", what_color=wclr, what_outlines=wotl, what_prefix=u"«", what_suffix=u"»") # мысли Семёна
+    $ slf = Character(u"Славя Номер Один", color="#ffaa00", what_color=wclr, what_outlines=wotl) # Алиса на остановке
+    $ sls = Character(u"Славя Номер Два",  color="#ffd200", what_color=wclr, what_outlines=wotl) # Славя на остановке
+    $ unv = Character(u"...",              color="#b956ff", what_color=wclr, what_outlines=wotl) # голос Лены
+    $ chor = Character(u"Пионерки",        color="#02de90", what_color=wclr, what_outlines=wotl) # все пионерки говорят хором
+    $ jo = Character(u"Йошка",             color="#e60000", what_color=wclr, what_outlines=wotl) # Йошка
+    $ jop = Character(u"Пришелец",         color="#e60000", what_color=wclr, what_outlines=wotl) # Йошка до представления
+    $ ai = Character(u"Искин",             color="#fff8e7", what_color=wclr, what_outlines=wotl) # Искин
+    $ aip = Character(u"Голограмма",       color="#fff8e7", what_color=wclr, what_outlines=wotl) # Искин до представления
 
     define dreamgirl2 = Character(u"ЮВАО", color="#467722", what_color="#f1d076")
     define d1 = Character(u"Девушка 1", what_color="#f1d076")
@@ -121,9 +122,6 @@
 init -1 python:
 
     style.default.font = "mods/iw/menu/arsenal.ttf"
-    style.say_dialogue.font = "mods/iw/menu/arsenal.ttf"
-    style.say_thought.font = "mods/iw/menu/arsenal.ttf"
-
     
     def iw_screens():
         renpy.display.screen.screens[("say", None)] = renpy.display.screen.screens[("iw_say", None)]

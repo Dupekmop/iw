@@ -122,7 +122,7 @@ label iw_dayOne_arriveSemyon:
     with hpunch
 
     show ja serious with dissolve
-    sls "..."
+    pause
     
     window hide
     play sound sfx_prunk1
@@ -569,4 +569,6 @@ label iw_dayOne_arriveJoshka:
     scene bg black with dissolve2
     stop sound_loop
     pause
+    stop ambience
+    
     jump iw_start

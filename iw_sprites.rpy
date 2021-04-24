@@ -9099,7 +9099,13 @@ init -1000:
         
 #######################################
 #######################################
-#Йошка
+
+#ЙОШКА
+
+    image yo suit = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/yo/yo_suit.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/yo/yo_suit.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/yo/yo_suit.png"))
 
     image yo grin body = ConditionSwitch(
         "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/yo/yo_1_body.png", (0, 0), "mods/iw/sprites/normal/yo/yo_1_grin.png"), im.matrix.tint(0.94, 0.82, 1.0)),

@@ -10,8 +10,8 @@
     $ sls = Character(u"Славя Номер Два",  color="#ffd200", what_color=wclr, what_outlines=wotl) # Славя на остановке
     $ unv = Character(u"...",              color="#b956ff", what_color=wclr, what_outlines=wotl) # голос Лены
     $ chor = Character(u"Пионерки",        color="#02de90", what_color=wclr, what_outlines=wotl) # все пионерки говорят хором
-    $ jo = Character(u"Йошка",             color="#e60000", what_color=wclr, what_outlines=wotl) # Йошка
-    $ jop = Character(u"Пришелец",         color="#e60000", what_color=wclr, what_outlines=wotl) # Йошка до представления
+    $ yo = Character(u"Йошка",             color="#e60000", what_color=wclr, what_outlines=wotl) # Йошка
+    $ yop = Character(u"Пришелец",         color="#e60000", what_color=wclr, what_outlines=wotl) # Йошка до представления
     $ ai = Character(u"Искин",             color="#fff8e7", what_color=wclr, what_outlines=wotl) # Искин
     $ aip = Character(u"Голограмма",       color="#fff8e7", what_color=wclr, what_outlines=wotl) # Искин до представления
 

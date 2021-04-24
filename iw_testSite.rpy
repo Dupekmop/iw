@@ -1,4 +1,4 @@
-label iw_test:
+﻿label iw_test:
     $ prolog_time()
     $ backdrop = "prologue"
     $ new_chapter(0, u"Сокровенное желание:\nТестовый полигон")
@@ -9,11 +9,13 @@ label iw_test:
     
 # ТЕСТИРОВАНИЕ КОДА    
     
-    show dv normal pioneer
+    #show dv normal pioneer
+    show yo cocky2 hati_gadget nude
     show un normal pioneer at fright
     show ai normal lng_pink at fleft
     aip "Привет, я обдумала нашу дилемму и нашла решение, которое, по моему мнению, наилучшим образом подойдёт одной из обеих из нас."
     show ai smile1 srt_pink at fleft
+    show yo bore2 gadget shirt
     pause
     show ai smile2 tai_pink at fleft
     pause

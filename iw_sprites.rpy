@@ -3,277 +3,214 @@ init -1000:
 #ИСКИН
 
     image ai normal lng_pink = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_lng_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_normal.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_lng_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_normal.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_lng_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_normal.png"))
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_lng_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_normal.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_lng_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_normal.png"))
     image ai normal srt_pink = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_srt_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_normal.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_srt_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_normal.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_srt_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_normal.png"))
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_srt_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_normal.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_srt_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_normal.png"))
     image ai normal tai_pink = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_tai_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_normal.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_tai_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_normal.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_tai_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_normal.png"))
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_tai_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_normal.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_tai_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_normal.png"))
 
     image ai smile1 lng_pink = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_lng_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_smile1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_lng_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_smile1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_lng_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_smile1.png"))
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_lng_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_smile1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_lng_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_smile1.png"))
     image ai smile1 srt_pink = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_srt_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_smile1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_srt_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_smile1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_srt_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_smile1.png"))
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_srt_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_smile1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_srt_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_smile1.png"))
     image ai smile1 tai_pink = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_tai_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_smile1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_tai_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_smile1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_tai_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_smile1.png"))
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_tai_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_smile1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_tai_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_smile1.png"))
 
     image ai smile2 lng_pink = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_lng_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_smile2.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_lng_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_smile2.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_lng_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_smile2.png"))
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_lng_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_smile2.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_lng_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_smile2.png"))
     image ai smile2 srt_pink = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_srt_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_smile2.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_srt_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_smile2.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_srt_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_smile2.png"))
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_srt_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_smile2.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_srt_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_smile2.png"))
     image ai smile2 tai_pink = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_tai_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_smile2.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_tai_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_smile2.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_tai_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_smile2.png"))
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_tai_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_smile2.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_tai_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_smile2.png"))
 
     image ai laugh1 lng_pink = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_lng_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_laugh1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_lng_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_laugh1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_lng_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_laugh1.png"))
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_lng_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_laugh1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_lng_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_laugh1.png"))
     image ai laugh1 srt_pink = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_srt_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_laugh1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_srt_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_laugh1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_srt_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_laugh1.png"))
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_srt_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_laugh1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_srt_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_laugh1.png"))
     image ai laugh1 tai_pink = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_tai_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_laugh1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_tai_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_laugh1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_tai_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_laugh1.png"))
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_tai_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_laugh1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_tai_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_laugh1.png"))
 
     image ai laugh2 lng_pink = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_lng_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_laugh2.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_lng_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_laugh2.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_lng_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_laugh2.png"))
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_lng_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_laugh2.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_lng_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_laugh2.png"))
     image ai laugh2 srt_pink = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_srt_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_laugh2.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_srt_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_laugh2.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_srt_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_laugh2.png"))
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_srt_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_laugh2.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_srt_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_laugh2.png"))
     image ai laugh2 tai_pink = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_tai_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_laugh2.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_tai_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_laugh2.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_tai_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_laugh2.png"))
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_tai_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_laugh2.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_tai_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_laugh2.png"))
 
     image ai happy lng_pink = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_lng_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_happy.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_lng_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_happy.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_lng_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_happy.png"))
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_lng_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_happy.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_lng_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_happy.png"))
     image ai happy srt_pink = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_srt_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_happy.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_srt_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_happy.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_srt_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_happy.png"))
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_srt_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_happy.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_srt_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_happy.png"))
     image ai happy tai_pink = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_tai_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_happy.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_tai_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_happy.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_tai_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_happy.png"))
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_tai_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_happy.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_tai_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_happy.png"))
 
     image ai shy1 lng_pink = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_lng_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_shy1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_lng_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_shy1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_lng_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_shy1.png"))
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_lng_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_shy1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_lng_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_shy1.png"))
     image ai shy1 srt_pink = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_srt_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_shy1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_srt_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_shy1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_srt_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_shy1.png"))
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_srt_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_shy1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_srt_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_shy1.png"))
     image ai shy1 tai_pink = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_tai_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_shy1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_tai_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_shy1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_tai_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_shy1.png"))
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_tai_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_shy1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_tai_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_shy1.png"))
 
     image ai shy2 lng_pink = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_lng_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_shy2.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_lng_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_shy2.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_lng_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_shy2.png"))
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_lng_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_shy2.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_lng_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_shy2.png"))
     image ai shy2 srt_pink = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_srt_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_shy2.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_srt_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_shy2.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_srt_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_shy2.png"))
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_srt_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_shy2.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_srt_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_shy2.png"))
     image ai shy2 tai_pink = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_tai_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_shy2.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_tai_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_shy2.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_tai_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_shy2.png"))
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_tai_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_shy2.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_tai_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_shy2.png"))
 
     image ai sad lng_pink = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_lng_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_sad.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_lng_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_sad.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_lng_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_sad.png"))
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_lng_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_sad.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_lng_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_sad.png"))
     image ai sad srt_pink = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_srt_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_sad.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_srt_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_sad.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_srt_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_sad.png"))
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_srt_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_sad.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_srt_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_sad.png"))
     image ai sad tai_pink = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_tai_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_sad.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_tai_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_sad.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_tai_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_sad.png"))
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_tai_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_sad.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_tai_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_sad.png"))
 
     image ai guilty lng_pink = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_lng_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_guilty.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_lng_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_guilty.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_lng_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_guilty.png"))
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_lng_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_guilty.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_lng_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_guilty.png"))
     image ai guilty srt_pink = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_srt_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_guilty.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_srt_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_guilty.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_srt_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_guilty.png"))
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_srt_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_guilty.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_srt_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_guilty.png"))
     image ai guilty tai_pink = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_tai_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_guilty.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_tai_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_guilty.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_tai_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_guilty.png"))
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_tai_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_guilty.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_tai_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_guilty.png"))
 
     image ai surprise lng_pink = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_lng_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_surprise.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_lng_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_surprise.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_lng_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_surprise.png"))
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_lng_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_surprise.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_lng_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_surprise.png"))
     image ai surprise srt_pink = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_srt_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_surprise.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_srt_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_surprise.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_srt_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_surprise.png"))
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_srt_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_surprise.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_srt_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_surprise.png"))
     image ai surprise tai_pink = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_tai_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_surprise.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_tai_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_surprise.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_tai_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_surprise.png"))
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_tai_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_surprise.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_tai_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_surprise.png"))
 
     image ai scary lng_pink = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_lng_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_scary.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_lng_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_scary.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_lng_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_scary.png"))
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_lng_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_scary.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_lng_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_scary.png"))
     image ai scary srt_pink = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_srt_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_scary.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_srt_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_scary.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_srt_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_scary.png"))
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_srt_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_scary.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_srt_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_scary.png"))
     image ai scary tai_pink = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_tai_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_scary.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_tai_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_scary.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_tai_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_scary.png"))
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_tai_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_scary.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_tai_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_scary.png"))
 
     image ai cry lng_pink = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_lng_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_cry.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_lng_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_cry.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_lng_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_cry.png"))
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_lng_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_cry.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_lng_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_cry.png"))
     image ai cry srt_pink = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_srt_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_cry.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_srt_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_cry.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_srt_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_cry.png"))
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_srt_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_cry.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_srt_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_cry.png"))
     image ai cry tai_pink = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_tai_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_cry.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_tai_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_cry.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_tai_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_cry.png"))
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_tai_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_cry.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_tai_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_cry.png"))
 
     image ai serious lng_pink = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_lng_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_serious.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_lng_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_serious.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_lng_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_serious.png"))
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_lng_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_serious.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_lng_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_serious.png"))
     image ai serious srt_pink = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_srt_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_serious.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_srt_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_serious.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_srt_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_serious.png"))
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_srt_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_serious.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_srt_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_serious.png"))
     image ai serious tai_pink = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_tai_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_serious.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_tai_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_serious.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_tai_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_serious.png"))
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_tai_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_serious.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_tai_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_serious.png"))
 
     image ai dontlike lng_pink = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_lng_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_dontlike.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_lng_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_dontlike.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_lng_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_dontlike.png"))
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_lng_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_dontlike.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_lng_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_dontlike.png"))
     image ai dontlike srt_pink = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_srt_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_dontlike.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_srt_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_dontlike.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_srt_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_dontlike.png"))
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_srt_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_dontlike.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_srt_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_dontlike.png"))
     image ai dontlike tai_pink = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_tai_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_dontlike.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_tai_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_dontlike.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_tai_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_dontlike.png"))
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_tai_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_dontlike.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_tai_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_dontlike.png"))
 
     image ai angry1 lng_pink = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_lng_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_angry1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_lng_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_angry1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_lng_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_angry1.png"))
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_lng_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_angry1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_lng_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_angry1.png"))
     image ai angry1 srt_pink = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_srt_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_angry1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_srt_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_angry1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_srt_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_angry1.png"))
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_srt_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_angry1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_srt_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_angry1.png"))
     image ai angry1 tai_pink = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_tai_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_angry1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_tai_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_angry1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_tai_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_angry1.png"))
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_tai_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_angry1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_tai_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_angry1.png"))
 
     image ai angry2 lng_pink = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_lng_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_angry2.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_lng_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_angry2.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_lng_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_angry2.png"))
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_lng_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_angry2.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_lng_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_angry2.png"))
     image ai angry2 srt_pink = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_srt_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_angry2.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_srt_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_angry2.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_srt_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_angry2.png"))
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_srt_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_angry2.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_srt_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_angry2.png"))
     image ai angry2 tai_pink = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_tai_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_angry2.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_tai_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_angry2.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_tai_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_angry2.png"))
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_tai_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_angry2.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_tai_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_angry2.png"))
 
     image ai rage lng_pink = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_lng_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_rage.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_lng_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_rage.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_lng_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_rage.png"))
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_lng_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_rage.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_lng_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_rage.png"))
     image ai rage srt_pink = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_srt_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_rage.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_srt_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_rage.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_srt_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_rage.png"))
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_srt_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_rage.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_srt_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_rage.png"))
     image ai rage tai_pink = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_tai_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_rage.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_tai_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_rage.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_tai_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_rage.png"))
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_tai_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_rage.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_tai_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_rage.png"))
 
     image ai anger lng_pink = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_lng_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_anger.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_lng_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_anger.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_lng_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_anger.png"))
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_lng_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_anger.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_lng_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_anger.png"))
     image ai anger srt_pink = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_srt_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_anger.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_srt_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_anger.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_srt_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_anger.png"))
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_srt_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_anger.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_srt_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_anger.png"))
     image ai anger tai_pink = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_tai_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_anger.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_tai_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_anger.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_tai_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_anger.png"))
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_tai_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_anger.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_tai_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_anger.png"))
 
     image ai frust1 lng_pink = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_lng_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_frust1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_lng_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_frust1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_lng_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_frust1.png"))
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_lng_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_frust1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_lng_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_frust1.png"))
     image ai frust1 srt_pink = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_srt_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_frust1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_srt_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_frust1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_srt_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_frust1.png"))
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_srt_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_frust1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_srt_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_frust1.png"))
     image ai frust1 tai_pink = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_tai_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_frust1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_tai_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_frust1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_tai_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_frust1.png"))
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_tai_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_frust1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_tai_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_frust1.png"))
 
     image ai frust2 lng_pink = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_lng_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_frust2.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_lng_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_frust2.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_lng_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_frust2.png"))
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_lng_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_frust2.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_lng_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_frust2.png"))
     image ai frust2 srt_pink = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_srt_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_frust2.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_srt_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_frust2.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_srt_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_frust2.png"))
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_srt_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_frust2.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_srt_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_frust2.png"))
     image ai frust2 tai_pink = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_tai_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_frust2.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_tai_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_frust2.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/body.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_tai_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_frust2.png"))
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_tai_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_frust2.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        True, im.Composite((900, 1080), (0, 0), "mods/iw/sprites/normal/ai/ai_1_tai_pink.png", (0, 0), "mods/iw/sprites/normal/ai/ai_1_frust2.png"))
 
 #АЛИСОСЛАВЯ
 

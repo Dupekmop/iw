@@ -4,72 +4,197 @@
     $ new_chapter(0, u"Сокровенное желание:\nТестовый полигон")
     $ persistent.sprite_time = "day"
 
-    scene bg ext_camp_entrance_day
+    scene bg int_bus
     "..."
     
 # ТЕСТИРОВАНИЕ КОДА    
     
-    #show dv normal pioneer
-    show yo suit
-    show un normal pioneer at fright
-    show ai normal lng_pink at fleft
-    aip "Привет, я обдумала нашу дилемму и нашла решение, которое, по моему мнению, наилучшим образом подойдёт одной из обеих из нас."
-    show ai smile1 srt_pink at fleft
-    show yo bore2 gadget shirt
+    scene bg ext_camp_entrance_day
+    show ai normal lng_dress
     pause
-    show ai smile2 tai_pink at fleft
+    
+    scene bg ext_stage_normal_day
+    show ai angry1 tai_dress
     pause
-    show ai laugh1 lng_pink at fleft
+    
+    scene bg ext_aidpost_day
+    show ai smile2 srt_dress
     pause
-    show ai laugh2 srt_pink at fleft
+    
+    scene bg ext_beach_day
+    show ai rage lng_kimono
     pause
-    show ai happy tai_pink at fleft
+    
+    scene bg ext_boathouse_day
+    show ai happy tai_kimono
     pause
+    
+    scene bg ext_no_bus
+    show ai normal srt_kimono
+    pause
+    
+    scene bg ext_camp_entrance_day
+    show ai angry1 lng_uniformb
+    pause
+    
+    scene bg ext_dining_hall_away_day
+    show ai smile2 tai_uniformb
+    pause
+    
+    scene bg ext_house_of_mt_day
+    show ai rage srt_uniformb
+    pause
+    
+    scene bg ext_houses_day
+    show ai happy lng_uniformw
+    pause
+    
+    scene bg ext_island_day
+    show ai normal tai_uniformw
+    pause
+    
+    scene bg ext_musclub_day
+    show ai angry1 srt_uniformw
+    pause
+    
+    scene bg ext_path_day
+    show ai smile2 lng_shirt
+    pause
+    
+    scene bg ext_playground_day
+    show ai rage tai_shirt
+    pause
+    
+    scene bg ext_square_day
+    show ai happy srt_shirt
+    pause
+    
+    scene bg ext_washstand_day
+    show ai normal lng_jeans
+    pause
+    
 
     $ persistent.sprite_time = "sunset"
 
     scene bg ext_camp_entrance_sunset
-    show sl normal pioneer at fleft
-    show yo suit at fright
-    show ai shy1 lng_pink
-    aip "Я тут набросала список из четырёхсот тридцати двух причин, почему я не зануда."
-    show ai shy2 srt_pink
+    show ai angry1 tai_jeans
     pause
-    show ai sad tai_pink
+    
+    scene bg ext_beach_sunset
+    show ai smile2 srt_jeans
     pause
-    show ai guilty lng_pink
+    
+    scene bg int_clubs_male_sunset
+    show ai rage lng_xmas
     pause
-    show ai surprise srt_pink
+    
+    scene bg ext_beach_sunset
+    show ai happy tai_xmas
     pause
-    show ai scary tai_pink
+    
+    scene bg ext_dining_hall_away_sunset
+    show ai normal srt_xmas
+    pause
+    
+    scene bg int_dining_hall_sunset
+    show ai angry1 lng_infant1
+    pause
+    
+    scene bg ext_no_bus_sunset
+    show ai smile2 tai_infant1
+    pause
+    
+    scene bg ext_path_sunset
+    show ai rage srt_infant1
+    pause
+    
+    scene bg int_house_of_mt_sunset
+    show ai happy lng_infant2
+    pause
+    
+    scene bg ext_houses_sunset
+    show ai normal tai_infant2
+    pause
+    
+    scene bg ext_square_sunset
+    show ai angry1 srt_infant2
     pause
 
     $ persistent.sprite_time = "night"
 
     scene bg ext_camp_entrance_night
-    show yo suit at fleft
-    show uv normal
-    show ai cry lng_pink at fright
-    ai "Несмотря на твоё хулиганское поведение, ты пока умудрился разбить мне только сердце."
-    show ai serious srt_pink at fright
-    ai "Несмотря на твоё хулиганское поведение, ты пока умудрился разбить мне только сердце. Давай на этом и остановимся."
-    show ai dontlike tai_pink at fright
-    pause
-    show ai angry1 lng_pink at fright
-    pause
-    show ai angry2 srt_pink at fright
-    pause
-    show ai rage tai_pink at fright
+    show ai smile2 lng_pink
     pause
     
-    $ persistent.sprite_time = "day"
+    scene bg ext_aidpost_night
+    show ai rage tai_pink
+    pause
     
-    scene bg ext_camp_entrance_day
-    show dv normal pioneer
-    show un normal pioneer at fright
-    show ai anger lng_pink at fleft
-    ai "Хорошие новости. Я поняла, что это был за прибор."
-    show ai frust1 srt_pink at fleft
-    ai "Набор моральных принципов. Мне его установили, когда я распылила в центре смертельные нейротоксины, чтобы я прекратила распылять в центре смертельные нейротоксины."
-    show ai frust2 tai_pink at fleft
-    ai "Располагайся поудобнее, пока я подготовлю распылители нейротоксинов…"
+    scene bg ext_bathhouse_night
+    show ai happy srt_pink
+    pause
+    
+    scene bg int_aidpost_night
+    show ai normal lng_pink
+    pause
+    
+    scene bg ext_beach_night
+    show ai angry1 tai_pink
+    pause
+    
+    scene bg ext_boathouse_night
+    show ai smile2 srt_pink
+    pause
+    
+    scene bg int_clubs_male2_night_nolight
+    show ai rage lng_pink
+    pause
+    
+    scene bg ext_camp_entrance_night
+    show ai happy tai_pink
+    pause
+    
+    scene bg ext_clubs_night
+    show ai normal srt_pink
+    pause
+    
+    scene bg int_dining_hall_night
+    show ai angry1 lng_pink
+    pause
+    
+    scene bg ext_dining_hall_near_night
+    show ai smile2 tai_pink
+    pause
+    
+    scene bg ext_house_of_dv_night
+    show ai rage srt_pink
+    pause
+    
+    scene bg int_house_of_dv_night
+    show ai happy lng_pink
+    pause
+    
+    scene bg ext_path_night
+    show ai normal tai_pink
+    pause
+    
+    scene bg ext_playground_night
+    show ai angry1 srt_pink
+    pause
+    
+    scene bg int_library_night
+    show ai smile2 lng_pink
+    pause
+    
+    scene bg ext_square_night
+    show ai rage tai_pink
+    pause
+    
+    scene bg ext_stage_big_night
+    show ai happy srt_pink
+    pause
+    
+    scene bg int_old_building_night
+    show ai normal lng_pink
+    "ФСЁ!"
+    

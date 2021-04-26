@@ -11,38 +11,47 @@
     
     scene bg ext_camp_entrance_day
     show ai normal lng_dress
+    show cs sad at fleft
     pause
     
     scene bg ext_stage_normal_day
     show ai angry1 tai_dress
+    show cs sad stethoscope at fleft
     pause
     
     scene bg ext_aidpost_day
     show ai smile2 srt_dress
+    show cs sad glasses at fleft
     pause
     
     scene bg ext_beach_day
     show ai rage lng_kimono
+    show cs sad glas_on at fleft
     pause
     
     scene bg ext_boathouse_day
     show ai happy tai_kimono
+    show cs sad glas_dw at fleft
     pause
     
     scene bg ext_no_bus
     show ai normal srt_kimono
+    show cs sad noshirt at fleft
     pause
     
     scene bg ext_camp_entrance_day
     show ai angry1 lng_uniformb
+    show cs sad noshirt glasses at fleft
     pause
     
     scene bg ext_dining_hall_away_day
     show ai smile2 tai_uniformb
+    show cs sad noshirt glas_on at fleft
     pause
     
     scene bg ext_house_of_mt_day
     show ai rage srt_uniformb
+    show cs sad noshirt glas_dw at fleft
     pause
     
     scene bg ext_houses_day
@@ -78,6 +87,7 @@
 
     scene bg ext_camp_entrance_sunset
     show ai angry1 tai_jeans
+    show cs sad at fleft
     pause
     
     scene bg ext_beach_sunset
@@ -94,6 +104,7 @@
     
     scene bg ext_dining_hall_away_sunset
     show ai normal srt_xmas
+    show cs sad stethoscope at fleft
     pause
     
     scene bg int_dining_hall_sunset
@@ -124,6 +135,7 @@
 
     scene bg ext_camp_entrance_night
     show ai smile2 lng_pink
+    show cs sad at fleft
     pause
     
     scene bg ext_aidpost_night
@@ -148,6 +160,7 @@
     
     scene bg int_clubs_male2_night_nolight
     show ai rage lng_pink
+    show cs sad stethoscope at fleft
     pause
     
     scene bg ext_camp_entrance_night

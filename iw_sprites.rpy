@@ -1,5 +1,1314 @@
 init -1000:
-#Спрайты
+#РАСШИРЕНИЕ ВАНИЛЬНЫХ СПРАЙТОВ
+#ВИОЛА
+
+    image cs angry = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_angry.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_angry.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_angry.png") )
+    image cs angry stethoscope = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_stethoscope.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_angry.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_stethoscope.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_angry.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_stethoscope.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_angry.png") )
+    image cs angry glasses = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_angry.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_angry.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_angry.png"))
+    image cs angry glas_on = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_angry.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_angry.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_angry.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"))
+    image cs angry glas_dw = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_angry.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_angry.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_angry.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"))
+    image cs angry noshirt = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_angry.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_angry.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_angry.png"))
+    image cs angry noshirt glasses = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_angry.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_angry.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_angry.png"))
+    image cs angry noshirt glas_on = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_angry.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_angry.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_angry.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"))
+    image cs angry noshirt glas_dw = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_angry.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_angry.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_angry.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"))
+    image cs cry = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_cry.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_cry.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_cry.png") )
+    image cs cry stethoscope = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_stethoscope.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_cry.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_stethoscope.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_cry.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_stethoscope.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_cry.png") )
+    image cs cry glasses = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_cry.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_cry.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_cry.png"))
+    image cs cry glas_on = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_cry.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_cry.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_cry.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"))
+    image cs cry glas_dw = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_cry.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_cry.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_cry.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"))
+    image cs cry noshirt = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_cry.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_cry.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_cry.png"))
+    image cs cry noshirt glasses = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_cry.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_cry.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_cry.png"))
+    image cs cry noshirt glas_on = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_cry.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_cry.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_cry.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"))
+    image cs cry noshirt glas_dw = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_cry.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_cry.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_cry.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"))
+    image cs dontlike = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_dontlike.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_dontlike.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_dontlike.png") )
+    image cs dontlike stethoscope = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_stethoscope.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_dontlike.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_stethoscope.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_dontlike.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_stethoscope.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_dontlike.png") )
+    image cs dontlike glasses = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_dontlike.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_dontlike.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_dontlike.png"))
+    image cs dontlike glas_on = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_dontlike.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_dontlike.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_dontlike.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"))
+    image cs dontlike glas_dw = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_dontlike.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_dontlike.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_dontlike.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"))
+    image cs dontlike noshirt = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_dontlike.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_dontlike.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_dontlike.png"))
+    image cs dontlike noshirt glasses = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_dontlike.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_dontlike.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_dontlike.png"))
+    image cs dontlike noshirt glas_on = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_dontlike.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_dontlike.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_dontlike.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"))
+    image cs dontlike noshirt glas_dw = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_dontlike.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_dontlike.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_dontlike.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"))
+    image cs doubt = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_doubt.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_doubt.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_doubt.png") )
+    image cs doubt stethoscope = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_stethoscope.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_doubt.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_stethoscope.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_doubt.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_stethoscope.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_doubt.png") )
+    image cs doubt glasses = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_doubt.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_doubt.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_doubt.png"))
+    image cs doubt glas_on = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_doubt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_doubt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_doubt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"))
+    image cs doubt glas_dw = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_doubt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_doubt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_doubt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"))
+    image cs doubt noshirt = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_doubt.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_doubt.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_doubt.png"))
+    image cs doubt noshirt glasses = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_doubt.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_doubt.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_doubt.png"))
+    image cs doubt noshirt glas_on = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_doubt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_doubt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_doubt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"))
+    image cs doubt noshirt glas_dw = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_doubt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_doubt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_doubt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"))
+    image cs fear = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_fear.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_fear.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_fear.png") )
+    image cs fear stethoscope = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_stethoscope.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_fear.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_stethoscope.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_fear.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_stethoscope.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_fear.png") )
+    image cs fear glasses = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_fear.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_fear.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_fear.png"))
+    image cs fear glas_on = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_fear.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_fear.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_fear.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"))
+    image cs fear glas_dw = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_fear.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_fear.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_fear.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"))
+    image cs fear noshirt = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_fear.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_fear.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_fear.png"))
+    image cs fear noshirt glasses = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_fear.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_fear.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_fear.png"))
+    image cs fear noshirt glas_on = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_fear.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_fear.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_fear.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"))
+    image cs fear noshirt glas_dw = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_fear.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_fear.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_fear.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"))
+    image cs grin = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_grin.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_grin.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_grin.png") )
+    image cs grin stethoscope = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_stethoscope.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_grin.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_stethoscope.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_grin.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_stethoscope.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_grin.png") )
+    image cs grin glasses = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_grin.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_grin.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_grin.png"))
+    image cs grin glas_on = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_grin.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_grin.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_grin.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"))
+    image cs grin glas_dw = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_grin.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_grin.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_grin.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"))
+    image cs grin noshirt = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_grin.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_grin.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_grin.png"))
+    image cs grin noshirt glasses = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_grin.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_grin.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_grin.png"))
+    image cs grin noshirt glas_on = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_grin.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_grin.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_grin.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"))
+    image cs grin noshirt glas_dw = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_grin.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_grin.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_grin.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"))
+    image cs laugh = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_laugh.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_laugh.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_laugh.png") )
+    image cs laugh stethoscope = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_stethoscope.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_laugh.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_stethoscope.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_laugh.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_stethoscope.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_laugh.png") )
+    image cs laugh glasses = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_laugh.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_laugh.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_laugh.png"))
+    image cs laugh glas_on = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_laugh.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_laugh.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_laugh.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"))
+    image cs laugh glas_dw = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_laugh.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_laugh.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_laugh.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"))
+    image cs laugh noshirt = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_laugh.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_laugh.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_laugh.png"))
+    image cs laugh noshirt glasses = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_laugh.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_laugh.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_laugh.png"))
+    image cs laugh noshirt glas_on = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_laugh.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_laugh.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_laugh.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"))
+    image cs laugh noshirt glas_dw = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_laugh.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_laugh.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_laugh.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"))
+    image cs rage = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_rage.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_rage.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_rage.png") )
+    image cs rage stethoscope = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_stethoscope.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_rage.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_stethoscope.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_rage.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_stethoscope.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_rage.png") )
+    image cs rage glasses = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_rage.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_rage.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_rage.png"))
+    image cs rage glas_on = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_rage.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_rage.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_rage.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"))
+    image cs rage glas_dw = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_rage.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_rage.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_rage.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"))
+    image cs rage noshirt = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_rage.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_rage.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_rage.png"))
+    image cs rage noshirt glasses = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_rage.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_rage.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_rage.png"))
+    image cs rage noshirt glas_on = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_rage.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_rage.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_rage.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"))
+    image cs rage noshirt glas_dw = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_rage.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_rage.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_rage.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"))
+    image cs sad = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_sad.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_sad.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_sad.png") )
+    image cs sad stethoscope = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_stethoscope.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_sad.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_stethoscope.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_sad.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_stethoscope.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_sad.png") )
+    image cs sad glasses = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_sad.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_sad.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_sad.png"))
+    image cs sad glas_on = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_sad.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_sad.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_sad.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"))
+    image cs sad glas_dw = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_sad.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_sad.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_sad.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"))
+    image cs sad noshirt = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_sad.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_sad.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_sad.png"))
+    image cs sad noshirt glasses = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_sad.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_sad.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_sad.png"))
+    image cs sad noshirt glas_on = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_sad.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_sad.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_sad.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"))
+    image cs sad noshirt glas_dw = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_sad.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_sad.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_sad.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"))
+    image cs serious = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_serious.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_serious.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_serious.png") )
+    image cs serious stethoscope = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_stethoscope.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_serious.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_stethoscope.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_serious.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_stethoscope.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_serious.png") )
+    image cs serious glasses = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_serious.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_serious.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_serious.png"))
+    image cs serious glas_on = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_serious.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_serious.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_serious.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"))
+    image cs serious glas_dw = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_serious.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_serious.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_serious.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"))
+    image cs serious noshirt = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_serious.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_serious.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_serious.png"))
+    image cs serious noshirt glasses = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_serious.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_serious.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_serious.png"))
+    image cs serious noshirt glas_on = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_serious.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_serious.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_serious.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"))
+    image cs serious noshirt glas_dw = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_serious.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_serious.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_serious.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"))
+    image cs tired = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_tired.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_tired.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_tired.png") )
+    image cs tired stethoscope = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_stethoscope.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_tired.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_stethoscope.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_tired.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_stethoscope.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_tired.png") )
+    image cs tired glasses = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_tired.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_tired.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_tired.png"))
+    image cs tired glas_on = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_tired.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_tired.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_tired.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"))
+    image cs tired glas_dw = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_tired.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_tired.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_tired.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"))
+    image cs tired noshirt = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_tired.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_tired.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_tired.png"))
+    image cs tired noshirt glasses = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_tired.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_tired.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_tired.png"))
+    image cs tired noshirt glas_on = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_tired.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_tired.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_tired.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"))
+    image cs tired noshirt glas_dw = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_tired.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_tired.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_tired.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"))
+    image cs upset = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_upset.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_upset.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_upset.png") )
+    image cs upset stethoscope = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_stethoscope.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_upset.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_stethoscope.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_upset.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_stethoscope.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_upset.png") )
+    image cs upset glasses = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_upset.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_upset.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_upset.png"))
+    image cs upset glas_on = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_upset.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_upset.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_upset.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"))
+    image cs upset glas_dw = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_upset.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_upset.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_upset.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"))
+    image cs upset noshirt = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_upset.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_upset.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_upset.png"))
+    image cs upset noshirt glasses = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_upset.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_upset.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_upset.png"))
+    image cs upset noshirt glas_on = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_upset.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_upset.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_upset.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"))
+    image cs upset noshirt glas_dw = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_upset.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_upset.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_upset.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"))
+    image cs dontlike far = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_dontlike.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_dontlike.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_dontlike.png") )
+    image cs dontlike stethoscope far = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "images/sprites/far/cs/cs_1_stethoscope.png",(0,0), "mods/iw/sprites/far/cs/cs_1_dontlike.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "images/sprites/far/cs/cs_1_stethoscope.png",(0,0), "mods/iw/sprites/far/cs/cs_1_dontlike.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "images/sprites/far/cs/cs_1_stethoscope.png",(0,0), "mods/iw/sprites/far/cs/cs_1_dontlike.png") )
+    image cs dontlike glasses far = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "images/sprites/far/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/far/cs/cs_1_dontlike.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "images/sprites/far/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/far/cs/cs_1_dontlike.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "images/sprites/far/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/far/cs/cs_1_dontlike.png"))
+    image cs dontlike glas_on far = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_dontlike.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_on.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_dontlike.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_on.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_dontlike.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_on.png"))
+    image cs dontlike glas_dw far = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_dontlike.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_dw.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_dontlike.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_dw.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_dontlike.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_dw.png"))
+    image cs dontlike noshirt far = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/far/cs/cs_1_dontlike.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/far/cs/cs_1_dontlike.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/far/cs/cs_1_dontlike.png"))
+    image cs dontlike noshirt glasses far = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "images/sprites/far/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/far/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/far/cs/cs_1_dontlike.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "images/sprites/far/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/far/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/far/cs/cs_1_dontlike.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "images/sprites/far/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/far/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/far/cs/cs_1_dontlike.png"))
+    image cs dontlike noshirt glas_on far = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/far/cs/cs_1_dontlike.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_on.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/far/cs/cs_1_dontlike.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_on.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/far/cs/cs_1_dontlike.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_on.png"))
+    image cs dontlike noshirt glas_dw far = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/far/cs/cs_1_dontlike.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_dw.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/far/cs/cs_1_dontlike.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_dw.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/far/cs/cs_1_dontlike.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_dw.png"))
+    image cs doubt far = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_doubt.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_doubt.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_doubt.png") )
+    image cs doubt stethoscope far = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "images/sprites/far/cs/cs_1_stethoscope.png",(0,0), "mods/iw/sprites/far/cs/cs_1_doubt.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "images/sprites/far/cs/cs_1_stethoscope.png",(0,0), "mods/iw/sprites/far/cs/cs_1_doubt.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "images/sprites/far/cs/cs_1_stethoscope.png",(0,0), "mods/iw/sprites/far/cs/cs_1_doubt.png") )
+    image cs doubt glasses far = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "images/sprites/far/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/far/cs/cs_1_doubt.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "images/sprites/far/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/far/cs/cs_1_doubt.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "images/sprites/far/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/far/cs/cs_1_doubt.png"))
+    image cs doubt glas_on far = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_doubt.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_on.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_doubt.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_on.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_doubt.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_on.png"))
+    image cs doubt glas_dw far = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_doubt.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_dw.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_doubt.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_dw.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_doubt.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_dw.png"))
+    image cs doubt noshirt far = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/far/cs/cs_1_doubt.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/far/cs/cs_1_doubt.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/far/cs/cs_1_doubt.png"))
+    image cs doubt noshirt glasses far = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "images/sprites/far/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/far/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/far/cs/cs_1_doubt.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "images/sprites/far/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/far/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/far/cs/cs_1_doubt.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "images/sprites/far/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/far/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/far/cs/cs_1_doubt.png"))
+    image cs doubt noshirt glas_on far = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/far/cs/cs_1_doubt.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_on.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/far/cs/cs_1_doubt.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_on.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/far/cs/cs_1_doubt.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_on.png"))
+    image cs doubt noshirt glas_dw far = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/far/cs/cs_1_doubt.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_dw.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/far/cs/cs_1_doubt.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_dw.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/far/cs/cs_1_doubt.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_dw.png"))
+    image cs fear far = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_fear.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_fear.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_fear.png") )
+    image cs fear stethoscope far = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "images/sprites/far/cs/cs_1_stethoscope.png",(0,0), "mods/iw/sprites/far/cs/cs_1_fear.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "images/sprites/far/cs/cs_1_stethoscope.png",(0,0), "mods/iw/sprites/far/cs/cs_1_fear.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "images/sprites/far/cs/cs_1_stethoscope.png",(0,0), "mods/iw/sprites/far/cs/cs_1_fear.png") )
+    image cs fear glasses far = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "images/sprites/far/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/far/cs/cs_1_fear.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "images/sprites/far/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/far/cs/cs_1_fear.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "images/sprites/far/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/far/cs/cs_1_fear.png"))
+    image cs fear glas_on far = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_fear.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_on.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_fear.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_on.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_fear.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_on.png"))
+    image cs fear glas_dw far = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_fear.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_dw.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_fear.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_dw.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_fear.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_dw.png"))
+    image cs fear noshirt far = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/far/cs/cs_1_fear.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/far/cs/cs_1_fear.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/far/cs/cs_1_fear.png"))
+    image cs fear noshirt glasses far = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "images/sprites/far/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/far/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/far/cs/cs_1_fear.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "images/sprites/far/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/far/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/far/cs/cs_1_fear.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "images/sprites/far/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/far/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/far/cs/cs_1_fear.png"))
+    image cs fear noshirt glas_on far = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/far/cs/cs_1_fear.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_on.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/far/cs/cs_1_fear.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_on.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/far/cs/cs_1_fear.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_on.png"))
+    image cs fear noshirt glas_dw far = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/far/cs/cs_1_fear.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_dw.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/far/cs/cs_1_fear.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_dw.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/far/cs/cs_1_fear.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_dw.png"))
+    image cs laugh far = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_laugh.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_laugh.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_laugh.png") )
+    image cs laugh stethoscope far = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "images/sprites/far/cs/cs_1_stethoscope.png",(0,0), "mods/iw/sprites/far/cs/cs_1_laugh.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "images/sprites/far/cs/cs_1_stethoscope.png",(0,0), "mods/iw/sprites/far/cs/cs_1_laugh.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "images/sprites/far/cs/cs_1_stethoscope.png",(0,0), "mods/iw/sprites/far/cs/cs_1_laugh.png") )
+    image cs laugh glasses far = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "images/sprites/far/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/far/cs/cs_1_laugh.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "images/sprites/far/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/far/cs/cs_1_laugh.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "images/sprites/far/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/far/cs/cs_1_laugh.png"))
+    image cs laugh glas_on far = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_laugh.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_on.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_laugh.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_on.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_laugh.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_on.png"))
+    image cs laugh glas_dw far = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_laugh.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_dw.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_laugh.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_dw.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_laugh.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_dw.png"))
+    image cs laugh noshirt far = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/far/cs/cs_1_laugh.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/far/cs/cs_1_laugh.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/far/cs/cs_1_laugh.png"))
+    image cs laugh noshirt glasses far = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "images/sprites/far/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/far/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/far/cs/cs_1_laugh.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "images/sprites/far/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/far/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/far/cs/cs_1_laugh.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "images/sprites/far/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/far/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/far/cs/cs_1_laugh.png"))
+    image cs laugh noshirt glas_on far = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/far/cs/cs_1_laugh.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_on.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/far/cs/cs_1_laugh.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_on.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/far/cs/cs_1_laugh.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_on.png"))
+    image cs laugh noshirt glas_dw far = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/far/cs/cs_1_laugh.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_dw.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/far/cs/cs_1_laugh.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_dw.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/far/cs/cs_1_laugh.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_dw.png"))
+    image cs sad far = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_sad.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_sad.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_sad.png") )
+    image cs sad stethoscope far = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "images/sprites/far/cs/cs_1_stethoscope.png",(0,0), "mods/iw/sprites/far/cs/cs_1_sad.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "images/sprites/far/cs/cs_1_stethoscope.png",(0,0), "mods/iw/sprites/far/cs/cs_1_sad.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "images/sprites/far/cs/cs_1_stethoscope.png",(0,0), "mods/iw/sprites/far/cs/cs_1_sad.png") )
+    image cs sad glasses far = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "images/sprites/far/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/far/cs/cs_1_sad.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "images/sprites/far/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/far/cs/cs_1_sad.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "images/sprites/far/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/far/cs/cs_1_sad.png"))
+    image cs sad glas_on far = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_sad.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_on.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_sad.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_on.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_sad.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_on.png"))
+    image cs sad glas_dw far = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_sad.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_dw.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_sad.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_dw.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_sad.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_dw.png"))
+    image cs sad noshirt far = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/far/cs/cs_1_sad.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/far/cs/cs_1_sad.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/far/cs/cs_1_sad.png"))
+    image cs sad noshirt glasses far = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "images/sprites/far/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/far/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/far/cs/cs_1_sad.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "images/sprites/far/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/far/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/far/cs/cs_1_sad.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "images/sprites/far/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/far/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/far/cs/cs_1_sad.png"))
+    image cs sad noshirt glas_on far = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/far/cs/cs_1_sad.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_on.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/far/cs/cs_1_sad.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_on.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/far/cs/cs_1_sad.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_on.png"))
+    image cs sad noshirt glas_dw far = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/far/cs/cs_1_sad.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_dw.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/far/cs/cs_1_sad.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_dw.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/far/cs/cs_1_sad.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_dw.png"))
+    image cs sad close = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((1100,1080), (0,0), "images/sprites/close/cs/cs_1_body.png",(0,0), "mods/iw/sprites/close/cs/cs_1_sad.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((1100,1080), (0,0), "images/sprites/close/cs/cs_1_body.png",(0,0), "mods/iw/sprites/close/cs/cs_1_sad.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((1100,1080), (0,0), "images/sprites/close/cs/cs_1_body.png",(0,0), "mods/iw/sprites/close/cs/cs_1_sad.png") )
+    image cs sad stethoscope close = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((1100,1080), (0,0), "images/sprites/close/cs/cs_1_body.png",(0,0), "images/sprites/close/cs/cs_1_stethoscope.png",(0,0), "mods/iw/sprites/close/cs/cs_1_sad.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((1100,1080), (0,0), "images/sprites/close/cs/cs_1_body.png",(0,0), "images/sprites/close/cs/cs_1_stethoscope.png",(0,0), "mods/iw/sprites/close/cs/cs_1_sad.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((1100,1080), (0,0), "images/sprites/close/cs/cs_1_body.png",(0,0), "images/sprites/close/cs/cs_1_stethoscope.png",(0,0), "mods/iw/sprites/close/cs/cs_1_sad.png") )
+    image cs sad glasses close = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((1100,1080), (0,0), "images/sprites/close/cs/cs_1_body.png",(0,0), "images/sprites/close/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/close/cs/cs_1_sad.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((1100,1080), (0,0), "images/sprites/close/cs/cs_1_body.png",(0,0), "images/sprites/close/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/close/cs/cs_1_sad.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((1100,1080), (0,0), "images/sprites/close/cs/cs_1_body.png",(0,0), "images/sprites/close/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/close/cs/cs_1_sad.png"))
+    image cs sad glas_on close = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((1100,1080), (0,0), "images/sprites/close/cs/cs_1_body.png",(0,0), "mods/iw/sprites/close/cs/cs_1_sad.png",(0,0), "mods/iw/sprites/close/cs/cs_1_glas_on.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((1100,1080), (0,0), "images/sprites/close/cs/cs_1_body.png",(0,0), "mods/iw/sprites/close/cs/cs_1_sad.png",(0,0), "mods/iw/sprites/close/cs/cs_1_glas_on.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((1100,1080), (0,0), "images/sprites/close/cs/cs_1_body.png",(0,0), "mods/iw/sprites/close/cs/cs_1_sad.png",(0,0), "mods/iw/sprites/close/cs/cs_1_glas_on.png"))
+    image cs sad glas_dw close = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((1100,1080), (0,0), "images/sprites/close/cs/cs_1_body.png",(0,0), "mods/iw/sprites/close/cs/cs_1_sad.png",(0,0), "mods/iw/sprites/close/cs/cs_1_glas_dw.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((1100,1080), (0,0), "images/sprites/close/cs/cs_1_body.png",(0,0), "mods/iw/sprites/close/cs/cs_1_sad.png",(0,0), "mods/iw/sprites/close/cs/cs_1_glas_dw.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((1100,1080), (0,0), "images/sprites/close/cs/cs_1_body.png",(0,0), "mods/iw/sprites/close/cs/cs_1_sad.png",(0,0), "mods/iw/sprites/close/cs/cs_1_glas_dw.png"))
+    image cs sad noshirt close = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((1100,1080), (0,0), "images/sprites/close/cs/cs_1_body.png",(0,0), "mods/iw/sprites/close/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/close/cs/cs_1_sad.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((1100,1080), (0,0), "images/sprites/close/cs/cs_1_body.png",(0,0), "mods/iw/sprites/close/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/close/cs/cs_1_sad.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((1100,1080), (0,0), "images/sprites/close/cs/cs_1_body.png",(0,0), "mods/iw/sprites/close/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/close/cs/cs_1_sad.png"))
+    image cs sad noshirt glasses close = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((1100,1080), (0,0), "images/sprites/close/cs/cs_1_body.png",(0,0), "images/sprites/close/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/close/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/close/cs/cs_1_sad.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((1100,1080), (0,0), "images/sprites/close/cs/cs_1_body.png",(0,0), "images/sprites/close/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/close/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/close/cs/cs_1_sad.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((1100,1080), (0,0), "images/sprites/close/cs/cs_1_body.png",(0,0), "images/sprites/close/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/close/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/close/cs/cs_1_sad.png"))
+    image cs sad noshirt glas_on close = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((1100,1080), (0,0), "images/sprites/close/cs/cs_1_body.png",(0,0), "mods/iw/sprites/close/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/close/cs/cs_1_sad.png",(0,0), "mods/iw/sprites/close/cs/cs_1_glas_on.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((1100,1080), (0,0), "images/sprites/close/cs/cs_1_body.png",(0,0), "mods/iw/sprites/close/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/close/cs/cs_1_sad.png",(0,0), "mods/iw/sprites/close/cs/cs_1_glas_on.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((1100,1080), (0,0), "images/sprites/close/cs/cs_1_body.png",(0,0), "mods/iw/sprites/close/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/close/cs/cs_1_sad.png",(0,0), "mods/iw/sprites/close/cs/cs_1_glas_on.png"))
+    image cs sad noshirt glas_dw close = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((1100,1080), (0,0), "images/sprites/close/cs/cs_1_body.png",(0,0), "mods/iw/sprites/close/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/close/cs/cs_1_sad.png",(0,0), "mods/iw/sprites/close/cs/cs_1_glas_dw.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((1100,1080), (0,0), "images/sprites/close/cs/cs_1_body.png",(0,0), "mods/iw/sprites/close/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/close/cs/cs_1_sad.png",(0,0), "mods/iw/sprites/close/cs/cs_1_glas_dw.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((1100,1080), (0,0), "images/sprites/close/cs/cs_1_body.png",(0,0), "mods/iw/sprites/close/cs/cs_1_noshirt.png",(0,0), "mods/iw/sprites/close/cs/cs_1_sad.png",(0,0), "mods/iw/sprites/close/cs/cs_1_glas_dw.png"))
+
+#ВИОЛА новые аксессуары для старых эмоций
+
+    image cs normal glas_on = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_normal.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_normal.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_normal.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"))
+    image cs normal glas_dw = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_normal.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_normal.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_normal.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"))
+    image cs normal noshirt = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "images/sprites/normal/cs/cs_1_normal.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "images/sprites/normal/cs/cs_1_normal.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "images/sprites/normal/cs/cs_1_normal.png"))
+    image cs normal noshirt glasses = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "images/sprites/normal/cs/cs_1_normal.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "images/sprites/normal/cs/cs_1_normal.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "images/sprites/normal/cs/cs_1_normal.png"))
+    image cs normal noshirt glas_on = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "images/sprites/normal/cs/cs_1_normal.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "images/sprites/normal/cs/cs_1_normal.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "images/sprites/normal/cs/cs_1_normal.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"))
+    image cs normal noshirt glas_dw = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "images/sprites/normal/cs/cs_1_normal.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "images/sprites/normal/cs/cs_1_normal.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "images/sprites/normal/cs/cs_1_normal.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"))
+    image cs shy glas_on = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_shy.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_shy.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_shy.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"))
+    image cs shy glas_dw = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_shy.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_shy.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_shy.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"))
+    image cs shy noshirt = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "images/sprites/normal/cs/cs_1_shy.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "images/sprites/normal/cs/cs_1_shy.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "images/sprites/normal/cs/cs_1_shy.png"))
+    image cs shy noshirt glasses = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "images/sprites/normal/cs/cs_1_shy.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "images/sprites/normal/cs/cs_1_shy.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "images/sprites/normal/cs/cs_1_shy.png"))
+    image cs shy noshirt glas_on = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "images/sprites/normal/cs/cs_1_shy.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "images/sprites/normal/cs/cs_1_shy.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "images/sprites/normal/cs/cs_1_shy.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"))
+    image cs shy noshirt glas_dw = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "images/sprites/normal/cs/cs_1_shy.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "images/sprites/normal/cs/cs_1_shy.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "images/sprites/normal/cs/cs_1_shy.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"))
+    image cs smile glas_on = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_smile.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_smile.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_smile.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"))
+    image cs smile glas_dw = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_smile.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_smile.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_smile.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"))
+    image cs smile noshirt = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "images/sprites/normal/cs/cs_1_smile.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "images/sprites/normal/cs/cs_1_smile.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "images/sprites/normal/cs/cs_1_smile.png"))
+    image cs smile noshirt glasses = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "images/sprites/normal/cs/cs_1_smile.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "images/sprites/normal/cs/cs_1_smile.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "images/sprites/normal/cs/cs_1_smile.png"))
+    image cs smile noshirt glas_on = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "images/sprites/normal/cs/cs_1_smile.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "images/sprites/normal/cs/cs_1_smile.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "images/sprites/normal/cs/cs_1_smile.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"))
+    image cs smile noshirt glas_dw = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "images/sprites/normal/cs/cs_1_smile.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "images/sprites/normal/cs/cs_1_smile.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "images/sprites/normal/cs/cs_1_body.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_noshirt.png",(0,0), "images/sprites/normal/cs/cs_1_smile.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"))
+    image cs normal glas_on far = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "images/sprites/far/cs/cs_1_normal.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_on.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "images/sprites/far/cs/cs_1_normal.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_on.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "images/sprites/far/cs/cs_1_normal.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_on.png"))
+    image cs normal glas_dw far = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "images/sprites/far/cs/cs_1_normal.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_dw.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "images/sprites/far/cs/cs_1_normal.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_dw.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "images/sprites/far/cs/cs_1_normal.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_dw.png"))
+    image cs normal noshirt far = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_noshirt.png",(0,0), "images/sprites/far/cs/cs_1_normal.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_noshirt.png",(0,0), "images/sprites/far/cs/cs_1_normal.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_noshirt.png",(0,0), "images/sprites/far/cs/cs_1_normal.png"))
+    image cs normal noshirt glasses far = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "images/sprites/far/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/far/cs/cs_1_noshirt.png",(0,0), "images/sprites/far/cs/cs_1_normal.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "images/sprites/far/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/far/cs/cs_1_noshirt.png",(0,0), "images/sprites/far/cs/cs_1_normal.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "images/sprites/far/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/far/cs/cs_1_noshirt.png",(0,0), "images/sprites/far/cs/cs_1_normal.png"))
+    image cs normal noshirt glas_on far = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_noshirt.png",(0,0), "images/sprites/far/cs/cs_1_normal.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_on.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_noshirt.png",(0,0), "images/sprites/far/cs/cs_1_normal.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_on.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_noshirt.png",(0,0), "images/sprites/far/cs/cs_1_normal.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_on.png"))
+    image cs normal noshirt glas_dw far = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_noshirt.png",(0,0), "images/sprites/far/cs/cs_1_normal.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_dw.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_noshirt.png",(0,0), "images/sprites/far/cs/cs_1_normal.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_dw.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_noshirt.png",(0,0), "images/sprites/far/cs/cs_1_normal.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_dw.png"))
+    image cs shy glas_on far = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "images/sprites/far/cs/cs_1_shy.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_on.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "images/sprites/far/cs/cs_1_shy.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_on.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "images/sprites/far/cs/cs_1_shy.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_on.png"))
+    image cs shy glas_dw far = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "images/sprites/far/cs/cs_1_shy.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_dw.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "images/sprites/far/cs/cs_1_shy.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_dw.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "images/sprites/far/cs/cs_1_shy.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_dw.png"))
+    image cs shy noshirt far = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_noshirt.png",(0,0), "images/sprites/far/cs/cs_1_shy.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_noshirt.png",(0,0), "images/sprites/far/cs/cs_1_shy.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_noshirt.png",(0,0), "images/sprites/far/cs/cs_1_shy.png"))
+    image cs shy noshirt glasses far = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "images/sprites/far/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/far/cs/cs_1_noshirt.png",(0,0), "images/sprites/far/cs/cs_1_shy.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "images/sprites/far/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/far/cs/cs_1_noshirt.png",(0,0), "images/sprites/far/cs/cs_1_shy.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "images/sprites/far/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/far/cs/cs_1_noshirt.png",(0,0), "images/sprites/far/cs/cs_1_shy.png"))
+    image cs shy noshirt glas_on far = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_noshirt.png",(0,0), "images/sprites/far/cs/cs_1_shy.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_on.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_noshirt.png",(0,0), "images/sprites/far/cs/cs_1_shy.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_on.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_noshirt.png",(0,0), "images/sprites/far/cs/cs_1_shy.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_on.png"))
+    image cs shy noshirt glas_dw far = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_noshirt.png",(0,0), "images/sprites/far/cs/cs_1_shy.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_dw.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_noshirt.png",(0,0), "images/sprites/far/cs/cs_1_shy.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_dw.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_noshirt.png",(0,0), "images/sprites/far/cs/cs_1_shy.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_dw.png"))
+    image cs smile glas_on far = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "images/sprites/far/cs/cs_1_smile.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_on.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "images/sprites/far/cs/cs_1_smile.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_on.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "images/sprites/far/cs/cs_1_smile.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_on.png"))
+    image cs smile glas_dw far = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "images/sprites/far/cs/cs_1_smile.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_dw.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "images/sprites/far/cs/cs_1_smile.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_dw.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "images/sprites/far/cs/cs_1_smile.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_dw.png"))
+    image cs smile noshirt far = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_noshirt.png",(0,0), "images/sprites/far/cs/cs_1_smile.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_noshirt.png",(0,0), "images/sprites/far/cs/cs_1_smile.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_noshirt.png",(0,0), "images/sprites/far/cs/cs_1_smile.png"))
+    image cs smile noshirt glasses far = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "images/sprites/far/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/far/cs/cs_1_noshirt.png",(0,0), "images/sprites/far/cs/cs_1_smile.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "images/sprites/far/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/far/cs/cs_1_noshirt.png",(0,0), "images/sprites/far/cs/cs_1_smile.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "images/sprites/far/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/far/cs/cs_1_noshirt.png",(0,0), "images/sprites/far/cs/cs_1_smile.png"))
+    image cs smile noshirt glas_on far = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_noshirt.png",(0,0), "images/sprites/far/cs/cs_1_smile.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_on.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_noshirt.png",(0,0), "images/sprites/far/cs/cs_1_smile.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_on.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_noshirt.png",(0,0), "images/sprites/far/cs/cs_1_smile.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_on.png"))
+    image cs smile noshirt glas_dw far = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_noshirt.png",(0,0), "images/sprites/far/cs/cs_1_smile.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_dw.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_noshirt.png",(0,0), "images/sprites/far/cs/cs_1_smile.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_dw.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((675,1080), (0,0), "images/sprites/far/cs/cs_1_body.png",(0,0), "mods/iw/sprites/far/cs/cs_1_noshirt.png",(0,0), "images/sprites/far/cs/cs_1_smile.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_dw.png"))
+    image cs normal glas_on close = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((1100,1080), (0,0), "images/sprites/close/cs/cs_1_body.png",(0,0), "images/sprites/close/cs/cs_1_normal.png",(0,0), "mods/iw/sprites/close/cs/cs_1_glas_on.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((1100,1080), (0,0), "images/sprites/close/cs/cs_1_body.png",(0,0), "images/sprites/close/cs/cs_1_normal.png",(0,0), "mods/iw/sprites/close/cs/cs_1_glas_on.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((1100,1080), (0,0), "images/sprites/close/cs/cs_1_body.png",(0,0), "images/sprites/close/cs/cs_1_normal.png",(0,0), "mods/iw/sprites/close/cs/cs_1_glas_on.png"))
+    image cs normal glas_dw close = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((1100,1080), (0,0), "images/sprites/close/cs/cs_1_body.png",(0,0), "images/sprites/close/cs/cs_1_normal.png",(0,0), "mods/iw/sprites/close/cs/cs_1_glas_dw.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((1100,1080), (0,0), "images/sprites/close/cs/cs_1_body.png",(0,0), "images/sprites/close/cs/cs_1_normal.png",(0,0), "mods/iw/sprites/close/cs/cs_1_glas_dw.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((1100,1080), (0,0), "images/sprites/close/cs/cs_1_body.png",(0,0), "images/sprites/close/cs/cs_1_normal.png",(0,0), "mods/iw/sprites/close/cs/cs_1_glas_dw.png"))
+    image cs normal noshirt close = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((1100,1080), (0,0), "images/sprites/close/cs/cs_1_body.png",(0,0), "mods/iw/sprites/close/cs/cs_1_noshirt.png",(0,0), "images/sprites/close/cs/cs_1_normal.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((1100,1080), (0,0), "images/sprites/close/cs/cs_1_body.png",(0,0), "mods/iw/sprites/close/cs/cs_1_noshirt.png",(0,0), "images/sprites/close/cs/cs_1_normal.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((1100,1080), (0,0), "images/sprites/close/cs/cs_1_body.png",(0,0), "mods/iw/sprites/close/cs/cs_1_noshirt.png",(0,0), "images/sprites/close/cs/cs_1_normal.png"))
+    image cs normal noshirt glasses close = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((1100,1080), (0,0), "images/sprites/close/cs/cs_1_body.png",(0,0), "images/sprites/close/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/close/cs/cs_1_noshirt.png",(0,0), "images/sprites/close/cs/cs_1_normal.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((1100,1080), (0,0), "images/sprites/close/cs/cs_1_body.png",(0,0), "images/sprites/close/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/close/cs/cs_1_noshirt.png",(0,0), "images/sprites/close/cs/cs_1_normal.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((1100,1080), (0,0), "images/sprites/close/cs/cs_1_body.png",(0,0), "images/sprites/close/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/close/cs/cs_1_noshirt.png",(0,0), "images/sprites/close/cs/cs_1_normal.png"))
+    image cs normal noshirt glas_on close = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((1100,1080), (0,0), "images/sprites/close/cs/cs_1_body.png",(0,0), "mods/iw/sprites/close/cs/cs_1_noshirt.png",(0,0), "images/sprites/close/cs/cs_1_normal.png",(0,0), "mods/iw/sprites/close/cs/cs_1_glas_on.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((1100,1080), (0,0), "images/sprites/close/cs/cs_1_body.png",(0,0), "mods/iw/sprites/close/cs/cs_1_noshirt.png",(0,0), "images/sprites/close/cs/cs_1_normal.png",(0,0), "mods/iw/sprites/close/cs/cs_1_glas_on.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((1100,1080), (0,0), "images/sprites/close/cs/cs_1_body.png",(0,0), "mods/iw/sprites/close/cs/cs_1_noshirt.png",(0,0), "images/sprites/close/cs/cs_1_normal.png",(0,0), "mods/iw/sprites/close/cs/cs_1_glas_on.png"))
+    image cs normal noshirt glas_dw close = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((1100,1080), (0,0), "images/sprites/close/cs/cs_1_body.png",(0,0), "mods/iw/sprites/close/cs/cs_1_noshirt.png",(0,0), "images/sprites/close/cs/cs_1_normal.png",(0,0), "mods/iw/sprites/close/cs/cs_1_glas_dw.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((1100,1080), (0,0), "images/sprites/close/cs/cs_1_body.png",(0,0), "mods/iw/sprites/close/cs/cs_1_noshirt.png",(0,0), "images/sprites/close/cs/cs_1_normal.png",(0,0), "mods/iw/sprites/close/cs/cs_1_glas_dw.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((1100,1080), (0,0), "images/sprites/close/cs/cs_1_body.png",(0,0), "mods/iw/sprites/close/cs/cs_1_noshirt.png",(0,0), "images/sprites/close/cs/cs_1_normal.png",(0,0), "mods/iw/sprites/close/cs/cs_1_glas_dw.png"))
+    image cs shy glas_on close = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((1100,1080), (0,0), "images/sprites/close/cs/cs_1_body.png",(0,0), "images/sprites/close/cs/cs_1_shy.png",(0,0), "mods/iw/sprites/close/cs/cs_1_glas_on.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((1100,1080), (0,0), "images/sprites/close/cs/cs_1_body.png",(0,0), "images/sprites/close/cs/cs_1_shy.png",(0,0), "mods/iw/sprites/close/cs/cs_1_glas_on.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((1100,1080), (0,0), "images/sprites/close/cs/cs_1_body.png",(0,0), "images/sprites/close/cs/cs_1_shy.png",(0,0), "mods/iw/sprites/close/cs/cs_1_glas_on.png"))
+    image cs shy glas_dw close = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((1100,1080), (0,0), "images/sprites/close/cs/cs_1_body.png",(0,0), "images/sprites/close/cs/cs_1_shy.png",(0,0), "mods/iw/sprites/close/cs/cs_1_glas_dw.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((1100,1080), (0,0), "images/sprites/close/cs/cs_1_body.png",(0,0), "images/sprites/close/cs/cs_1_shy.png",(0,0), "mods/iw/sprites/close/cs/cs_1_glas_dw.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((1100,1080), (0,0), "images/sprites/close/cs/cs_1_body.png",(0,0), "images/sprites/close/cs/cs_1_shy.png",(0,0), "mods/iw/sprites/close/cs/cs_1_glas_dw.png"))
+    image cs shy noshirt close = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((1100,1080), (0,0), "images/sprites/close/cs/cs_1_body.png",(0,0), "mods/iw/sprites/close/cs/cs_1_noshirt.png",(0,0), "images/sprites/close/cs/cs_1_shy.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((1100,1080), (0,0), "images/sprites/close/cs/cs_1_body.png",(0,0), "mods/iw/sprites/close/cs/cs_1_noshirt.png",(0,0), "images/sprites/close/cs/cs_1_shy.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((1100,1080), (0,0), "images/sprites/close/cs/cs_1_body.png",(0,0), "mods/iw/sprites/close/cs/cs_1_noshirt.png",(0,0), "images/sprites/close/cs/cs_1_shy.png"))
+    image cs shy noshirt glasses close = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((1100,1080), (0,0), "images/sprites/close/cs/cs_1_body.png",(0,0), "images/sprites/close/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/close/cs/cs_1_noshirt.png",(0,0), "images/sprites/close/cs/cs_1_shy.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((1100,1080), (0,0), "images/sprites/close/cs/cs_1_body.png",(0,0), "images/sprites/close/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/close/cs/cs_1_noshirt.png",(0,0), "images/sprites/close/cs/cs_1_shy.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((1100,1080), (0,0), "images/sprites/close/cs/cs_1_body.png",(0,0), "images/sprites/close/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/close/cs/cs_1_noshirt.png",(0,0), "images/sprites/close/cs/cs_1_shy.png"))
+    image cs shy noshirt glas_on close = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((1100,1080), (0,0), "images/sprites/close/cs/cs_1_body.png",(0,0), "mods/iw/sprites/close/cs/cs_1_noshirt.png",(0,0), "images/sprites/close/cs/cs_1_shy.png",(0,0), "mods/iw/sprites/close/cs/cs_1_glas_on.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((1100,1080), (0,0), "images/sprites/close/cs/cs_1_body.png",(0,0), "mods/iw/sprites/close/cs/cs_1_noshirt.png",(0,0), "images/sprites/close/cs/cs_1_shy.png",(0,0), "mods/iw/sprites/close/cs/cs_1_glas_on.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((1100,1080), (0,0), "images/sprites/close/cs/cs_1_body.png",(0,0), "mods/iw/sprites/close/cs/cs_1_noshirt.png",(0,0), "images/sprites/close/cs/cs_1_shy.png",(0,0), "mods/iw/sprites/close/cs/cs_1_glas_on.png"))
+    image cs shy noshirt glas_dw close = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((1100,1080), (0,0), "images/sprites/close/cs/cs_1_body.png",(0,0), "mods/iw/sprites/close/cs/cs_1_noshirt.png",(0,0), "images/sprites/close/cs/cs_1_shy.png",(0,0), "mods/iw/sprites/close/cs/cs_1_glas_dw.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((1100,1080), (0,0), "images/sprites/close/cs/cs_1_body.png",(0,0), "mods/iw/sprites/close/cs/cs_1_noshirt.png",(0,0), "images/sprites/close/cs/cs_1_shy.png",(0,0), "mods/iw/sprites/close/cs/cs_1_glas_dw.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((1100,1080), (0,0), "images/sprites/close/cs/cs_1_body.png",(0,0), "mods/iw/sprites/close/cs/cs_1_noshirt.png",(0,0), "images/sprites/close/cs/cs_1_shy.png",(0,0), "mods/iw/sprites/close/cs/cs_1_glas_dw.png"))
+    image cs smile glas_on close = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((1100,1080), (0,0), "images/sprites/close/cs/cs_1_body.png",(0,0), "images/sprites/close/cs/cs_1_smile.png",(0,0), "mods/iw/sprites/close/cs/cs_1_glas_on.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((1100,1080), (0,0), "images/sprites/close/cs/cs_1_body.png",(0,0), "images/sprites/close/cs/cs_1_smile.png",(0,0), "mods/iw/sprites/close/cs/cs_1_glas_on.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((1100,1080), (0,0), "images/sprites/close/cs/cs_1_body.png",(0,0), "images/sprites/close/cs/cs_1_smile.png",(0,0), "mods/iw/sprites/close/cs/cs_1_glas_on.png"))
+    image cs smile glas_dw close = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((1100,1080), (0,0), "images/sprites/close/cs/cs_1_body.png",(0,0), "images/sprites/close/cs/cs_1_smile.png",(0,0), "mods/iw/sprites/close/cs/cs_1_glas_dw.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((1100,1080), (0,0), "images/sprites/close/cs/cs_1_body.png",(0,0), "images/sprites/close/cs/cs_1_smile.png",(0,0), "mods/iw/sprites/close/cs/cs_1_glas_dw.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((1100,1080), (0,0), "images/sprites/close/cs/cs_1_body.png",(0,0), "images/sprites/close/cs/cs_1_smile.png",(0,0), "mods/iw/sprites/close/cs/cs_1_glas_dw.png"))
+    image cs smile noshirt close = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((1100,1080), (0,0), "images/sprites/close/cs/cs_1_body.png",(0,0), "mods/iw/sprites/close/cs/cs_1_noshirt.png",(0,0), "images/sprites/close/cs/cs_1_smile.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((1100,1080), (0,0), "images/sprites/close/cs/cs_1_body.png",(0,0), "mods/iw/sprites/close/cs/cs_1_noshirt.png",(0,0), "images/sprites/close/cs/cs_1_smile.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((1100,1080), (0,0), "images/sprites/close/cs/cs_1_body.png",(0,0), "mods/iw/sprites/close/cs/cs_1_noshirt.png",(0,0), "images/sprites/close/cs/cs_1_smile.png"))
+    image cs smile noshirt glasses close = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((1100,1080), (0,0), "images/sprites/close/cs/cs_1_body.png",(0,0), "images/sprites/close/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/close/cs/cs_1_noshirt.png",(0,0), "images/sprites/close/cs/cs_1_smile.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((1100,1080), (0,0), "images/sprites/close/cs/cs_1_body.png",(0,0), "images/sprites/close/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/close/cs/cs_1_noshirt.png",(0,0), "images/sprites/close/cs/cs_1_smile.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((1100,1080), (0,0), "images/sprites/close/cs/cs_1_body.png",(0,0), "images/sprites/close/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/close/cs/cs_1_noshirt.png",(0,0), "images/sprites/close/cs/cs_1_smile.png"))
+    image cs smile noshirt glas_on close = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((1100,1080), (0,0), "images/sprites/close/cs/cs_1_body.png",(0,0), "mods/iw/sprites/close/cs/cs_1_noshirt.png",(0,0), "images/sprites/close/cs/cs_1_smile.png",(0,0), "mods/iw/sprites/close/cs/cs_1_glas_on.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((1100,1080), (0,0), "images/sprites/close/cs/cs_1_body.png",(0,0), "mods/iw/sprites/close/cs/cs_1_noshirt.png",(0,0), "images/sprites/close/cs/cs_1_smile.png",(0,0), "mods/iw/sprites/close/cs/cs_1_glas_on.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((1100,1080), (0,0), "images/sprites/close/cs/cs_1_body.png",(0,0), "mods/iw/sprites/close/cs/cs_1_noshirt.png",(0,0), "images/sprites/close/cs/cs_1_smile.png",(0,0), "mods/iw/sprites/close/cs/cs_1_glas_on.png"))
+    image cs smile noshirt glas_dw close = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((1100,1080), (0,0), "images/sprites/close/cs/cs_1_body.png",(0,0), "mods/iw/sprites/close/cs/cs_1_noshirt.png",(0,0), "images/sprites/close/cs/cs_1_smile.png",(0,0), "mods/iw/sprites/close/cs/cs_1_glas_dw.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((1100,1080), (0,0), "images/sprites/close/cs/cs_1_body.png",(0,0), "mods/iw/sprites/close/cs/cs_1_noshirt.png",(0,0), "images/sprites/close/cs/cs_1_smile.png",(0,0), "mods/iw/sprites/close/cs/cs_1_glas_dw.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((1100,1080), (0,0), "images/sprites/close/cs/cs_1_body.png",(0,0), "mods/iw/sprites/close/cs/cs_1_noshirt.png",(0,0), "images/sprites/close/cs/cs_1_smile.png",(0,0), "mods/iw/sprites/close/cs/cs_1_glas_dw.png"))
+
+#ВИОЛА новая одежда для всех эмоций
+
+    image cs angry panzu = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_angry.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_angry.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_angry.png") )
+    image cs angry panzu glasses = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_angry.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_angry.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_angry.png"))
+    image cs angry panzu glas_on = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_angry.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_angry.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_angry.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"))
+    image cs angry panzu glas_dw = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_angry.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_angry.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_angry.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"))
+    image cs cry panzu = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_cry.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_cry.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_cry.png") )
+    image cs cry panzu glasses = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_cry.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_cry.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_cry.png"))
+    image cs cry panzu glas_on = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_cry.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_cry.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_cry.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"))
+    image cs cry panzu glas_dw = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_cry.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_cry.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_cry.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"))
+    image cs dontlike panzu = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_dontlike.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_dontlike.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_dontlike.png") )
+    image cs dontlike panzu glasses = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_dontlike.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_dontlike.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_dontlike.png"))
+    image cs dontlike panzu glas_on = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_dontlike.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_dontlike.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_dontlike.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"))
+    image cs dontlike panzu glas_dw = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_dontlike.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_dontlike.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_dontlike.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"))
+    image cs doubt panzu = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_doubt.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_doubt.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_doubt.png") )
+    image cs doubt panzu glasses = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_doubt.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_doubt.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_doubt.png"))
+    image cs doubt panzu glas_on = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_doubt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_doubt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_doubt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"))
+    image cs doubt panzu glas_dw = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_doubt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_doubt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_doubt.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"))
+    image cs fear panzu = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_fear.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_fear.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_fear.png") )
+    image cs fear panzu glasses = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_fear.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_fear.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_fear.png"))
+    image cs fear panzu glas_on = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_fear.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_fear.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_fear.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"))
+    image cs fear panzu glas_dw = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_fear.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_fear.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_fear.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"))
+    image cs grin panzu = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_grin.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_grin.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_grin.png") )
+    image cs grin panzu glasses = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_grin.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_grin.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_grin.png"))
+    image cs grin panzu glas_on = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_grin.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_grin.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_grin.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"))
+    image cs grin panzu glas_dw = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_grin.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_grin.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_grin.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"))
+    image cs laugh panzu = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_laugh.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_laugh.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_laugh.png") )
+    image cs laugh panzu glasses = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_laugh.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_laugh.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_laugh.png"))
+    image cs laugh panzu glas_on = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_laugh.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_laugh.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_laugh.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"))
+    image cs laugh panzu glas_dw = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_laugh.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_laugh.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_laugh.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"))
+    image cs rage panzu = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_rage.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_rage.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_rage.png") )
+    image cs rage panzu glasses = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_rage.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_rage.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_rage.png"))
+    image cs rage panzu glas_on = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_rage.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_rage.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_rage.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"))
+    image cs rage panzu glas_dw = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_rage.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_rage.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_rage.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"))
+    image cs sad panzu = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_sad.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_sad.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_sad.png") )
+    image cs sad panzu glasses = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_sad.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_sad.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_sad.png"))
+    image cs sad panzu glas_on = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_sad.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_sad.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_sad.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"))
+    image cs sad panzu glas_dw = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_sad.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_sad.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_sad.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"))
+    image cs serious panzu = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_serious.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_serious.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_serious.png") )
+    image cs serious panzu glasses = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_serious.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_serious.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_serious.png"))
+    image cs serious panzu glas_on = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_serious.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_serious.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_serious.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"))
+    image cs serious panzu glas_dw = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_serious.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_serious.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_serious.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"))
+    image cs tired panzu = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_tired.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_tired.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_tired.png") )
+    image cs tired panzu glasses = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_tired.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_tired.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_tired.png"))
+    image cs tired panzu glas_on = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_tired.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_tired.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_tired.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"))
+    image cs tired panzu glas_dw = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_tired.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_tired.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_tired.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"))
+    image cs upset panzu = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_upset.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_upset.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_upset.png") )
+    image cs upset panzu glasses = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_upset.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_upset.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_upset.png"))
+    image cs upset panzu glas_on = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_upset.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_upset.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_upset.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"))
+    image cs upset panzu glas_dw = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_upset.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_upset.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_upset.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"))
+    image cs dontlike panzu far = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((675,1080), (0,0), "mods/iw/sprites/far/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/far/cs/cs_1_dontlike.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((675,1080), (0,0), "mods/iw/sprites/far/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/far/cs/cs_1_dontlike.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((675,1080), (0,0), "mods/iw/sprites/far/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/far/cs/cs_1_dontlike.png") )
+    image cs dontlike panzu glasses far = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((675,1080), (0,0), "mods/iw/sprites/far/cs/cs_1_panzu.png",(0,0), "images/sprites/far/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/far/cs/cs_1_dontlike.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((675,1080), (0,0), "mods/iw/sprites/far/cs/cs_1_panzu.png",(0,0), "images/sprites/far/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/far/cs/cs_1_dontlike.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((675,1080), (0,0), "mods/iw/sprites/far/cs/cs_1_panzu.png",(0,0), "images/sprites/far/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/far/cs/cs_1_dontlike.png"))
+    image cs dontlike panzu glas_on far = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((675,1080), (0,0), "mods/iw/sprites/far/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/far/cs/cs_1_dontlike.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_on.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((675,1080), (0,0), "mods/iw/sprites/far/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/far/cs/cs_1_dontlike.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_on.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((675,1080), (0,0), "mods/iw/sprites/far/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/far/cs/cs_1_dontlike.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_on.png"))
+    image cs dontlike panzu glas_dw far = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((675,1080), (0,0), "mods/iw/sprites/far/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/far/cs/cs_1_dontlike.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_dw.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((675,1080), (0,0), "mods/iw/sprites/far/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/far/cs/cs_1_dontlike.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_dw.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((675,1080), (0,0), "mods/iw/sprites/far/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/far/cs/cs_1_dontlike.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_dw.png"))
+    image cs doubt panzu far = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((675,1080), (0,0), "mods/iw/sprites/far/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/far/cs/cs_1_doubt.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((675,1080), (0,0), "mods/iw/sprites/far/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/far/cs/cs_1_doubt.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((675,1080), (0,0), "mods/iw/sprites/far/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/far/cs/cs_1_doubt.png") )
+    image cs doubt panzu glasses far = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((675,1080), (0,0), "mods/iw/sprites/far/cs/cs_1_panzu.png",(0,0), "images/sprites/far/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/far/cs/cs_1_doubt.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((675,1080), (0,0), "mods/iw/sprites/far/cs/cs_1_panzu.png",(0,0), "images/sprites/far/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/far/cs/cs_1_doubt.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((675,1080), (0,0), "mods/iw/sprites/far/cs/cs_1_panzu.png",(0,0), "images/sprites/far/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/far/cs/cs_1_doubt.png"))
+    image cs doubt panzu glas_on far = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((675,1080), (0,0), "mods/iw/sprites/far/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/far/cs/cs_1_doubt.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_on.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((675,1080), (0,0), "mods/iw/sprites/far/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/far/cs/cs_1_doubt.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_on.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((675,1080), (0,0), "mods/iw/sprites/far/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/far/cs/cs_1_doubt.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_on.png"))
+    image cs doubt panzu glas_dw far = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((675,1080), (0,0), "mods/iw/sprites/far/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/far/cs/cs_1_doubt.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_dw.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((675,1080), (0,0), "mods/iw/sprites/far/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/far/cs/cs_1_doubt.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_dw.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((675,1080), (0,0), "mods/iw/sprites/far/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/far/cs/cs_1_doubt.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_dw.png"))
+    image cs fear panzu far = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((675,1080), (0,0), "mods/iw/sprites/far/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/far/cs/cs_1_fear.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((675,1080), (0,0), "mods/iw/sprites/far/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/far/cs/cs_1_fear.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((675,1080), (0,0), "mods/iw/sprites/far/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/far/cs/cs_1_fear.png") )
+    image cs fear panzu glasses far = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((675,1080), (0,0), "mods/iw/sprites/far/cs/cs_1_panzu.png",(0,0), "images/sprites/far/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/far/cs/cs_1_fear.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((675,1080), (0,0), "mods/iw/sprites/far/cs/cs_1_panzu.png",(0,0), "images/sprites/far/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/far/cs/cs_1_fear.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((675,1080), (0,0), "mods/iw/sprites/far/cs/cs_1_panzu.png",(0,0), "images/sprites/far/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/far/cs/cs_1_fear.png"))
+    image cs fear panzu glas_on far = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((675,1080), (0,0), "mods/iw/sprites/far/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/far/cs/cs_1_fear.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_on.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((675,1080), (0,0), "mods/iw/sprites/far/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/far/cs/cs_1_fear.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_on.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((675,1080), (0,0), "mods/iw/sprites/far/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/far/cs/cs_1_fear.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_on.png"))
+    image cs fear panzu glas_dw far = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((675,1080), (0,0), "mods/iw/sprites/far/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/far/cs/cs_1_fear.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_dw.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((675,1080), (0,0), "mods/iw/sprites/far/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/far/cs/cs_1_fear.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_dw.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((675,1080), (0,0), "mods/iw/sprites/far/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/far/cs/cs_1_fear.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_dw.png"))
+    image cs laugh panzu far = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((675,1080), (0,0), "mods/iw/sprites/far/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/far/cs/cs_1_laugh.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((675,1080), (0,0), "mods/iw/sprites/far/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/far/cs/cs_1_laugh.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((675,1080), (0,0), "mods/iw/sprites/far/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/far/cs/cs_1_laugh.png") )
+    image cs laugh panzu glasses far = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((675,1080), (0,0), "mods/iw/sprites/far/cs/cs_1_panzu.png",(0,0), "images/sprites/far/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/far/cs/cs_1_laugh.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((675,1080), (0,0), "mods/iw/sprites/far/cs/cs_1_panzu.png",(0,0), "images/sprites/far/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/far/cs/cs_1_laugh.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((675,1080), (0,0), "mods/iw/sprites/far/cs/cs_1_panzu.png",(0,0), "images/sprites/far/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/far/cs/cs_1_laugh.png"))
+    image cs laugh panzu glas_on far = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((675,1080), (0,0), "mods/iw/sprites/far/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/far/cs/cs_1_laugh.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_on.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((675,1080), (0,0), "mods/iw/sprites/far/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/far/cs/cs_1_laugh.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_on.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((675,1080), (0,0), "mods/iw/sprites/far/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/far/cs/cs_1_laugh.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_on.png"))
+    image cs laugh panzu glas_dw far = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((675,1080), (0,0), "mods/iw/sprites/far/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/far/cs/cs_1_laugh.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_dw.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((675,1080), (0,0), "mods/iw/sprites/far/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/far/cs/cs_1_laugh.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_dw.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((675,1080), (0,0), "mods/iw/sprites/far/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/far/cs/cs_1_laugh.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_dw.png"))
+    image cs sad panzu far = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((675,1080), (0,0), "mods/iw/sprites/far/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/far/cs/cs_1_sad.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((675,1080), (0,0), "mods/iw/sprites/far/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/far/cs/cs_1_sad.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((675,1080), (0,0), "mods/iw/sprites/far/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/far/cs/cs_1_sad.png") )
+    image cs sad panzu glasses far = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((675,1080), (0,0), "mods/iw/sprites/far/cs/cs_1_panzu.png",(0,0), "images/sprites/far/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/far/cs/cs_1_sad.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((675,1080), (0,0), "mods/iw/sprites/far/cs/cs_1_panzu.png",(0,0), "images/sprites/far/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/far/cs/cs_1_sad.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((675,1080), (0,0), "mods/iw/sprites/far/cs/cs_1_panzu.png",(0,0), "images/sprites/far/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/far/cs/cs_1_sad.png"))
+    image cs sad panzu glas_on far = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((675,1080), (0,0), "mods/iw/sprites/far/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/far/cs/cs_1_sad.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_on.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((675,1080), (0,0), "mods/iw/sprites/far/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/far/cs/cs_1_sad.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_on.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((675,1080), (0,0), "mods/iw/sprites/far/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/far/cs/cs_1_sad.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_on.png"))
+    image cs sad panzu glas_dw far = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((675,1080), (0,0), "mods/iw/sprites/far/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/far/cs/cs_1_sad.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_dw.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((675,1080), (0,0), "mods/iw/sprites/far/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/far/cs/cs_1_sad.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_dw.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((675,1080), (0,0), "mods/iw/sprites/far/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/far/cs/cs_1_sad.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_dw.png"))
+    image cs sad panzu close = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((1100,1080), (0,0), "mods/iw/sprites/close/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/close/cs/cs_1_sad.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((1100,1080), (0,0), "mods/iw/sprites/close/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/close/cs/cs_1_sad.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((1100,1080), (0,0), "mods/iw/sprites/close/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/close/cs/cs_1_sad.png") )
+    image cs sad panzu glasses close = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((1100,1080), (0,0), "mods/iw/sprites/close/cs/cs_1_panzu.png",(0,0), "images/sprites/close/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/close/cs/cs_1_sad.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((1100,1080), (0,0), "mods/iw/sprites/close/cs/cs_1_panzu.png",(0,0), "images/sprites/close/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/close/cs/cs_1_sad.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((1100,1080), (0,0), "mods/iw/sprites/close/cs/cs_1_panzu.png",(0,0), "images/sprites/close/cs/cs_1_glasses.png",(0,0), "mods/iw/sprites/close/cs/cs_1_sad.png"))
+    image cs sad panzu glas_on close = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((1100,1080), (0,0), "mods/iw/sprites/close/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/close/cs/cs_1_sad.png",(0,0), "mods/iw/sprites/close/cs/cs_1_glas_on.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((1100,1080), (0,0), "mods/iw/sprites/close/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/close/cs/cs_1_sad.png",(0,0), "mods/iw/sprites/close/cs/cs_1_glas_on.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((1100,1080), (0,0), "mods/iw/sprites/close/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/close/cs/cs_1_sad.png",(0,0), "mods/iw/sprites/close/cs/cs_1_glas_on.png"))
+    image cs sad panzu glas_dw close = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((1100,1080), (0,0), "mods/iw/sprites/close/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/close/cs/cs_1_sad.png",(0,0), "mods/iw/sprites/close/cs/cs_1_glas_dw.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((1100,1080), (0,0), "mods/iw/sprites/close/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/close/cs/cs_1_sad.png",(0,0), "mods/iw/sprites/close/cs/cs_1_glas_dw.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((1100,1080), (0,0), "mods/iw/sprites/close/cs/cs_1_panzu.png",(0,0), "mods/iw/sprites/close/cs/cs_1_sad.png",(0,0), "mods/iw/sprites/close/cs/cs_1_glas_dw.png"))
+
+    image cs normal panzu = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "images/sprites/normal/cs/cs_1_normal.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "images/sprites/normal/cs/cs_1_normal.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "images/sprites/normal/cs/cs_1_normal.png"))
+    image cs normal panzu glasses = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "images/sprites/normal/cs/cs_1_normal.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "images/sprites/normal/cs/cs_1_normal.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "images/sprites/normal/cs/cs_1_normal.png"))
+    image cs normal panzu glas_on = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "images/sprites/normal/cs/cs_1_normal.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "images/sprites/normal/cs/cs_1_normal.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "images/sprites/normal/cs/cs_1_normal.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"))
+    image cs normal panzu glas_dw = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "images/sprites/normal/cs/cs_1_normal.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "images/sprites/normal/cs/cs_1_normal.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "images/sprites/normal/cs/cs_1_normal.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"))
+    image cs shy panzu = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "images/sprites/normal/cs/cs_1_shy.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "images/sprites/normal/cs/cs_1_shy.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "images/sprites/normal/cs/cs_1_shy.png"))
+    image cs shy panzu glasses = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "images/sprites/normal/cs/cs_1_shy.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "images/sprites/normal/cs/cs_1_shy.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "images/sprites/normal/cs/cs_1_shy.png"))
+    image cs shy panzu glas_on = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "images/sprites/normal/cs/cs_1_shy.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "images/sprites/normal/cs/cs_1_shy.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "images/sprites/normal/cs/cs_1_shy.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"))
+    image cs shy panzu glas_dw = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "images/sprites/normal/cs/cs_1_shy.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "images/sprites/normal/cs/cs_1_shy.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "images/sprites/normal/cs/cs_1_shy.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"))
+    image cs smile panzu = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "images/sprites/normal/cs/cs_1_smile.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "images/sprites/normal/cs/cs_1_smile.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "images/sprites/normal/cs/cs_1_smile.png"))
+    image cs smile panzu glasses = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "images/sprites/normal/cs/cs_1_smile.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "images/sprites/normal/cs/cs_1_smile.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "images/sprites/normal/cs/cs_1_glasses.png",(0,0), "images/sprites/normal/cs/cs_1_smile.png"))
+    image cs smile panzu glas_on = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "images/sprites/normal/cs/cs_1_smile.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "images/sprites/normal/cs/cs_1_smile.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "images/sprites/normal/cs/cs_1_smile.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_on.png"))
+    image cs smile panzu glas_dw = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "images/sprites/normal/cs/cs_1_smile.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "images/sprites/normal/cs/cs_1_smile.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((900,1080), (0,0), "mods/iw/sprites/normal/cs/cs_1_panzu.png",(0,0), "images/sprites/normal/cs/cs_1_smile.png",(0,0), "mods/iw/sprites/normal/cs/cs_1_glas_dw.png"))
+    image cs normal panzu far = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((675,1080), (0,0), "mods/iw/sprites/far/cs/cs_1_panzu.png",(0,0), "images/sprites/far/cs/cs_1_normal.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((675,1080), (0,0), "mods/iw/sprites/far/cs/cs_1_panzu.png",(0,0), "images/sprites/far/cs/cs_1_normal.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((675,1080), (0,0), "mods/iw/sprites/far/cs/cs_1_panzu.png",(0,0), "images/sprites/far/cs/cs_1_normal.png"))
+    image cs normal panzu glasses far = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((675,1080), (0,0), "mods/iw/sprites/far/cs/cs_1_panzu.png",(0,0), "images/sprites/far/cs/cs_1_glasses.png",(0,0), "images/sprites/far/cs/cs_1_normal.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((675,1080), (0,0), "mods/iw/sprites/far/cs/cs_1_panzu.png",(0,0), "images/sprites/far/cs/cs_1_glasses.png",(0,0), "images/sprites/far/cs/cs_1_normal.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((675,1080), (0,0), "mods/iw/sprites/far/cs/cs_1_panzu.png",(0,0), "images/sprites/far/cs/cs_1_glasses.png",(0,0), "images/sprites/far/cs/cs_1_normal.png"))
+    image cs normal panzu glas_on far = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((675,1080), (0,0), "mods/iw/sprites/far/cs/cs_1_panzu.png",(0,0), "images/sprites/far/cs/cs_1_normal.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_on.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((675,1080), (0,0), "mods/iw/sprites/far/cs/cs_1_panzu.png",(0,0), "images/sprites/far/cs/cs_1_normal.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_on.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((675,1080), (0,0), "mods/iw/sprites/far/cs/cs_1_panzu.png",(0,0), "images/sprites/far/cs/cs_1_normal.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_on.png"))
+    image cs normal panzu glas_dw far = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((675,1080), (0,0), "mods/iw/sprites/far/cs/cs_1_panzu.png",(0,0), "images/sprites/far/cs/cs_1_normal.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_dw.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((675,1080), (0,0), "mods/iw/sprites/far/cs/cs_1_panzu.png",(0,0), "images/sprites/far/cs/cs_1_normal.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_dw.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((675,1080), (0,0), "mods/iw/sprites/far/cs/cs_1_panzu.png",(0,0), "images/sprites/far/cs/cs_1_normal.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_dw.png"))
+    image cs shy panzu far = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((675,1080), (0,0), "mods/iw/sprites/far/cs/cs_1_panzu.png",(0,0), "images/sprites/far/cs/cs_1_shy.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((675,1080), (0,0), "mods/iw/sprites/far/cs/cs_1_panzu.png",(0,0), "images/sprites/far/cs/cs_1_shy.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((675,1080), (0,0), "mods/iw/sprites/far/cs/cs_1_panzu.png",(0,0), "images/sprites/far/cs/cs_1_shy.png"))
+    image cs shy panzu glasses far = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((675,1080), (0,0), "mods/iw/sprites/far/cs/cs_1_panzu.png",(0,0), "images/sprites/far/cs/cs_1_glasses.png",(0,0), "images/sprites/far/cs/cs_1_shy.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((675,1080), (0,0), "mods/iw/sprites/far/cs/cs_1_panzu.png",(0,0), "images/sprites/far/cs/cs_1_glasses.png",(0,0), "images/sprites/far/cs/cs_1_shy.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((675,1080), (0,0), "mods/iw/sprites/far/cs/cs_1_panzu.png",(0,0), "images/sprites/far/cs/cs_1_glasses.png",(0,0), "images/sprites/far/cs/cs_1_shy.png"))
+    image cs shy panzu glas_on far = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((675,1080), (0,0), "mods/iw/sprites/far/cs/cs_1_panzu.png",(0,0), "images/sprites/far/cs/cs_1_shy.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_on.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((675,1080), (0,0), "mods/iw/sprites/far/cs/cs_1_panzu.png",(0,0), "images/sprites/far/cs/cs_1_shy.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_on.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((675,1080), (0,0), "mods/iw/sprites/far/cs/cs_1_panzu.png",(0,0), "images/sprites/far/cs/cs_1_shy.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_on.png"))
+    image cs shy panzu glas_dw far = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((675,1080), (0,0), "mods/iw/sprites/far/cs/cs_1_panzu.png",(0,0), "images/sprites/far/cs/cs_1_shy.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_dw.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((675,1080), (0,0), "mods/iw/sprites/far/cs/cs_1_panzu.png",(0,0), "images/sprites/far/cs/cs_1_shy.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_dw.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((675,1080), (0,0), "mods/iw/sprites/far/cs/cs_1_panzu.png",(0,0), "images/sprites/far/cs/cs_1_shy.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_dw.png"))
+    image cs smile panzu far = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((675,1080), (0,0), "mods/iw/sprites/far/cs/cs_1_panzu.png",(0,0), "images/sprites/far/cs/cs_1_smile.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((675,1080), (0,0), "mods/iw/sprites/far/cs/cs_1_panzu.png",(0,0), "images/sprites/far/cs/cs_1_smile.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((675,1080), (0,0), "mods/iw/sprites/far/cs/cs_1_panzu.png",(0,0), "images/sprites/far/cs/cs_1_smile.png"))
+    image cs smile panzu glasses far = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((675,1080), (0,0), "mods/iw/sprites/far/cs/cs_1_panzu.png",(0,0), "images/sprites/far/cs/cs_1_glasses.png",(0,0), "images/sprites/far/cs/cs_1_smile.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((675,1080), (0,0), "mods/iw/sprites/far/cs/cs_1_panzu.png",(0,0), "images/sprites/far/cs/cs_1_glasses.png",(0,0), "images/sprites/far/cs/cs_1_smile.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((675,1080), (0,0), "mods/iw/sprites/far/cs/cs_1_panzu.png",(0,0), "images/sprites/far/cs/cs_1_glasses.png",(0,0), "images/sprites/far/cs/cs_1_smile.png"))
+    image cs smile panzu glas_on far = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((675,1080), (0,0), "mods/iw/sprites/far/cs/cs_1_panzu.png",(0,0), "images/sprites/far/cs/cs_1_smile.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_on.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((675,1080), (0,0), "mods/iw/sprites/far/cs/cs_1_panzu.png",(0,0), "images/sprites/far/cs/cs_1_smile.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_on.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((675,1080), (0,0), "mods/iw/sprites/far/cs/cs_1_panzu.png",(0,0), "images/sprites/far/cs/cs_1_smile.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_on.png"))
+    image cs smile panzu glas_dw far = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((675,1080), (0,0), "mods/iw/sprites/far/cs/cs_1_panzu.png",(0,0), "images/sprites/far/cs/cs_1_smile.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_dw.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((675,1080), (0,0), "mods/iw/sprites/far/cs/cs_1_panzu.png",(0,0), "images/sprites/far/cs/cs_1_smile.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_dw.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((675,1080), (0,0), "mods/iw/sprites/far/cs/cs_1_panzu.png",(0,0), "images/sprites/far/cs/cs_1_smile.png",(0,0), "mods/iw/sprites/far/cs/cs_1_glas_dw.png"))
+    image cs normal panzu close = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((1100,1080), (0,0), "mods/iw/sprites/close/cs/cs_1_panzu.png",(0,0), "images/sprites/close/cs/cs_1_normal.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((1100,1080), (0,0), "mods/iw/sprites/close/cs/cs_1_panzu.png",(0,0), "images/sprites/close/cs/cs_1_normal.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((1100,1080), (0,0), "mods/iw/sprites/close/cs/cs_1_panzu.png",(0,0), "images/sprites/close/cs/cs_1_normal.png"))
+    image cs normal panzu glasses close = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((1100,1080), (0,0), "mods/iw/sprites/close/cs/cs_1_panzu.png",(0,0), "images/sprites/close/cs/cs_1_glasses.png",(0,0), "images/sprites/close/cs/cs_1_normal.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((1100,1080), (0,0), "mods/iw/sprites/close/cs/cs_1_panzu.png",(0,0), "images/sprites/close/cs/cs_1_glasses.png",(0,0), "images/sprites/close/cs/cs_1_normal.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((1100,1080), (0,0), "mods/iw/sprites/close/cs/cs_1_panzu.png",(0,0), "images/sprites/close/cs/cs_1_glasses.png",(0,0), "images/sprites/close/cs/cs_1_normal.png"))
+    image cs normal panzu glas_on close = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((1100,1080), (0,0), "mods/iw/sprites/close/cs/cs_1_panzu.png",(0,0), "images/sprites/close/cs/cs_1_normal.png",(0,0), "mods/iw/sprites/close/cs/cs_1_glas_on.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((1100,1080), (0,0), "mods/iw/sprites/close/cs/cs_1_panzu.png",(0,0), "images/sprites/close/cs/cs_1_normal.png",(0,0), "mods/iw/sprites/close/cs/cs_1_glas_on.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((1100,1080), (0,0), "mods/iw/sprites/close/cs/cs_1_panzu.png",(0,0), "images/sprites/close/cs/cs_1_normal.png",(0,0), "mods/iw/sprites/close/cs/cs_1_glas_on.png"))
+    image cs normal panzu glas_dw close = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((1100,1080), (0,0), "mods/iw/sprites/close/cs/cs_1_panzu.png",(0,0), "images/sprites/close/cs/cs_1_normal.png",(0,0), "mods/iw/sprites/close/cs/cs_1_glas_dw.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((1100,1080), (0,0), "mods/iw/sprites/close/cs/cs_1_panzu.png",(0,0), "images/sprites/close/cs/cs_1_normal.png",(0,0), "mods/iw/sprites/close/cs/cs_1_glas_dw.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((1100,1080), (0,0), "mods/iw/sprites/close/cs/cs_1_panzu.png",(0,0), "images/sprites/close/cs/cs_1_normal.png",(0,0), "mods/iw/sprites/close/cs/cs_1_glas_dw.png"))
+    image cs shy panzu close = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((1100,1080), (0,0), "mods/iw/sprites/close/cs/cs_1_panzu.png",(0,0), "images/sprites/close/cs/cs_1_shy.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((1100,1080), (0,0), "mods/iw/sprites/close/cs/cs_1_panzu.png",(0,0), "images/sprites/close/cs/cs_1_shy.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((1100,1080), (0,0), "mods/iw/sprites/close/cs/cs_1_panzu.png",(0,0), "images/sprites/close/cs/cs_1_shy.png"))
+    image cs shy panzu glasses close = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((1100,1080), (0,0), "mods/iw/sprites/close/cs/cs_1_panzu.png",(0,0), "images/sprites/close/cs/cs_1_glasses.png",(0,0), "images/sprites/close/cs/cs_1_shy.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((1100,1080), (0,0), "mods/iw/sprites/close/cs/cs_1_panzu.png",(0,0), "images/sprites/close/cs/cs_1_glasses.png",(0,0), "images/sprites/close/cs/cs_1_shy.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((1100,1080), (0,0), "mods/iw/sprites/close/cs/cs_1_panzu.png",(0,0), "images/sprites/close/cs/cs_1_glasses.png",(0,0), "images/sprites/close/cs/cs_1_shy.png"))
+    image cs shy panzu glas_on close = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((1100,1080), (0,0), "mods/iw/sprites/close/cs/cs_1_panzu.png",(0,0), "images/sprites/close/cs/cs_1_shy.png",(0,0), "mods/iw/sprites/close/cs/cs_1_glas_on.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((1100,1080), (0,0), "mods/iw/sprites/close/cs/cs_1_panzu.png",(0,0), "images/sprites/close/cs/cs_1_shy.png",(0,0), "mods/iw/sprites/close/cs/cs_1_glas_on.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((1100,1080), (0,0), "mods/iw/sprites/close/cs/cs_1_panzu.png",(0,0), "images/sprites/close/cs/cs_1_shy.png",(0,0), "mods/iw/sprites/close/cs/cs_1_glas_on.png"))
+    image cs shy panzu glas_dw close = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((1100,1080), (0,0), "mods/iw/sprites/close/cs/cs_1_panzu.png",(0,0), "images/sprites/close/cs/cs_1_shy.png",(0,0), "mods/iw/sprites/close/cs/cs_1_glas_dw.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((1100,1080), (0,0), "mods/iw/sprites/close/cs/cs_1_panzu.png",(0,0), "images/sprites/close/cs/cs_1_shy.png",(0,0), "mods/iw/sprites/close/cs/cs_1_glas_dw.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((1100,1080), (0,0), "mods/iw/sprites/close/cs/cs_1_panzu.png",(0,0), "images/sprites/close/cs/cs_1_shy.png",(0,0), "mods/iw/sprites/close/cs/cs_1_glas_dw.png"))
+    image cs smile panzu close = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((1100,1080), (0,0), "mods/iw/sprites/close/cs/cs_1_panzu.png",(0,0), "images/sprites/close/cs/cs_1_smile.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((1100,1080), (0,0), "mods/iw/sprites/close/cs/cs_1_panzu.png",(0,0), "images/sprites/close/cs/cs_1_smile.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((1100,1080), (0,0), "mods/iw/sprites/close/cs/cs_1_panzu.png",(0,0), "images/sprites/close/cs/cs_1_smile.png"))
+    image cs smile panzu glasses close = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((1100,1080), (0,0), "mods/iw/sprites/close/cs/cs_1_panzu.png",(0,0), "images/sprites/close/cs/cs_1_glasses.png",(0,0), "images/sprites/close/cs/cs_1_smile.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((1100,1080), (0,0), "mods/iw/sprites/close/cs/cs_1_panzu.png",(0,0), "images/sprites/close/cs/cs_1_glasses.png",(0,0), "images/sprites/close/cs/cs_1_smile.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((1100,1080), (0,0), "mods/iw/sprites/close/cs/cs_1_panzu.png",(0,0), "images/sprites/close/cs/cs_1_glasses.png",(0,0), "images/sprites/close/cs/cs_1_smile.png"))
+    image cs smile panzu glas_on close = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((1100,1080), (0,0), "mods/iw/sprites/close/cs/cs_1_panzu.png",(0,0), "images/sprites/close/cs/cs_1_smile.png",(0,0), "mods/iw/sprites/close/cs/cs_1_glas_on.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((1100,1080), (0,0), "mods/iw/sprites/close/cs/cs_1_panzu.png",(0,0), "images/sprites/close/cs/cs_1_smile.png",(0,0), "mods/iw/sprites/close/cs/cs_1_glas_on.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((1100,1080), (0,0), "mods/iw/sprites/close/cs/cs_1_panzu.png",(0,0), "images/sprites/close/cs/cs_1_smile.png",(0,0), "mods/iw/sprites/close/cs/cs_1_glas_on.png"))
+    image cs smile panzu glas_dw close = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((1100,1080), (0,0), "mods/iw/sprites/close/cs/cs_1_panzu.png",(0,0), "images/sprites/close/cs/cs_1_smile.png",(0,0), "mods/iw/sprites/close/cs/cs_1_glas_dw.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((1100,1080), (0,0), "mods/iw/sprites/close/cs/cs_1_panzu.png",(0,0), "images/sprites/close/cs/cs_1_smile.png",(0,0), "mods/iw/sprites/close/cs/cs_1_glas_dw.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+    True,im.Composite((1100,1080), (0,0), "mods/iw/sprites/close/cs/cs_1_panzu.png",(0,0), "images/sprites/close/cs/cs_1_smile.png",(0,0), "mods/iw/sprites/close/cs/cs_1_glas_dw.png"))
+
+#==================================================================================================================================================#
+#==================================================================================================================================================#
+#НОВЫЕ СПРАЙТЫ ДЛЯ МОДА
 #ИСКИН
 
     image ai normal lng_pink = ConditionSwitch(

@@ -1,7 +1,7 @@
 label iw_dayOne_arriveSemyon:
     $ ty = "1"
     show text "{size=+10}{font=mods/iw/menu/headingpro.ttf}{color=#fff8e7}Существует теория, что Вселенная бесконечна,\nа потому в ней должны быть копии нашей планеты.\nВы только представьте: летел космический корабль\nмиллионы световых лет в поисках другой цивилизации…\nи уткнулся в Мытищи.{/color}{/font}{/size}" at truecenter with dissolve2
-    $ renpy.pause(12)
+    $ renpy.pause(10)
     hide text with dissolve2
     $ backdrop = "days"
     $ new_chapter(1, u"Сокровенное желание:\nПрибытие")

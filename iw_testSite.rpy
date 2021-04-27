@@ -12,11 +12,13 @@
     scene bg ext_camp_entrance_day
     show ai normal lng_dress
     show cs normal civil sunglasses close at fleft
+    rip "Упал отжался!"
     pause
     
     scene bg ext_stage_normal_day
     show ai angry1 tai_dress
     show cs smile civil sunglasses at fleft
+    ri "Быро!"
     pause
     
     scene bg ext_aidpost_day

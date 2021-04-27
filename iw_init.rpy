@@ -49,6 +49,7 @@
     $ sfx_prunk1 = "mods/iw/audio/sfx/prunk1.ogg"
     $ sfx_prunk2 = "mods/iw/audio/sfx/prunk2.ogg"
     $ sfx_prunk3 = "mods/iw/audio/sfx/prunk3.ogg"
+    $ sfx_prunks = "mods/iw/audio/sfx/prunks.ogg"
     $ sfx_smoke = "mods/iw/audio/sfx/smoke.ogg"
     
 

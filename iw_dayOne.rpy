@@ -122,9 +122,9 @@ label iw_dayOne_arriveSemyon:
     with hpunch
 
     show ja serious with dissolve
-    pause
-    
     window hide
+    pause
+   
     play sound sfx_prunk1
     show bg:
         ease 0.5 xpos 0.55
@@ -242,6 +242,25 @@ label iw_dayOne_arriveSemyon:
         ease 0.1 xpos 0.75
     $ renpy.pause(0.1, hard=True)
 
+    play sound sfx_prunk2
+    show bg:
+        ease 0.1 xpos 0.45
+    show jd rage:
+        ease 0.1 xpos 0.25
+    show ja rage with hpunch:
+        ease 0.1 xpos 0.95
+    $ renpy.pause(0.1, hard=True)
+    
+    play sound sfx_prunk3
+    show bg:
+        ease 0.1 xpos 0.55
+    show jd rage:
+        ease 0.1 xpos 0.05
+    show ja rage with hpunch:
+        ease 0.1 xpos 0.75
+    $ renpy.pause(0.1, hard=True)
+
+    play sound sfx_prunks
     show bg:
         parallel:
             ease 1.5 zoom 100
@@ -331,7 +350,6 @@ label iw_dayOne_arriveSemyon:
     usp "То есть мне!"
 
     "Сцена обогатилась ещё одним персонажем: маленькой рыжей девочкой лет двенадцати."
-    "Она быстро подбежала к Славянам и встала между ними живым барьером."
     
     show un angry2 at cleft zorder 0
     show us normal sport at center zorder 1
@@ -429,8 +447,9 @@ label iw_dayOne_arriveSemyon:
 
     us "Ну, и что тут происходит? Что я пропустила интересного?"
 
-    show un angry2 at cright with ease
-    show ja sad with dissolve
+    show un angry2 at cright
+    show ja sad
+    with dissolve
     sls "Эта ненормальная утверждает, что теперь она Славяна."
     "Славя Номер Два кивнула на поверженную Славю Номер Один."
 
@@ -469,7 +488,7 @@ label iw_dayOne_arriveSemyon:
     show un scared far at right
     show jd scared far at fleft
     show ja scared far at fright
-    with dissolve    
+    with vpunch    
     window show
     mt "Чего притихли?{w} Вам совсем кукушки поотшибало на жаре?!"
     "Грозно проревела вожатая, впечатывая взглядом в плавящийся вязкий воздух каждую по отдельности и всех вместе."

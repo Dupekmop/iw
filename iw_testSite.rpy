@@ -11,22 +11,22 @@
     
     scene bg ext_camp_entrance_day
     show ai normal lng_dress
-    show cs sad at fleft
+    show cs normal civil sunglasses close at fleft
     pause
     
     scene bg ext_stage_normal_day
     show ai angry1 tai_dress
-    show cs sad stethoscope at fleft
+    show cs smile civil sunglasses at fleft
     pause
     
     scene bg ext_aidpost_day
     show ai smile2 srt_dress
-    show cs sad glasses at fleft
+    show cs shy civil sunglasses far at fleft
     pause
     
     scene bg ext_beach_day
     show ai rage lng_kimono
-    show cs sad glas_on at fleft
+    show cs sad civil close at fleft
     pause
     
     scene bg ext_boathouse_day

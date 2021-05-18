@@ -11,6 +11,9 @@ label iw_start:
 
 
 label iw_prescriptum:
+    play ambience ambience_cold_wind_loop fadein 3
+    play music iw_reverance fadein 3
+    $ renpy.pause(2)
     $ prolog_time()
     $ backdrop = "prologue"
     $ new_chapter(0, u"Сокровенное желание:\nПрескриптум")
@@ -19,8 +22,6 @@ label iw_prescriptum:
     $ renpy.pause(4)
     hide text with dissolve2
     
-    play ambience ambience_cold_wind_loop fadein 3
-    play music iw_reverance fadein 3
     scene bg black
 
     $ set_mode_nvl()
@@ -106,6 +107,15 @@ label iw_prescriptum:
     $ renpy.pause(0.5, hard=True)
     scene cg prologue_cat with zoomin
     window show
+
+    show cg:
+        anchor (0.5,0.5)
+        pos (0.5,0.5)
+        ease 2 ypos 0.49
+        ease 2 ypos 0.50
+        ease 2 ypos 0.51
+        ease 2 ypos 0.50
+        repeat
     
     "Точки погасли, и кошка практически бесшумно выпрыгнула из темноты." with vpunch
     "Её неестественно большая морда застыла совсем рядом…"
@@ -248,7 +258,7 @@ label iw_prescriptum:
     play sound_loop sfx_head_heartbeat fadein 3
     stop ambience fadeout 3
     "Всё вокруг поплыло, потеряло чёткость.{w} Голова закружилась.{w} Я почувствовал, как само моё естество вырывается из физической оболочки."
-    "Воспоминания с размаху ударили меня по голове как свинцовый кирпич…"
+    "Откуда-то выпрыгнула услышанная недавно фраза и с размаху ударила меня как свинцовый кирпич…"
     window hide
     play sound sfx_intro_bus_transition
     show text u"{size=+40}{font=mods/iw/menu/ustroke.ttf}{color=#ac0000}вот смысл окна, например,\nчтобы в него выброситься...\nно порой бросаешься в него,\nа бросаться там некуда{/color}{/font}{/size}" onlayer texture:

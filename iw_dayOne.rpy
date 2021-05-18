@@ -1,5 +1,7 @@
 label iw_dayOne_arriveSemyon:
     $ ty = "1"
+    play ambience ambience_camp_entrance_day
+    $ renpy.pause(2)
     show text "{size=+10}{font=mods/iw/menu/headingpro.ttf}{color=#fff8e7}Существует теория, что Вселенная бесконечна,\nа потому в ней должны быть копии нашей планеты.\nВы только представьте: летел космический корабль\nмиллионы световых лет в поисках другой цивилизации…\nи уткнулся в Мытищи.{/color}{/font}{/size}" at truecenter with dissolve2
     $ renpy.pause(10)
     hide text with dissolve2
@@ -16,6 +18,7 @@ label iw_dayOne_arriveSemyon:
     
     play music music_list["no_tresspassing"]
     scene bg ext_road_day with flash
+    stop ambience fadeout 3
     $ set_mode_adv()
     
     $ iw_screens()
@@ -489,6 +492,7 @@ label iw_dayOne_arriveSemyon:
     show jd scared far at fleft
     show ja scared far at fright
     with vpunch    
+    play music music_list["doomed_to_be_defeated"]
     window show
     mt "Чего притихли?{w} Вам совсем кукушки поотшибало на жаре?!"
     "Грозно проревела вожатая, впечатывая взглядом в плавящийся вязкий воздух каждую по отдельности и всех вместе."
@@ -496,6 +500,7 @@ label iw_dayOne_arriveSemyon:
     window hide
     $ renpy.pause(1, hard=True)
     show mt angry close with dissolve2
+    stop music fadeout 5
     window show
     mt "Так, ладно…"
     "Удовлетворившись произведённым эффектом, Ольга Дмитриевна так же резко сменила гнев на милость и приблизилась ко мне."

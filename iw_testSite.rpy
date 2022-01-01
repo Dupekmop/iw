@@ -24,26 +24,31 @@
     scene bg ext_aidpost_day
     show ai smile2 srt_dress
     show cs shy civil sunglasses far at fleft
+    aip "Моё полное имя А.Л.И.С.А."
     pause
     
     scene bg ext_beach_day
     show ai rage lng_kimono
     show cs sad civil close at fleft
+    ai "Но все зовут Глаша. И ты тоже зови!"
     pause
     
     scene bg ext_boathouse_day
     show ai happy tai_kimono
     show cs sad glas_dw at fleft
+    yop "тысяча чертей!"
     pause
     
     scene bg ext_no_bus
     show ai normal srt_kimono
     show cs sad noshirt at fleft
+    yo "Каналья!"
     pause
     
     scene bg ext_camp_entrance_day
     show ai angry1 lng_uniformb
     show cs sad noshirt glasses at fleft
+    chor "Ряяя"
     pause
     
     scene bg ext_dining_hall_away_day

@@ -14,8 +14,8 @@
     $ yop = Character(u"Пилот пепелаца",       color="#e60000", what_color=wclr, what_outlines=wotl) # Йошка до представления
     $ ai = Character(u"Искин",                 color="#fff8e7", what_color=wclr, what_outlines=wotl) # Искин
     $ aip = Character(u"Голографическая нэко", color="#fff8e7", what_color=wclr, what_outlines=wotl) # Искин до представления
-    $ ri = Character(u"Рита",                  color="#ff0cbd", what_color=wclr, what_outlines=wotl) # Рита
-    $ rip = Character(u"Розоволосая тян",      color="#ff0cbd", what_color=wclr, what_outlines=wotl) # Рита до представления
+    $ ri = Character(u"Антонина",              color="#f750b6", what_color=wclr, what_outlines=wotl) # Антонина
+    $ rip = Character(u"Розоволосая тян",      color="#f750b6", what_color=wclr, what_outlines=wotl) # Антонина до представления
 
 #sfx
     $ sfx_vzhux = "mods/iw/audio/sfx/vzhux.ogg"
@@ -51,7 +51,7 @@
     image bg ext_camp_entrance_sunset = "mods/iw/img/bg/ext_camp_entrance_sunset.png"
     
 #cg
-    image cg prologue_cat =  "mods/iw/img/cg/prologue_cat.png"
+    image cg prologue_cat = "mods/iw/img/cg/prologue_cat.png"
 
 #image
     image dreamgirl = "mods/iw/img/i/dreamgirl.png"

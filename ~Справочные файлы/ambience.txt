@@ -1,38 +1,41 @@
-﻿ambience_boat_station_day               ## Шум воды
-ambience_boat_station_night             ## Шум воды
-ambience_camp_center_day                ## Шум птиц
-ambience_camp_center_evening            ## Шум с кукушкой и птицами
-ambience_camp_center_night              ## Кузнечики
-ambience_camp_entrance_day              ## Шум автобуса
-ambience_camp_entrance_day_people       ## Шум автобуса
-ambience_camp_entrance_evening          ## Шум кузнечика
-ambience_camp_entrance_night            ## Шум насекомых
-ambience_catacombs                      ## Эхо в катакомбах
-ambience_catacombs_stones               ## Эхо в катакомбах
-ambience_clubs_inside_day               ## Радиоклуб
-ambience_cold_wind_loop                 ## Ветер
-ambience_day_countryside_ambience       ## Шум птиц
-ambience_dining_hall_empty              ## Ложкой по тарелке один
-ambience_dining_hall_full               ## Ложкой по тарелке полная столовая
-ambience_ext_road_day                   ## Шум у дороги
-ambience_ext_road_evening               ## Шум у дороги
-ambience_ext_road_night                 ## Шум у дороги
-ambience_forest_day                     ## Шум леса
-ambience_forest_evening                 ## Шум леса
-ambience_forest_night                   ## Шум леса
-ambience_grasshoper_clean               ## Кузнечик
-ambience_int_cabin_day                  ## Часы 1
-ambience_int_cabin_evening              ## Часы 1
-ambience_int_cabin_night                ## Часы 1
-ambience_lake_shore_day                 ## Шум реки, птиц
-ambience_lake_shore_evening             ## Шум реки, насекомых
-ambience_lake_shore_night               ## Шум реки, насекомого
-ambience_library_day                    ## Листают книги
-ambience_medium_crowd_indoors_1         ## Шум разговоров
-ambience_medium_crowd_outdoors          ## Шум разговоров
-ambience_medstation_inside_day          ## Часы 2
-ambience_medstation_inside_night        ## Часы 2
-ambience_music_club_day                 ## Часы в музклубе
-ambience_music_club_night               ## Часы в музклубе
-ambience_old_camp_outside               ## Насекомые
-ambience_soccer_play_background         ## Игра на спортплощадке
+﻿#external
+ambience_boat_station_day               ## Пристань, день (шум воды и птиц)
+ambience_boat_station_night             ## Пристань, ночь (тихий шум воды)
+ambience_day_countryside_ambience       ## Загородный эмбиент с шумом птиц (например, в лесу)
+ambience_camp_center_day                ## Дневной эмбиент с шумом птиц
+ambience_camp_center_evening            ## Вечерний эмбиент с тихим шумом птиц
+ambience_camp_center_night              ## Ночной эмбиент со сверчками
+ambience_camp_entrance_day              ## Ворота лагеря, день
+ambience_camp_entrance_day_people       ## Ворота лагеря, день
+ambience_camp_entrance_evening          ## Ворота лагеря, вечер
+ambience_camp_entrance_night            ## Ворота лагеря, ночь, гудение фонаря
+ambience_cold_wind_loop                 ## Холодный ветер
+ambience_ext_road_day                   ## Эмбиент у шоссе, день
+ambience_ext_road_evening               ## Эмбиент у шоссе, вечер
+ambience_ext_road_night                 ## Эмбиент у шоссе, ночь
+ambience_forest_day                     ## Лес, день
+ambience_forest_evening                 ## Лес, вечер
+ambience_forest_night                   ## Лес, ночь
+ambience_grasshoper_clean               ## Ночь и одинокий кузнечик
+ambience_lake_shore_day                 ## Озеро или залив, день
+ambience_lake_shore_evening             ## Озеро или залив, вечер
+ambience_lake_shore_night               ## Озеро или залив, ночь
+ambience_old_camp_outside               ## Болото ночью
+ambience_soccer_play_background         ## На спортплощадке идёт игра
+
+#internal
+ambience_int_cabin_day                  ## В домике днём, тиканье часов
+ambience_int_cabin_evening              ## В домике вечером, тиканье часов
+ambience_int_cabin_night                ## В домике ночью, тиканье часов
+ambience_catacombs                      ## Катакомбы 1
+ambience_catacombs_stones               ## Катакомбы 2
+ambience_clubs_inside_day               ## Клуб кибернетики
+ambience_dining_hall_empty              ## Столовая с одним посетителем
+ambience_dining_hall_full               ## Столовая заполнена людьми
+ambience_library_day                    ## Библиотека с посетителями
+ambience_medium_crowd_indoors_1         ## Люди разговаривают в большом помещении
+ambience_medium_crowd_outdoors          ## Люди негромко разговаривают в большом помещении
+ambience_medstation_inside_day          ## Медпункт днём или вечером, тиканье часов
+ambience_medstation_inside_night        ## Медпункт ночью, только тиканье часов
+ambience_music_club_day                 ## Музклуб днём, тиканье часов
+ambience_music_club_night               ## Музклуб ночью, тиканье часов

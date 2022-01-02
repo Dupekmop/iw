@@ -60,7 +60,6 @@
     image chat = "mods/iw/img/i/chat.png"
     image msngr = "mods/iw/img/i/msngr.png"
 
-
 #===========================
 #Новый текстбокс
 init -1 python:

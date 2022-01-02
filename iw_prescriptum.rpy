@@ -6,6 +6,8 @@ label iw_start:
             jump iw_dayOne_arriveSemyon
         "День первый: прибытие Йошки":
             jump iw_dayOne_arriveJoshka
+        "Лабиринт":
+            jump iw_dayThree_maze
         "Тестирование кода":
             jump iw_test
 

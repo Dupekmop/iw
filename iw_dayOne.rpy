@@ -293,7 +293,7 @@ label iw_dayOne_arriveSemyon:
     sls "Чего-о-о?"
 
     show jd normal with dissolve
-    slf "Того!{w} Теперь твоя очередь в одиночестве бренчать на гитаре по вечерам, устраивать пакости Панамке и держать в страхе весь лагерь."
+    slf "Того!{w} Теперь твоя очередь в одиночестве бренчать на гитаре по вечерам, устраивать пакости Панаме и держать в страхе весь лагерь."
     slf "Ещё быть колючей, гордой и неприступной, но с большим любящим сердцем. Не забудь."
 
     show ja serious with dissolve
@@ -515,10 +515,11 @@ label iw_dayOne_arriveSemyon:
     show ja sad
     with dissolve
     window show
+    show mt normal with dissolve
     mt "Лена, ты ещё здесь?"
     show un shy with dissolve
-    show mt smile with dissolve
     mt "В расход его."
+    show mt smile with dissolve
     mt "А остальным оправиться и прибыть ко мне для профилактической беседы."
     show un angry2 with dissolve
     window hide

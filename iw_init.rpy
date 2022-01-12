@@ -11,7 +11,7 @@
     $ unv = Character(u"...",                  color="#b956ff", what_color=wclr, what_outlines=wotl) # голос Лены
     $ chor = Character(u"Пионерки",            color="#02de90", what_color=wclr, what_outlines=wotl) # все пионерки говорят хором
     $ yo = Character(u"Йошка",                 color="#e60000", what_color=wclr, what_outlines=wotl) # Йошка
-    $ yop = Character(u"Пилот пепелаца",       color="#e60000", what_color=wclr, what_outlines=wotl) # Йошка до представления
+    $ yop = Character(u"Пришелец",             color="#e60000", what_color=wclr, what_outlines=wotl) # Йошка до представления
     $ ai = Character(u"Искин",                 color="#fff8e7", what_color=wclr, what_outlines=wotl) # Искин
     $ aip = Character(u"Голографическая нэко", color="#fff8e7", what_color=wclr, what_outlines=wotl) # Искин до представления
     $ ri = Character(u"Антонина",              color="#f750b6", what_color=wclr, what_outlines=wotl) # Антонина
@@ -39,6 +39,7 @@
     $ iw_reverance = "mods/iw/audio/music/reverance.mp3"
     $ iw_story = "mods/iw/audio/music/story.ogg"
     $ iw_killem = "mods/iw/audio/music/killem.mp3"
+    $ iw_feelgood = "mods/iw/audio/music/feelgood.mp3"
     
 #bg 
     image bg ext_dream_prologue = "mods/iw/img/bg/ext_dream_prologue.png"

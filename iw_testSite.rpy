@@ -8,213 +8,206 @@
     "..."
     
 # ТЕСТИРОВАНИЕ КОДА    
+    scene bg black with dissolve2
+    play ambience ambience_camp_center_day
+    play music iw_feelgood
+    $ renpy.pause(2)
+    scene bg ext_camp_entrance_day with dissolve:
+        promenad
+    $ renpy.pause(3)
+    scene bg ext_clubs_day with dissolve:
+        promenad
+    $ renpy.pause(3)
+    scene bg ext_square_day with dissolve:
+        promenad
+    $ renpy.pause(3)
+    scene bg ext_dining_hall_away_day with dissolve:
+        promenad
+    $ renpy.pause(3)
+    scene bg ext_beach_day with dissolve
+    play ambience ambience_lake_shore_day
+    $ renpy.pause(2)
     
-    scene bg ext_camp_entrance_day
-    show ai normal lng_dress
-    show cs normal civil sunglasses close at fleft
-    rip "Упал отжался!"
-    pause
-    
-    scene bg ext_stage_normal_day
-    show ai angry1 tai_dress
-    show cs smile civil sunglasses at fleft
-    ri "Быро!"
+    show ri bored dress at center
+    show sl normal pioneer at right
+    show dv normal pioneer at left
     pause
     
     scene bg ext_aidpost_day
-    show ai smile2 srt_dress
-    show cs shy civil sunglasses far at fleft
-    aip "Моё полное имя А.Л.И.С.А."
+    show ri smile2 dress at center
+    show un normal pioneer at right
+    show us normal pioneer at left
     pause
-    
-    scene bg ext_beach_day
-    show ai rage lng_kimono
-    show cs sad civil close at fleft
-    ai "Но все зовут Глаша. И ты тоже зови!"
-    pause
-    
+
     scene bg ext_boathouse_day
-    show ai happy tai_kimono
-    show cs sad glas_dw at fleft
-    yop "тысяча чертей!"
+    show ri sad everyday at center
+    show mt normal pioneer at right
+    show cs normal at left
     pause
     
     scene bg ext_no_bus
-    show ai normal srt_kimono
-    show cs sad noshirt at fleft
-    yo "Каналья!"
+    show ri smile everyday at center
+    show mi normal pioneer at right
+    show el normal pioneer at left
     pause
     
-    scene bg ext_camp_entrance_day
-    show ai angry1 lng_uniformb
-    show cs sad noshirt glasses at fleft
-    chor "Ряяя"
+    scene bg ext_clubs_day
+    show ri smile sport at center
+    show sh normal pioneer at right
+    show yo happy2 hati_gadget jerkin at left
     pause
-    
-    scene bg ext_dining_hall_away_day
-    show ai smile2 tai_uniformb
-    show cs sad noshirt glas_on at fleft
+
+    scene bg ext_dining_hall_near_day
+    show ri dontlike sport at center
+    show uv normal at right
+    show ai happy tai_infant2 at left
     pause
-    
-    scene bg ext_house_of_mt_day
-    show ai rage srt_uniformb
-    show cs sad noshirt glas_dw at fleft
-    pause
-    
+
     scene bg ext_houses_day
-    show ai happy lng_uniformw
-    pause
-    
-    scene bg ext_island_day
-    show ai normal tai_uniformw
+    show ri pensive swim at center
+    show sl normal pioneer at right
+    show dv normal pioneer at left
     pause
     
     scene bg ext_musclub_day
-    show ai angry1 srt_uniformw
+    show ri surprise swim at center
+    show un normal pioneer at right
+    show us normal pioneer at left
     pause
-    
-    scene bg ext_path_day
-    show ai smile2 lng_shirt
-    pause
-    
-    scene bg ext_playground_day
-    show ai rage tai_shirt
-    pause
-    
+
     scene bg ext_square_day
-    show ai happy srt_shirt
+    show ri angry top
+    show mt normal pioneer at right
+    show cs normal at left
     pause
     
     scene bg ext_washstand_day
-    show ai normal lng_jeans
+    show ri nope top
+    show mi normal pioneer at right
+    show el normal pioneer at left
     pause
-    
 
+    scene bg ext_beach_sunset
     $ persistent.sprite_time = "sunset"
-
-    scene bg ext_camp_entrance_sunset
-    show ai angry1 tai_jeans
-    show cs sad at fleft
-    pause
-    
-    scene bg ext_beach_sunset
-    show ai smile2 srt_jeans
-    pause
-    
-    scene bg int_clubs_male_sunset
-    show ai rage lng_xmas
-    pause
-    
-    scene bg ext_beach_sunset
-    show ai happy tai_xmas
+    show ri bored dress at center
+    show sl normal pioneer at right
+    show dv normal pioneer at left
     pause
     
     scene bg ext_dining_hall_away_sunset
-    show ai normal srt_xmas
-    show cs sad stethoscope at fleft
+    show ri smile2 dress at center
+    show un normal pioneer at right
+    show us normal pioneer at left
     pause
-    
-    scene bg int_dining_hall_sunset
-    show ai angry1 lng_infant1
-    pause
-    
-    scene bg ext_no_bus_sunset
-    show ai smile2 tai_infant1
+
+    scene bg ext_house_of_mt_sunset
+    show ri sad everyday at center
+    show mt normal pioneer at right
+    show cs normal at left
     pause
     
     scene bg ext_path_sunset
-    show ai rage srt_infant1
+    show ri smile everyday at center
+    show mi normal pioneer at right
+    show el normal pioneer at left
     pause
     
-    scene bg int_house_of_mt_sunset
-    show ai happy lng_infant2
+    scene bg ext_road_sunset
+    show ri smile sport at center
+    show sh normal pioneer at right
+    show yo happy2 hati_gadget jerkin at left
     pause
-    
+
+    scene bg ext_dining_hall_near_sunset
+    show ri dontlike sport at center
+    show uv normal at right
+    show ai happy tai_infant2 at left
+    pause
+
     scene bg ext_houses_sunset
-    show ai normal tai_infant2
+    show ri pensive swim at center
+    show sl normal pioneer at right
+    show dv normal pioneer at left
     pause
     
+    scene bg ext_no_bus_sunset
+    show ri surprise swim at center
+    show un normal pioneer at right
+    show us normal pioneer at left
+    pause
+
     scene bg ext_square_sunset
-    show ai angry1 srt_infant2
-    pause
-
-    $ persistent.sprite_time = "night"
-
-    scene bg ext_camp_entrance_night
-    show ai smile2 lng_pink
-    show cs sad at fleft
+    show ri angry top
+    show mt normal pioneer at right
+    show cs normal at left
     pause
     
+    scene bg ext_polyana_sunset
+    show ri nope top
+    show mi normal pioneer at right
+    show el normal pioneer at left
+    pause
+
     scene bg ext_aidpost_night
-    show ai rage tai_pink
-    pause
-    
-    scene bg ext_bathhouse_night
-    show ai happy srt_pink
-    pause
-    
-    scene bg int_aidpost_night
-    show ai normal lng_pink
+    $ persistent.sprite_time = "night"
+    show ri bored dress at center
+    show sl normal pioneer at right
+    show dv normal pioneer at left
     pause
     
     scene bg ext_beach_night
-    show ai angry1 tai_pink
+    show ri smile2 dress at center
+    show un normal pioneer at right
+    show us normal pioneer at left
     pause
-    
-    scene bg ext_boathouse_night
-    show ai smile2 srt_pink
-    pause
-    
-    scene bg int_clubs_male2_night_nolight
-    show ai rage lng_pink
-    show cs sad stethoscope at fleft
-    pause
-    
+
     scene bg ext_camp_entrance_night
-    show ai happy tai_pink
+    show ri sad everyday at center
+    show mt normal pioneer at right
+    show cs normal at left
     pause
     
     scene bg ext_clubs_night
-    show ai normal srt_pink
+    show ri smile everyday at center
+    show mi normal pioneer at right
+    show el normal pioneer at left
     pause
     
-    scene bg int_dining_hall_night
-    show ai angry1 lng_pink
+    scene bg ext_library_night
+    show ri smile sport at center
+    show sh normal pioneer at right
+    show yo happy2 hati_gadget jerkin at left
     pause
-    
-    scene bg ext_dining_hall_near_night
-    show ai smile2 tai_pink
-    pause
-    
-    scene bg ext_house_of_dv_night
-    show ai rage srt_pink
-    pause
-    
-    scene bg int_house_of_dv_night
-    show ai happy lng_pink
-    pause
-    
-    scene bg ext_path_night
-    show ai normal tai_pink
-    pause
-    
+
     scene bg ext_playground_night
-    show ai angry1 srt_pink
+    show ri dontlike sport at center
+    show uv normal at right
+    show ai happy tai_infant2 at left
     pause
-    
-    scene bg int_library_night
-    show ai smile2 lng_pink
-    pause
-    
+
     scene bg ext_square_night
-    show ai rage tai_pink
+    show ri pensive swim at center
+    show sl normal pioneer at right
+    show dv normal pioneer at left
     pause
     
     scene bg ext_stage_big_night
-    show ai happy srt_pink
+    show ri surprise swim at center
+    show un normal pioneer at right
+    show us normal pioneer at left
+    pause
+
+    scene bg ext_house_of_dv_night
+    show ri angry top
+    show mt normal pioneer at right
+    show cs normal at left
     pause
     
-    scene bg int_old_building_night
-    show ai normal lng_pink
-    "ФСЁ!"
+    scene bg ext_path_night
+    show ri nope top
+    show mi normal pioneer at right
+    show el normal pioneer at left
+    pause
+
+
     

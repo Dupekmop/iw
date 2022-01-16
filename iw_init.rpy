@@ -4,18 +4,20 @@
 
     $ wotl = [(0,"#000000",2,2)]
     $ wclr = "#fff8e7"
-    $ pvo = Character(u"Голос из темноты",     color="#000000", what_color=wclr, what_outlines=wotl) # Голос во сне в прологе
-    $ sv = Character(u"...",                   color="#fff8e7", what_color=wclr, what_outlines=wotl, what_prefix=u"«", what_suffix=u"»") # мысли Семёна
-    $ slf = Character(u"Славя Номер Один",     color="#ffaa00", what_color=wclr, what_outlines=wotl) # Алиса на остановке
-    $ sls = Character(u"Славя Номер Два",      color="#ffd200", what_color=wclr, what_outlines=wotl) # Славя на остановке
-    $ unv = Character(u"...",                  color="#b956ff", what_color=wclr, what_outlines=wotl) # голос Лены
-    $ chor = Character(u"Пионерки",            color="#02de90", what_color=wclr, what_outlines=wotl) # все пионерки говорят хором
-    $ yo = Character(u"Йошка",                 color="#e60000", what_color=wclr, what_outlines=wotl) # Йошка
-    $ yop = Character(u"Пришелец",             color="#e60000", what_color=wclr, what_outlines=wotl) # Йошка до представления
-    $ ai = Character(u"Искин",                 color="#fff8e7", what_color=wclr, what_outlines=wotl) # Искин
-    $ aip = Character(u"Голографическая нэко", color="#fff8e7", what_color=wclr, what_outlines=wotl) # Искин до представления
-    $ ri = Character(u"Антонина",              color="#f750b6", what_color=wclr, what_outlines=wotl) # Антонина
-    $ rip = Character(u"Розоволосая тян",      color="#f750b6", what_color=wclr, what_outlines=wotl) # Антонина до представления
+    $ pvo = Character(u"Голос из темноты",       color="#000000", what_color=wclr, what_outlines=wotl) # Голос во сне в прологе
+    $ sv = Character(u"...",                     color="#fff8e7", what_color=wclr, what_outlines=wotl, what_prefix=u"«", what_suffix=u"»") # мысли Семёна
+    $ slf = Character(u"Славя Номер Один",       color="#ffaa00", what_color=wclr, what_outlines=wotl) # Алиса на остановке
+    $ sls = Character(u"Славя Номер Два",        color="#ffd200", what_color=wclr, what_outlines=wotl) # Славя на остановке
+    $ unv = Character(u"...",                    color="#b956ff", what_color=wclr, what_outlines=wotl) # голос Лены
+    $ chor = Character(u"Пионерки",              color="#02de90", what_color=wclr, what_outlines=wotl) # все пионерки говорят хором
+    $ yo = Character(u"Йошка",                   color="#e60000", what_color=wclr, what_outlines=wotl) # Йошка
+    $ yop = Character(u"Пришелец",               color="#e60000", what_color=wclr, what_outlines=wotl) # Йошка до представления
+    $ ai = Character(u"Искин",                   color="#fff8e7", what_color=wclr, what_outlines=wotl) # Искин
+    $ aip = Character(u"Голографическая нэко",   color="#fff8e7", what_color=wclr, what_outlines=wotl) # Искин до представления
+    $ ri = Character(u"Антонина",                color="#f750b6", what_color=wclr, what_outlines=wotl) # Антонина
+    $ rip = Character(u"Розоволосая тян",        color="#f750b6", what_color=wclr, what_outlines=wotl) # Антонина до представления
+    $ gl = Character(u"Глаша",                   color="#fff8e7", what_color=wclr, what_outlines=wotl) # Глаша
+    $ glp = Character(u"Девушка в костюме нэко", color="#fff8e7", what_color=wclr, what_outlines=wotl) # Глаша до представления
 
 #sfx
     $ sfx_vzhux = "mods/iw/audio/sfx/vzhux.ogg"

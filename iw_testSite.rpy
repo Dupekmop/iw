@@ -28,890 +28,998 @@
     play ambience ambience_lake_shore_day
     $ renpy.pause(2)
     
-    show ai grin1 jeans tal
-    show sh normal pioneer at left
-    show mt normal pioneer at right
+    show ai grin1 jeans srt
+    show sl normal pioneer at left
+    show cs normal at right
     ai "grin1"
 
-    scene bg ext_camp_entrance_day
+    scene bg ext_island_day
     show ai surprise uniformb srt
-    show mi normal pioneer at left
-    show yo normal shirt at right
+    show cs normal at left
+    show el normal pioneer at right
     ai "surprise"
 
-    scene bg ext_square_day_city
-    show ai scary little1 lng
-    show uv normal at left
-    show gl normal jeans at right
+    scene bg int_house_of_sl_day
+    show ai scary jeans lng
+    show cs normal at left
+    show cs normal at right
     ai "scary"
 
-    scene bg ext_washstand_day
-    show ai sad uniformw srt
-    show un normal pioneer at left
-    show sl normal pioneer at right
+    scene bg int_clubs_male_day
+    show ai sad little2 tal
+    show uv normal at left
+    show yo normal shirt at right
     ai "sad"
 
-    scene bg int_dining_hall_people_day
-    show ai shy1 jeans srt
-    show pi at left
-    show uv normal at right
+    scene bg ext_camp_entrance_day
+    show ai shy1 dress tal
+    show uv normal at left
+    show mi normal pioneer at right
     ai "shy1"
 
-    scene bg ext_path2_day
-    show ai guilty little1 tal
-    show el normal pioneer at left
-    show pi at right
+    scene bg ext_aidpost_day
+    show ai guilty dress lng
+    show un normal pioneer at left
+    show yo normal shirt at right
     ai "guilty"
 
-    scene bg ext_square_day_city
-    show ai evilsmile1 uniformw lng
-    show mi normal pioneer at left
-    show sh normal pioneer at right
+    scene bg ext_polyana_day
+    show ai evilsmile1 little1 tal
+    show cs normal at left
+    show yo normal shirt at right
     ai "evilsmile1"
 
-    scene bg ext_washstand_day
-    show ai happy jeans srt
-    show mz normal pioneer at left
-    show el normal pioneer at right
-    ai "happy"
-
-    scene bg int_musclub_day
-    show ai laugh1 pink srt
-    show mz normal pioneer at left
-    show mi normal pioneer at right
-    ai "laugh1"
-
-    scene bg int_bus
-    show ai smile1 pink lng
-    show mt normal pioneer at left
-    show un normal pioneer at right
-    ai "smile1"
-
-    scene bg int_aidpost_day
-    show ai normal jeans srt
-    show mi normal pioneer at left
-    show us normal pioneer at right
-    ai "normal"
-
-    scene bg ext_musclub_day
-    show ai serious pink lng
-    show mz normal pioneer at left
-    show el normal pioneer at right
-    ai "serious"
-
-    scene bg int_aidpost_day_apple
-    show ai dontlike1 little2 tal
-    show yo normal shirt at left
-    show el normal pioneer at right
-    ai "dontlike1"
-
-    scene bg int_house_of_mt_day
-    show ai angry1 uniformb tal
-    show un normal pioneer at left
-    show un normal pioneer at right
-    ai "angry1"
-
-    scene bg ext_house_of_mt_day
-    show ai rage uniformb srt
+    scene bg ext_beach_day
+    show ai happy kimono tal
     show yo normal shirt at left
     show pi at right
+    ai "happy"
+
+    scene bg int_bus
+    show ai laugh1 pink srt
+    show un normal pioneer at left
+    show yo normal shirt at right
+    ai "laugh1"
+
+    scene bg int_bus_people_day
+    show ai smile1 dress srt
+    show mz normal pioneer at left
+    show el normal pioneer at right
+    ai "smile1"
+
+    scene bg int_library_day
+    show ai normal shirt tal
+    show mi normal pioneer at left
+    show uv normal at right
+    ai "normal"
+
+    scene bg int_bus
+    show ai serious jeans srt
+    show uv normal at left
+    show us normal pioneer at right
+    ai "serious"
+
+    scene bg ext_square_day_city
+    show ai dontlike1 shirt lng
+    show yo normal shirt at left
+    show cs normal at right
+    ai "dontlike1"
+
+    scene bg int_house_of_dv_day
+    show ai angry1 uniformb lng
+    show mt normal pioneer at left
+    show mz normal pioneer at right
+    ai "angry1"
+
+    scene bg int_dining_hall_day
+    show ai rage pink lng
+    show gl normal jeans at left
+    show uv normal at right
     ai "rage"
 
-    scene bg ext_house_of_dv_day
-    show ai anger jeans lng
-    show gl normal jeans at left
+    scene bg int_dining_hall_people_day
+    show ai anger jeans srt
+    show jd normal pioneer at left
     show mz normal pioneer at right
     ai "anger"
 
-    scene bg ext_beach_day
-    show ai frust1 kimono srt
-    show mt normal pioneer at left
-    show yo normal shirt at right
+    scene bg int_aidpost_day
+    show ai frust1 xmas srt
+    show uv normal at left
+    show jd normal pioneer at right
     ai "frust1"
 
-    scene bg ext_no_bus
-    show ai dontlike2 xmas tal
-    show el normal pioneer at left
+    scene bg ext_houses_day
+    show ai dontlike2 uniformb tal
+    show sl normal pioneer at left
     show un normal pioneer at right
     ai "dontlike2"
 
-    scene bg ext_house_of_un_day
-    show ai evilsmile2 pink tal
-    show cs normal at left
-    show mt normal pioneer at right
+    scene bg ext_house_of_sl_day
+    show ai evilsmile2 uniformb lng
+    show jd normal pioneer at left
+    show mz normal pioneer at right
     ai "evilsmile2"
 
-    scene bg ext_houses_day
-    show ai grin2 little2 tal
-    show sh normal pioneer at left
-    show cs normal at right
+    scene bg int_library_day
+    show ai grin2 xmas lng
+    show jd normal pioneer at left
+    show mt normal pioneer at right
     ai "grin2"
 
-    scene bg ext_house_of_un_day
-    show ai smile2 uniformb lng
-    show sl normal pioneer at left
-    show un normal pioneer at right
+    scene bg ext_path2_day
+    show ai smile2 xmas srt
+    show cs normal at left
+    show jd normal pioneer at right
     ai "smile2"
 
-    scene bg ext_house_of_un_day
-    show ai shy2 uniformb srt
+    scene bg ext_path2_day
+    show ai shy2 uniformw srt
     show mz normal pioneer at left
-    show uv normal at right
+    show yo normal shirt at right
     ai "shy2"
 
-    scene bg int_musclub_day
+    scene bg ext_road_day
     show ai laugh2 little2 lng
-    show pi at left
-    show un normal pioneer at right
+    show us normal pioneer at left
+    show pi at right
     ai "laugh2"
 
-    scene bg int_house_of_sl_day
-    show ai frust2 little1 lng
-    show mz normal pioneer at left
+    scene bg ext_houses_day
+    show ai frust2 kimono srt
+    show cs normal at left
     show sh normal pioneer at right
     ai "frust2"
 
-    scene bg ext_washstand2_day
-    show ai angry2 little1 lng
-    show mi normal pioneer at left
-    show mz normal pioneer at right
+    scene bg int_clubs_male_day
+    show ai angry2 uniformw tal
+    show sl normal pioneer at left
+    show pi at right
     ai "angry2"
 
-    scene bg int_house_of_mt_day
-    show ai surprise jeans lng
-    show pi at left
-    show mt normal pioneer at right
+    scene bg int_library_day
+    show ai dontlike1 jeans lng
+    show mt normal pioneer at left
+    show dv normal pioneer at right
     ai "jeans lng"
 
     scene bg ext_bus
-    show ai laugh1 pink lng
-    show yo normal shirt at left
-    show jd normal pioneer at right
+    show ai evilsmile2 pink lng
+    show uv normal at left
+    show sh normal pioneer at right
     ai "pink lng"
 
-    scene bg int_dining_hall_day
-    show ai serious little1 lng
-    show dv normal pioneer at left
-    show jd normal pioneer at right
+    scene bg ext_bus
+    show ai rage little1 lng
+    show mz normal pioneer at left
+    show el normal pioneer at right
     ai "little1 lng"
 
-    scene bg ext_house_of_mt_day
-    show ai evilsmile1 little2 lng
-    show us normal pioneer at left
+    scene bg int_library_day
+    show ai dontlike1 little2 lng
+    show gl normal jeans at left
     show sh normal pioneer at right
     ai "little2 lng"
 
-    scene bg ext_dining_hall_away_day
-    show ai rage kimono lng
-    show us normal pioneer at left
-    show us normal pioneer at right
+    scene bg ext_playground_day
+    show ai guilty kimono lng
+    show uv normal at left
+    show yo normal shirt at right
     ai "kimono lng"
 
-    scene bg ext_square_day
-    show ai laugh2 uniformw lng
-    show jd normal pioneer at left
-    show mz normal pioneer at right
+    scene bg int_bus
+    show ai dontlike2 uniformw lng
+    show yo normal shirt at left
+    show mi normal pioneer at right
     ai "uniformw lng"
 
-    scene bg ext_island_day
-    show ai guilty uniformb lng
-    show el normal pioneer at left
-    show sl normal pioneer at right
+    scene bg ext_road_day
+    show ai shy2 uniformb lng
+    show yo normal shirt at left
+    show mi normal pioneer at right
     ai "uniformb lng"
 
-    scene bg ext_clubs_day
-    show ai surprise xmas lng
-    show mi normal pioneer at left
-    show un normal pioneer at right
+    scene bg ext_no_bus
+    show ai smile2 xmas lng
+    show gl normal jeans at left
+    show mt normal pioneer at right
     ai "xmas lng"
 
-    scene bg ext_beach_day
-    show ai frust1 jeans srt
-    show pi at left
-    show yo normal shirt at right
+    scene bg ext_clubs_day
+    show ai dontlike1 shirt lng
+    show el normal pioneer at left
+    show el normal pioneer at right
+    ai "shirt lng"
+
+    scene bg ext_road_day
+    show ai happy dress lng
+    show jd normal pioneer at left
+    show dv normal pioneer at right
+    ai "dress lng"
+
+    scene bg int_aidpost_day_apple
+    show ai serious jeans srt
+    show yo normal shirt at left
+    show pi at right
     ai "jeans srt"
 
-    scene bg ext_no_bus
-    show ai scary pink srt
+    scene bg ext_road_day
+    show ai frust1 pink srt
     show mt normal pioneer at left
-    show gl normal jeans at right
+    show yo normal shirt at right
     ai "pink srt"
 
-    scene bg ext_clubs_day
-    show ai shy1 little1 srt
-    show mi normal pioneer at left
-    show mz normal pioneer at right
+    scene bg ext_musclub_day
+    show ai anger little1 srt
+    show pi at left
+    show sh normal pioneer at right
     ai "little1 srt"
 
-    scene bg ext_island_day
-    show ai shy2 little2 srt
-    show cs normal at left
+    scene bg ext_washstand2_day
+    show ai dontlike1 little2 srt
+    show mz normal pioneer at left
     show sh normal pioneer at right
     ai "little2 srt"
 
-    scene bg ext_no_bus
-    show ai grin2 kimono srt
+    scene bg ext_island_day
+    show ai angry2 kimono srt
     show cs normal at left
-    show el normal pioneer at right
+    show pi at right
     ai "kimono srt"
 
-    scene bg ext_playground_day
-    show ai smile2 uniformw srt
+    scene bg ext_house_of_sl_day
+    show ai scary uniformw srt
     show pi at left
-    show us normal pioneer at right
+    show mi normal pioneer at right
     ai "uniformw srt"
 
-    scene bg ext_polyana_day
-    show ai surprise uniformb srt
-    show mt normal pioneer at left
-    show un normal pioneer at right
+    scene bg int_musclub_day
+    show ai normal uniformb srt
+    show cs normal at left
+    show mi normal pioneer at right
     ai "uniformb srt"
 
-    scene bg ext_house_of_un_day
-    show ai frust1 xmas srt
-    show pi at left
-    show uv normal at right
+    scene bg ext_road_day
+    show ai sad xmas srt
+    show un normal pioneer at left
+    show sh normal pioneer at right
     ai "xmas srt"
 
-    scene bg ext_stage_normal_day
-    show ai happy jeans tal
-    show sh normal pioneer at left
+    scene bg ext_path2_day
+    show ai frust1 shirt srt
+    show mi normal pioneer at left
+    show mi normal pioneer at right
+    ai "shirt srt"
+
+    scene bg int_dining_hall_day
+    show ai frust1 dress srt
+    show jd normal pioneer at left
+    show mt normal pioneer at right
+    ai "dress srt"
+
+    scene bg ext_dining_hall_near_day
+    show ai shy1 jeans tal
+    show yo normal shirt at left
     show yo normal shirt at right
     ai "jeans tal"
 
-    scene bg int_house_of_sl_day
-    show ai frust1 pink tal
-    show mi normal pioneer at left
-    show sl normal pioneer at right
+    scene bg ext_houses_day
+    show ai evilsmile2 pink tal
+    show jd normal pioneer at left
+    show un normal pioneer at right
     ai "pink tal"
 
-    scene bg ext_island_day
-    show ai evilsmile2 little1 tal
-    show gl normal jeans at left
-    show mz normal pioneer at right
+    scene bg ext_square_day
+    show ai smile2 little1 tal
+    show sh normal pioneer at left
+    show gl normal jeans at right
     ai "little1 tal"
 
-    scene bg ext_square_day_city
-    show ai angry2 little2 tal
-    show yo normal shirt at left
-    show us normal pioneer at right
+    scene bg int_aidpost_day
+    show ai frust2 little2 tal
+    show gl normal jeans at left
+    show el normal pioneer at right
     ai "little2 tal"
 
-    scene bg int_aidpost_day
-    show ai serious kimono tal
-    show uv normal at left
-    show mz normal pioneer at right
+    scene bg ext_square_day_city
+    show ai dontlike2 kimono tal
+    show el normal pioneer at left
+    show jd normal pioneer at right
     ai "kimono tal"
 
-    scene bg int_aidpost_day_apple
-    show ai smile1 uniformw tal
+    scene bg int_musclub_day
+    show ai happy uniformw tal
     show mt normal pioneer at left
-    show yo normal shirt at right
+    show us normal pioneer at right
     ai "uniformw tal"
 
-    scene bg int_library_day
-    show ai guilty uniformb tal
-    show us normal pioneer at left
-    show mt normal pioneer at right
+    scene bg int_aidpost_day
+    show ai dontlike2 uniformb tal
+    show uv normal at left
+    show un normal pioneer at right
     ai "uniformb tal"
 
     scene bg ext_path2_day
-    show ai anger xmas tal
-    show jd normal pioneer at left
-    show uv normal at right
+    show ai serious xmas tal
+    show gl normal jeans at left
+    show sh normal pioneer at right
     ai "xmas tal"
+
+    scene bg int_bus
+    show ai dontlike2 shirt tal
+    show sl normal pioneer at left
+    show yo normal shirt at right
+    ai "shirt tal"
+
+    scene bg ext_house_of_sl_day
+    show ai smile1 dress tal
+    show sh normal pioneer at left
+    show el normal pioneer at right
+    ai "dress tal"
 
     $ persistent.sprite_time = "sunset"
 
-    scene bg ext_beach_sunset
-    show ai grin1 kimono lng
-    show sh normal pioneer at left
-    show el normal pioneer at right
+    scene bg ext_dining_hall_away_sunset
+    show ai grin1 little1 lng
+    show cs normal far at left
+    show el normal pioneer far at right
     ai "grin1"
 
-    scene bg int_house_of_mt_sunset
-    show ai surprise xmas srt
-    show el normal pioneer at left
-    show mt normal pioneer at right
+    scene bg ext_dining_hall_away_sunset
+    show ai surprise uniformw lng
+    show sl normal pioneer far at left
+    show sl normal pioneer far at right
     ai "surprise"
 
-    scene bg ext_polyana_sunset
-    show ai scary xmas lng
-    show sh normal pioneer at left
-    show sh normal pioneer at right
+    scene bg ext_dining_hall_away_sunset
+    show ai scary dress srt
+    show mt normal pioneer far at left
+    show mz normal pioneer far at right
     ai "scary"
 
-    scene bg ext_road_sunset
-    show ai sad little1 srt
-    show sh normal pioneer at left
-    show gl normal jeans at right
+    scene bg ext_houses_sunset
+    show ai sad little2 tal
+    show uv normal far at left
+    show sl normal pioneer far at right
     ai "sad"
 
-    scene bg ext_path_sunset
-    show ai shy1 little2 srt
-    show el normal pioneer at left
-    show gl normal jeans at right
+    scene bg ext_polyana_sunset
+    show ai shy1 uniformw tal
+    show mi normal pioneer far at left
+    show mi normal pioneer far at right
     ai "shy1"
 
-    scene bg int_house_of_mt_sunset
-    show ai guilty kimono srt
-    show mz normal pioneer at left
-    show pi at right
+    scene bg ext_path_sunset
+    show ai guilty kimono lng
+    show sl normal pioneer far at left
+    show jd normal pioneer far at right
     ai "guilty"
 
-    scene bg ext_dining_hall_away_sunset
-    show ai evilsmile1 jeans srt
-    show mt normal pioneer at left
-    show sh normal pioneer at right
+    scene bg ext_polyana_sunset
+    show ai evilsmile1 uniformw tal
+    show mz normal pioneer far at left
+    show mi normal pioneer far at right
     ai "evilsmile1"
 
-    scene bg ext_path_sunset
-    show ai happy jeans tal
-    show mz normal pioneer at left
-    show jd normal pioneer at right
+    scene bg ext_square_sunset
+    show ai happy shirt srt
+    show mi normal pioneer far at left
+    show mz normal pioneer far at right
     ai "happy"
 
     scene bg ext_dining_hall_near_sunset
-    show ai laugh1 kimono tal
-    show uv normal at left
-    show mz normal pioneer at right
+    show ai laugh1 uniformb srt
+    show uv normal far at left
+    show mi normal pioneer far at right
     ai "laugh1"
 
-    scene bg int_clubs_male_sunset
-    show ai smile1 little2 tal
-    show mz normal pioneer at left
-    show dv normal pioneer at right
+    scene bg ext_dining_hall_near_sunset
+    show ai smile1 little1 lng
+    show el normal pioneer far at left
+    show un normal pioneer far at right
     ai "smile1"
 
-    scene bg int_dining_hall_sunset
-    show ai normal jeans lng
-    show sh normal pioneer at left
-    show sh normal pioneer at right
+    scene bg ext_beach_sunset
+    show ai normal uniformw tal
+    show el normal pioneer far at left
+    show us normal pioneer far at right
     ai "normal"
 
-    scene bg ext_house_of_mt_sunset
-    show ai serious xmas lng
-    show sl normal pioneer at left
-    show el normal pioneer at right
+    scene bg ext_road_sunset
+    show ai serious dress lng
+    show mt normal pioneer far at left
+    show sh normal pioneer far at right
     ai "serious"
 
-    scene bg ext_no_bus_sunset
-    show ai dontlike1 jeans srt
-    show un normal pioneer at left
-    show mt normal pioneer at right
+    scene bg ext_houses_sunset
+    show ai dontlike1 kimono tal
+    show dv normal pioneer far at left
+    show jd normal pioneer far at right
     ai "dontlike1"
 
     scene bg ext_house_of_mt_sunset
-    show ai angry1 kimono srt
-    show sh normal pioneer at left
-    show gl normal jeans at right
+    show ai angry1 xmas tal
+    show mz normal pioneer far at left
+    show cs normal far at right
     ai "angry1"
 
     scene bg ext_road_sunset
-    show ai rage xmas lng
-    show uv normal at left
-    show dv normal pioneer at right
+    show ai rage uniformb srt
+    show mz normal pioneer far at left
+    show us normal pioneer far at right
     ai "rage"
 
-    scene bg ext_square_sunset
-    show ai anger uniformb lng
-    show gl normal jeans at left
-    show el normal pioneer at right
+    scene bg ext_house_of_mt_sunset
+    show ai anger little1 lng
+    show uv normal far at left
+    show us normal pioneer far at right
     ai "anger"
 
-    scene bg ext_square_sunset
-    show ai frust1 pink tal
-    show pi at left
-    show yo normal shirt at right
+    scene bg int_dining_hall_sunset
+    show ai frust1 xmas srt
+    show mt normal pioneer far at left
+    show yo normal shirt far at right
     ai "frust1"
 
-    scene bg ext_square_sunset
-    show ai dontlike2 uniformw tal
-    show mz normal pioneer at left
-    show pi at right
+    scene bg ext_no_bus_sunset
+    show ai dontlike2 xmas lng
+    show cs normal far at left
+    show pi far at right
     ai "dontlike2"
 
     scene bg ext_no_bus_sunset
-    show ai evilsmile2 kimono srt
-    show pi at left
-    show jd normal pioneer at right
+    show ai evilsmile2 shirt tal
+    show yo normal shirt far at left
+    show jd normal pioneer far at right
     ai "evilsmile2"
 
-    scene bg ext_road_sunset
-    show ai grin2 pink tal
-    show yo normal shirt at left
-    show sh normal pioneer at right
+    scene bg ext_no_bus_sunset
+    show ai grin2 kimono lng
+    show jd normal pioneer far at left
+    show us normal pioneer far at right
     ai "grin2"
 
-    scene bg ext_dining_hall_away_sunset
-    show ai smile2 kimono srt
-    show mz normal pioneer at left
-    show mi normal pioneer at right
+    scene bg ext_no_bus_sunset
+    show ai smile2 little2 tal
+    show mz normal pioneer far at left
+    show sh normal pioneer far at right
     ai "smile2"
 
     scene bg ext_dining_hall_near_sunset
-    show ai shy2 jeans tal
-    show uv normal at left
-    show pi at right
+    show ai shy2 uniformw lng
+    show pi far at left
+    show un normal pioneer far at right
     ai "shy2"
 
-    scene bg ext_polyana_sunset
-    show ai laugh2 kimono lng
-    show yo normal shirt at left
-    show el normal pioneer at right
+    scene bg int_clubs_male_sunset
+    show ai laugh2 little2 tal
+    show un normal pioneer far at left
+    show sl normal pioneer far at right
     ai "laugh2"
 
-    scene bg ext_dining_hall_near_sunset
-    show ai frust2 pink lng
-    show mt normal pioneer at left
-    show sl normal pioneer at right
+    scene bg ext_square_sunset
+    show ai frust2 little2 srt
+    show gl normal jeans far at left
+    show uv normal far at right
     ai "frust2"
 
-    scene bg ext_house_of_mt_sunset
-    show ai angry2 pink lng
-    show mi normal pioneer at left
-    show us normal pioneer at right
+    scene bg int_clubs_male_sunset
+    show ai angry2 little1 srt
+    show yo normal shirt far at left
+    show mi normal pioneer far at right
     ai "angry2"
 
-    scene bg ext_dining_hall_away_sunset
-    show ai evilsmile1 jeans lng
-    show mt normal pioneer at left
-    show cs normal at right
+    scene bg int_dining_hall_sunset
+    show ai frust2 jeans lng
+    show un normal pioneer far at left
+    show jd normal pioneer far at right
     ai "jeans lng"
 
-    scene bg ext_path_sunset
-    show ai smile1 pink lng
-    show mz normal pioneer at left
-    show yo normal shirt at right
+    scene bg ext_dining_hall_away_sunset
+    show ai evilsmile1 pink lng
+    show mz normal pioneer far at left
+    show uv normal far at right
     ai "pink lng"
 
     scene bg ext_houses_sunset
-    show ai laugh2 little1 lng
-    show mi normal pioneer at left
-    show sl normal pioneer at right
+    show ai anger little1 lng
+    show mi normal pioneer far at left
+    show jd normal pioneer far at right
     ai "little1 lng"
 
-    scene bg ext_house_of_mt_sunset
-    show ai evilsmile1 little2 lng
-    show sl normal pioneer at left
-    show us normal pioneer at right
+    scene bg ext_dining_hall_away_sunset
+    show ai guilty little2 lng
+    show el normal pioneer far at left
+    show pi far at right
     ai "little2 lng"
 
-    scene bg ext_dining_hall_away_sunset
-    show ai dontlike1 kimono lng
-    show cs normal at left
-    show us normal pioneer at right
+    scene bg int_clubs_male_sunset
+    show ai dontlike2 kimono lng
+    show gl normal jeans far at left
+    show un normal pioneer far at right
     ai "kimono lng"
 
-    scene bg int_clubs_male_sunset
-    show ai dontlike2 uniformw lng
-    show sh normal pioneer at left
-    show gl normal jeans at right
+    scene bg ext_dining_hall_away_sunset
+    show ai happy uniformw lng
+    show cs normal far at left
+    show sh normal pioneer far at right
     ai "uniformw lng"
 
-    scene bg ext_path_sunset
-    show ai grin2 uniformb lng
-    show cs normal at left
-    show uv normal at right
+    scene bg int_clubs_male_sunset
+    show ai dontlike1 uniformb lng
+    show dv normal pioneer far at left
+    show el normal pioneer far at right
     ai "uniformb lng"
 
-    scene bg ext_no_bus_sunset
-    show ai serious xmas lng
-    show pi at left
-    show dv normal pioneer at right
+    scene bg ext_dining_hall_near_sunset
+    show ai frust2 xmas lng
+    show us normal pioneer far at left
+    show sh normal pioneer far at right
     ai "xmas lng"
 
-    scene bg int_dining_hall_sunset
+    scene bg int_clubs_male_sunset
+    show ai evilsmile2 shirt lng
+    show uv normal far at left
+    show sh normal pioneer far at right
+    ai "shirt lng"
+
+    scene bg ext_beach_sunset
+    show ai angry2 dress lng
+    show cs normal far at left
+    show mz normal pioneer far at right
+    ai "dress lng"
+
+    scene bg ext_no_bus_sunset
     show ai evilsmile1 jeans srt
-    show mz normal pioneer at left
-    show uv normal at right
+    show el normal pioneer far at left
+    show mz normal pioneer far at right
     ai "jeans srt"
 
-    scene bg ext_beach_sunset
-    show ai frust2 pink srt
-    show mt normal pioneer at left
-    show cs normal at right
+    scene bg ext_path_sunset
+    show ai happy pink srt
+    show mz normal pioneer far at left
+    show yo normal shirt far at right
     ai "pink srt"
 
-    scene bg ext_beach_sunset
-    show ai shy2 little1 srt
-    show mz normal pioneer at left
-    show un normal pioneer at right
+    scene bg ext_road_sunset
+    show ai rage little1 srt
+    show gl normal jeans far at left
+    show gl normal jeans far at right
     ai "little1 srt"
 
-    scene bg ext_no_bus_sunset
-    show ai normal little2 srt
-    show us normal pioneer at left
-    show mt normal pioneer at right
+    scene bg ext_polyana_sunset
+    show ai frust1 little2 srt
+    show yo normal shirt far at left
+    show us normal pioneer far at right
     ai "little2 srt"
 
-    scene bg int_house_of_mt_sunset
-    show ai smile2 kimono srt
-    show cs normal at left
-    show yo normal shirt at right
+    scene bg ext_no_bus_sunset
+    show ai frust2 kimono srt
+    show sh normal pioneer far at left
+    show pi far at right
     ai "kimono srt"
 
-    scene bg int_clubs_male_sunset
-    show ai guilty uniformw srt
-    show sh normal pioneer at left
-    show mi normal pioneer at right
+    scene bg ext_no_bus_sunset
+    show ai surprise uniformw srt
+    show mz normal pioneer far at left
+    show uv normal far at right
     ai "uniformw srt"
 
-    scene bg ext_path_sunset
-    show ai scary uniformb srt
-    show mt normal pioneer at left
-    show gl normal jeans at right
+    scene bg ext_house_of_mt_sunset
+    show ai dontlike2 uniformb srt
+    show mi normal pioneer far at left
+    show cs normal far at right
     ai "uniformb srt"
 
-    scene bg ext_no_bus_sunset
-    show ai dontlike1 xmas srt
-    show sl normal pioneer at left
-    show uv normal at right
+    scene bg int_dining_hall_sunset
+    show ai shy1 xmas srt
+    show mt normal pioneer far at left
+    show sh normal pioneer far at right
     ai "xmas srt"
 
-    scene bg int_clubs_male_sunset
-    show ai dontlike1 jeans tal
-    show jd normal pioneer at left
-    show sl normal pioneer at right
-    ai "jeans tal"
-
-    scene bg ext_path_sunset
-    show ai laugh1 pink tal
-    show cs normal at left
-    show mz normal pioneer at right
-    ai "pink tal"
-
-    scene bg ext_house_of_mt_sunset
-    show ai smile1 little1 tal
-    show mi normal pioneer at left
-    show cs normal at right
-    ai "little1 tal"
-
     scene bg ext_polyana_sunset
-    show ai grin2 little2 tal
-    show yo normal shirt at left
-    show sl normal pioneer at right
-    ai "little2 tal"
-
-    scene bg ext_no_bus_sunset
-    show ai grin1 kimono tal
-    show jd normal pioneer at left
-    show mt normal pioneer at right
-    ai "kimono tal"
+    show ai laugh2 shirt srt
+    show yo normal shirt far at left
+    show yo normal shirt far at right
+    ai "shirt srt"
 
     scene bg ext_square_sunset
-    show ai scary uniformw tal
-    show sl normal pioneer at left
-    show pi at right
+    show ai happy dress srt
+    show dv normal pioneer far at left
+    show cs normal far at right
+    ai "dress srt"
+
+    scene bg ext_square_sunset
+    show ai grin1 jeans tal
+    show pi far at left
+    show un normal pioneer far at right
+    ai "jeans tal"
+
+    scene bg int_clubs_male_sunset
+    show ai rage pink tal
+    show jd normal pioneer far at left
+    show pi far at right
+    ai "pink tal"
+
+    scene bg int_clubs_male_sunset
+    show ai smile2 little1 tal
+    show un normal pioneer far at left
+    show pi far at right
+    ai "little1 tal"
+
+    scene bg int_clubs_male_sunset
+    show ai angry2 little2 tal
+    show uv normal far at left
+    show mi normal pioneer far at right
+    ai "little2 tal"
+
+    scene bg ext_dining_hall_away_sunset
+    show ai frust1 kimono tal
+    show sl normal pioneer far at left
+    show mz normal pioneer far at right
+    ai "kimono tal"
+
+    scene bg int_house_of_mt_sunset
+    show ai anger uniformw tal
+    show el normal pioneer far at left
+    show us normal pioneer far at right
     ai "uniformw tal"
 
-    scene bg ext_no_bus_sunset
-    show ai happy uniformb tal
-    show sl normal pioneer at left
-    show dv normal pioneer at right
+    scene bg int_clubs_male_sunset
+    show ai dontlike1 uniformb tal
+    show mz normal pioneer far at left
+    show yo normal shirt far at right
     ai "uniformb tal"
 
-    scene bg ext_no_bus_sunset
-    show ai dontlike2 xmas tal
-    show el normal pioneer at left
-    show sh normal pioneer at right
+    scene bg ext_dining_hall_away_sunset
+    show ai frust1 xmas tal
+    show cs normal far at left
+    show pi far at right
     ai "xmas tal"
+
+    scene bg ext_road_sunset
+    show ai anger shirt tal
+    show cs normal far at left
+    show un normal pioneer far at right
+    ai "shirt tal"
+
+    scene bg ext_house_of_mt_sunset
+    show ai normal dress tal
+    show mz normal pioneer far at left
+    show pi far at right
+    ai "dress tal"
 
     $ persistent.sprite_time = "night"
 
     scene bg ext_path_night
-    show ai grin1 uniformw tal
-    show un normal pioneer at fleft
-    show mz normal pioneer at fright
+    show ai grin1 xmas lng
+    show gl normal jeans close at fleft
+    show sh normal pioneer close at fright
     ai "grin1"
 
-    scene bg int_dining_hall_night
-    show ai surprise jeans srt
-    show un normal pioneer at fleft
-    show mt normal pioneer at fright
+    scene bg ext_path2_night
+    show ai surprise shirt lng
+    show dv normal pioneer close at fleft
+    show yo normal shirt close at fright
     ai "surprise"
 
-    scene bg int_library_night
-    show ai scary jeans tal
-    show uv normal at fleft
-    show el normal pioneer at fright
+    scene bg int_house_of_mt_night
+    show ai scary uniformw srt
+    show us normal pioneer close at fleft
+    show gl normal jeans close at fright
     ai "scary"
 
-    scene bg int_liaz
-    show ai sad pink lng
-    show uv normal at fleft
-    show pi at fright
+    scene bg ext_stage_big_night
+    show ai sad jeans tal
+    show jd normal pioneer close at fleft
+    show un normal pioneer close at fright
     ai "sad"
 
-    scene bg ext_bus_night
-    show ai shy1 xmas srt
-    show sl normal pioneer at fleft
-    show un normal pioneer at fright
+    scene bg ext_old_building_night_moonlight
+    show ai shy1 little2 tal
+    show pi close at fleft
+    show mt normal pioneer close at fright
     ai "shy1"
 
-    scene bg ext_dining_hall_away_night
-    show ai guilty little2 tal
-    show gl normal jeans at fleft
-    show us normal pioneer at fright
+    scene bg int_bus_night
+    show ai guilty dress srt
+    show gl normal jeans close at fleft
+    show un normal pioneer close at fright
     ai "guilty"
 
     scene bg ext_house_of_dv_night
-    show ai evilsmile1 uniformb tal
-    show sh normal pioneer at fleft
-    show cs normal at fright
+    show ai evilsmile1 little1 tal
+    show pi close at fleft
+    show us normal pioneer close at fright
     ai "evilsmile1"
 
-    scene bg ext_bus_night
-    show ai happy jeans lng
-    show mt normal pioneer at fleft
-    show un normal pioneer at fright
+    scene bg int_house_of_mt_noitem_night
+    show ai happy pink tal
+    show mi normal pioneer close at fleft
+    show mt normal pioneer close at fright
     ai "happy"
 
-    scene bg ext_polyana_night
-    show ai laugh1 jeans srt
-    show un normal pioneer at fleft
-    show yo normal shirt at fright
+    scene bg ext_no_bus_night
+    show ai laugh1 pink tal
+    show gl normal jeans close at fleft
+    show sl normal pioneer close at fright
     ai "laugh1"
 
-    scene bg int_liaz
-    show ai smile1 uniformb tal
-    show jd normal pioneer at fleft
-    show mt normal pioneer at fright
+    scene bg int_old_building_night
+    show ai smile1 little2 lng
+    show pi close at fleft
+    show sh normal pioneer close at fright
     ai "smile1"
 
-    scene bg int_bus_people_night
-    show ai normal uniformb srt
-    show mi normal pioneer at fleft
-    show uv normal at fright
+    scene bg ext_library_night
+    show ai normal dress lng
+    show pi close at fleft
+    show el normal pioneer close at fright
     ai "normal"
 
-    scene bg ext_old_building_night
-    show ai serious uniformb tal
-    show jd normal pioneer at fleft
-    show us normal pioneer at fright
+    scene bg int_house_of_mt_noitem_night
+    show ai serious uniformw lng
+    show us normal pioneer close at fleft
+    show dv normal pioneer close at fright
     ai "serious"
 
-    scene bg ext_square_night_party2
-    show ai dontlike1 uniformb lng
-    show mi normal pioneer at fleft
-    show mi normal pioneer at fright
+    scene bg ext_bus_night
+    show ai dontlike1 pink tal
+    show sh normal pioneer close at fleft
+    show uv normal close at fright
     ai "dontlike1"
 
-    scene bg int_house_of_mt_night
-    show ai angry1 kimono lng
-    show sl normal pioneer at fleft
-    show uv normal at fright
+    scene bg int_house_of_mt_night2
+    show ai angry1 little1 srt
+    show sh normal pioneer close at fleft
+    show yo normal shirt close at fright
     ai "angry1"
 
-    scene bg ext_stage_big_night
-    show ai rage pink lng
-    show sl normal pioneer at fleft
-    show sl normal pioneer at fright
+    scene bg int_dining_hall_night
+    show ai rage kimono tal
+    show mt normal pioneer close at fleft
+    show yo normal shirt close at fright
     ai "rage"
 
-    scene bg int_dining_hall_night
-    show ai anger xmas srt
-    show sh normal pioneer at fleft
-    show un normal pioneer at fright
+    scene bg ext_house_of_mt_night_without_light
+    show ai anger shirt lng
+    show sl normal pioneer close at fleft
+    show dv normal pioneer close at fright
     ai "anger"
 
-    scene bg ext_house_of_mt_night_without_light
-    show ai frust1 kimono lng
-    show gl normal jeans at fleft
-    show dv normal pioneer at fright
+    scene bg int_house_of_mt_noitem_night
+    show ai frust1 uniformw tal
+    show uv normal close at fleft
+    show mi normal pioneer close at fright
     ai "frust1"
 
-    scene bg int_house_of_mt_night
-    show ai dontlike2 pink lng
-    show us normal pioneer at fleft
-    show un normal pioneer at fright
+    scene bg ext_house_of_mt_night
+    show ai dontlike2 jeans tal
+    show un normal pioneer close at fleft
+    show us normal pioneer close at fright
     ai "dontlike2"
 
-    scene bg ext_stage_big_night
-    show ai evilsmile2 xmas lng
-    show jd normal pioneer at fleft
-    show jd normal pioneer at fright
+    scene bg ext_house_of_dv_night
+    show ai evilsmile2 uniformw lng
+    show un normal pioneer close at fleft
+    show dv normal pioneer close at fright
     ai "evilsmile2"
 
-    scene bg int_library_night2
-    show ai grin2 kimono tal
-    show us normal pioneer at fleft
-    show cs normal at fright
+    scene bg ext_bus_night
+    show ai grin2 shirt srt
+    show uv normal close at fleft
+    show cs normal close at fright
     ai "grin2"
 
-    scene bg ext_square_night_party2
-    show ai smile2 kimono tal
-    show el normal pioneer at fleft
-    show mt normal pioneer at fright
+    scene bg int_house_of_mt_night
+    show ai smile2 uniformb tal
+    show uv normal close at fleft
+    show el normal pioneer close at fright
     ai "smile2"
 
-    scene bg int_clubs_male2_night_nolight
-    show ai shy2 uniformw srt
-    show mz normal pioneer at fleft
-    show sh normal pioneer at fright
+    scene bg ext_square_night_party
+    show ai shy2 little1 tal
+    show mi normal pioneer close at fleft
+    show mz normal pioneer close at fright
     ai "shy2"
 
-    scene bg ext_square_night_party
-    show ai laugh2 xmas srt
-    show cs normal at fleft
-    show pi at fright
+    scene bg int_house_of_dv_night
+    show ai laugh2 little1 tal
+    show mi normal pioneer close at fleft
+    show gl normal jeans close at fright
     ai "laugh2"
 
-    scene bg ext_island_night
-    show ai frust2 kimono lng
-    show sh normal pioneer at fleft
-    show cs normal at fright
+    scene bg int_aidpost_night
+    show ai frust2 little1 tal
+    show el normal pioneer close at fleft
+    show mi normal pioneer close at fright
     ai "frust2"
 
-    scene bg int_aidpost_night
-    show ai angry2 little2 tal
-    show sl normal pioneer at fleft
-    show us normal pioneer at fright
+    scene bg ext_island_night
+    show ai angry2 pink tal
+    show jd normal pioneer close at fleft
+    show sl normal pioneer close at fright
     ai "angry2"
 
-    scene bg ext_no_bus_night
-    show ai evilsmile2 jeans lng
-    show un normal pioneer at fleft
-    show mi normal pioneer at fright
+    scene bg ext_dining_hall_near_night
+    show ai rage jeans lng
+    show gl normal jeans close at fleft
+    show uv normal close at fright
     ai "jeans lng"
 
-    scene bg int_liaz
-    show ai laugh1 pink lng
-    show un normal pioneer at fleft
-    show el normal pioneer at fright
+    scene bg ext_island_night
+    show ai evilsmile1 pink lng
+    show cs normal close at fleft
+    show jd normal pioneer close at fright
     ai "pink lng"
 
-    scene bg int_clubs_male2_night
-    show ai angry1 little1 lng
-    show pi at fleft
-    show mz normal pioneer at fright
+    scene bg ext_house_of_mt_night
+    show ai scary little1 lng
+    show cs normal close at fleft
+    show un normal pioneer close at fright
     ai "little1 lng"
 
-    scene bg ext_stage_normal_night
-    show ai sad little2 lng
-    show un normal pioneer at fleft
-    show us normal pioneer at fright
+    scene bg ext_old_building_night
+    show ai dontlike2 little2 lng
+    show mz normal pioneer close at fleft
+    show us normal pioneer close at fright
     ai "little2 lng"
 
-    scene bg ext_beach_night
-    show ai shy1 kimono lng
-    show pi at fleft
-    show us normal pioneer at fright
+    scene bg ext_old_building_night_moonlight
+    show ai evilsmile1 kimono lng
+    show el normal pioneer close at fleft
+    show dv normal pioneer close at fright
     ai "kimono lng"
 
-    scene bg ext_square_night
-    show ai serious uniformw lng
-    show sl normal pioneer at fleft
-    show us normal pioneer at fright
+    scene bg ext_dining_hall_away_night
+    show ai dontlike2 uniformw lng
+    show mi normal pioneer close at fleft
+    show sh normal pioneer close at fright
     ai "uniformw lng"
 
-    scene bg ext_dining_hall_away_night
-    show ai anger uniformb lng
-    show jd normal pioneer at fleft
-    show mt normal pioneer at fright
+    scene bg int_bus_night
+    show ai smile1 uniformb lng
+    show sl normal pioneer close at fleft
+    show sh normal pioneer close at fright
     ai "uniformb lng"
 
-    scene bg ext_dining_hall_near_night
+    scene bg ext_boathouse_night
     show ai scary xmas lng
-    show uv normal at fleft
-    show jd normal pioneer at fright
+    show sl normal pioneer close at fleft
+    show jd normal pioneer close at fright
     ai "xmas lng"
 
-    scene bg int_house_of_un_night
-    show ai dontlike2 jeans srt
-    show yo normal shirt at fleft
-    show sh normal pioneer at fright
-    ai "jeans srt"
-
-    scene bg int_house_of_mt_noitem_night
-    show ai guilty pink srt
-    show mt normal pioneer at fleft
-    show un normal pioneer at fright
-    ai "pink srt"
+    scene bg int_house_of_dv_night
+    show ai grin2 shirt lng
+    show mi normal pioneer close at fleft
+    show el normal pioneer close at fright
+    ai "shirt lng"
 
     scene bg ext_path2_night
-    show ai rage little1 srt
-    show el normal pioneer at fleft
-    show cs normal at fright
+    show ai grin2 dress lng
+    show mz normal pioneer close at fleft
+    show jd normal pioneer close at fright
+    ai "dress lng"
+
+    scene bg ext_beach_night
+    show ai smile1 jeans srt
+    show mz normal pioneer close at fleft
+    show mt normal pioneer close at fright
+    ai "jeans srt"
+
+    scene bg int_library_night2
+    show ai angry2 pink srt
+    show sh normal pioneer close at fleft
+    show yo normal shirt close at fright
+    ai "pink srt"
+
+    scene bg int_clubs_male2_night
+    show ai laugh1 little1 srt
+    show mi normal pioneer close at fleft
+    show sl normal pioneer close at fright
     ai "little1 srt"
 
-    scene bg ext_bathhouse_night
-    show ai shy1 little2 srt
-    show el normal pioneer at fleft
-    show mz normal pioneer at fright
+    scene bg ext_square_night
+    show ai frust1 little2 srt
+    show sh normal pioneer close at fleft
+    show yo normal shirt close at fright
     ai "little2 srt"
 
-    scene bg ext_boathouse_night
-    show ai grin2 kimono srt
-    show el normal pioneer at fleft
-    show us normal pioneer at fright
+    scene bg int_house_of_mt_night
+    show ai laugh1 kimono srt
+    show sh normal pioneer close at fleft
+    show sl normal pioneer close at fright
     ai "kimono srt"
 
-    scene bg ext_path_night
-    show ai laugh1 uniformw srt
-    show el normal pioneer at fleft
-    show gl normal jeans at fright
+    scene bg int_aidpost_night
+    show ai anger uniformw srt
+    show pi close at fleft
+    show mt normal pioneer close at fright
     ai "uniformw srt"
 
-    scene bg ext_stage_normal_night
-    show ai laugh1 uniformb srt
-    show el normal pioneer at fleft
-    show dv normal pioneer at fright
+    scene bg int_bus_night
+    show ai shy1 uniformb srt
+    show cs normal close at fleft
+    show sh normal pioneer close at fright
     ai "uniformb srt"
 
-    scene bg ext_no_bus_night
-    show ai evilsmile2 xmas srt
-    show sl normal pioneer at fleft
-    show jd normal pioneer at fright
+    scene bg ext_path2_night
+    show ai anger xmas srt
+    show el normal pioneer close at fleft
+    show sh normal pioneer close at fright
     ai "xmas srt"
 
-    scene bg ext_clubs_night
-    show ai shy2 jeans tal
-    show sh normal pioneer at fleft
-    show sl normal pioneer at fright
-    ai "jeans tal"
+    scene bg ext_playground_night
+    show ai scary shirt srt
+    show jd normal pioneer close at fleft
+    show mz normal pioneer close at fright
+    ai "shirt srt"
 
-    scene bg int_house_of_un_night
-    show ai guilty pink tal
-    show sh normal pioneer at fleft
-    show mt normal pioneer at fright
-    ai "pink tal"
-
-    scene bg ext_bathhouse_night
-    show ai grin1 little1 tal
-    show mi normal pioneer at fleft
-    show us normal pioneer at fright
-    ai "little1 tal"
-
-    scene bg ext_path_night
-    show ai angry2 little2 tal
-    show sh normal pioneer at fleft
-    show us normal pioneer at fright
-    ai "little2 tal"
+    scene bg ext_boathouse_night
+    show ai serious dress srt
+    show jd normal pioneer close at fleft
+    show un normal pioneer close at fright
+    ai "dress srt"
 
     scene bg int_house_of_mt_night
-    show ai anger kimono tal
-    show uv normal at fleft
-    show gl normal jeans at fright
+    show ai shy2 jeans tal
+    show el normal pioneer close at fleft
+    show sh normal pioneer close at fright
+    ai "jeans tal"
+
+    scene bg ext_playground_night
+    show ai grin1 pink tal
+    show mi normal pioneer close at fleft
+    show sh normal pioneer close at fright
+    ai "pink tal"
+
+    scene bg ext_old_building_night_moonlight
+    show ai guilty little1 tal
+    show un normal pioneer close at fleft
+    show mt normal pioneer close at fright
+    ai "little1 tal"
+
+    scene bg ext_path2_night
+    show ai happy little2 tal
+    show pi close at fleft
+    show mt normal pioneer close at fright
+    ai "little2 tal"
+
+    scene bg ext_camp_entrance_night
+    show ai smile1 kimono tal
+    show un normal pioneer close at fleft
+    show yo normal shirt close at fright
     ai "kimono tal"
 
-    scene bg ext_stage_big_night
-    show ai scary uniformw tal
-    show pi at fleft
-    show un normal pioneer at fright
+    scene bg ext_playground_night
+    show ai angry1 uniformw tal
+    show sl normal pioneer close at fleft
+    show uv normal close at fright
     ai "uniformw tal"
 
-    scene bg int_bus_people_night
-    show ai smile2 uniformb tal
-    show jd normal pioneer at fleft
-    show el normal pioneer at fright
+    scene bg ext_library_night
+    show ai normal uniformb tal
+    show sl normal pioneer close at fleft
+    show mi normal pioneer close at fright
     ai "uniformb tal"
 
-    scene bg int_house_of_dv_night
-    show ai angry2 xmas tal
-    show pi at fleft
-    show sh normal pioneer at fright
+    scene bg ext_library_night
+    show ai frust1 xmas tal
+    show mi normal pioneer close at fleft
+    show el normal pioneer close at fright
     ai "xmas tal"
+
+    scene bg ext_boathouse_night
+    show ai laugh1 shirt tal
+    show pi close at fleft
+    show un normal pioneer close at fright
+    ai "shirt tal"
+
+    scene bg int_house_of_mt_night
+    show ai serious dress tal
+    show mz normal pioneer close at fleft
+    show gl normal jeans close at fright
+    ai "dress tal"
 
 
 

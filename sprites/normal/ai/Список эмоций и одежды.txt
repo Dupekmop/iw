@@ -1,0 +1,8 @@
+Поза1: 
+grin1,surprise,scary,sad,shy1,guilty,evilsmile1,happy,laugh1,smile1,normal,serious,dontlike1,angry1,rage,anger,frust1
+jeans,pink,little1,little2,dress,shirt,kimono,uniformw,uniformb,xmas
+
+
+Поза2: 
+dontlike2,evilsmile2,grin2,smile2,shy2,laugh2,frust2,angry2
+jeans,pink,little1,little2,kimono,uniformw,uniformb,xmas

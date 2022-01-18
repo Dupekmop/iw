@@ -2818,623 +2818,611 @@ init -1000:
         True, im.Composite((900, 1080), (0, 0), normal+"ai/body_2tal.png", (0, 0), normal+"ai/uniformw_2.png", (0, 0), normal+"ai/angry2.png", (0, 0), normal+"ai/acs_uw_2.png"))
 
 #ГЛАША
-#normal
-    image gl grin1 jeans = ConditionSwitch(
+# normal
+    image gl grin1 = ConditionSwitch(
         "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/grin1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
         "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/grin1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
         True, im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/grin1.png"))
-    image gl surprise jeans = ConditionSwitch(
+    image gl surprise = ConditionSwitch(
         "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/surprise.png"), im.matrix.tint(0.94, 0.82, 1.0)),
         "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/surprise.png"), im.matrix.tint(0.63, 0.78, 0.82)),
         True, im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/surprise.png"))
-    image gl scary jeans = ConditionSwitch(
+    image gl scary = ConditionSwitch(
         "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/scary.png"), im.matrix.tint(0.94, 0.82, 1.0)),
         "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/scary.png"), im.matrix.tint(0.63, 0.78, 0.82)),
         True, im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/scary.png"))
-    image gl sad jeans = ConditionSwitch(
+    image gl sad = ConditionSwitch(
         "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/sad.png"), im.matrix.tint(0.94, 0.82, 1.0)),
         "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/sad.png"), im.matrix.tint(0.63, 0.78, 0.82)),
         True, im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/sad.png"))
-    image gl shy1 jeans = ConditionSwitch(
+    image gl shy1 = ConditionSwitch(
         "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/shy1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
         "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/shy1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
         True, im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/shy1.png"))
-    image gl guilty jeans = ConditionSwitch(
+    image gl guilty = ConditionSwitch(
         "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/guilty.png"), im.matrix.tint(0.94, 0.82, 1.0)),
         "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/guilty.png"), im.matrix.tint(0.63, 0.78, 0.82)),
         True, im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/guilty.png"))
-    image gl evilsmile1 jeans = ConditionSwitch(
+    image gl evilsmile1 = ConditionSwitch(
         "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/evilsmile1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
         "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/evilsmile1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
         True, im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/evilsmile1.png"))
-    image gl happy jeans = ConditionSwitch(
+    image gl happy = ConditionSwitch(
         "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/happy.png"), im.matrix.tint(0.94, 0.82, 1.0)),
         "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/happy.png"), im.matrix.tint(0.63, 0.78, 0.82)),
         True, im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/happy.png"))
-    image gl laugh1 jeans = ConditionSwitch(
+    image gl laugh1 = ConditionSwitch(
         "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/laugh1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
         "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/laugh1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
         True, im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/laugh1.png"))
-    image gl smile1 jeans = ConditionSwitch(
+    image gl smile1 = ConditionSwitch(
         "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/smile1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
         "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/smile1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
         True, im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/smile1.png"))
-    image gl normal jeans = ConditionSwitch(
+    image gl normal = ConditionSwitch(
         "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/normal.png"), im.matrix.tint(0.94, 0.82, 1.0)),
         "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/normal.png"), im.matrix.tint(0.63, 0.78, 0.82)),
         True, im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/normal.png"))
-    image gl serious jeans = ConditionSwitch(
+    image gl serious = ConditionSwitch(
         "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/serious.png"), im.matrix.tint(0.94, 0.82, 1.0)),
         "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/serious.png"), im.matrix.tint(0.63, 0.78, 0.82)),
         True, im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/serious.png"))
-    image gl dontlike1 jeans = ConditionSwitch(
+    image gl dontlike1 = ConditionSwitch(
         "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/dontlike1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
         "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/dontlike1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
         True, im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/dontlike1.png"))
-    image gl angry1 jeans = ConditionSwitch(
+    image gl angry1 = ConditionSwitch(
         "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/angry1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
         "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/angry1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
         True, im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/angry1.png"))
-    image gl rage jeans = ConditionSwitch(
+    image gl rage = ConditionSwitch(
         "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/rage.png"), im.matrix.tint(0.94, 0.82, 1.0)),
         "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/rage.png"), im.matrix.tint(0.63, 0.78, 0.82)),
         True, im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/rage.png"))
-    image gl anger jeans = ConditionSwitch(
+    image gl anger = ConditionSwitch(
         "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/anger.png"), im.matrix.tint(0.94, 0.82, 1.0)),
         "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/anger.png"), im.matrix.tint(0.63, 0.78, 0.82)),
         True, im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/anger.png"))
-    image gl frust1 jeans = ConditionSwitch(
+    image gl frust1 = ConditionSwitch(
         "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/frust1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
         "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/frust1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
         True, im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/frust1.png"))
-    image gl dontlike2 jeans = ConditionSwitch(
+    image gl dontlike2 = ConditionSwitch(
         "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_2.png", (0, 0), normal+"gl/jeans_2.png", (0, 0), normal+"gl/dontlike2.png"), im.matrix.tint(0.94, 0.82, 1.0)),
         "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_2.png", (0, 0), normal+"gl/jeans_2.png", (0, 0), normal+"gl/dontlike2.png"), im.matrix.tint(0.63, 0.78, 0.82)),
         True, im.Composite((900, 1080), (0, 0), normal+"gl/body_2.png", (0, 0), normal+"gl/jeans_2.png", (0, 0), normal+"gl/dontlike2.png"))
-    image gl evilsmile2 jeans = ConditionSwitch(
+    image gl evilsmile2 = ConditionSwitch(
         "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_2.png", (0, 0), normal+"gl/jeans_2.png", (0, 0), normal+"gl/evilsmile2.png"), im.matrix.tint(0.94, 0.82, 1.0)),
         "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_2.png", (0, 0), normal+"gl/jeans_2.png", (0, 0), normal+"gl/evilsmile2.png"), im.matrix.tint(0.63, 0.78, 0.82)),
         True, im.Composite((900, 1080), (0, 0), normal+"gl/body_2.png", (0, 0), normal+"gl/jeans_2.png", (0, 0), normal+"gl/evilsmile2.png"))
-    image gl grin2 jeans = ConditionSwitch(
+    image gl grin2 = ConditionSwitch(
         "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_2.png", (0, 0), normal+"gl/jeans_2.png", (0, 0), normal+"gl/grin2.png"), im.matrix.tint(0.94, 0.82, 1.0)),
         "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_2.png", (0, 0), normal+"gl/jeans_2.png", (0, 0), normal+"gl/grin2.png"), im.matrix.tint(0.63, 0.78, 0.82)),
         True, im.Composite((900, 1080), (0, 0), normal+"gl/body_2.png", (0, 0), normal+"gl/jeans_2.png", (0, 0), normal+"gl/grin2.png"))
-    image gl smile2 jeans = ConditionSwitch(
+    image gl smile2 = ConditionSwitch(
         "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_2.png", (0, 0), normal+"gl/jeans_2.png", (0, 0), normal+"gl/smile2.png"), im.matrix.tint(0.94, 0.82, 1.0)),
         "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_2.png", (0, 0), normal+"gl/jeans_2.png", (0, 0), normal+"gl/smile2.png"), im.matrix.tint(0.63, 0.78, 0.82)),
         True, im.Composite((900, 1080), (0, 0), normal+"gl/body_2.png", (0, 0), normal+"gl/jeans_2.png", (0, 0), normal+"gl/smile2.png"))
-    image gl shy2 jeans = ConditionSwitch(
+    image gl shy2 = ConditionSwitch(
         "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_2.png", (0, 0), normal+"gl/jeans_2.png", (0, 0), normal+"gl/shy2.png"), im.matrix.tint(0.94, 0.82, 1.0)),
         "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_2.png", (0, 0), normal+"gl/jeans_2.png", (0, 0), normal+"gl/shy2.png"), im.matrix.tint(0.63, 0.78, 0.82)),
         True, im.Composite((900, 1080), (0, 0), normal+"gl/body_2.png", (0, 0), normal+"gl/jeans_2.png", (0, 0), normal+"gl/shy2.png"))
-    image gl laugh2 jeans = ConditionSwitch(
+    image gl laugh2 = ConditionSwitch(
         "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_2.png", (0, 0), normal+"gl/jeans_2.png", (0, 0), normal+"gl/laugh2.png"), im.matrix.tint(0.94, 0.82, 1.0)),
         "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_2.png", (0, 0), normal+"gl/jeans_2.png", (0, 0), normal+"gl/laugh2.png"), im.matrix.tint(0.63, 0.78, 0.82)),
         True, im.Composite((900, 1080), (0, 0), normal+"gl/body_2.png", (0, 0), normal+"gl/jeans_2.png", (0, 0), normal+"gl/laugh2.png"))
-    image gl frust2 jeans = ConditionSwitch(
+    image gl frust2 = ConditionSwitch(
         "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_2.png", (0, 0), normal+"gl/jeans_2.png", (0, 0), normal+"gl/frust2.png"), im.matrix.tint(0.94, 0.82, 1.0)),
         "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_2.png", (0, 0), normal+"gl/jeans_2.png", (0, 0), normal+"gl/frust2.png"), im.matrix.tint(0.63, 0.78, 0.82)),
         True, im.Composite((900, 1080), (0, 0), normal+"gl/body_2.png", (0, 0), normal+"gl/jeans_2.png", (0, 0), normal+"gl/frust2.png"))
-    image gl angry2 jeans = ConditionSwitch(
+    image gl angry2 = ConditionSwitch(
         "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_2.png", (0, 0), normal+"gl/jeans_2.png", (0, 0), normal+"gl/angry2.png"), im.matrix.tint(0.94, 0.82, 1.0)),
         "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_2.png", (0, 0), normal+"gl/jeans_2.png", (0, 0), normal+"gl/angry2.png"), im.matrix.tint(0.63, 0.78, 0.82)),
         True, im.Composite((900, 1080), (0, 0), normal+"gl/body_2.png", (0, 0), normal+"gl/jeans_2.png", (0, 0), normal+"gl/angry2.png"))
+    image gl grin1 ears = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/grin1.png", (0, 0), normal+"gl/ears_1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/grin1.png", (0, 0), normal+"gl/ears_1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/grin1.png", (0, 0), normal+"gl/ears_1.png"))
+    image gl surprise ears = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/surprise.png", (0, 0), normal+"gl/ears_1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/surprise.png", (0, 0), normal+"gl/ears_1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/surprise.png", (0, 0), normal+"gl/ears_1.png"))
+    image gl scary ears = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/scary.png", (0, 0), normal+"gl/ears_1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/scary.png", (0, 0), normal+"gl/ears_1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/scary.png", (0, 0), normal+"gl/ears_1.png"))
+    image gl sad ears = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/sad.png", (0, 0), normal+"gl/ears_1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/sad.png", (0, 0), normal+"gl/ears_1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/sad.png", (0, 0), normal+"gl/ears_1.png"))
+    image gl shy1 ears = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/shy1.png", (0, 0), normal+"gl/ears_1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/shy1.png", (0, 0), normal+"gl/ears_1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/shy1.png", (0, 0), normal+"gl/ears_1.png"))
+    image gl guilty ears = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/guilty.png", (0, 0), normal+"gl/ears_1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/guilty.png", (0, 0), normal+"gl/ears_1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/guilty.png", (0, 0), normal+"gl/ears_1.png"))
+    image gl evilsmile1 ears = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/evilsmile1.png", (0, 0), normal+"gl/ears_1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/evilsmile1.png", (0, 0), normal+"gl/ears_1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/evilsmile1.png", (0, 0), normal+"gl/ears_1.png"))
+    image gl happy ears = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/happy.png", (0, 0), normal+"gl/ears_1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/happy.png", (0, 0), normal+"gl/ears_1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/happy.png", (0, 0), normal+"gl/ears_1.png"))
+    image gl laugh1 ears = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/laugh1.png", (0, 0), normal+"gl/ears_1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/laugh1.png", (0, 0), normal+"gl/ears_1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/laugh1.png", (0, 0), normal+"gl/ears_1.png"))
+    image gl smile1 ears = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/smile1.png", (0, 0), normal+"gl/ears_1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/smile1.png", (0, 0), normal+"gl/ears_1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/smile1.png", (0, 0), normal+"gl/ears_1.png"))
+    image gl normal ears = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/normal.png", (0, 0), normal+"gl/ears_1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/normal.png", (0, 0), normal+"gl/ears_1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/normal.png", (0, 0), normal+"gl/ears_1.png"))
+    image gl serious ears = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/serious.png", (0, 0), normal+"gl/ears_1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/serious.png", (0, 0), normal+"gl/ears_1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/serious.png", (0, 0), normal+"gl/ears_1.png"))
+    image gl dontlike1 ears = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/dontlike1.png", (0, 0), normal+"gl/ears_1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/dontlike1.png", (0, 0), normal+"gl/ears_1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/dontlike1.png", (0, 0), normal+"gl/ears_1.png"))
+    image gl angry1 ears = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/angry1.png", (0, 0), normal+"gl/ears_1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/angry1.png", (0, 0), normal+"gl/ears_1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/angry1.png", (0, 0), normal+"gl/ears_1.png"))
+    image gl rage ears = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/rage.png", (0, 0), normal+"gl/ears_1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/rage.png", (0, 0), normal+"gl/ears_1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/rage.png", (0, 0), normal+"gl/ears_1.png"))
+    image gl anger ears = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/anger.png", (0, 0), normal+"gl/ears_1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/anger.png", (0, 0), normal+"gl/ears_1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/anger.png", (0, 0), normal+"gl/ears_1.png"))
+    image gl frust1 ears = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/frust1.png", (0, 0), normal+"gl/ears_1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/frust1.png", (0, 0), normal+"gl/ears_1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/frust1.png", (0, 0), normal+"gl/ears_1.png"))
+    image gl dontlike2 ears = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_2.png", (0, 0), normal+"gl/jeans_2.png", (0, 0), normal+"gl/dontlike2.png", (0, 0), normal+"gl/ears_2.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_2.png", (0, 0), normal+"gl/jeans_2.png", (0, 0), normal+"gl/dontlike2.png", (0, 0), normal+"gl/ears_2.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((900, 1080), (0, 0), normal+"gl/body_2.png", (0, 0), normal+"gl/jeans_2.png", (0, 0), normal+"gl/dontlike2.png", (0, 0), normal+"gl/ears_2.png"))
+    image gl evilsmile2 ears = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_2.png", (0, 0), normal+"gl/jeans_2.png", (0, 0), normal+"gl/evilsmile2.png", (0, 0), normal+"gl/ears_2.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_2.png", (0, 0), normal+"gl/jeans_2.png", (0, 0), normal+"gl/evilsmile2.png", (0, 0), normal+"gl/ears_2.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((900, 1080), (0, 0), normal+"gl/body_2.png", (0, 0), normal+"gl/jeans_2.png", (0, 0), normal+"gl/evilsmile2.png", (0, 0), normal+"gl/ears_2.png"))
+    image gl grin2 ears = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_2.png", (0, 0), normal+"gl/jeans_2.png", (0, 0), normal+"gl/grin2.png", (0, 0), normal+"gl/ears_2.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_2.png", (0, 0), normal+"gl/jeans_2.png", (0, 0), normal+"gl/grin2.png", (0, 0), normal+"gl/ears_2.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((900, 1080), (0, 0), normal+"gl/body_2.png", (0, 0), normal+"gl/jeans_2.png", (0, 0), normal+"gl/grin2.png", (0, 0), normal+"gl/ears_2.png"))
+    image gl smile2 ears = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_2.png", (0, 0), normal+"gl/jeans_2.png", (0, 0), normal+"gl/smile2.png", (0, 0), normal+"gl/ears_2.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_2.png", (0, 0), normal+"gl/jeans_2.png", (0, 0), normal+"gl/smile2.png", (0, 0), normal+"gl/ears_2.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((900, 1080), (0, 0), normal+"gl/body_2.png", (0, 0), normal+"gl/jeans_2.png", (0, 0), normal+"gl/smile2.png", (0, 0), normal+"gl/ears_2.png"))
+    image gl shy2 ears = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_2.png", (0, 0), normal+"gl/jeans_2.png", (0, 0), normal+"gl/shy2.png", (0, 0), normal+"gl/ears_2.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_2.png", (0, 0), normal+"gl/jeans_2.png", (0, 0), normal+"gl/shy2.png", (0, 0), normal+"gl/ears_2.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((900, 1080), (0, 0), normal+"gl/body_2.png", (0, 0), normal+"gl/jeans_2.png", (0, 0), normal+"gl/shy2.png", (0, 0), normal+"gl/ears_2.png"))
+    image gl laugh2 ears = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_2.png", (0, 0), normal+"gl/jeans_2.png", (0, 0), normal+"gl/laugh2.png", (0, 0), normal+"gl/ears_2.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_2.png", (0, 0), normal+"gl/jeans_2.png", (0, 0), normal+"gl/laugh2.png", (0, 0), normal+"gl/ears_2.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((900, 1080), (0, 0), normal+"gl/body_2.png", (0, 0), normal+"gl/jeans_2.png", (0, 0), normal+"gl/laugh2.png", (0, 0), normal+"gl/ears_2.png"))
+    image gl frust2 ears = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_2.png", (0, 0), normal+"gl/jeans_2.png", (0, 0), normal+"gl/frust2.png", (0, 0), normal+"gl/ears_2.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_2.png", (0, 0), normal+"gl/jeans_2.png", (0, 0), normal+"gl/frust2.png", (0, 0), normal+"gl/ears_2.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((900, 1080), (0, 0), normal+"gl/body_2.png", (0, 0), normal+"gl/jeans_2.png", (0, 0), normal+"gl/frust2.png", (0, 0), normal+"gl/ears_2.png"))
+    image gl angry2 ears = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_2.png", (0, 0), normal+"gl/jeans_2.png", (0, 0), normal+"gl/angry2.png", (0, 0), normal+"gl/ears_2.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_2.png", (0, 0), normal+"gl/jeans_2.png", (0, 0), normal+"gl/angry2.png", (0, 0), normal+"gl/ears_2.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((900, 1080), (0, 0), normal+"gl/body_2.png", (0, 0), normal+"gl/jeans_2.png", (0, 0), normal+"gl/angry2.png", (0, 0), normal+"gl/ears_2.png"))
 
-#Добавление кошачьих ушек
-
-    image gl grin1 jeans ears = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/ears_1.png", (0, 0), normal+"gl/grin1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/ears_1.png", (0, 0), normal+"gl/grin1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/ears_1.png", (0, 0), normal+"gl/grin1.png"))
-    image gl surprise jeans ears = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/ears_1.png", (0, 0), normal+"gl/surprise.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/ears_1.png", (0, 0), normal+"gl/surprise.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/ears_1.png", (0, 0), normal+"gl/surprise.png"))
-    image gl scary jeans ears = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/ears_1.png", (0, 0), normal+"gl/scary.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/ears_1.png", (0, 0), normal+"gl/scary.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/ears_1.png", (0, 0), normal+"gl/scary.png"))
-    image gl sad jeans ears = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/ears_1.png", (0, 0), normal+"gl/sad.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/ears_1.png", (0, 0), normal+"gl/sad.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/ears_1.png", (0, 0), normal+"gl/sad.png"))
-    image gl shy1 jeans ears = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/ears_1.png", (0, 0), normal+"gl/shy1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/ears_1.png", (0, 0), normal+"gl/shy1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/ears_1.png", (0, 0), normal+"gl/shy1.png"))
-    image gl guilty jeans ears = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/ears_1.png", (0, 0), normal+"gl/guilty.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/ears_1.png", (0, 0), normal+"gl/guilty.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/ears_1.png", (0, 0), normal+"gl/guilty.png"))
-    image gl evilsmile1 jeans ears = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/ears_1.png", (0, 0), normal+"gl/evilsmile1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/ears_1.png", (0, 0), normal+"gl/evilsmile1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/ears_1.png", (0, 0), normal+"gl/evilsmile1.png"))
-    image gl happy jeans ears = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/ears_1.png", (0, 0), normal+"gl/happy.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/ears_1.png", (0, 0), normal+"gl/happy.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/ears_1.png", (0, 0), normal+"gl/happy.png"))
-    image gl laugh1 jeans ears = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/ears_1.png", (0, 0), normal+"gl/laugh1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/ears_1.png", (0, 0), normal+"gl/laugh1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/ears_1.png", (0, 0), normal+"gl/laugh1.png"))
-    image gl smile1 jeans ears = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/ears_1.png", (0, 0), normal+"gl/smile1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/ears_1.png", (0, 0), normal+"gl/smile1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/ears_1.png", (0, 0), normal+"gl/smile1.png"))
-    image gl normal jeans ears = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/ears_1.png", (0, 0), normal+"gl/normal.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/ears_1.png", (0, 0), normal+"gl/normal.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/ears_1.png", (0, 0), normal+"gl/normal.png"))
-    image gl serious jeans ears = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/ears_1.png", (0, 0), normal+"gl/serious.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/ears_1.png", (0, 0), normal+"gl/serious.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/ears_1.png", (0, 0), normal+"gl/serious.png"))
-    image gl dontlike1 jeans ears = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/ears_1.png", (0, 0), normal+"gl/dontlike1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/ears_1.png", (0, 0), normal+"gl/dontlike1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/ears_1.png", (0, 0), normal+"gl/dontlike1.png"))
-    image gl angry1 jeans ears = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/ears_1.png", (0, 0), normal+"gl/angry1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/ears_1.png", (0, 0), normal+"gl/angry1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/ears_1.png", (0, 0), normal+"gl/angry1.png"))
-    image gl rage jeans ears = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/ears_1.png", (0, 0), normal+"gl/rage.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/ears_1.png", (0, 0), normal+"gl/rage.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/ears_1.png", (0, 0), normal+"gl/rage.png"))
-    image gl anger jeans ears = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/ears_1.png", (0, 0), normal+"gl/anger.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/ears_1.png", (0, 0), normal+"gl/anger.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/ears_1.png", (0, 0), normal+"gl/anger.png"))
-    image gl frust1 jeans ears = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/ears_1.png", (0, 0), normal+"gl/frust1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/ears_1.png", (0, 0), normal+"gl/frust1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((900, 1080), (0, 0), normal+"gl/body_1.png", (0, 0), normal+"gl/jeans_1.png", (0, 0), normal+"gl/ears_1.png", (0, 0), normal+"gl/frust1.png"))
-    image gl dontlike2 jeans ears = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_2.png", (0, 0), normal+"gl/jeans_2.png", (0, 0), normal+"gl/ears_2.png", (0, 0), normal+"gl/dontlike2.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_2.png", (0, 0), normal+"gl/jeans_2.png", (0, 0), normal+"gl/ears_2.png", (0, 0), normal+"gl/dontlike2.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((900, 1080), (0, 0), normal+"gl/body_2.png", (0, 0), normal+"gl/jeans_2.png", (0, 0), normal+"gl/ears_2.png", (0, 0), normal+"gl/dontlike2.png"))
-    image gl evilsmile2 jeans ears = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_2.png", (0, 0), normal+"gl/jeans_2.png", (0, 0), normal+"gl/ears_2.png", (0, 0), normal+"gl/evilsmile2.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_2.png", (0, 0), normal+"gl/jeans_2.png", (0, 0), normal+"gl/ears_2.png", (0, 0), normal+"gl/evilsmile2.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((900, 1080), (0, 0), normal+"gl/body_2.png", (0, 0), normal+"gl/jeans_2.png", (0, 0), normal+"gl/ears_2.png", (0, 0), normal+"gl/evilsmile2.png"))
-    image gl grin2 jeans ears = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_2.png", (0, 0), normal+"gl/jeans_2.png", (0, 0), normal+"gl/ears_2.png", (0, 0), normal+"gl/grin2.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_2.png", (0, 0), normal+"gl/jeans_2.png", (0, 0), normal+"gl/ears_2.png", (0, 0), normal+"gl/grin2.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((900, 1080), (0, 0), normal+"gl/body_2.png", (0, 0), normal+"gl/jeans_2.png", (0, 0), normal+"gl/ears_2.png", (0, 0), normal+"gl/grin2.png"))
-    image gl smile2 jeans ears = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_2.png", (0, 0), normal+"gl/jeans_2.png", (0, 0), normal+"gl/ears_2.png", (0, 0), normal+"gl/smile2.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_2.png", (0, 0), normal+"gl/jeans_2.png", (0, 0), normal+"gl/ears_2.png", (0, 0), normal+"gl/smile2.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((900, 1080), (0, 0), normal+"gl/body_2.png", (0, 0), normal+"gl/jeans_2.png", (0, 0), normal+"gl/ears_2.png", (0, 0), normal+"gl/smile2.png"))
-    image gl shy2 jeans ears = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_2.png", (0, 0), normal+"gl/jeans_2.png", (0, 0), normal+"gl/ears_2.png", (0, 0), normal+"gl/shy2.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_2.png", (0, 0), normal+"gl/jeans_2.png", (0, 0), normal+"gl/ears_2.png", (0, 0), normal+"gl/shy2.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((900, 1080), (0, 0), normal+"gl/body_2.png", (0, 0), normal+"gl/jeans_2.png", (0, 0), normal+"gl/ears_2.png", (0, 0), normal+"gl/shy2.png"))
-    image gl laugh2 jeans ears = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_2.png", (0, 0), normal+"gl/jeans_2.png", (0, 0), normal+"gl/ears_2.png", (0, 0), normal+"gl/laugh2.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_2.png", (0, 0), normal+"gl/jeans_2.png", (0, 0), normal+"gl/ears_2.png", (0, 0), normal+"gl/laugh2.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((900, 1080), (0, 0), normal+"gl/body_2.png", (0, 0), normal+"gl/jeans_2.png", (0, 0), normal+"gl/ears_2.png", (0, 0), normal+"gl/laugh2.png"))
-    image gl frust2 jeans ears = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_2.png", (0, 0), normal+"gl/jeans_2.png", (0, 0), normal+"gl/ears_2.png", (0, 0), normal+"gl/frust2.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_2.png", (0, 0), normal+"gl/jeans_2.png", (0, 0), normal+"gl/ears_2.png", (0, 0), normal+"gl/frust2.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((900, 1080), (0, 0), normal+"gl/body_2.png", (0, 0), normal+"gl/jeans_2.png", (0, 0), normal+"gl/ears_2.png", (0, 0), normal+"gl/frust2.png"))
-    image gl angry2 jeans ears = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_2.png", (0, 0), normal+"gl/jeans_2.png", (0, 0), normal+"gl/ears_2.png", (0, 0), normal+"gl/angry2.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), normal+"gl/body_2.png", (0, 0), normal+"gl/jeans_2.png", (0, 0), normal+"gl/ears_2.png", (0, 0), normal+"gl/angry2.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((900, 1080), (0, 0), normal+"gl/body_2.png", (0, 0), normal+"gl/jeans_2.png", (0, 0), normal+"gl/ears_2.png", (0, 0), normal+"gl/angry2.png"))
-
-#far
-
-    image gl grin1 jeans far = ConditionSwitch(
+# far
+    image gl grin1 far = ConditionSwitch(
         "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/grin1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
         "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/grin1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
         True, im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/grin1.png"))
-    image gl surprise jeans far = ConditionSwitch(
+    image gl surprise far = ConditionSwitch(
         "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/surprise.png"), im.matrix.tint(0.94, 0.82, 1.0)),
         "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/surprise.png"), im.matrix.tint(0.63, 0.78, 0.82)),
         True, im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/surprise.png"))
-    image gl scary jeans far = ConditionSwitch(
+    image gl scary far = ConditionSwitch(
         "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/scary.png"), im.matrix.tint(0.94, 0.82, 1.0)),
         "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/scary.png"), im.matrix.tint(0.63, 0.78, 0.82)),
         True, im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/scary.png"))
-    image gl sad jeans far = ConditionSwitch(
+    image gl sad far = ConditionSwitch(
         "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/sad.png"), im.matrix.tint(0.94, 0.82, 1.0)),
         "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/sad.png"), im.matrix.tint(0.63, 0.78, 0.82)),
         True, im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/sad.png"))
-    image gl shy1 jeans far = ConditionSwitch(
+    image gl shy1 far = ConditionSwitch(
         "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/shy1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
         "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/shy1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
         True, im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/shy1.png"))
-    image gl guilty jeans far = ConditionSwitch(
+    image gl guilty far = ConditionSwitch(
         "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/guilty.png"), im.matrix.tint(0.94, 0.82, 1.0)),
         "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/guilty.png"), im.matrix.tint(0.63, 0.78, 0.82)),
         True, im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/guilty.png"))
-    image gl evilsmile1 jeans far = ConditionSwitch(
+    image gl evilsmile1 far = ConditionSwitch(
         "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/evilsmile1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
         "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/evilsmile1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
         True, im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/evilsmile1.png"))
-    image gl happy jeans far = ConditionSwitch(
+    image gl happy far = ConditionSwitch(
         "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/happy.png"), im.matrix.tint(0.94, 0.82, 1.0)),
         "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/happy.png"), im.matrix.tint(0.63, 0.78, 0.82)),
         True, im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/happy.png"))
-    image gl laugh1 jeans far = ConditionSwitch(
+    image gl laugh1 far = ConditionSwitch(
         "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/laugh1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
         "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/laugh1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
         True, im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/laugh1.png"))
-    image gl smile1 jeans far = ConditionSwitch(
+    image gl smile1 far = ConditionSwitch(
         "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/smile1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
         "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/smile1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
         True, im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/smile1.png"))
-    image gl normal jeans far = ConditionSwitch(
+    image gl normal far = ConditionSwitch(
         "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/normal.png"), im.matrix.tint(0.94, 0.82, 1.0)),
         "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/normal.png"), im.matrix.tint(0.63, 0.78, 0.82)),
         True, im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/normal.png"))
-    image gl serious jeans far = ConditionSwitch(
+    image gl serious far = ConditionSwitch(
         "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/serious.png"), im.matrix.tint(0.94, 0.82, 1.0)),
         "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/serious.png"), im.matrix.tint(0.63, 0.78, 0.82)),
         True, im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/serious.png"))
-    image gl dontlike1 jeans far = ConditionSwitch(
+    image gl dontlike1 far = ConditionSwitch(
         "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/dontlike1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
         "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/dontlike1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
         True, im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/dontlike1.png"))
-    image gl angry1 jeans far = ConditionSwitch(
+    image gl angry1 far = ConditionSwitch(
         "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/angry1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
         "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/angry1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
         True, im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/angry1.png"))
-    image gl rage jeans far = ConditionSwitch(
+    image gl rage far = ConditionSwitch(
         "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/rage.png"), im.matrix.tint(0.94, 0.82, 1.0)),
         "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/rage.png"), im.matrix.tint(0.63, 0.78, 0.82)),
         True, im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/rage.png"))
-    image gl anger jeans far = ConditionSwitch(
+    image gl anger far = ConditionSwitch(
         "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/anger.png"), im.matrix.tint(0.94, 0.82, 1.0)),
         "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/anger.png"), im.matrix.tint(0.63, 0.78, 0.82)),
         True, im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/anger.png"))
-    image gl frust1 jeans far = ConditionSwitch(
+    image gl frust1 far = ConditionSwitch(
         "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/frust1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
         "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/frust1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
         True, im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/frust1.png"))
-    image gl dontlike2 jeans far = ConditionSwitch(
+    image gl dontlike2 far = ConditionSwitch(
         "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_2.png", (0, 0), far+"gl/jeans_2.png", (0, 0), far+"gl/dontlike2.png"), im.matrix.tint(0.94, 0.82, 1.0)),
         "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_2.png", (0, 0), far+"gl/jeans_2.png", (0, 0), far+"gl/dontlike2.png"), im.matrix.tint(0.63, 0.78, 0.82)),
         True, im.Composite((675, 1080), (0, 0), far+"gl/body_2.png", (0, 0), far+"gl/jeans_2.png", (0, 0), far+"gl/dontlike2.png"))
-    image gl evilsmile2 jeans far = ConditionSwitch(
+    image gl evilsmile2 far = ConditionSwitch(
         "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_2.png", (0, 0), far+"gl/jeans_2.png", (0, 0), far+"gl/evilsmile2.png"), im.matrix.tint(0.94, 0.82, 1.0)),
         "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_2.png", (0, 0), far+"gl/jeans_2.png", (0, 0), far+"gl/evilsmile2.png"), im.matrix.tint(0.63, 0.78, 0.82)),
         True, im.Composite((675, 1080), (0, 0), far+"gl/body_2.png", (0, 0), far+"gl/jeans_2.png", (0, 0), far+"gl/evilsmile2.png"))
-    image gl grin2 jeans far = ConditionSwitch(
+    image gl grin2 far = ConditionSwitch(
         "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_2.png", (0, 0), far+"gl/jeans_2.png", (0, 0), far+"gl/grin2.png"), im.matrix.tint(0.94, 0.82, 1.0)),
         "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_2.png", (0, 0), far+"gl/jeans_2.png", (0, 0), far+"gl/grin2.png"), im.matrix.tint(0.63, 0.78, 0.82)),
         True, im.Composite((675, 1080), (0, 0), far+"gl/body_2.png", (0, 0), far+"gl/jeans_2.png", (0, 0), far+"gl/grin2.png"))
-    image gl smile2 jeans far = ConditionSwitch(
+    image gl smile2 far = ConditionSwitch(
         "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_2.png", (0, 0), far+"gl/jeans_2.png", (0, 0), far+"gl/smile2.png"), im.matrix.tint(0.94, 0.82, 1.0)),
         "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_2.png", (0, 0), far+"gl/jeans_2.png", (0, 0), far+"gl/smile2.png"), im.matrix.tint(0.63, 0.78, 0.82)),
         True, im.Composite((675, 1080), (0, 0), far+"gl/body_2.png", (0, 0), far+"gl/jeans_2.png", (0, 0), far+"gl/smile2.png"))
-    image gl shy2 jeans far = ConditionSwitch(
+    image gl shy2 far = ConditionSwitch(
         "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_2.png", (0, 0), far+"gl/jeans_2.png", (0, 0), far+"gl/shy2.png"), im.matrix.tint(0.94, 0.82, 1.0)),
         "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_2.png", (0, 0), far+"gl/jeans_2.png", (0, 0), far+"gl/shy2.png"), im.matrix.tint(0.63, 0.78, 0.82)),
         True, im.Composite((675, 1080), (0, 0), far+"gl/body_2.png", (0, 0), far+"gl/jeans_2.png", (0, 0), far+"gl/shy2.png"))
-    image gl laugh2 jeans far = ConditionSwitch(
+    image gl laugh2 far = ConditionSwitch(
         "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_2.png", (0, 0), far+"gl/jeans_2.png", (0, 0), far+"gl/laugh2.png"), im.matrix.tint(0.94, 0.82, 1.0)),
         "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_2.png", (0, 0), far+"gl/jeans_2.png", (0, 0), far+"gl/laugh2.png"), im.matrix.tint(0.63, 0.78, 0.82)),
         True, im.Composite((675, 1080), (0, 0), far+"gl/body_2.png", (0, 0), far+"gl/jeans_2.png", (0, 0), far+"gl/laugh2.png"))
-    image gl frust2 jeans far = ConditionSwitch(
+    image gl frust2 far = ConditionSwitch(
         "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_2.png", (0, 0), far+"gl/jeans_2.png", (0, 0), far+"gl/frust2.png"), im.matrix.tint(0.94, 0.82, 1.0)),
         "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_2.png", (0, 0), far+"gl/jeans_2.png", (0, 0), far+"gl/frust2.png"), im.matrix.tint(0.63, 0.78, 0.82)),
         True, im.Composite((675, 1080), (0, 0), far+"gl/body_2.png", (0, 0), far+"gl/jeans_2.png", (0, 0), far+"gl/frust2.png"))
-    image gl angry2 jeans far = ConditionSwitch(
+    image gl angry2 far = ConditionSwitch(
         "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_2.png", (0, 0), far+"gl/jeans_2.png", (0, 0), far+"gl/angry2.png"), im.matrix.tint(0.94, 0.82, 1.0)),
         "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_2.png", (0, 0), far+"gl/jeans_2.png", (0, 0), far+"gl/angry2.png"), im.matrix.tint(0.63, 0.78, 0.82)),
         True, im.Composite((675, 1080), (0, 0), far+"gl/body_2.png", (0, 0), far+"gl/jeans_2.png", (0, 0), far+"gl/angry2.png"))
+    image gl grin1 ears far = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/grin1.png", (0, 0), far+"gl/ears_1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/grin1.png", (0, 0), far+"gl/ears_1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/grin1.png", (0, 0), far+"gl/ears_1.png"))
+    image gl surprise ears far = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/surprise.png", (0, 0), far+"gl/ears_1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/surprise.png", (0, 0), far+"gl/ears_1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/surprise.png", (0, 0), far+"gl/ears_1.png"))
+    image gl scary ears far = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/scary.png", (0, 0), far+"gl/ears_1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/scary.png", (0, 0), far+"gl/ears_1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/scary.png", (0, 0), far+"gl/ears_1.png"))
+    image gl sad ears far = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/sad.png", (0, 0), far+"gl/ears_1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/sad.png", (0, 0), far+"gl/ears_1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/sad.png", (0, 0), far+"gl/ears_1.png"))
+    image gl shy1 ears far = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/shy1.png", (0, 0), far+"gl/ears_1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/shy1.png", (0, 0), far+"gl/ears_1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/shy1.png", (0, 0), far+"gl/ears_1.png"))
+    image gl guilty ears far = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/guilty.png", (0, 0), far+"gl/ears_1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/guilty.png", (0, 0), far+"gl/ears_1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/guilty.png", (0, 0), far+"gl/ears_1.png"))
+    image gl evilsmile1 ears far = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/evilsmile1.png", (0, 0), far+"gl/ears_1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/evilsmile1.png", (0, 0), far+"gl/ears_1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/evilsmile1.png", (0, 0), far+"gl/ears_1.png"))
+    image gl happy ears far = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/happy.png", (0, 0), far+"gl/ears_1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/happy.png", (0, 0), far+"gl/ears_1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/happy.png", (0, 0), far+"gl/ears_1.png"))
+    image gl laugh1 ears far = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/laugh1.png", (0, 0), far+"gl/ears_1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/laugh1.png", (0, 0), far+"gl/ears_1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/laugh1.png", (0, 0), far+"gl/ears_1.png"))
+    image gl smile1 ears far = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/smile1.png", (0, 0), far+"gl/ears_1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/smile1.png", (0, 0), far+"gl/ears_1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/smile1.png", (0, 0), far+"gl/ears_1.png"))
+    image gl normal ears far = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/normal.png", (0, 0), far+"gl/ears_1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/normal.png", (0, 0), far+"gl/ears_1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/normal.png", (0, 0), far+"gl/ears_1.png"))
+    image gl serious ears far = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/serious.png", (0, 0), far+"gl/ears_1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/serious.png", (0, 0), far+"gl/ears_1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/serious.png", (0, 0), far+"gl/ears_1.png"))
+    image gl dontlike1 ears far = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/dontlike1.png", (0, 0), far+"gl/ears_1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/dontlike1.png", (0, 0), far+"gl/ears_1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/dontlike1.png", (0, 0), far+"gl/ears_1.png"))
+    image gl angry1 ears far = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/angry1.png", (0, 0), far+"gl/ears_1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/angry1.png", (0, 0), far+"gl/ears_1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/angry1.png", (0, 0), far+"gl/ears_1.png"))
+    image gl rage ears far = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/rage.png", (0, 0), far+"gl/ears_1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/rage.png", (0, 0), far+"gl/ears_1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/rage.png", (0, 0), far+"gl/ears_1.png"))
+    image gl anger ears far = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/anger.png", (0, 0), far+"gl/ears_1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/anger.png", (0, 0), far+"gl/ears_1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/anger.png", (0, 0), far+"gl/ears_1.png"))
+    image gl frust1 ears far = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/frust1.png", (0, 0), far+"gl/ears_1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/frust1.png", (0, 0), far+"gl/ears_1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/frust1.png", (0, 0), far+"gl/ears_1.png"))
+    image gl dontlike2 ears far = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_2.png", (0, 0), far+"gl/jeans_2.png", (0, 0), far+"gl/dontlike2.png", (0, 0), far+"gl/ears_2.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_2.png", (0, 0), far+"gl/jeans_2.png", (0, 0), far+"gl/dontlike2.png", (0, 0), far+"gl/ears_2.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((675, 1080), (0, 0), far+"gl/body_2.png", (0, 0), far+"gl/jeans_2.png", (0, 0), far+"gl/dontlike2.png", (0, 0), far+"gl/ears_2.png"))
+    image gl evilsmile2 ears far = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_2.png", (0, 0), far+"gl/jeans_2.png", (0, 0), far+"gl/evilsmile2.png", (0, 0), far+"gl/ears_2.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_2.png", (0, 0), far+"gl/jeans_2.png", (0, 0), far+"gl/evilsmile2.png", (0, 0), far+"gl/ears_2.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((675, 1080), (0, 0), far+"gl/body_2.png", (0, 0), far+"gl/jeans_2.png", (0, 0), far+"gl/evilsmile2.png", (0, 0), far+"gl/ears_2.png"))
+    image gl grin2 ears far = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_2.png", (0, 0), far+"gl/jeans_2.png", (0, 0), far+"gl/grin2.png", (0, 0), far+"gl/ears_2.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_2.png", (0, 0), far+"gl/jeans_2.png", (0, 0), far+"gl/grin2.png", (0, 0), far+"gl/ears_2.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((675, 1080), (0, 0), far+"gl/body_2.png", (0, 0), far+"gl/jeans_2.png", (0, 0), far+"gl/grin2.png", (0, 0), far+"gl/ears_2.png"))
+    image gl smile2 ears far = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_2.png", (0, 0), far+"gl/jeans_2.png", (0, 0), far+"gl/smile2.png", (0, 0), far+"gl/ears_2.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_2.png", (0, 0), far+"gl/jeans_2.png", (0, 0), far+"gl/smile2.png", (0, 0), far+"gl/ears_2.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((675, 1080), (0, 0), far+"gl/body_2.png", (0, 0), far+"gl/jeans_2.png", (0, 0), far+"gl/smile2.png", (0, 0), far+"gl/ears_2.png"))
+    image gl shy2 ears far = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_2.png", (0, 0), far+"gl/jeans_2.png", (0, 0), far+"gl/shy2.png", (0, 0), far+"gl/ears_2.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_2.png", (0, 0), far+"gl/jeans_2.png", (0, 0), far+"gl/shy2.png", (0, 0), far+"gl/ears_2.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((675, 1080), (0, 0), far+"gl/body_2.png", (0, 0), far+"gl/jeans_2.png", (0, 0), far+"gl/shy2.png", (0, 0), far+"gl/ears_2.png"))
+    image gl laugh2 ears far = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_2.png", (0, 0), far+"gl/jeans_2.png", (0, 0), far+"gl/laugh2.png", (0, 0), far+"gl/ears_2.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_2.png", (0, 0), far+"gl/jeans_2.png", (0, 0), far+"gl/laugh2.png", (0, 0), far+"gl/ears_2.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((675, 1080), (0, 0), far+"gl/body_2.png", (0, 0), far+"gl/jeans_2.png", (0, 0), far+"gl/laugh2.png", (0, 0), far+"gl/ears_2.png"))
+    image gl frust2 ears far = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_2.png", (0, 0), far+"gl/jeans_2.png", (0, 0), far+"gl/frust2.png", (0, 0), far+"gl/ears_2.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_2.png", (0, 0), far+"gl/jeans_2.png", (0, 0), far+"gl/frust2.png", (0, 0), far+"gl/ears_2.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((675, 1080), (0, 0), far+"gl/body_2.png", (0, 0), far+"gl/jeans_2.png", (0, 0), far+"gl/frust2.png", (0, 0), far+"gl/ears_2.png"))
+    image gl angry2 ears far = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_2.png", (0, 0), far+"gl/jeans_2.png", (0, 0), far+"gl/angry2.png", (0, 0), far+"gl/ears_2.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_2.png", (0, 0), far+"gl/jeans_2.png", (0, 0), far+"gl/angry2.png", (0, 0), far+"gl/ears_2.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((675, 1080), (0, 0), far+"gl/body_2.png", (0, 0), far+"gl/jeans_2.png", (0, 0), far+"gl/angry2.png", (0, 0), far+"gl/ears_2.png"))
 
-#Добавление кошачьих ушек
-
-
-    image gl grin1 jeans ears far = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/ears_1.png", (0, 0), far+"gl/grin1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/ears_1.png", (0, 0), far+"gl/grin1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/ears_1.png", (0, 0), far+"gl/grin1.png"))
-    image gl surprise jeans ears far = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/ears_1.png", (0, 0), far+"gl/surprise.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/ears_1.png", (0, 0), far+"gl/surprise.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/ears_1.png", (0, 0), far+"gl/surprise.png"))
-    image gl scary jeans ears far = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/ears_1.png", (0, 0), far+"gl/scary.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/ears_1.png", (0, 0), far+"gl/scary.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/ears_1.png", (0, 0), far+"gl/scary.png"))
-    image gl sad jeans ears far = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/ears_1.png", (0, 0), far+"gl/sad.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/ears_1.png", (0, 0), far+"gl/sad.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/ears_1.png", (0, 0), far+"gl/sad.png"))
-    image gl shy1 jeans ears far = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/ears_1.png", (0, 0), far+"gl/shy1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/ears_1.png", (0, 0), far+"gl/shy1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/ears_1.png", (0, 0), far+"gl/shy1.png"))
-    image gl guilty jeans ears far = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/ears_1.png", (0, 0), far+"gl/guilty.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/ears_1.png", (0, 0), far+"gl/guilty.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/ears_1.png", (0, 0), far+"gl/guilty.png"))
-    image gl evilsmile1 jeans ears far = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/ears_1.png", (0, 0), far+"gl/evilsmile1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/ears_1.png", (0, 0), far+"gl/evilsmile1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/ears_1.png", (0, 0), far+"gl/evilsmile1.png"))
-    image gl happy jeans ears far = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/ears_1.png", (0, 0), far+"gl/happy.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/ears_1.png", (0, 0), far+"gl/happy.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/ears_1.png", (0, 0), far+"gl/happy.png"))
-    image gl laugh1 jeans ears far = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/ears_1.png", (0, 0), far+"gl/laugh1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/ears_1.png", (0, 0), far+"gl/laugh1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/ears_1.png", (0, 0), far+"gl/laugh1.png"))
-    image gl smile1 jeans ears far = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/ears_1.png", (0, 0), far+"gl/smile1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/ears_1.png", (0, 0), far+"gl/smile1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/ears_1.png", (0, 0), far+"gl/smile1.png"))
-    image gl normal jeans ears far = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/ears_1.png", (0, 0), far+"gl/normal.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/ears_1.png", (0, 0), far+"gl/normal.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/ears_1.png", (0, 0), far+"gl/normal.png"))
-    image gl serious jeans ears far = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/ears_1.png", (0, 0), far+"gl/serious.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/ears_1.png", (0, 0), far+"gl/serious.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/ears_1.png", (0, 0), far+"gl/serious.png"))
-    image gl dontlike1 jeans ears far = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/ears_1.png", (0, 0), far+"gl/dontlike1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/ears_1.png", (0, 0), far+"gl/dontlike1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/ears_1.png", (0, 0), far+"gl/dontlike1.png"))
-    image gl angry1 jeans ears far = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/ears_1.png", (0, 0), far+"gl/angry1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/ears_1.png", (0, 0), far+"gl/angry1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/ears_1.png", (0, 0), far+"gl/angry1.png"))
-    image gl rage jeans ears far = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/ears_1.png", (0, 0), far+"gl/rage.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/ears_1.png", (0, 0), far+"gl/rage.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/ears_1.png", (0, 0), far+"gl/rage.png"))
-    image gl anger jeans ears far = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/ears_1.png", (0, 0), far+"gl/anger.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/ears_1.png", (0, 0), far+"gl/anger.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/ears_1.png", (0, 0), far+"gl/anger.png"))
-    image gl frust1 jeans ears far = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/ears_1.png", (0, 0), far+"gl/frust1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/ears_1.png", (0, 0), far+"gl/frust1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((675, 1080), (0, 0), far+"gl/body_1.png", (0, 0), far+"gl/jeans_1.png", (0, 0), far+"gl/ears_1.png", (0, 0), far+"gl/frust1.png"))
-    image gl dontlike2 jeans ears far = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_2.png", (0, 0), far+"gl/jeans_2.png", (0, 0), far+"gl/ears_2.png", (0, 0), far+"gl/dontlike2.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_2.png", (0, 0), far+"gl/jeans_2.png", (0, 0), far+"gl/ears_2.png", (0, 0), far+"gl/dontlike2.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((675, 1080), (0, 0), far+"gl/body_2.png", (0, 0), far+"gl/jeans_2.png", (0, 0), far+"gl/ears_2.png", (0, 0), far+"gl/dontlike2.png"))
-    image gl evilsmile2 jeans ears far = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_2.png", (0, 0), far+"gl/jeans_2.png", (0, 0), far+"gl/ears_2.png", (0, 0), far+"gl/evilsmile2.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_2.png", (0, 0), far+"gl/jeans_2.png", (0, 0), far+"gl/ears_2.png", (0, 0), far+"gl/evilsmile2.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((675, 1080), (0, 0), far+"gl/body_2.png", (0, 0), far+"gl/jeans_2.png", (0, 0), far+"gl/ears_2.png", (0, 0), far+"gl/evilsmile2.png"))
-    image gl grin2 jeans ears far = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_2.png", (0, 0), far+"gl/jeans_2.png", (0, 0), far+"gl/ears_2.png", (0, 0), far+"gl/grin2.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_2.png", (0, 0), far+"gl/jeans_2.png", (0, 0), far+"gl/ears_2.png", (0, 0), far+"gl/grin2.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((675, 1080), (0, 0), far+"gl/body_2.png", (0, 0), far+"gl/jeans_2.png", (0, 0), far+"gl/ears_2.png", (0, 0), far+"gl/grin2.png"))
-    image gl smile2 jeans ears far = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_2.png", (0, 0), far+"gl/jeans_2.png", (0, 0), far+"gl/ears_2.png", (0, 0), far+"gl/smile2.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_2.png", (0, 0), far+"gl/jeans_2.png", (0, 0), far+"gl/ears_2.png", (0, 0), far+"gl/smile2.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((675, 1080), (0, 0), far+"gl/body_2.png", (0, 0), far+"gl/jeans_2.png", (0, 0), far+"gl/ears_2.png", (0, 0), far+"gl/smile2.png"))
-    image gl shy2 jeans ears far = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_2.png", (0, 0), far+"gl/jeans_2.png", (0, 0), far+"gl/ears_2.png", (0, 0), far+"gl/shy2.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_2.png", (0, 0), far+"gl/jeans_2.png", (0, 0), far+"gl/ears_2.png", (0, 0), far+"gl/shy2.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((675, 1080), (0, 0), far+"gl/body_2.png", (0, 0), far+"gl/jeans_2.png", (0, 0), far+"gl/ears_2.png", (0, 0), far+"gl/shy2.png"))
-    image gl laugh2 jeans ears far = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_2.png", (0, 0), far+"gl/jeans_2.png", (0, 0), far+"gl/ears_2.png", (0, 0), far+"gl/laugh2.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_2.png", (0, 0), far+"gl/jeans_2.png", (0, 0), far+"gl/ears_2.png", (0, 0), far+"gl/laugh2.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((675, 1080), (0, 0), far+"gl/body_2.png", (0, 0), far+"gl/jeans_2.png", (0, 0), far+"gl/ears_2.png", (0, 0), far+"gl/laugh2.png"))
-    image gl frust2 jeans ears far = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_2.png", (0, 0), far+"gl/jeans_2.png", (0, 0), far+"gl/ears_2.png", (0, 0), far+"gl/frust2.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_2.png", (0, 0), far+"gl/jeans_2.png", (0, 0), far+"gl/ears_2.png", (0, 0), far+"gl/frust2.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((675, 1080), (0, 0), far+"gl/body_2.png", (0, 0), far+"gl/jeans_2.png", (0, 0), far+"gl/ears_2.png", (0, 0), far+"gl/frust2.png"))
-    image gl angry2 jeans ears far = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_2.png", (0, 0), far+"gl/jeans_2.png", (0, 0), far+"gl/ears_2.png", (0, 0), far+"gl/angry2.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((675, 1080), (0, 0), far+"gl/body_2.png", (0, 0), far+"gl/jeans_2.png", (0, 0), far+"gl/ears_2.png", (0, 0), far+"gl/angry2.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((675, 1080), (0, 0), far+"gl/body_2.png", (0, 0), far+"gl/jeans_2.png", (0, 0), far+"gl/ears_2.png", (0, 0), far+"gl/angry2.png"))
-
-#close
-
-    image gl grin1 jeans close = ConditionSwitch(
+# close
+    image gl grin1 close = ConditionSwitch(
         "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/grin1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
         "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/grin1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
         True, im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/grin1.png"))
-    image gl surprise jeans close = ConditionSwitch(
+    image gl surprise close = ConditionSwitch(
         "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/surprise.png"), im.matrix.tint(0.94, 0.82, 1.0)),
         "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/surprise.png"), im.matrix.tint(0.63, 0.78, 0.82)),
         True, im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/surprise.png"))
-    image gl scary jeans close = ConditionSwitch(
+    image gl scary close = ConditionSwitch(
         "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/scary.png"), im.matrix.tint(0.94, 0.82, 1.0)),
         "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/scary.png"), im.matrix.tint(0.63, 0.78, 0.82)),
         True, im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/scary.png"))
-    image gl sad jeans close = ConditionSwitch(
+    image gl sad close = ConditionSwitch(
         "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/sad.png"), im.matrix.tint(0.94, 0.82, 1.0)),
         "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/sad.png"), im.matrix.tint(0.63, 0.78, 0.82)),
         True, im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/sad.png"))
-    image gl shy1 jeans close = ConditionSwitch(
+    image gl shy1 close = ConditionSwitch(
         "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/shy1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
         "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/shy1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
         True, im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/shy1.png"))
-    image gl guilty jeans close = ConditionSwitch(
+    image gl guilty close = ConditionSwitch(
         "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/guilty.png"), im.matrix.tint(0.94, 0.82, 1.0)),
         "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/guilty.png"), im.matrix.tint(0.63, 0.78, 0.82)),
         True, im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/guilty.png"))
-    image gl evilsmile1 jeans close = ConditionSwitch(
+    image gl evilsmile1 close = ConditionSwitch(
         "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/evilsmile1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
         "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/evilsmile1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
         True, im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/evilsmile1.png"))
-    image gl happy jeans close = ConditionSwitch(
+    image gl happy close = ConditionSwitch(
         "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/happy.png"), im.matrix.tint(0.94, 0.82, 1.0)),
         "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/happy.png"), im.matrix.tint(0.63, 0.78, 0.82)),
         True, im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/happy.png"))
-    image gl laugh1 jeans close = ConditionSwitch(
+    image gl laugh1 close = ConditionSwitch(
         "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/laugh1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
         "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/laugh1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
         True, im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/laugh1.png"))
-    image gl smile1 jeans close = ConditionSwitch(
+    image gl smile1 close = ConditionSwitch(
         "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/smile1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
         "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/smile1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
         True, im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/smile1.png"))
-    image gl normal jeans close = ConditionSwitch(
+    image gl normal close = ConditionSwitch(
         "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/normal.png"), im.matrix.tint(0.94, 0.82, 1.0)),
         "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/normal.png"), im.matrix.tint(0.63, 0.78, 0.82)),
         True, im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/normal.png"))
-    image gl serious jeans close = ConditionSwitch(
+    image gl serious close = ConditionSwitch(
         "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/serious.png"), im.matrix.tint(0.94, 0.82, 1.0)),
         "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/serious.png"), im.matrix.tint(0.63, 0.78, 0.82)),
         True, im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/serious.png"))
-    image gl dontlike1 jeans close = ConditionSwitch(
+    image gl dontlike1 close = ConditionSwitch(
         "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/dontlike1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
         "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/dontlike1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
         True, im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/dontlike1.png"))
-    image gl angry1 jeans close = ConditionSwitch(
+    image gl angry1 close = ConditionSwitch(
         "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/angry1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
         "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/angry1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
         True, im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/angry1.png"))
-    image gl rage jeans close = ConditionSwitch(
+    image gl rage close = ConditionSwitch(
         "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/rage.png"), im.matrix.tint(0.94, 0.82, 1.0)),
         "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/rage.png"), im.matrix.tint(0.63, 0.78, 0.82)),
         True, im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/rage.png"))
-    image gl anger jeans close = ConditionSwitch(
+    image gl anger close = ConditionSwitch(
         "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/anger.png"), im.matrix.tint(0.94, 0.82, 1.0)),
         "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/anger.png"), im.matrix.tint(0.63, 0.78, 0.82)),
         True, im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/anger.png"))
-    image gl frust1 jeans close = ConditionSwitch(
+    image gl frust1 close = ConditionSwitch(
         "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/frust1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
         "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/frust1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
         True, im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/frust1.png"))
-    image gl dontlike2 jeans close = ConditionSwitch(
+    image gl grin1 ears close = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/grin1.png", (0, 0), close+"gl/ears_1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/grin1.png", (0, 0), close+"gl/ears_1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/grin1.png", (0, 0), close+"gl/ears_1.png"))
+    image gl surprise ears close = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/surprise.png", (0, 0), close+"gl/ears_1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/surprise.png", (0, 0), close+"gl/ears_1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/surprise.png", (0, 0), close+"gl/ears_1.png"))
+    image gl scary ears close = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/scary.png", (0, 0), close+"gl/ears_1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/scary.png", (0, 0), close+"gl/ears_1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/scary.png", (0, 0), close+"gl/ears_1.png"))
+    image gl sad ears close = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/sad.png", (0, 0), close+"gl/ears_1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/sad.png", (0, 0), close+"gl/ears_1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/sad.png", (0, 0), close+"gl/ears_1.png"))
+    image gl shy1 ears close = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/shy1.png", (0, 0), close+"gl/ears_1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/shy1.png", (0, 0), close+"gl/ears_1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/shy1.png", (0, 0), close+"gl/ears_1.png"))
+    image gl guilty ears close = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/guilty.png", (0, 0), close+"gl/ears_1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/guilty.png", (0, 0), close+"gl/ears_1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/guilty.png", (0, 0), close+"gl/ears_1.png"))
+    image gl evilsmile1 ears close = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/evilsmile1.png", (0, 0), close+"gl/ears_1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/evilsmile1.png", (0, 0), close+"gl/ears_1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/evilsmile1.png", (0, 0), close+"gl/ears_1.png"))
+    image gl happy ears close = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/happy.png", (0, 0), close+"gl/ears_1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/happy.png", (0, 0), close+"gl/ears_1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/happy.png", (0, 0), close+"gl/ears_1.png"))
+    image gl laugh1 ears close = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/laugh1.png", (0, 0), close+"gl/ears_1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/laugh1.png", (0, 0), close+"gl/ears_1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/laugh1.png", (0, 0), close+"gl/ears_1.png"))
+    image gl smile1 ears close = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/smile1.png", (0, 0), close+"gl/ears_1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/smile1.png", (0, 0), close+"gl/ears_1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/smile1.png", (0, 0), close+"gl/ears_1.png"))
+    image gl normal ears close = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/normal.png", (0, 0), close+"gl/ears_1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/normal.png", (0, 0), close+"gl/ears_1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/normal.png", (0, 0), close+"gl/ears_1.png"))
+    image gl serious ears close = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/serious.png", (0, 0), close+"gl/ears_1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/serious.png", (0, 0), close+"gl/ears_1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/serious.png", (0, 0), close+"gl/ears_1.png"))
+    image gl dontlike1 ears close = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/dontlike1.png", (0, 0), close+"gl/ears_1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/dontlike1.png", (0, 0), close+"gl/ears_1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/dontlike1.png", (0, 0), close+"gl/ears_1.png"))
+    image gl angry1 ears close = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/angry1.png", (0, 0), close+"gl/ears_1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/angry1.png", (0, 0), close+"gl/ears_1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/angry1.png", (0, 0), close+"gl/ears_1.png"))
+    image gl rage ears close = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/rage.png", (0, 0), close+"gl/ears_1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/rage.png", (0, 0), close+"gl/ears_1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/rage.png", (0, 0), close+"gl/ears_1.png"))
+    image gl anger ears close = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/anger.png", (0, 0), close+"gl/ears_1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/anger.png", (0, 0), close+"gl/ears_1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/anger.png", (0, 0), close+"gl/ears_1.png"))
+    image gl frust1 ears close = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/frust1.png", (0, 0), close+"gl/ears_1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/frust1.png", (0, 0), close+"gl/ears_1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/frust1.png", (0, 0), close+"gl/ears_1.png"))
+    image gl dontlike2 close = ConditionSwitch(
         "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_2.png", (0, 0), close+"gl/jeans_2.png", (0, 0), close+"gl/dontlike2.png"), im.matrix.tint(0.94, 0.82, 1.0)),
         "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_2.png", (0, 0), close+"gl/jeans_2.png", (0, 0), close+"gl/dontlike2.png"), im.matrix.tint(0.63, 0.78, 0.82)),
         True, im.Composite((1125, 1080), (0, 0), close+"gl/body_2.png", (0, 0), close+"gl/jeans_2.png", (0, 0), close+"gl/dontlike2.png"))
-    image gl evilsmile2 jeans close = ConditionSwitch(
+    image gl evilsmile2 close = ConditionSwitch(
         "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_2.png", (0, 0), close+"gl/jeans_2.png", (0, 0), close+"gl/evilsmile2.png"), im.matrix.tint(0.94, 0.82, 1.0)),
         "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_2.png", (0, 0), close+"gl/jeans_2.png", (0, 0), close+"gl/evilsmile2.png"), im.matrix.tint(0.63, 0.78, 0.82)),
         True, im.Composite((1125, 1080), (0, 0), close+"gl/body_2.png", (0, 0), close+"gl/jeans_2.png", (0, 0), close+"gl/evilsmile2.png"))
-    image gl grin2 jeans close = ConditionSwitch(
+    image gl grin2 close = ConditionSwitch(
         "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_2.png", (0, 0), close+"gl/jeans_2.png", (0, 0), close+"gl/grin2.png"), im.matrix.tint(0.94, 0.82, 1.0)),
         "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_2.png", (0, 0), close+"gl/jeans_2.png", (0, 0), close+"gl/grin2.png"), im.matrix.tint(0.63, 0.78, 0.82)),
         True, im.Composite((1125, 1080), (0, 0), close+"gl/body_2.png", (0, 0), close+"gl/jeans_2.png", (0, 0), close+"gl/grin2.png"))
-    image gl smile2 jeans close = ConditionSwitch(
+    image gl smile2 close = ConditionSwitch(
         "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_2.png", (0, 0), close+"gl/jeans_2.png", (0, 0), close+"gl/smile2.png"), im.matrix.tint(0.94, 0.82, 1.0)),
         "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_2.png", (0, 0), close+"gl/jeans_2.png", (0, 0), close+"gl/smile2.png"), im.matrix.tint(0.63, 0.78, 0.82)),
         True, im.Composite((1125, 1080), (0, 0), close+"gl/body_2.png", (0, 0), close+"gl/jeans_2.png", (0, 0), close+"gl/smile2.png"))
-    image gl shy2 jeans close = ConditionSwitch(
+    image gl shy2 close = ConditionSwitch(
         "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_2.png", (0, 0), close+"gl/jeans_2.png", (0, 0), close+"gl/shy2.png"), im.matrix.tint(0.94, 0.82, 1.0)),
         "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_2.png", (0, 0), close+"gl/jeans_2.png", (0, 0), close+"gl/shy2.png"), im.matrix.tint(0.63, 0.78, 0.82)),
         True, im.Composite((1125, 1080), (0, 0), close+"gl/body_2.png", (0, 0), close+"gl/jeans_2.png", (0, 0), close+"gl/shy2.png"))
-    image gl laugh2 jeans close = ConditionSwitch(
+    image gl laugh2 close = ConditionSwitch(
         "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_2.png", (0, 0), close+"gl/jeans_2.png", (0, 0), close+"gl/laugh2.png"), im.matrix.tint(0.94, 0.82, 1.0)),
         "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_2.png", (0, 0), close+"gl/jeans_2.png", (0, 0), close+"gl/laugh2.png"), im.matrix.tint(0.63, 0.78, 0.82)),
         True, im.Composite((1125, 1080), (0, 0), close+"gl/body_2.png", (0, 0), close+"gl/jeans_2.png", (0, 0), close+"gl/laugh2.png"))
-    image gl frust2 jeans close = ConditionSwitch(
+    image gl frust2 close = ConditionSwitch(
         "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_2.png", (0, 0), close+"gl/jeans_2.png", (0, 0), close+"gl/frust2.png"), im.matrix.tint(0.94, 0.82, 1.0)),
         "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_2.png", (0, 0), close+"gl/jeans_2.png", (0, 0), close+"gl/frust2.png"), im.matrix.tint(0.63, 0.78, 0.82)),
         True, im.Composite((1125, 1080), (0, 0), close+"gl/body_2.png", (0, 0), close+"gl/jeans_2.png", (0, 0), close+"gl/frust2.png"))
-    image gl angry2 jeans close = ConditionSwitch(
+    image gl angry2 close = ConditionSwitch(
         "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_2.png", (0, 0), close+"gl/jeans_2.png", (0, 0), close+"gl/angry2.png"), im.matrix.tint(0.94, 0.82, 1.0)),
         "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_2.png", (0, 0), close+"gl/jeans_2.png", (0, 0), close+"gl/angry2.png"), im.matrix.tint(0.63, 0.78, 0.82)),
         True, im.Composite((1125, 1080), (0, 0), close+"gl/body_2.png", (0, 0), close+"gl/jeans_2.png", (0, 0), close+"gl/angry2.png"))
-
-#Добавление кошачьих ушек
-
-    image gl grin1 jeans ears close = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/ears_1.png", (0, 0), close+"gl/grin1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/ears_1.png", (0, 0), close+"gl/grin1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/ears_1.png", (0, 0), close+"gl/grin1.png"))
-    image gl surprise jeans ears close = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/ears_1.png", (0, 0), close+"gl/surprise.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/ears_1.png", (0, 0), close+"gl/surprise.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/ears_1.png", (0, 0), close+"gl/surprise.png"))
-    image gl scary jeans ears close = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/ears_1.png", (0, 0), close+"gl/scary.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/ears_1.png", (0, 0), close+"gl/scary.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/ears_1.png", (0, 0), close+"gl/scary.png"))
-    image gl sad jeans ears close = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/ears_1.png", (0, 0), close+"gl/sad.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/ears_1.png", (0, 0), close+"gl/sad.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/ears_1.png", (0, 0), close+"gl/sad.png"))
-    image gl shy1 jeans ears close = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/ears_1.png", (0, 0), close+"gl/shy1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/ears_1.png", (0, 0), close+"gl/shy1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/ears_1.png", (0, 0), close+"gl/shy1.png"))
-    image gl guilty jeans ears close = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/ears_1.png", (0, 0), close+"gl/guilty.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/ears_1.png", (0, 0), close+"gl/guilty.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/ears_1.png", (0, 0), close+"gl/guilty.png"))
-    image gl evilsmile1 jeans ears close = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/ears_1.png", (0, 0), close+"gl/evilsmile1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/ears_1.png", (0, 0), close+"gl/evilsmile1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/ears_1.png", (0, 0), close+"gl/evilsmile1.png"))
-    image gl happy jeans ears close = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/ears_1.png", (0, 0), close+"gl/happy.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/ears_1.png", (0, 0), close+"gl/happy.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/ears_1.png", (0, 0), close+"gl/happy.png"))
-    image gl laugh1 jeans ears close = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/ears_1.png", (0, 0), close+"gl/laugh1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/ears_1.png", (0, 0), close+"gl/laugh1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/ears_1.png", (0, 0), close+"gl/laugh1.png"))
-    image gl smile1 jeans ears close = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/ears_1.png", (0, 0), close+"gl/smile1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/ears_1.png", (0, 0), close+"gl/smile1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/ears_1.png", (0, 0), close+"gl/smile1.png"))
-    image gl normal jeans ears close = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/ears_1.png", (0, 0), close+"gl/normal.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/ears_1.png", (0, 0), close+"gl/normal.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/ears_1.png", (0, 0), close+"gl/normal.png"))
-    image gl serious jeans ears close = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/ears_1.png", (0, 0), close+"gl/serious.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/ears_1.png", (0, 0), close+"gl/serious.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/ears_1.png", (0, 0), close+"gl/serious.png"))
-    image gl dontlike1 jeans ears close = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/ears_1.png", (0, 0), close+"gl/dontlike1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/ears_1.png", (0, 0), close+"gl/dontlike1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/ears_1.png", (0, 0), close+"gl/dontlike1.png"))
-    image gl angry1 jeans ears close = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/ears_1.png", (0, 0), close+"gl/angry1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/ears_1.png", (0, 0), close+"gl/angry1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/ears_1.png", (0, 0), close+"gl/angry1.png"))
-    image gl rage jeans ears close = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/ears_1.png", (0, 0), close+"gl/rage.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/ears_1.png", (0, 0), close+"gl/rage.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/ears_1.png", (0, 0), close+"gl/rage.png"))
-    image gl anger jeans ears close = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/ears_1.png", (0, 0), close+"gl/anger.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/ears_1.png", (0, 0), close+"gl/anger.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/ears_1.png", (0, 0), close+"gl/anger.png"))
-    image gl frust1 jeans ears close = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/ears_1.png", (0, 0), close+"gl/frust1.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/ears_1.png", (0, 0), close+"gl/frust1.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((1125, 1080), (0, 0), close+"gl/body_1.png", (0, 0), close+"gl/jeans_1.png", (0, 0), close+"gl/ears_1.png", (0, 0), close+"gl/frust1.png"))
-    image gl dontlike2 jeans ears close = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_2.png", (0, 0), close+"gl/jeans_2.png", (0, 0), close+"gl/ears_2.png", (0, 0), close+"gl/dontlike2.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_2.png", (0, 0), close+"gl/jeans_2.png", (0, 0), close+"gl/ears_2.png", (0, 0), close+"gl/dontlike2.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((1125, 1080), (0, 0), close+"gl/body_2.png", (0, 0), close+"gl/jeans_2.png", (0, 0), close+"gl/ears_2.png", (0, 0), close+"gl/dontlike2.png"))
-    image gl evilsmile2 jeans ears close = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_2.png", (0, 0), close+"gl/jeans_2.png", (0, 0), close+"gl/ears_2.png", (0, 0), close+"gl/evilsmile2.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_2.png", (0, 0), close+"gl/jeans_2.png", (0, 0), close+"gl/ears_2.png", (0, 0), close+"gl/evilsmile2.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((1125, 1080), (0, 0), close+"gl/body_2.png", (0, 0), close+"gl/jeans_2.png", (0, 0), close+"gl/ears_2.png", (0, 0), close+"gl/evilsmile2.png"))
-    image gl grin2 jeans ears close = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_2.png", (0, 0), close+"gl/jeans_2.png", (0, 0), close+"gl/ears_2.png", (0, 0), close+"gl/grin2.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_2.png", (0, 0), close+"gl/jeans_2.png", (0, 0), close+"gl/ears_2.png", (0, 0), close+"gl/grin2.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((1125, 1080), (0, 0), close+"gl/body_2.png", (0, 0), close+"gl/jeans_2.png", (0, 0), close+"gl/ears_2.png", (0, 0), close+"gl/grin2.png"))
-    image gl smile2 jeans ears close = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_2.png", (0, 0), close+"gl/jeans_2.png", (0, 0), close+"gl/ears_2.png", (0, 0), close+"gl/smile2.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_2.png", (0, 0), close+"gl/jeans_2.png", (0, 0), close+"gl/ears_2.png", (0, 0), close+"gl/smile2.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((1125, 1080), (0, 0), close+"gl/body_2.png", (0, 0), close+"gl/jeans_2.png", (0, 0), close+"gl/ears_2.png", (0, 0), close+"gl/smile2.png"))
-    image gl shy2 jeans ears close = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_2.png", (0, 0), close+"gl/jeans_2.png", (0, 0), close+"gl/ears_2.png", (0, 0), close+"gl/shy2.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_2.png", (0, 0), close+"gl/jeans_2.png", (0, 0), close+"gl/ears_2.png", (0, 0), close+"gl/shy2.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((1125, 1080), (0, 0), close+"gl/body_2.png", (0, 0), close+"gl/jeans_2.png", (0, 0), close+"gl/ears_2.png", (0, 0), close+"gl/shy2.png"))
-    image gl laugh2 jeans ears close = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_2.png", (0, 0), close+"gl/jeans_2.png", (0, 0), close+"gl/ears_2.png", (0, 0), close+"gl/laugh2.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_2.png", (0, 0), close+"gl/jeans_2.png", (0, 0), close+"gl/ears_2.png", (0, 0), close+"gl/laugh2.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((1125, 1080), (0, 0), close+"gl/body_2.png", (0, 0), close+"gl/jeans_2.png", (0, 0), close+"gl/ears_2.png", (0, 0), close+"gl/laugh2.png"))
-    image gl frust2 jeans ears close = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_2.png", (0, 0), close+"gl/jeans_2.png", (0, 0), close+"gl/ears_2.png", (0, 0), close+"gl/frust2.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_2.png", (0, 0), close+"gl/jeans_2.png", (0, 0), close+"gl/ears_2.png", (0, 0), close+"gl/frust2.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((1125, 1080), (0, 0), close+"gl/body_2.png", (0, 0), close+"gl/jeans_2.png", (0, 0), close+"gl/ears_2.png", (0, 0), close+"gl/frust2.png"))
-    image gl angry2 jeans ears close = ConditionSwitch(
-        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_2.png", (0, 0), close+"gl/jeans_2.png", (0, 0), close+"gl/ears_2.png", (0, 0), close+"gl/angry2.png"), im.matrix.tint(0.94, 0.82, 1.0)),
-        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_2.png", (0, 0), close+"gl/jeans_2.png", (0, 0), close+"gl/ears_2.png", (0, 0), close+"gl/angry2.png"), im.matrix.tint(0.63, 0.78, 0.82)),
-        True, im.Composite((1125, 1080), (0, 0), close+"gl/body_2.png", (0, 0), close+"gl/jeans_2.png", (0, 0), close+"gl/ears_2.png", (0, 0), close+"gl/angry2.png"))
+    image gl dontlike2 ears close = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_2.png", (0, 0), close+"gl/jeans_2.png", (0, 0), close+"gl/dontlike2.png", (0, 0), close+"gl/ears_2.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_2.png", (0, 0), close+"gl/jeans_2.png", (0, 0), close+"gl/dontlike2.png", (0, 0), close+"gl/ears_2.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((1125, 1080), (0, 0), close+"gl/body_2.png", (0, 0), close+"gl/jeans_2.png", (0, 0), close+"gl/dontlike2.png", (0, 0), close+"gl/ears_2.png"))
+    image gl evilsmile2 ears close = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_2.png", (0, 0), close+"gl/jeans_2.png", (0, 0), close+"gl/evilsmile2.png", (0, 0), close+"gl/ears_2.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_2.png", (0, 0), close+"gl/jeans_2.png", (0, 0), close+"gl/evilsmile2.png", (0, 0), close+"gl/ears_2.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((1125, 1080), (0, 0), close+"gl/body_2.png", (0, 0), close+"gl/jeans_2.png", (0, 0), close+"gl/evilsmile2.png", (0, 0), close+"gl/ears_2.png"))
+    image gl grin2 ears close = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_2.png", (0, 0), close+"gl/jeans_2.png", (0, 0), close+"gl/grin2.png", (0, 0), close+"gl/ears_2.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_2.png", (0, 0), close+"gl/jeans_2.png", (0, 0), close+"gl/grin2.png", (0, 0), close+"gl/ears_2.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((1125, 1080), (0, 0), close+"gl/body_2.png", (0, 0), close+"gl/jeans_2.png", (0, 0), close+"gl/grin2.png", (0, 0), close+"gl/ears_2.png"))
+    image gl smile2 ears close = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_2.png", (0, 0), close+"gl/jeans_2.png", (0, 0), close+"gl/smile2.png", (0, 0), close+"gl/ears_2.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_2.png", (0, 0), close+"gl/jeans_2.png", (0, 0), close+"gl/smile2.png", (0, 0), close+"gl/ears_2.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((1125, 1080), (0, 0), close+"gl/body_2.png", (0, 0), close+"gl/jeans_2.png", (0, 0), close+"gl/smile2.png", (0, 0), close+"gl/ears_2.png"))
+    image gl shy2 ears close = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_2.png", (0, 0), close+"gl/jeans_2.png", (0, 0), close+"gl/shy2.png", (0, 0), close+"gl/ears_2.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_2.png", (0, 0), close+"gl/jeans_2.png", (0, 0), close+"gl/shy2.png", (0, 0), close+"gl/ears_2.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((1125, 1080), (0, 0), close+"gl/body_2.png", (0, 0), close+"gl/jeans_2.png", (0, 0), close+"gl/shy2.png", (0, 0), close+"gl/ears_2.png"))
+    image gl laugh2 ears close = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_2.png", (0, 0), close+"gl/jeans_2.png", (0, 0), close+"gl/laugh2.png", (0, 0), close+"gl/ears_2.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_2.png", (0, 0), close+"gl/jeans_2.png", (0, 0), close+"gl/laugh2.png", (0, 0), close+"gl/ears_2.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((1125, 1080), (0, 0), close+"gl/body_2.png", (0, 0), close+"gl/jeans_2.png", (0, 0), close+"gl/laugh2.png", (0, 0), close+"gl/ears_2.png"))
+    image gl frust2 ears close = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_2.png", (0, 0), close+"gl/jeans_2.png", (0, 0), close+"gl/frust2.png", (0, 0), close+"gl/ears_2.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_2.png", (0, 0), close+"gl/jeans_2.png", (0, 0), close+"gl/frust2.png", (0, 0), close+"gl/ears_2.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((1125, 1080), (0, 0), close+"gl/body_2.png", (0, 0), close+"gl/jeans_2.png", (0, 0), close+"gl/frust2.png", (0, 0), close+"gl/ears_2.png"))
+    image gl angry2 ears close = ConditionSwitch(
+        "persistent.sprite_time == 'sunset'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_2.png", (0, 0), close+"gl/jeans_2.png", (0, 0), close+"gl/angry2.png", (0, 0), close+"gl/ears_2.png"), im.matrix.tint(0.94, 0.82, 1.0)),
+        "persistent.sprite_time == 'night'", im.MatrixColor(im.Composite((1125, 1080), (0, 0), close+"gl/body_2.png", (0, 0), close+"gl/jeans_2.png", (0, 0), close+"gl/angry2.png", (0, 0), close+"gl/ears_2.png"), im.matrix.tint(0.63, 0.78, 0.82)),
+        True, im.Composite((1125, 1080), (0, 0), close+"gl/body_2.png", (0, 0), close+"gl/jeans_2.png", (0, 0), close+"gl/angry2.png", (0, 0), close+"gl/ears_2.png"))
 
 
 

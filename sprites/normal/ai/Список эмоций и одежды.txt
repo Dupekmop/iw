@@ -1,3 +1,5 @@
+show ai
+
 Поза1: 
 grin1,surprise,scary,sad,shy1,guilty,evilsmile1,happy,laugh1,smile1,normal,serious,dontlike1,angry1,rage,anger,frust1
 jeans,pink,little1,little2,shirt,xmas,dress,kimono,uniformb,uniformw
